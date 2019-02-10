@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Candida-Std-Roman_9171.ttf">
+            <string>CandidaStd-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TitleHeading">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="37"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Umed Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl1-gE-jQw">
+                    <rect key="frame" x="0.0" y="0.0" width="137" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="DyC-oR-N4z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CandidaStd-Roman" family="Candida Std" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new Lead Learning site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2D-F0-665">
+                    <rect key="frame" x="0.0" y="22" width="137" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="t1p-vv-fF5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Fl1-gE-jQw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RLM-iK-9ci"/>
+                <constraint firstItem="Fl1-gE-jQw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="WFI-rE-Fz9"/>
+                <constraint firstItem="X2D-F0-665" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="k7S-r8-8nK"/>
+                <constraint firstItem="Fl1-gE-jQw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ktr-vw-fXb"/>
+                <constraint firstItem="X2D-F0-665" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qx8-AO-IXd"/>
+                <constraint firstItem="X2D-F0-665" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="zv9-dF-gOX"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-405.5" y="-154.5"/>
+        </view>
+    </objects>
+</document>
