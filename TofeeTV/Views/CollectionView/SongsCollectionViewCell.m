@@ -14,6 +14,9 @@
     [super awakeFromNib];
     // Initialization code
 
+    self.lblTitle.font = [UIFont fontWithName:FontRegular size:16.0];
+    self.lblTitle.textColor = [UIColor blueColor];
+    
 }
 
 @end

@@ -7,11 +7,14 @@
 //
 
 #import "Song.h"
+#import "RestCall.h"
 
 @interface Song()
 
 
+
 @property (nonatomic,strong) NSArray * colors;
+
 
 
 @end
@@ -36,6 +39,47 @@
 
 
 
++(NSMutableArray *)parseTheSongsService:(id)item
+{
+    
+    NSMutableArray * resultArray = [NSMutableArray new];
+    
+    
+    Song * tmpCurrentSong;
+    
+    for (id currentItemShowing in item) {
+        tmpCurrentSong  = [Song new];
+        
+        
+        tmpCurrentSong.itemId = [[currentItemShowing objectForKey:@"id"] intValue];
+        tmpCurrentSong.name = [currentItemShowing objectForKey:@"title"];
+        tmpCurrentSong.isLocked = [[currentItemShowing objectForKey:@"is_locked"] boolValue];
+        
+        tmpCurrentSong.inAppPurchaseId = [currentItemShowing objectForKey:@"in_app_purchase_ios"];
+        tmpCurrentSong.fileOwned = [[currentItemShowing objectForKey:@"is_owned"] boolValue];
+        
+        tmpCurrentSong.thumbNailUrl = [currentItemShowing objectForKey:@"thumbnail_file"];
+        //tmpCurrentSong.thumbNailUrl = @"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg";
+        
+        //
+        tmpCurrentSong.videoUrl = [currentItemShowing objectForKey:@"video_file"];
+        //tmpCurrentSong.videoUrl = @"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+        
+        
+        tmpCurrentSong.itemColor = self.colors[tmpCurrentSong.itemId % self.colors.count ];
+        
+        
+        [resultArray addObject:tmpCurrentSong];
+        
+        
+        
+        
+    }
+    
+    return resultArray;
+    
+}
+
 +(void)callGiveMeSongsListWithComiltionHandler:(void(^)(id result))completionHandler
                              withFailueHandler:(void(^)(id error))failureHandler
 {
@@ -43,6 +87,7 @@
     
     NSMutableArray * resultAnswer = [NSMutableArray new];
     
+    /*
     for (int i= 1; i < 13 ; i++)
     {
     
@@ -59,12 +104,61 @@
         {
             currentOne.isLocked = YES;
         }
-        
         [resultAnswer addObject:currentOne];
-        
     }
-    
     completionHandler(resultAnswer);
+    */
+    
+    
+    
+    NSMutableDictionary * currentDictionary = [NSMutableDictionary new];
+    
+    
+    
+    [RestCall callWebServiceWithTheseParams:currentDictionary
+                      withSignatureSequence:nil
+                                 urlCalling:[self makeURLCompleteFromString:@"songs"]
+                              isPostService:NO
+                      withComplitionHandler:^(id result)
+     {
+         
+         
+         
+         if ([self isSuccessFullWithDictionary:result]) {
+             
+             id dataObject = [result objectForKey:@"data"];
+             NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
+             [resultToSend addObjectsFromArray:resultToSend];
+             [resultToSend addObjectsFromArray:resultToSend];
+             [resultToSend addObjectsFromArray:resultToSend];
+             
+             
+             completionHandler(resultToSend);
+             
+         }
+         else
+         {
+             
+             
+             //[self Failure:failureHandler result:result];
+             
+             
+         }
+         
+         
+         
+     }
+                    failureComlitionHandler:^{
+                        
+                        failureHandler(ErrorWhileLoadingData);
+                        
+                    }];
     
 }
+
+
+
+
+
+
 @end

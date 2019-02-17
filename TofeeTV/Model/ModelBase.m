@@ -1,14 +1,14 @@
 //
-//  BaseModel.m
-//  Rohi Hayot
+//  ModelBase.m
+//  TofeeTV
 //
-//  Created by Shehzad Bilal on 6/28/18.
-//  Copyright © 2018 Grappetite. All rights reserved.
+//  Created by Tauqeer Ahmed on 17/02/2019.
+//  Copyright © 2019 Tauqeer. All rights reserved.
 //
 
-#import "BaseModel.h"
+#import "ModelBase.h"
 
-@implementation BaseModel
+@implementation ModelBase
 
 +(NSString *)makeURLCompleteFromString:(NSString *)name
 {
@@ -54,4 +54,6 @@
     return false;
     
 }
+
+
 @end

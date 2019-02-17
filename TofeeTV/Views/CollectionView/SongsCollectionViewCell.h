@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SongsCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageShowing;
+@property (weak, nonatomic) IBOutlet UIImageView *lockedImage;
 
 @end
 

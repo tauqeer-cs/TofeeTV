@@ -6,9 +6,10 @@
 //  Copyright © 2018 Grappetite. All rights reserved.
 //
 
-#import "BaseModel.h"
 
-@interface Question : BaseModel
+#import "ModelBase.h"
+
+@interface Question : ModelBase
 
 
 @property (nonatomic,strong) NSString * answer;
@@ -16,6 +17,7 @@
 @property (nonatomic) int lessonId;
 @property (nonatomic,strong) NSString * question;
 +(NSMutableArray *)listQuestionsWithArray:(NSArray*)questionList;
+
 
 
 

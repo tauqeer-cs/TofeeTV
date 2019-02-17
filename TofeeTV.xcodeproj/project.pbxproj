@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
+		50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
+		50545BD52219BEC80064DBF4 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD42219BEC80064DBF4 /* Quiz.m */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
 		509AF0CF220B20F700EB8CB2 /* ManuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0CE220B20F700EB8CB2 /* ManuViewController.m */; };
 		509AF0D5220B21E600EB8CB2 /* QuizzesLisingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */; };
@@ -15,7 +17,6 @@
 		509AF0DC220B366D00EB8CB2 /* SongsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0DA220B366D00EB8CB2 /* SongsCollectionViewCell.m */; };
 		509AF0DD220B366D00EB8CB2 /* SongsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 509AF0DB220B366D00EB8CB2 /* SongsCollectionViewCell.xib */; };
 		509AF0E0220B384A00EB8CB2 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0DF220B384A00EB8CB2 /* Song.m */; };
-		509AF0E3220B429E00EB8CB2 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0E2220B429E00EB8CB2 /* BaseModel.m */; };
 		509AF0E6220B42B500EB8CB2 /* SongsListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0E5220B42B500EB8CB2 /* SongsListingViewController.m */; };
 		509E3A6A2210832900DAC9A5 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A662210832700DAC9A5 /* FBSDKShareKit.framework */; };
 		509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A672210832700DAC9A5 /* Bolts.framework */; };
@@ -224,6 +225,10 @@
 /* Begin PBXFileReference section */
 		2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TofeeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
+		50545BD02219B8DB0064DBF4 /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
+		50545BD12219B8DB0064DBF4 /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
+		50545BD32219BEC80064DBF4 /* Quiz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		50545BD42219BEC80064DBF4 /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
 		509AF0CD220B20F700EB8CB2 /* ManuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuViewController.h; sourceTree = "<group>"; };
@@ -237,8 +242,6 @@
 		509AF0DB220B366D00EB8CB2 /* SongsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsCollectionViewCell.xib; sourceTree = "<group>"; };
 		509AF0DE220B384A00EB8CB2 /* Song.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		509AF0DF220B384A00EB8CB2 /* Song.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
-		509AF0E1220B429E00EB8CB2 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		509AF0E2220B429E00EB8CB2 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		509AF0E4220B42B500EB8CB2 /* SongsListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListingViewController.h; sourceTree = "<group>"; };
 		509AF0E5220B42B500EB8CB2 /* SongsListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListingViewController.m; sourceTree = "<group>"; };
 		509E3A662210832700DAC9A5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -994,14 +997,16 @@
 		50C5AB782206E92E008BA500 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				509AF0E1220B429E00EB8CB2 /* BaseModel.h */,
-				509AF0E2220B429E00EB8CB2 /* BaseModel.m */,
 				50C5AB832206E92E008BA500 /* User.h */,
 				50C5AB7B2206E92E008BA500 /* User.m */,
 				50C5AB7C2206E92E008BA500 /* Question.h */,
 				50C5AB822206E92E008BA500 /* Question.m */,
 				509AF0DE220B384A00EB8CB2 /* Song.h */,
 				509AF0DF220B384A00EB8CB2 /* Song.m */,
+				50545BD02219B8DB0064DBF4 /* ModelBase.h */,
+				50545BD12219B8DB0064DBF4 /* ModelBase.m */,
+				50545BD32219BEC80064DBF4 /* Quiz.h */,
+				50545BD42219BEC80064DBF4 /* Quiz.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1390,7 +1395,7 @@
 				50C5AC602206E94B008BA500 /* CategoryCollectionViewCell.m in Sources */,
 				50C5AB3F2206E8F3008BA500 /* QZDatePickerView.m in Sources */,
 				50C5AA8C2206E84C008BA500 /* Validator.m in Sources */,
-				509AF0E3220B429E00EB8CB2 /* BaseModel.m in Sources */,
+				50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */,
 				50C5AB3A2206E8F3008BA500 /* JotTextView.m in Sources */,
 				50C5AB412206E8F3008BA500 /* QZDateSelectorView.m in Sources */,
 				50C5AB732206E8F3008BA500 /* UIView+Toast.m in Sources */,
@@ -1406,6 +1411,7 @@
 				50749780220C8A5200B1924E /* RegitersViewController.m in Sources */,
 				50C5AB4E2206E8F3008BA500 /* MASViewConstraint.m in Sources */,
 				50C5AC572206E94B008BA500 /* ChaterDetailView.m in Sources */,
+				50545BD52219BEC80064DBF4 /* Quiz.m in Sources */,
 				50C5AB372206E8F3008BA500 /* JotDrawingContainer.m in Sources */,
 				50C5AB632206E8F3008BA500 /* FSCalendarWeekdayView.m in Sources */,
 				50C5AA972206E84C008BA500 /* GTMNSString+HTML.m in Sources */,

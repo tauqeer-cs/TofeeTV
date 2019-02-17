@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseModel.h"
-@interface User : BaseModel
+#import "ModelBase.h"
 
+
+@interface User : ModelBase
 
 @property (nonatomic,strong) NSString * name;
-
 @property (nonatomic,strong) NSString * email;
 @property (nonatomic,strong) NSString * status;
 @property (nonatomic) int userId;
-
 @property (nonatomic,strong) NSString * firstName;
 @property (nonatomic,strong) NSString * lastName;
 

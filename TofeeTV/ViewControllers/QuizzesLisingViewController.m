@@ -7,6 +7,10 @@
 //
 
 #import "QuizzesLisingViewController.h"
+#import "Question.h"
+#import "Quiz.h"
+
+
 
 @interface QuizzesLisingViewController ()
 
@@ -17,6 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [Quiz callQuiztionsListingWithComiltionHandler:^(id result) {
+        
+        NSLog(@"");
+        
+    } withFailueHandler:^(id error) {
+        
+    }];
+    
+    //
+    
+    
+    
 }
 
 /*

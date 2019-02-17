@@ -207,17 +207,7 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
     
     
     AppDelegate * appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
 
-    
-
-    /*
-    if (!appDelegate.tokenToSend) {
-        
-        return;
-        
-    }*/
-    
         [currentDictionary setObject:@"" forKey:@"token"];
         [currentDictionary setObject:@"iOS" forKey:@"device_type"];
         [currentDictionary setObject:[[[UIDevice currentDevice] identifierForVendor] UUIDString] forKey:@"device_id"];
@@ -423,8 +413,7 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
     
     NSMutableDictionary *currentDictionary = [NSMutableDictionary new];
     [currentDictionary setObject:emailAddress forKey:@"email"];
-    [currentDictionary setObject:firstName forKey:@"first_name"];
-    [currentDictionary setObject:@"" forKey:@"last_name"];
+    [currentDictionary setObject:firstName forKey:@"name"];
     [currentDictionary setObject:password forKey:@"password"];
     
     NSUserDefaults *defauls = [NSUserDefaults standardUserDefaults];

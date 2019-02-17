@@ -33,13 +33,19 @@
     [self addCollectionViewCellWithCollectionView:self.collectionView withNibName:@"SongsCollectionViewCell" withCellIdName:@"cellSongs"];
     
     
+    [self showLoader];
+    
     
     [Song callGiveMeSongsListWithComiltionHandler:^(id  _Nonnull result) {
+        
+    
+        [self hideLoader];
         
         self.dataSource = result;
         [self.collectionView reloadData];
         
     } withFailueHandler:^(id  _Nonnull error) {
+        [self hideLoader];
         
     }];
     
@@ -59,7 +65,7 @@
     
     
     
-    return CGSizeMake([[UIScreen mainScreen ] bounds].size.width-32, 98);
+    return CGSizeMake([[UIScreen mainScreen ] bounds].size.width/2, [[UIScreen mainScreen ] bounds].size.width/2);
     
 }
 
@@ -68,6 +74,15 @@
 {
     SongsCollectionViewCell *currentCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellSongs" forIndexPath:indexPath];
     currentCell.backgroundColor = self.dataSource[indexPath.row].itemColor;
+    currentCell.lblTitle.text = self.dataSource[indexPath.row].name;
+    [currentCell.lockedImage setHidden:!self.dataSource[indexPath.row].isLocked];
+    [FileManager
+     loadImageFromurl:self.dataSource[indexPath.row].thumbNailUrl
+     withComplitionHandler:^(id result) {
+        [currentCell.imageShowing setImage:result];
+    } withFailHander:^(int item) {
+    }];
+   
     return currentCell;
 }
 

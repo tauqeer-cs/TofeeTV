@@ -1,39 +1,30 @@
 //
-//  Question.m
-//  Rohi Hayot
+//  Quiz.m
+//  TofeeTV
 //
-//  Created by Shehzad Bilal on 7/3/18.
-//  Copyright © 2018 Grappetite. All rights reserved.
+//  Created by Tauqeer Ahmed on 17/02/2019.
+//  Copyright © 2019 Tauqeer. All rights reserved.
 //
 
-#import "Question.h"
+#import "Quiz.h"
 
-@implementation Question
+@interface Quiz()
 
+@end
 
-+(Question *)makeQuestionFromDictionary:(NSDictionary *)question{
-    
-    Question * tmpQuesrtion = [Question new];
-    tmpQuesrtion.answer = [question objectForKey:@"answer"];
-    tmpQuesrtion.question = [question objectForKey:@"question"];
-   tmpQuesrtion.questionId =  [[question objectForKey:@"id"] intValue];
-   tmpQuesrtion.lessonId =  [[question objectForKey:@"lesson_id"] intValue];
-    return tmpQuesrtion;
-    
-}
-+(NSMutableArray *)listQuestionsWithArray:(NSArray*)questionList
+@implementation Quiz
+
++(NSArray *)colors
 {
     
-    NSMutableArray * tmpArray = [NSMutableArray new];
-    
-    for (id current in questionList)
-    {
-        [tmpArray addObject:[self makeQuestionFromDictionary:current]];
-        
-        
-    }
-    return tmpArray;
-    
+    return @[
+             [UIColor colorWithRed:29.0/255.0 green:175.0/255.0 blue:236.0/255.0 alpha:1.0],
+             [UIColor colorWithRed:245.0/255.0 green:147.0/255.0 blue:49.0/255.0 alpha:1.0],
+             [UIColor colorWithRed:141.0/255.0 green:196.0/255.0 blue:72.0/255.0 alpha:1.0],
+             [UIColor colorWithRed:240.0/255.0 green:89.0/255.0 blue:52.0/255.0 alpha:1.0],
+             [UIColor colorWithRed:33.0/255.0 green:168.0/255.0 blue:156.0/255.0 alpha:1.0],
+             [UIColor colorWithRed:235.0/255.0 green:40.0/255.0 blue:124.0/255.0 alpha:1.0],
+             ];
 }
 
 +(NSMutableArray *)parseItemFromResult:(id)items
@@ -42,11 +33,28 @@
     
     NSMutableArray * answerArray = [NSMutableArray new];
     
+    Quiz * tmpCurrentQuiz;
     
-    for (id currentItem in items) {
+    
+    for (id currentItemShowing in items) {
+        
+        tmpCurrentQuiz = [Quiz new];
+        
+        NSLog(@"%@",currentItemShowing);
+        
+        tmpCurrentQuiz.itemId = [[currentItemShowing objectForKey:@"id"] intValue];
+        tmpCurrentQuiz.isLocked = [[currentItemShowing objectForKey:@"is_locked"] boolValue];
+        tmpCurrentQuiz.fileOwned = [[currentItemShowing objectForKey:@"is_owned"] boolValue];
+        tmpCurrentQuiz.name = [currentItemShowing objectForKey:@"title"];
+        
+        tmpCurrentQuiz.itemColor = [self colors][tmpCurrentQuiz.itemId % [self colors].count ];
         
         
-        NSLog(@"%@",currentItem);
+        [answerArray addObject:tmpCurrentQuiz];
+        
+        
+        
+        
         
         
     }
@@ -56,7 +64,7 @@
 }
 
 +(void)callQuiztionsListingWithComiltionHandler:(void(^)(id result))completionHandler
-                             withFailueHandler:(void(^)(id error))failureHandler
+                              withFailueHandler:(void(^)(id error))failureHandler
 {
     
     
@@ -105,11 +113,12 @@
              //NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
              
              NSMutableArray * resultToSend = [self parseItemFromResult:dataObject];
+             [resultToSend addObjectsFromArray:resultToSend];
+             [resultToSend addObjectsFromArray:resultToSend];
+             [resultToSend addObjectsFromArray:resultToSend];
              
              
-             
-             
-             completionHandler(dataObject);
+             completionHandler(resultToSend);
              
          }
          else
@@ -131,7 +140,6 @@
                     }];
     
 }
-
 
 
 @end
