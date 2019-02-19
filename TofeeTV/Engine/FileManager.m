@@ -123,6 +123,23 @@
     return fileExists;
 }
 
++(NSString * )fileAtCoverExistsAtPath:(NSString *)directory{
+    
+    
+    if (!directory) {
+        return @"";
+        
+    }
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    documentsDirectory = [documentsDirectory stringByAppendingPathComponent:@"CoverImages"];
+    NSString *dataPath = [[documentsDirectory stringByAppendingString:@"/"] stringByAppendingString:directory];
+    
+    
+    return dataPath;
+}
+
+
 
 +(NSString  *)filePathAtDirecary:(NSString *)directory{
     
@@ -3488,6 +3505,63 @@
     }
     
 }
+
+
++(void)loadVideoFromurl:(NSString *)urlToLoad  withComplitionHandler:(void(^)(id))completionHandler
+         withFailHander:(void(^)(int))failureHandler
+{
+    NSString *pathName = [urlToLoad
+                          stringByReplacingOccurrencesOfString:@"/"
+                          withString:@""];
+    
+    
+    
+    if ([FileManager fileCoverExistsAtPath:pathName])
+    {
+        
+        
+        
+        completionHandler([self fileAtCoverExistsAtPath:pathName]);
+        
+        
+    }
+    else{
+        
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            
+            
+            NSURL *imageURL = [NSURL URLWithString:urlToLoad];
+            
+            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+            
+            
+            
+            
+            if (!imageData) {
+            
+                return ;
+                
+            }
+            
+    
+            
+            [FileManager saveCoverImageToDisk:imageData fileName:pathName];
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionHandler([self fileAtCoverExistsAtPath:pathName]);
+            });
+            
+            
+            
+            
+        });
+        
+    }
+    
+}
+
 
 
 

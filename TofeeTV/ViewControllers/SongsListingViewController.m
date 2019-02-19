@@ -9,6 +9,8 @@
 #import "SongsListingViewController.h"
 #import "SongsCollectionViewCell.h"
 #import "Song.h"
+#import "VideoPlayerViewController.h"
+
 @interface SongsListingViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -90,6 +92,11 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    VideoPlayerViewController * destination = [[VideoPlayerViewController alloc] initWithNibName:@"VideoPlayerViewController" bundle:nil];
+    
+    destination.currentSong = self.dataSource[indexPath.row];
+    
+    [self.navigationController showViewController:destination sender:self];
     
     
 }

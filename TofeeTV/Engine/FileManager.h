@@ -141,6 +141,7 @@
    withFileIndexLoading:(int)index
   withComplitionHandler:(void(^)(id))completionHandler
          withFailHander:(void(^)(int))failureHandler;
+
 +(void)loadImageFromurl:(NSString *)urlToLoad  withComplitionHandler:(void(^)(id))completionHandler
          withFailHander:(void(^)(int))failureHandler;
 +(UIImage *)loadNotSynceImageFromurl:(NSString *)urlToLoad;
@@ -162,5 +163,8 @@
                   url:(NSString *)urlToLoad loader:(UIActivityIndicatorView *)loader
 withComplitionHandler:(void(^)(id))completionHandler;
 
+
++(void)loadVideoFromurl:(NSString *)urlToLoad  withComplitionHandler:(void(^)(id))completionHandler
+         withFailHander:(void(^)(int))failureHandler;
 
 @end

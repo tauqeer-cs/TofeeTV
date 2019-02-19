@@ -220,6 +220,8 @@
 		50C5ACD82206E9F2008BA500 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB72206E9F2008BA500 /* Raleway-Italic.ttf */; };
 		50C5ACDA2206E9F2008BA500 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB92206E9F2008BA500 /* Raleway-Bold.ttf */; };
 		50C5ACDE2206F2D7008BA500 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ACDD2206F2D7008BA500 /* LoginViewController.m */; };
+		50E56AEC221C5B86008A1F81 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */; };
+		50E56AED221C5B86008A1F81 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -594,6 +596,9 @@
 		50C5ACB92206E9F2008BA500 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		50C5ACDC2206F2D7008BA500 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		50C5ACDD2206F2D7008BA500 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		50E56AE9221C5B85008A1F81 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 		CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1163,6 +1168,9 @@
 				509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */,
 				509AF0D6220B22A900EB8CB2 /* MyScoreViewController.h */,
 				509AF0D7220B22A900EB8CB2 /* MyScoreViewController.m */,
+				50E56AE9221C5B85008A1F81 /* VideoPlayerViewController.h */,
+				50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */,
+				50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1340,6 +1348,7 @@
 				50C5ACD32206E9F2008BA500 /* Raleway-LightItalic.ttf in Resources */,
 				50C5AC6B2206E94B008BA500 /* MyListProfileCollectionViewCell.xib in Resources */,
 				50C5ACC72206E9F2008BA500 /* Raleway-ExtraBold.ttf in Resources */,
+				50E56AED221C5B86008A1F81 /* VideoPlayerViewController.xib in Resources */,
 				50C5AC822206E94B008BA500 /* DescriptionTableViewCell.xib in Resources */,
 				50C5ACCF2206E9F2008BA500 /* Raleway-Black.ttf in Resources */,
 			);
@@ -1430,6 +1439,7 @@
 				50C5AB6A2206E8F3008BA500 /* FSCalendarAppearance.m in Sources */,
 				50C5AB5F2206E8F3008BA500 /* FSCalendarStickyHeader.m in Sources */,
 				50C5AC8D2206E94B008BA500 /* TitleHeading.m in Sources */,
+				50E56AEC221C5B86008A1F81 /* VideoPlayerViewController.m in Sources */,
 				50C5AC832206E94B008BA500 /* StoryOneTableViewCell.m in Sources */,
 				50C5AA912206E84C008BA500 /* Reachability.m in Sources */,
 				50C5AC562206E94B008BA500 /* DIYTableViewCell.m in Sources */,
@@ -1666,6 +1676,7 @@
 			baseConfigurationReference = CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 667792X4E7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1681,6 +1692,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = home.TofeeTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1690,6 +1702,7 @@
 			baseConfigurationReference = 4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 667792X4E7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1705,6 +1718,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = home.TofeeTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
