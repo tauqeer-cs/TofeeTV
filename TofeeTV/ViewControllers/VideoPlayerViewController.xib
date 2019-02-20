@@ -69,11 +69,49 @@
                         <constraint firstItem="020-yp-ZtG" firstAttribute="top" secondItem="hYN-K9-J08" secondAttribute="top" constant="8" id="Ndf-u2-JAw"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O7-70-vgN">
+                    <rect key="frame" x="131" y="300.5" width="408" height="74.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHm-DG-H8F">
+                            <rect key="frame" x="185.5" y="18.5" width="37" height="37.5"/>
+                            <state key="normal" image="pauseButton"/>
+                            <state key="selected" image="playButton"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2l-GR-spf">
+                            <rect key="frame" x="132" y="18.5" width="37.5" height="37.5"/>
+                            <state key="normal" image="backward"/>
+                            <state key="selected" image="backward"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-gs-cY1">
+                            <rect key="frame" x="238.5" y="18.5" width="37.5" height="37.5"/>
+                            <state key="normal" image="forward"/>
+                            <state key="selected" image="forward"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="width" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.5" id="0Jq-4n-aXs"/>
+                        <constraint firstItem="o52-gs-cY1" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="HjQ-ad-Mmh"/>
+                        <constraint firstItem="y2l-GR-spf" firstAttribute="height" secondItem="zHm-DG-H8F" secondAttribute="height" id="Mde-g3-Gb8"/>
+                        <constraint firstItem="o52-gs-cY1" firstAttribute="height" secondItem="zHm-DG-H8F" secondAttribute="height" id="PKJ-ds-kHT"/>
+                        <constraint firstItem="y2l-GR-spf" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="Ryw-CM-qJs"/>
+                        <constraint firstItem="y2l-GR-spf" firstAttribute="width" secondItem="zHm-DG-H8F" secondAttribute="width" id="VSc-aa-KvZ"/>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="leading" secondItem="y2l-GR-spf" secondAttribute="trailing" constant="16" id="ZtV-xq-rVh"/>
+                        <constraint firstItem="o52-gs-cY1" firstAttribute="leading" secondItem="zHm-DG-H8F" secondAttribute="trailing" constant="16" id="g51-l7-9R8"/>
+                        <constraint firstItem="o52-gs-cY1" firstAttribute="width" secondItem="zHm-DG-H8F" secondAttribute="width" id="iga-OK-jqX"/>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="height" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.5" id="qYs-OT-pWh"/>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="centerX" secondItem="5O7-70-vgN" secondAttribute="centerX" id="wZl-Sa-w3r"/>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="zE5-by-mJF"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="5O7-70-vgN" firstAttribute="leading" secondItem="62U-E2-X0d" secondAttribute="trailing" constant="8" id="Ce3-8j-vMM"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="DF3-iF-Dp4"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="DI6-kL-2L3"/>
+                <constraint firstItem="5O7-70-vgN" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="LBj-D8-4Cm"/>
+                <constraint firstItem="hYN-K9-J08" firstAttribute="leading" secondItem="5O7-70-vgN" secondAttribute="trailing" constant="8" id="NZ4-Nj-pio"/>
                 <constraint firstAttribute="bottom" secondItem="62U-E2-X0d" secondAttribute="bottom" id="OKt-n0-cH3"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="aLN-9f-bLU"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.78" id="b1v-lO-Qc7"/>
@@ -82,9 +120,16 @@
                 <constraint firstItem="62U-E2-X0d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="p8k-7o-jAM"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" id="qfY-eh-0Gf"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="rWH-hX-3NZ"/>
+                <constraint firstItem="5O7-70-vgN" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="8" id="rhs-2u-WyG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="138.98050974512745" y="152.80000000000001"/>
         </view>
     </objects>
+    <resources>
+        <image name="backward" width="167" height="165"/>
+        <image name="forward" width="170" height="165"/>
+        <image name="pauseButton" width="166" height="165"/>
+        <image name="playButton" width="170" height="165"/>
+    </resources>
 </document>
