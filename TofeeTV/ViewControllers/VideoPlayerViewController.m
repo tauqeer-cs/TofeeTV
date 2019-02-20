@@ -14,11 +14,16 @@
 @interface VideoPlayerViewController ()
 
 @property (nonatomic) AVPlayer *avPlayer;
+@property (weak, nonatomic) IBOutlet UIView *videoContainer;
 
 
 @end
 
 @implementation VideoPlayerViewController
+- (IBAction)btnQuizMeTapped:(UIButton *)sender {
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,18 +35,25 @@
 
     
 
+
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
-        
-            
+                
+                
                 NSURL *vedioURL = item;
                 NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
                 NSString *documentsDirectory = [paths objectAtIndex:0];
                 NSArray *filePathsArray = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:documentsDirectory  error:nil];
-
+                
                 NSLog(@"files array %@", filePathsArray);
                 NSString *fullpath;
-
+                
                 
                 for ( NSString *apath in filePathsArray )
                 {
@@ -51,11 +63,10 @@
                 
                 NSLog(@"");
                 
-
-
                 
                 
-                NSString *filepath = [[NSBundle mainBundle] pathForResource:item ofType:nil inDirectory:@"CoverImages"];
+                
+                
                 
                 NSURL *fileURL = [NSURL fileURLWithPath:item];
                 self.avPlayer = [AVPlayer playerWithURL:fileURL];
@@ -63,19 +74,33 @@
                 
                 
                 AVPlayerLayer *videoLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
-                videoLayer.frame = self.view.bounds;
+                videoLayer.frame = self.videoContainer.frame;
                 videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
                 [self.view.layer addSublayer:videoLayer];
                 
+                self.avPlayer.accessibilityFrame = self.view.frame;
+                videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+                videoLayer.frame = self.videoContainer.frame;
+                
+
                 [self.avPlayer play];
+                
+                [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemDidFinishPlaying:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.avPlayer currentItem]];
+                
                 
                 NSLog(@"");
                 
                 
-    } withFailHander:^(int error) {
-        
-    }];
+            } withFailHander:^(int error) {
+                
+            }];
+    
 }
+- (void)itemDidFinishPlaying:(NSNotification *)notification {
+    AVPlayerItem *player = [notification object];
+    [player seekToTime:kCMTimeZero];
+}
+
 
 /*
 #pragma mark - Navigation

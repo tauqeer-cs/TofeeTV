@@ -11,6 +11,7 @@
 		50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
 		50545BD52219BEC80064DBF4 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD42219BEC80064DBF4 /* Quiz.m */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
+		508E93FD221DAAEE00A123DF /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E93FC221DAAEE00A123DF /* CustomViewController.m */; };
 		509AF0CF220B20F700EB8CB2 /* ManuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0CE220B20F700EB8CB2 /* ManuViewController.m */; };
 		509AF0D5220B21E600EB8CB2 /* QuizzesLisingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */; };
 		509AF0D8220B22A900EB8CB2 /* MyScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D7220B22A900EB8CB2 /* MyScoreViewController.m */; };
@@ -233,6 +234,8 @@
 		50545BD42219BEC80064DBF4 /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
+		508E93FB221DAAEE00A123DF /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		508E93FC221DAAEE00A123DF /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		509AF0CD220B20F700EB8CB2 /* ManuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuViewController.h; sourceTree = "<group>"; };
 		509AF0CE220B20F700EB8CB2 /* ManuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManuViewController.m; sourceTree = "<group>"; };
 		509AF0D3220B21E600EB8CB2 /* QuizzesLisingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizzesLisingViewController.h; sourceTree = "<group>"; };
@@ -1171,6 +1174,8 @@
 				50E56AE9221C5B85008A1F81 /* VideoPlayerViewController.h */,
 				50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */,
 				50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */,
+				508E93FB221DAAEE00A123DF /* CustomViewController.h */,
+				508E93FC221DAAEE00A123DF /* CustomViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1517,6 +1522,7 @@
 				50C5AA792206E84B008BA500 /* JSONKit.m in Sources */,
 				50C5AA892206E84C008BA500 /* XMLDictionary.m in Sources */,
 				50C5AA772206E84B008BA500 /* AFDropdownNotification.m in Sources */,
+				508E93FD221DAAEE00A123DF /* CustomViewController.m in Sources */,
 				50C5AB4A2206E8F3008BA500 /* MASLayoutConstraint.m in Sources */,
 				50C5AC872206E94B008BA500 /* DescriptionTableViewCell.m in Sources */,
 				50C5AB542206E8F3008BA500 /* HRColorPickerView.m in Sources */,
