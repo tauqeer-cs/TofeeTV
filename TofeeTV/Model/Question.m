@@ -14,10 +14,26 @@
 +(Question *)makeQuestionFromDictionary:(NSDictionary *)question{
     
     Question * tmpQuesrtion = [Question new];
-    tmpQuesrtion.answer = [question objectForKey:@"answer"];
-    tmpQuesrtion.question = [question objectForKey:@"question"];
+   
+    
+    tmpQuesrtion.answer = [question objectForKey:@"correct_answer"];
+    tmpQuesrtion.question = [question objectForKey:@"title"];
    tmpQuesrtion.questionId =  [[question objectForKey:@"id"] intValue];
-   tmpQuesrtion.lessonId =  [[question objectForKey:@"lesson_id"] intValue];
+   tmpQuesrtion.lessonId =  [[question objectForKey:@"song_id"] intValue];
+    
+    tmpQuesrtion.optionsArray  = [NSMutableArray new];
+    
+
+    [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option1"]];
+    [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option2"]];
+    [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option3"]];
+    [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option4"]];
+    tmpQuesrtion.questionType = [question objectForKey:@"question_type"];
+    
+    tmpQuesrtion.subQuestion = @"What color are the bottles";
+    tmpQuesrtion.currentGivenAnswer = [question objectForKey:@"answer"];
+    
+    
     return tmpQuesrtion;
     
 }

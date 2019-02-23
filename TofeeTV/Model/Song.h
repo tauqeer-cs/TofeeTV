@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+@property (nonatomic,strong) NSMutableArray * myQuestions;
+
 @end
 
 NS_ASSUME_NONNULL_END

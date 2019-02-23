@@ -16,10 +16,20 @@
 @property (nonatomic) int  questionId;
 @property (nonatomic) int lessonId;
 @property (nonatomic,strong) NSString * question;
+@property (nonatomic,strong) NSString * subQuestion;
+
 +(NSMutableArray *)listQuestionsWithArray:(NSArray*)questionList;
 
 
+@property (nonatomic,strong) NSMutableArray * optionsArray;
 
+@property (nonatomic,strong) NSString * questionType;
+
+@property (nonatomic,strong) NSString * currentGivenAnswer;
+
+
++(void)callQuiztionsListingWithComiltionHandler:(void(^)(id result))completionHandler
+                              withFailueHandler:(void(^)(id error))failureHandler;
 
 
 @end

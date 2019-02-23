@@ -19,6 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
                               withFailueHandler:(void(^)(id error))failureHandler;
 
 
++(void)callSubmitQuestionsWithQuestionId:(int)questionId
+                      withAnswerSelected:(NSString *)answerSlected
+                              withSongId:(int)songId
+                    withComiltionHandler:(void(^)(id result))completionHandler
+                       withFailueHandler:(void(^)(id error))failureHandler;
+
 
 
 @end

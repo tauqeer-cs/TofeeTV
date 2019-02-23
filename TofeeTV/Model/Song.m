@@ -8,6 +8,7 @@
 
 #import "Song.h"
 #import "RestCall.h"
+#import "Question.h"
 
 @interface Song()
 
@@ -67,6 +68,12 @@
         
         
         tmpCurrentSong.itemColor = self.colors[tmpCurrentSong.itemId % self.colors.count ];
+        
+        id answerArray = [Question listQuestionsWithArray:[currentItemShowing objectForKey:@"questions"]];
+        
+        tmpCurrentSong.myQuestions = answerArray;
+        
+        NSLog(@"");
         
         
         [resultArray addObject:tmpCurrentSong];

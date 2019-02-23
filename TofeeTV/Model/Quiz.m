@@ -142,4 +142,62 @@
 }
 
 
++(void)callSubmitQuestionsWithQuestionId:(int)questionId
+                      withAnswerSelected:(NSString *)answerSlected
+                              withSongId:(int)songId
+                        withComiltionHandler:(void(^)(id result))completionHandler
+                              withFailueHandler:(void(^)(id error))failureHandler
+{
+    
+    
+
+    
+    
+    NSMutableDictionary * currentDictionary = [NSMutableDictionary new];
+    [currentDictionary setObject:[NSString stringWithFormat:@"%d",songId] forKey:@"song_id"];
+    [currentDictionary setObject:[NSString stringWithFormat:@"%d",questionId] forKey:@"question_id"];
+    [currentDictionary setObject:answerSlected forKey:@"answer"];
+    
+    
+    
+    [RestCall callWebServiceWithTheseParams:currentDictionary
+                      withSignatureSequence:nil
+                                 urlCalling:[self makeURLCompleteFromString:@"quiz/insertAnswer"]
+                              isPostService:YES
+                      withComplitionHandler:^(id result)
+     {
+         
+         
+         
+         if ([self isSuccessFullWithDictionary:result]) {
+             
+             id dataObject = [result objectForKey:@"data"];
+             //NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
+             completionHandler(dataObject);
+             
+         }
+         else
+         {
+             
+             failureHandler(ErrorWhileLoadingData);
+             
+             
+             //[self Failure:failureHandler result:result];
+             
+             
+         }
+         
+         
+         
+     }
+                    failureComlitionHandler:^{
+                        
+                        failureHandler(ErrorWhileLoadingData);
+                        
+                    }];
+    
+}
+
+
+
 @end

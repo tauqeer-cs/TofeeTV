@@ -57,6 +57,7 @@
                             <state key="normal" title="Quiz Me"/>
                             <connections>
                                 <action selector="btnQuizMeTapped:" destination="-1" eventType="touchUpInside" id="El4-tN-xlP"/>
+                                <action selector="quizMeTapped:" destination="-1" eventType="touchUpInside" id="fIw-vi-EMK"/>
                             </connections>
                         </button>
                     </subviews>

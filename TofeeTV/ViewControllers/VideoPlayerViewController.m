@@ -9,6 +9,9 @@
 #import "VideoPlayerViewController.h"
 #import "FileManager.h"
 #import <AVFoundation/AVFoundation.h>
+#import "QuestionViewController.h"
+#import "Song.h"
+#import "Question.h"
 
 
 @interface VideoPlayerViewController ()
@@ -28,12 +31,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    
-    
-
-
-    
 
 
 }
@@ -99,6 +96,17 @@
 - (void)itemDidFinishPlaying:(NSNotification *)notification {
     AVPlayerItem *player = [notification object];
     [player seekToTime:kCMTimeZero];
+}
+
+- (IBAction)quizMeTapped:(UIButton *)sender
+{
+
+    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
+    destination.questionIndex = 0;
+    destination.selectedSong = self.currentSong;
+    
+    [self.navigationController showViewController:destination sender:nil];
+    
 }
 
 

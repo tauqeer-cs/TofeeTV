@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
+		504B265822211390007D376B /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B265622211390007D376B /* QuestionViewController.m */; };
+		504B265922211390007D376B /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504B265722211390007D376B /* QuestionViewController.xib */; };
 		50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
 		50545BD52219BEC80064DBF4 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD42219BEC80064DBF4 /* Quiz.m */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
+		50895FCC222159B000BEC1C8 /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50895FCA222159B000BEC1C8 /* ThankYouViewController.m */; };
+		50895FCD222159B000BEC1C8 /* ThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */; };
 		508E93FD221DAAEE00A123DF /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E93FC221DAAEE00A123DF /* CustomViewController.m */; };
 		509AF0CF220B20F700EB8CB2 /* ManuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0CE220B20F700EB8CB2 /* ManuViewController.m */; };
 		509AF0D5220B21E600EB8CB2 /* QuizzesLisingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */; };
@@ -228,12 +232,18 @@
 /* Begin PBXFileReference section */
 		2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TofeeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
+		504B265522211390007D376B /* QuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		504B265622211390007D376B /* QuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		504B265722211390007D376B /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		50545BD02219B8DB0064DBF4 /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
 		50545BD12219B8DB0064DBF4 /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
 		50545BD32219BEC80064DBF4 /* Quiz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		50545BD42219BEC80064DBF4 /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
+		50895FC9222159B000BEC1C8 /* ThankYouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
+		50895FCA222159B000BEC1C8 /* ThankYouViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
+		50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThankYouViewController.xib; sourceTree = "<group>"; };
 		508E93FB221DAAEE00A123DF /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		508E93FC221DAAEE00A123DF /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		509AF0CD220B20F700EB8CB2 /* ManuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuViewController.h; sourceTree = "<group>"; };
@@ -1176,6 +1186,12 @@
 				50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */,
 				508E93FB221DAAEE00A123DF /* CustomViewController.h */,
 				508E93FC221DAAEE00A123DF /* CustomViewController.m */,
+				504B265522211390007D376B /* QuestionViewController.h */,
+				504B265622211390007D376B /* QuestionViewController.m */,
+				504B265722211390007D376B /* QuestionViewController.xib */,
+				50895FC9222159B000BEC1C8 /* ThankYouViewController.h */,
+				50895FCA222159B000BEC1C8 /* ThankYouViewController.m */,
+				50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1347,6 +1363,7 @@
 				50C5ACC12206E9F2008BA500 /* MavenPro-Black.ttf in Resources */,
 				50C5ACBF2206E9F2008BA500 /* Raleway-ThinItalic.ttf in Resources */,
 				50C5AA832206E84C008BA500 /* menu-button@2x.png in Resources */,
+				504B265922211390007D376B /* QuestionViewController.xib in Resources */,
 				50C5AC7C2206E94B008BA500 /* CustomAddToListView.xib in Resources */,
 				50C5ACD22206E9F2008BA500 /* MavenPro-Medium.ttf in Resources */,
 				50C5ACCE2206E9F2008BA500 /* MavenPro-Regular.ttf in Resources */,
@@ -1354,6 +1371,7 @@
 				50C5AC6B2206E94B008BA500 /* MyListProfileCollectionViewCell.xib in Resources */,
 				50C5ACC72206E9F2008BA500 /* Raleway-ExtraBold.ttf in Resources */,
 				50E56AED221C5B86008A1F81 /* VideoPlayerViewController.xib in Resources */,
+				50895FCD222159B000BEC1C8 /* ThankYouViewController.xib in Resources */,
 				50C5AC822206E94B008BA500 /* DescriptionTableViewCell.xib in Resources */,
 				50C5ACCF2206E9F2008BA500 /* Raleway-Black.ttf in Resources */,
 			);
@@ -1447,6 +1465,7 @@
 				50E56AEC221C5B86008A1F81 /* VideoPlayerViewController.m in Sources */,
 				50C5AC832206E94B008BA500 /* StoryOneTableViewCell.m in Sources */,
 				50C5AA912206E84C008BA500 /* Reachability.m in Sources */,
+				504B265822211390007D376B /* QuestionViewController.m in Sources */,
 				50C5AC562206E94B008BA500 /* DIYTableViewCell.m in Sources */,
 				50C5AA942206E84C008BA500 /* NSString+HTML.m in Sources */,
 				50C5ACDE2206F2D7008BA500 /* LoginViewController.m in Sources */,
@@ -1540,6 +1559,7 @@
 				50C5AB552206E8F3008BA500 /* HRBrightnessCursor.m in Sources */,
 				50C5AB742206E8F3008BA500 /* ADDropDownMenuItemView.m in Sources */,
 				50C5AA7F2206E84C008BA500 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				50895FCC222159B000BEC1C8 /* ThankYouViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
