@@ -36,6 +36,9 @@
     
     ///[self makeButtonRounded:self.btnSignUp];
     
+    self.txtEmail.delegate = self;
+    self.txtPassword.delegate = self;
+    
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"Not Registered? Sign Up" attributes:@{
                                                                                                                                             NSFontAttributeName: [UIFont fontWithName:@"Raleway-Regular" size: 14.0f],
                                                                                                                                             NSForegroundColorAttributeName: [UIColor colorWithWhite:42.0f / 255.0f alpha:1.0f]

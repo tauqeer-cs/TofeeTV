@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RegitersViewController : BaseViewController
 
+@property (nonatomic) BOOL isEditMode;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -132,7 +132,9 @@
                            {
                         
                                ThankYouViewController * destination  = [[ThankYouViewController alloc] initWithNibName:@"ThankYouViewController" bundle:nil];
-                              
+                               
+                               destination.currentQuestion = self.selectedSong;
+                               
                                
                                [self.navigationController showViewController:destination sender:nil];
                                

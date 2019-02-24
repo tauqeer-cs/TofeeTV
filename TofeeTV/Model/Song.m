@@ -94,27 +94,7 @@
     
     NSMutableArray * resultAnswer = [NSMutableArray new];
     
-    /*
-    for (int i= 1; i < 13 ; i++)
-    {
-    
-        Song * currentOne = [Song new];
-        currentOne.name = [NSString stringWithFormat:@"Song %d",i];;
-        currentOne.itemId = i;
-        currentOne.itemColor = self.colors[i % self.colors.count ];
-        
-        if (i < 4) {
-            currentOne.isLocked = NO;
-            
-        }
-        else
-        {
-            currentOne.isLocked = YES;
-        }
-        [resultAnswer addObject:currentOne];
-    }
-    completionHandler(resultAnswer);
-    */
+  
     
     
     
@@ -162,6 +142,70 @@
                     }];
     
 }
+
+
++(void)callGetScoreWithId:(int)songId
+           withComplition:(void(^)(id result))completionHandler
+                             withFailueHandler:(void(^)(id error))failureHandler
+{
+    
+    
+    
+
+    
+    
+    
+    
+    NSMutableDictionary * currentDictionary = [NSMutableDictionary new];
+    
+    if (songId > 0)
+    {
+        
+        
+        
+        [currentDictionary setObject:[NSString stringWithFormat:@"%d",songId] forKey:@"song_id"];
+        
+        
+    }
+    
+    [RestCall callWebServiceWithTheseParams:currentDictionary
+                      withSignatureSequence:nil
+                                 urlCalling:[self makeURLCompleteFromString:@"user/score"]
+                              isPostService:NO
+                      withComplitionHandler:^(id result)
+     {
+         
+         
+         
+         if ([self isSuccessFullWithDictionary:result]) {
+             
+             id dataObject = [result objectForKey:@"data"];
+             NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
+             
+             
+             completionHandler(resultToSend);
+             
+         }
+         else
+         {
+             
+             
+             // [self Failure:failureHandler result:result];
+             
+             
+         }
+         
+         
+         
+     }
+                    failureComlitionHandler:^{
+                        
+                        failureHandler(ErrorWhileLoadingData);
+                        
+                    }];
+    
+}
+
 
 
 

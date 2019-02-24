@@ -32,6 +32,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSMutableArray * myQuestions;
 
++(void)callGetScoreWithId:(int)songId
+           withComplition:(void(^)(id result))completionHandler
+        withFailueHandler:(void(^)(id error))failureHandler;
+
++(void)callGetScoreWithId:(int)songId
+           withComplition:(void(^)(id result))completionHandler
+        withFailueHandler:(void(^)(id error))failureHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

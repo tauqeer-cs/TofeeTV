@@ -30,7 +30,7 @@
     [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option4"]];
     tmpQuesrtion.questionType = [question objectForKey:@"question_type"];
     
-    tmpQuesrtion.subQuestion = @"What color are the bottles";
+    tmpQuesrtion.subQuestion = [question objectForKey:@"sub_title"];
     tmpQuesrtion.currentGivenAnswer = [question objectForKey:@"answer"];
     
     
