@@ -173,6 +173,7 @@
     {
         
     }
+    /*
     else
         if (!self.btnIAgree.isSelected) {
             
@@ -180,7 +181,8 @@
             
             return;
             
-        }
+        }*/
+    
     
     
     [self showLoader];

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayerViewController">
             <connections>
+                <outlet property="btnPlay" destination="zHm-DG-H8F" id="ood-aE-nIV"/>
                 <outlet property="videoContainer" destination="xPP-c0-Rvi" id="BaV-4a-k2k"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -77,16 +78,25 @@
                             <rect key="frame" x="185.5" y="18.5" width="37" height="37.5"/>
                             <state key="normal" image="pauseButton"/>
                             <state key="selected" image="playButton"/>
+                            <connections>
+                                <action selector="btnPauseTapped:" destination="-1" eventType="touchUpInside" id="bqZ-Nw-IiV"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2l-GR-spf">
                             <rect key="frame" x="132" y="18.5" width="37.5" height="37.5"/>
                             <state key="normal" image="backward"/>
                             <state key="selected" image="backward"/>
+                            <connections>
+                                <action selector="btnBackTapped:" destination="-1" eventType="touchUpInside" id="TJQ-ny-SJE"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-gs-cY1">
                             <rect key="frame" x="238.5" y="18.5" width="37.5" height="37.5"/>
                             <state key="normal" image="forward"/>
                             <state key="selected" image="forward"/>
+                            <connections>
+                                <action selector="btnForwardTapped:" destination="-1" eventType="touchUpInside" id="Ltp-Tv-YcP"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

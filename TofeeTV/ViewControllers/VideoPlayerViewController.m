@@ -19,6 +19,7 @@
 @property (nonatomic) AVPlayer *avPlayer;
 @property (weak, nonatomic) IBOutlet UIView *videoContainer;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnPlay;
 
 @end
 
@@ -33,6 +34,72 @@
     // Do any additional setup after loading the view from its nib.
 
 
+}
+- (IBAction)btnPauseTapped:(UIButton *)sender {
+    
+    if (sender.selected) {
+        [self.avPlayer play];
+        
+    }
+    else
+    {
+        [self.avPlayer pause];
+        
+        
+    }
+    
+    [sender setSelected:!sender.selected];
+    
+    
+}
+- (IBAction)btnForwardTapped:(UIButton *)sender {
+    
+    //self.avPlayer forwardInvocation:<#(NSInvocation *)#>
+    
+   
+    float playerCurrentTime = [self getCurrentTime];
+    float newTime = playerCurrentTime + 2;
+
+    CMTime time = CMTimeMake(newTime*1000, 1000);
+    [self.avPlayer seekToTime:time completionHandler:^(BOOL finished) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+           
+            // playerSliderisScrubbing = NO;
+        });
+    }];
+    
+    
+}
+
+
+- (IBAction)btnBackTapped:(UIButton *)sender {
+    float playerCurrentTime = [self getCurrentTime];
+    float newTime = playerCurrentTime - 2;
+    
+    if (newTime < 0) {
+        newTime = 0;
+        
+        
+    }
+    
+    CMTime time = CMTimeMake(newTime*1000, 1000);
+    [self.avPlayer seekToTime:time completionHandler:^(BOOL finished) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            // playerSliderisScrubbing = NO;
+        });
+    }];
+    
+    
+    
+}
+
+- (float)getCurrentTime {
+    float seconds = 0;
+    if (self.avPlayer) {
+        seconds = CMTimeGetSeconds([self.avPlayer currentTime]);
+    }
+    return seconds;
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -96,6 +163,12 @@
 - (void)itemDidFinishPlaying:(NSNotification *)notification {
     AVPlayerItem *player = [notification object];
     [player seekToTime:kCMTimeZero];
+    
+    [self.avPlayer pause];
+    
+    
+    [self.btnPlay setSelected:!self.btnPlay.selected];
+    
 }
 
 - (IBAction)quizMeTapped:(UIButton *)sender
