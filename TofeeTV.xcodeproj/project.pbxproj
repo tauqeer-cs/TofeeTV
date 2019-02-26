@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
+		50368D0D2225ACA900A05482 /* Barish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50368D0C2225ACA900A05482 /* Barish.mp3 */; };
+		50368D102225AD7C00A05482 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50368D0F2225AD7C00A05482 /* AudioController.m */; };
 		504B265822211390007D376B /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B265622211390007D376B /* QuestionViewController.m */; };
 		504B265922211390007D376B /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504B265722211390007D376B /* QuestionViewController.xib */; };
 		50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
@@ -232,6 +234,9 @@
 /* Begin PBXFileReference section */
 		2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TofeeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
+		50368D0C2225ACA900A05482 /* Barish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Barish.mp3; sourceTree = "<group>"; };
+		50368D0E2225AD7C00A05482 /* AudioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		50368D0F2225AD7C00A05482 /* AudioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
 		504B265522211390007D376B /* QuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		504B265622211390007D376B /* QuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		504B265722211390007D376B /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
@@ -710,6 +715,8 @@
 				50C5AA732206E84B008BA500 /* DateFormatter.h */,
 				50C5AA742206E84B008BA500 /* DatePickerSheet.m */,
 				50C5AA752206E84B008BA500 /* CropImageViewController.h */,
+				50368D0E2225AD7C00A05482 /* AudioController.h */,
+				50368D0F2225AD7C00A05482 /* AudioController.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -1199,6 +1206,7 @@
 		50C5AC972206E9F2008BA500 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				50368D0C2225ACA900A05482 /* Barish.mp3 */,
 				50C5AC992206E9F2008BA500 /* Raleway-BoldItalic.ttf */,
 				50C5AC9A2206E9F2008BA500 /* Raleway-MediumItalic.ttf */,
 				50C5AC9B2206E9F2008BA500 /* OpenSans-Semibold.ttf */,
@@ -1316,6 +1324,7 @@
 				50C5AC912206E94B008BA500 /* TitleHeading copy.xib in Resources */,
 				50C5ACC52206E9F2008BA500 /* Raleway-SemiBold.ttf in Resources */,
 				50C5ACBD2206E9F2008BA500 /* Raleway-MediumItalic.ttf in Resources */,
+				50368D0D2225ACA900A05482 /* Barish.mp3 in Resources */,
 				50C5ACD82206E9F2008BA500 /* Raleway-Italic.ttf in Resources */,
 				50C5ACD52206E9F2008BA500 /* OpenSans-Regular.ttf in Resources */,
 				50C5AA1D2206E479008BA500 /* LaunchScreen.storyboard in Resources */,
@@ -1555,6 +1564,7 @@
 				50C5AB702206E8F3008BA500 /* JTSSimpleImageDownloader.m in Sources */,
 				50C5AA8B2206E84C008BA500 /* TKImageView.m in Sources */,
 				50C5AA872206E84C008BA500 /* RTIconButton.m in Sources */,
+				50368D102225AD7C00A05482 /* AudioController.m in Sources */,
 				50C5AA8F2206E84C008BA500 /* NSString+MyString.m in Sources */,
 				50C5AB552206E8F3008BA500 /* HRBrightnessCursor.m in Sources */,
 				50C5AB742206E8F3008BA500 /* ADDropDownMenuItemView.m in Sources */,

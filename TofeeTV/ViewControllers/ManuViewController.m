@@ -7,8 +7,14 @@
 //
 
 #import "ManuViewController.h"
+#import "AudioController.h"
+
 
 @interface ManuViewController ()
+@property (strong, nonatomic) AudioController *audioController;
+
+
+@property (nonatomic) BOOL isPaused;
 
 @end
 
@@ -22,9 +28,34 @@
 
     [self showAllFonts];
    
-    
+    self.audioController = [[AudioController alloc] init];
+    [self.audioController tryPlayMusic];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+ 
+    [super viewDidAppear:animated];
+    
+    if (self.isPaused) {
+        
+        self.isPaused = NO;
+        [self.audioController resumeIt];
+        
+        
+    }
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+ 
+    [super viewDidDisappear:animated];
+    
+    [self.audioController pauseIt];
+    
+    self.isPaused = YES;
+    
+    
+}
 
 - (IBAction)btnSongTapped:(UIButton *)sender {
     
