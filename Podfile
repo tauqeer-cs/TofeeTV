@@ -7,11 +7,7 @@ target 'TofeeTV' do
 
 pod 'SpinKit', '~> 1.1'
 pod 'AFNetworking', '~> 3.0'
-pod 'Bolts'
-pod 'FBSDKCoreKit', :git => 'https://github.com/facebook/facebook-objc-sdk.git', :branch => 'master'
-pod 'FBSDKShareKit'
-pod 'FBSDKLoginKit'
-
+pod 'IAPHelper'
   # Pods for TofeeTV
 
 end

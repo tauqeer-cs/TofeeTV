@@ -14,21 +14,25 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - IAPHelper (1.1)
   - SpinKit (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - IAPHelper
   - SpinKit (~> 1.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - IAPHelper
     - SpinKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IAPHelper: fd74f53b0ac142eed085777b88b86a11746a2dd4
   SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
 
-PODFILE CHECKSUM: 80ff87375447bd0b75b00edf2f933707a736dd31
+PODFILE CHECKSUM: a7e80e79d16f15f4632ae524ae3c0c72f9309704
 
 COCOAPODS: 1.5.3

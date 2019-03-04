@@ -1857,5 +1857,136 @@
 }
 
 
+-(void)purchaseItem:(NSString *)identifier
+{
+    
+    [self showLoader];
+    
+    
+    if(![IAPShare sharedHelper].iap) {
+        //com.hashtaggospel
+        //unlock123
+        NSSet* dataSet = [[NSSet alloc] initWithObjects:identifier, nil];
+        
+        [IAPShare sharedHelper].iap = [[IAPHelper alloc] initWithProductIdentifiers:dataSet];
+    }
+    
+    [IAPShare sharedHelper].iap.production = NO;
+    
+    
+    [[IAPShare sharedHelper].iap requestProductsWithCompletion:^(SKProductsRequest* request,SKProductsResponse* response)
+     {
+         if(response > 0 ) {
+             SKProduct* product =[[IAPShare sharedHelper].iap.products objectAtIndex:0];
+             
+             NSLog(@"Price: %@",[[IAPShare sharedHelper].iap getLocalePrice:product]);
+             NSLog(@"Title: %@",product.localizedTitle);
+             
+             [[IAPShare sharedHelper].iap buyProduct:product
+                                        onCompletion:^(SKPaymentTransaction* trans){
+                                            
+                                            if(trans.error)
+                                            {
+                                                
+                                                NSLog(@"Fail %@",[trans.error localizedDescription]);
+                                                
+                                            }
+                                            else if(trans.transactionState == SKPaymentTransactionStatePurchased) {
+                                                
+                                                [[IAPShare sharedHelper].iap checkReceipt:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]] AndSharedSecret:@"your sharesecret" onCompletion:^(NSString *response, NSError *error) {
+                                                    
+                                                    //Convert JSON String to NSDictionary
+                                                    NSDictionary* rec = [IAPShare toJSON:response];
+                                                    
+                                                    if([rec[@"status"] integerValue]==0)
+                                                    {
+                                                        
+                                                        [[IAPShare sharedHelper].iap provideContentWithTransaction:trans];
+                                                        NSLog(@"SUCCESS %@",response);
+                                                        NSLog(@"Pruchases %@",[IAPShare sharedHelper].iap.purchasedProducts);
+                                                        
+                                                        
+                                                        
+                                                        [self hideLoader];
+                                                        
+                                                        [self dismissViewControllerAnimated:YES completion:^{
+                                                           
+                                                            /*
+                                                            if (self.chapterView) {
+                                                                [self.chapterView showChapterWitId:self.chapterNo];
+                                                                
+                                                                
+                                                            }
+                                                            else if(self.groupChaptersView){
+                                                                
+                                                                [self.groupChaptersView showChapterWitId:self.chapterNo];
+                                                                
+                                                                
+                                                            }
+                                                            */
+                                                            
+                                                        }];
+                                                        
+                                                        
+                                                        
+                                                    }
+                                                    else {
+                                                        NSLog(@"Fail");
+                                                    }
+                                                }];
+                                            }
+                                            else if(trans.transactionState == SKPaymentTransactionStateFailed) {
+                                                NSLog(@"Fail");
+                                            }
+                                        }];//end of buy product
+         }
+     }];
+    
+}
+
+
+-(void)restoreItem:(NSString *)identifier
+{
+    
+    [self showLoader];
+    
+    if(![IAPShare sharedHelper].iap) {
+        //com.hashtaggospel
+        //unlock123
+        NSSet* dataSet = [[NSSet alloc] initWithObjects:identifier, nil];
+        
+        [IAPShare sharedHelper].iap = [[IAPHelper alloc] initWithProductIdentifiers:dataSet];
+    }
+    
+    [[IAPShare sharedHelper].iap restoreProductsWithCompletion:^(SKPaymentQueue *payment, NSError *error) {
+        
+        //check with SKPaymentQueue
+        
+        // number of restore count
+        int numberOfTransactions = payment.transactions.count;
+        for (SKPaymentTransaction *transaction in payment.transactions)
+        {
+            NSString *purchased = transaction.payment.productIdentifier;
+            if([purchased isEqualToString:identifier])
+            {
+                [self.userDefaults setValue:@"1" forKey:@"HasPurchasedTheItem"];
+                
+                [self hideLoader];
+                
+                [self dismissViewControllerAnimated:YES completion:^{
+                    
+
+                    
+                }];
+                
+                
+                
+                
+            }
+        }
+        
+    }];
+    
+}
 
 @end

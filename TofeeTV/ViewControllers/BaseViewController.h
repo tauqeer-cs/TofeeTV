@@ -21,6 +21,8 @@
 #import "TitleViewLogin.h"
 #import "TitleHeading.h"
 #import "TextViewForSignUpform.h"
+#import "IAPHelper.h"
+#import "IAPShare.h"
 
 
 @import AVKit;
