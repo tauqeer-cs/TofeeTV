@@ -69,7 +69,8 @@
     [self setPlaceHolderColorWithTextFieldWith:self.txtPassword];
     
     [self setupSignUPFormButtonsFont:self.btnLogin];
-    [self.btnLogin setBackgroundColor:DefaultRed];
+    [self.btnLogin setBackgroundColor:DefaultYellowColor2];
+    
     [self setupSignUPFormButtonsFont:self.btnFB];
     [self.lblOr setFont:[UIFont fontWithName:FontRegular size:15.0]];
     

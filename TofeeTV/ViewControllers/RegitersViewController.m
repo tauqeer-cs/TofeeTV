@@ -71,7 +71,7 @@
     
     [self setupSignUPFormButtonsFont:self.btnRegister];
     
-    [self.btnRegister setBackgroundColor:DefaultRed];
+    [self.btnRegister setBackgroundColor:DefaultYellowColor2];
     
     
     

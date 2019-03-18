@@ -142,8 +142,8 @@
 #define TitleBarFontColor [UIColor colorWithRed:1.0 green:252.0/255.0 blue:234.0/255.0 alpha:1.0]
 
 
-#define DefaultYellowColor2 [UIColor colorWithRed:255.0/255.0 green:199.0/255.0 blue:44.0/255.0 alpha:1.0]
-
+#define DefaultYellowColor2 [UIColor colorWithRed:251.0/255.0 green:176.0/255.0 blue:59.0/255.0 alpha:1.0]
+//// 251  176  59
 #define TopBarTitleColor [UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:1.0]
 
 #define DefaultRed [UIColor colorWithRed:214.0/255.0 green:4.0/255.0 blue:3.0/255.0 alpha:1.0]
