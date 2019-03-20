@@ -106,8 +106,12 @@
 {
     [super viewDidAppear:animated];
     
+    [self showLoader];
+    
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
+                
+                [self hideLoader];
                 
                 
                 NSURL *vedioURL = item;
