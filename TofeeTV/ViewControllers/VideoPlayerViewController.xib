@@ -22,7 +22,10 @@
             <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62U-E2-X0d">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-c0-Rvi">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="292.5"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62U-E2-X0d">
                     <rect key="frame" x="0.0" y="293" width="123" height="82"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="108" translatesAutoresizingMaskIntoConstraints="NO" id="YSA-hX-1tJ">
@@ -44,25 +47,19 @@
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="ylt-ZC-eE1"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-c0-Rvi">
-                    <rect key="frame" x="0.0" y="0.0" width="667" height="292.5"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYN-K9-J08">
                     <rect key="frame" x="547" y="292.5" width="120" height="82.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="020-yp-ZtG">
                             <rect key="frame" x="8" y="8" width="104" height="66.5"/>
-                            <color key="backgroundColor" red="0.15686274510000001" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <state key="normal" title="Quiz Me"/>
+                            <state key="normal" title="Quiz Me" backgroundImage="bt-plain"/>
                             <connections>
                                 <action selector="btnQuizMeTapped:" destination="-1" eventType="touchUpInside" id="El4-tN-xlP"/>
                                 <action selector="quizMeTapped:" destination="-1" eventType="touchUpInside" id="fIw-vi-EMK"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="020-yp-ZtG" secondAttribute="bottom" constant="8" id="2Oy-RV-9Mf"/>
                         <constraint firstAttribute="width" constant="120" id="C9X-CR-8vw"/>
@@ -76,15 +73,15 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHm-DG-H8F">
                             <rect key="frame" x="185.5" y="18.5" width="37" height="37.5"/>
-                            <state key="normal" image="pauseButton"/>
-                            <state key="selected" image="playButton"/>
+                            <state key="normal" image="icon-pause"/>
+                            <state key="selected" image="icon-play"/>
                             <connections>
                                 <action selector="btnPauseTapped:" destination="-1" eventType="touchUpInside" id="bqZ-Nw-IiV"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2l-GR-spf">
                             <rect key="frame" x="132" y="18.5" width="37.5" height="37.5"/>
-                            <state key="normal" image="backward"/>
+                            <state key="normal" image="icon-rewind"/>
                             <state key="selected" image="backward"/>
                             <connections>
                                 <action selector="btnBackTapped:" destination="-1" eventType="touchUpInside" id="TJQ-ny-SJE"/>
@@ -92,14 +89,13 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-gs-cY1">
                             <rect key="frame" x="238.5" y="18.5" width="37.5" height="37.5"/>
-                            <state key="normal" image="forward"/>
+                            <state key="normal" image="icon-forward"/>
                             <state key="selected" image="forward"/>
                             <connections>
                                 <action selector="btnForwardTapped:" destination="-1" eventType="touchUpInside" id="Ltp-Tv-YcP"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="zHm-DG-H8F" firstAttribute="width" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.5" id="0Jq-4n-aXs"/>
                         <constraint firstItem="o52-gs-cY1" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="HjQ-ad-Mmh"/>
@@ -115,9 +111,27 @@
                         <constraint firstItem="zHm-DG-H8F" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="zE5-by-mJF"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sk0-kO-ZPD">
+                    <rect key="frame" x="16" y="16" width="30" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGG-oD-HT6">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="previous"/>
+                            <connections>
+                                <action selector="btnBackBackTapped:" destination="-1" eventType="touchUpInside" id="Ryo-UP-k2v"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="c5b-mt-n5l"/>
+                        <constraint firstAttribute="height" constant="30" id="cdG-rC-6EN"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.28310409190000002" green="0.6571135521" blue="0.79511803390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="sk0-kO-ZPD" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="7pS-hF-bYR"/>
                 <constraint firstItem="5O7-70-vgN" firstAttribute="leading" secondItem="62U-E2-X0d" secondAttribute="trailing" constant="8" id="Ce3-8j-vMM"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="DF3-iF-Dp4"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="DI6-kL-2L3"/>
@@ -126,6 +140,7 @@
                 <constraint firstAttribute="bottom" secondItem="62U-E2-X0d" secondAttribute="bottom" id="OKt-n0-cH3"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="aLN-9f-bLU"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.78" id="b1v-lO-Qc7"/>
+                <constraint firstItem="sk0-kO-ZPD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="cO1-Hg-scL"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="cqk-ly-Tjm"/>
                 <constraint firstItem="62U-E2-X0d" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="0.5" id="iWp-Rz-tDA"/>
                 <constraint firstItem="62U-E2-X0d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="p8k-7o-jAM"/>
@@ -139,8 +154,12 @@
     </objects>
     <resources>
         <image name="backward" width="167" height="165"/>
+        <image name="bt-plain" width="633" height="229"/>
         <image name="forward" width="170" height="165"/>
-        <image name="pauseButton" width="166" height="165"/>
-        <image name="playButton" width="170" height="165"/>
+        <image name="icon-forward" width="500" height="500"/>
+        <image name="icon-pause" width="500" height="500"/>
+        <image name="icon-play" width="500" height="500"/>
+        <image name="icon-rewind" width="500" height="500"/>
+        <image name="previous" width="9.5" height="17.5"/>
     </resources>
 </document>

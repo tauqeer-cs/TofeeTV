@@ -110,6 +110,7 @@
 #define PasswordCntBeLessThan6 @"Password can not be less than 6 characters."
 #define IAgreeToTerms @"I agree to the Terms and Conditions"
 
+#define FancyFont @"KGWhattheTeacherWants"
 #define FontRegular @"Raleway-Regular"
 #define FontSemiBold @"Raleway-SemiBold"
 #define FontExtraBold @"Raleway-ExtraBold"

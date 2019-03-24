@@ -219,16 +219,17 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="qJ4-K0-uIo" id="Aps-Yg-i9g"/>
+                        <segue destination="msD-Y7-6Ve" kind="show" identifier="playVideo" id="SLZ-ce-sbQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXu-jg-xFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="-967.4662668665668"/>
+            <point key="canvasLocation" x="2446" y="-1093"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Nav View Controller-->
         <scene sceneID="Tox-3U-OVK">
             <objects>
-                <navigationController restorationIdentifier="RootTapBar" storyboardIdentifier="RootTapBar" automaticallyAdjustsScrollViewInsets="NO" id="JRl-bI-mJf" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="RootTapBar" storyboardIdentifier="RootTapBar" automaticallyAdjustsScrollViewInsets="NO" id="JRl-bI-mJf" customClass="CustomNavViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lzv-Sx-JtF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -242,6 +243,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcF-ub-UkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="344.80000000000001" y="-670.61469265367316"/>
+        </scene>
+        <!--Custom Nav View Controller2-->
+        <scene sceneID="ri8-dC-4yq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="msD-Y7-6Ve" customClass="CustomNavViewController2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gsv-Ka-B2y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dwi-oh-9fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3920.8000000000002" y="-1067.3163418290856"/>
         </scene>
     </scenes>
     <resources>

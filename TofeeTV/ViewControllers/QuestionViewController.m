@@ -35,8 +35,10 @@
     self.lblQuestionTextOne.text = @"Question one part one";
     self.lblQuestionTextTwo.text = @"Question on part two";
     
-    self.lblQuestionTextTwo.font =  [UIFont fontWithName:FontSemiBold size:30];
-    self.lblQuestionTextTwo.font =  [UIFont fontWithName:FontSemiBold size:36];
+    NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
+    self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:30];
+    self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:36];
+    NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     
     for (UIView * currentView in self.pillarViews) {
         

@@ -12,9 +12,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol VideoPlayerViewControllerDelegate
+
+-(void)quizTapped:(id)itemTapped;
+
+@end
+
 @interface VideoPlayerViewController : BaseViewController
 
 @property (nonatomic,strong) Song * currentSong;
+@property (nonatomic,strong) id<VideoPlayerViewControllerDelegate> delegate;
+
 
 @end
 

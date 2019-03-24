@@ -39,6 +39,11 @@
 
 
 
+-(BOOL)canISeeThis
+{
+    return !self.isOwned;
+
+}
 
 +(NSMutableArray *)parseTheSongsService:(id)item
 {
@@ -55,6 +60,7 @@
         tmpCurrentSong.itemId = [[currentItemShowing objectForKey:@"id"] intValue];
         tmpCurrentSong.name = [currentItemShowing objectForKey:@"title"];
         tmpCurrentSong.isLocked = [[currentItemShowing objectForKey:@"is_locked"] boolValue];
+        tmpCurrentSong.isOwned = [[currentItemShowing objectForKey:@"is_owned"] boolValue];
         
         tmpCurrentSong.inAppPurchaseId = [currentItemShowing objectForKey:@"in_app_purchase_ios"];
         tmpCurrentSong.fileOwned = [[currentItemShowing objectForKey:@"is_owned"] boolValue];
@@ -116,9 +122,6 @@
              id dataObject = [result objectForKey:@"data"];
              NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
              [resultToSend addObjectsFromArray:resultToSend];
-             [resultToSend addObjectsFromArray:resultToSend];
-             [resultToSend addObjectsFromArray:resultToSend];
-             
              
              completionHandler(resultToSend);
              
@@ -180,10 +183,9 @@
          if ([self isSuccessFullWithDictionary:result]) {
              
              id dataObject = [result objectForKey:@"data"];
-             NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
              
              
-             completionHandler(resultToSend);
+             completionHandler(dataObject);
              
          }
          else
@@ -207,6 +209,68 @@
 }
 
 
++(void)callUnlockWithScoreWithId:(int)songId
+           withComplition:(void(^)(id result))completionHandler
+        withFailueHandler:(void(^)(id error))failureHandler
+{
+    
+    
+    
+    
+    
+    
+    
+    
+    NSMutableDictionary * currentDictionary = [NSMutableDictionary new];
+    
+    if (songId > 0)
+    {
+        
+        
+        
+        [currentDictionary setObject:[NSString stringWithFormat:@"%d",songId] forKey:@"song_id"];
+        
+        
+    }
+    
+    [RestCall callWebServiceWithTheseParams:currentDictionary
+                      withSignatureSequence:nil
+                                 urlCalling:[self makeURLCompleteFromString:@"song/unlock"]
+                              isPostService:YES
+                      withComplitionHandler:^(id result)
+     {
+         
+         
+         
+         if ([self isSuccessFullWithDictionary:result]) {
+             
+             id dataObject = [result objectForKey:@"data"];
+             
+             
+             completionHandler(dataObject);
+             
+         }
+         else
+         {
+             
+             
+             // [self Failure:failureHandler result:result];
+             
+             
+         }
+         
+         
+         
+     }
+                    failureComlitionHandler:^{
+                        
+                        failureHandler(ErrorWhileLoadingData);
+                        
+                    }];
+    
+}
+
+//unlock
 
 
 

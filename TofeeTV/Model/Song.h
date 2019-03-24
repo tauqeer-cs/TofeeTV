@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSString * name;
 @property (nonatomic) int itemId;
 @property (nonatomic) BOOL isLocked;
+@property (nonatomic) BOOL isOwned;
+
+@property (nonatomic) BOOL canISeeThis;
+
 @property (nonatomic,strong) UIColor * itemColor;
 @property (nonatomic) BOOL fileOwned;
 @property (nonatomic,strong) NSString * thumbNailUrl;
@@ -36,9 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
            withComplition:(void(^)(id result))completionHandler
         withFailueHandler:(void(^)(id error))failureHandler;
 
-+(void)callGetScoreWithId:(int)songId
-           withComplition:(void(^)(id result))completionHandler
-        withFailueHandler:(void(^)(id error))failureHandler;
+
++(void)callUnlockWithScoreWithId:(int)songId
+                  withComplition:(void(^)(id result))completionHandler
+               withFailueHandler:(void(^)(id error))failureHandler;
 
 @end
 

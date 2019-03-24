@@ -12,6 +12,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic) BOOL shouldAutoRotate;
+
+@property (nonatomic) id currentSelectedItem;
+@property (nonatomic,strong) id navigation;
 
 @end
 

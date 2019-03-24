@@ -33,23 +33,26 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon-background" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-Tx-es0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jX-7f-N4R">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-9O-zaj">
-                            <rect key="frame" x="32" y="189" width="311" height="128"/>
+                            <rect key="frame" x="32" y="152.5" width="311" height="164.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-s8-Fb2">
-                                    <rect key="frame" x="8" y="8" width="295" height="21"/>
+                                    <rect key="frame" x="8" y="8" width="295" height="57.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="F2O-xa-WqW"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GD-zl-saW">
-                                    <rect key="frame" x="8" y="61" width="295" height="21"/>
+                                    <rect key="frame" x="8" y="97.5" width="295" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="7mZ-4y-Z1F"/>
                                     </constraints>
@@ -176,12 +179,19 @@
                 <constraint firstItem="8jX-7f-N4R" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="GI3-Bq-H58"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gzC-wh-gYP" secondAttribute="trailing" id="Kp5-ec-CwT"/>
                 <constraint firstItem="gzC-wh-gYP" firstAttribute="top" secondItem="8jX-7f-N4R" secondAttribute="bottom" id="PmZ-Ao-gyD"/>
+                <constraint firstItem="NTt-Tx-es0" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="RUO-Tj-zoX"/>
+                <constraint firstItem="NTt-Tx-es0" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="W0r-gQ-qQ6"/>
                 <constraint firstItem="8jX-7f-N4R" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="a6C-NH-EFD"/>
                 <constraint firstItem="8jX-7f-N4R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ejF-fb-0mv"/>
+                <constraint firstItem="NTt-Tx-es0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ek8-oa-EPw"/>
                 <constraint firstItem="gzC-wh-gYP" firstAttribute="height" secondItem="8jX-7f-N4R" secondAttribute="height" multiplier="0.8" id="q7y-rs-cPJ"/>
+                <constraint firstItem="NTt-Tx-es0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vyS-BL-WLj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
     </objects>
+    <resources>
+        <image name="appicon-background" width="1024" height="1024"/>
+    </resources>
 </document>

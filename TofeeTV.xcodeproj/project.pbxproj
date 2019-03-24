@@ -15,6 +15,8 @@
 		50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
 		50545BD52219BEC80064DBF4 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD42219BEC80064DBF4 /* Quiz.m */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
+		507ECE672247537A0080ABB6 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE662247537A0080ABB6 /* CustomNavViewController.m */; };
+		507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE69224758830080ABB6 /* CustomNavViewController2.m */; };
 		50895FCC222159B000BEC1C8 /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50895FCA222159B000BEC1C8 /* ThankYouViewController.m */; };
 		50895FCD222159B000BEC1C8 /* ThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */; };
 		508E93FD221DAAEE00A123DF /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E93FC221DAAEE00A123DF /* CustomViewController.m */; };
@@ -29,6 +31,7 @@
 		509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A672210832700DAC9A5 /* Bolts.framework */; };
 		509E3A6C2210832900DAC9A5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */; };
 		509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */; };
+		50B3B4EA2247C0430064C4C2 /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */; };
 		50C5AA122206E477008BA500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA112206E477008BA500 /* AppDelegate.m */; };
 		50C5AA152206E477008BA500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA142206E477008BA500 /* ViewController.m */; };
 		50C5AA182206E477008BA500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA162206E477008BA500 /* Main.storyboard */; };
@@ -246,6 +249,10 @@
 		50545BD42219BEC80064DBF4 /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
+		507ECE652247537A0080ABB6 /* CustomNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
+		507ECE662247537A0080ABB6 /* CustomNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController.m; sourceTree = "<group>"; };
+		507ECE68224758830080ABB6 /* CustomNavViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController2.h; sourceTree = "<group>"; };
+		507ECE69224758830080ABB6 /* CustomNavViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController2.m; sourceTree = "<group>"; };
 		50895FC9222159B000BEC1C8 /* ThankYouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
 		50895FCA222159B000BEC1C8 /* ThankYouViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
 		50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThankYouViewController.xib; sourceTree = "<group>"; };
@@ -268,6 +275,7 @@
 		509E3A672210832700DAC9A5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGWhattheTeacherWants.ttf; sourceTree = "<group>"; };
 		50C5AA0D2206E477008BA500 /* TofeeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TofeeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C5AA102206E477008BA500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50C5AA112206E477008BA500 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1199,6 +1207,10 @@
 				50895FC9222159B000BEC1C8 /* ThankYouViewController.h */,
 				50895FCA222159B000BEC1C8 /* ThankYouViewController.m */,
 				50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */,
+				507ECE652247537A0080ABB6 /* CustomNavViewController.h */,
+				507ECE662247537A0080ABB6 /* CustomNavViewController.m */,
+				507ECE68224758830080ABB6 /* CustomNavViewController2.h */,
+				507ECE69224758830080ABB6 /* CustomNavViewController2.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1207,6 +1219,7 @@
 			isa = PBXGroup;
 			children = (
 				50368D0C2225ACA900A05482 /* Barish.mp3 */,
+				50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */,
 				50C5AC992206E9F2008BA500 /* Raleway-BoldItalic.ttf */,
 				50C5AC9A2206E9F2008BA500 /* Raleway-MediumItalic.ttf */,
 				50C5AC9B2206E9F2008BA500 /* OpenSans-Semibold.ttf */,
@@ -1337,6 +1350,7 @@
 				50C5AC702206E94B008BA500 /* BottomCollectionReusableView.xib in Resources */,
 				509AF0DD220B366D00EB8CB2 /* SongsCollectionViewCell.xib in Resources */,
 				50C5ACCD2206E9F2008BA500 /* chat_sound.mp3 in Resources */,
+				50B3B4EA2247C0430064C4C2 /* KGWhattheTeacherWants.ttf in Resources */,
 				50C5AC782206E94B008BA500 /* TextViewForSignUpform.xib in Resources */,
 				50C5AC682206E94B008BA500 /* CustomFooterView.xib in Resources */,
 				50C5AC592206E94B008BA500 /* BrandSectionCollectionReusableView.xib in Resources */,
@@ -1539,6 +1553,7 @@
 				50C5AB442206E8F3008BA500 /* LMDropdownView.m in Sources */,
 				50C5AA122206E477008BA500 /* AppDelegate.m in Sources */,
 				50C5AB712206E8F3008BA500 /* JTSImageViewController.m in Sources */,
+				507ECE672247537A0080ABB6 /* CustomNavViewController.m in Sources */,
 				50C5AB4D2206E8F3008BA500 /* MASConstraint.m in Sources */,
 				50C5AA992206E84C008BA500 /* NSDictionary+NullReplacement.m in Sources */,
 				50C5AA9A2206E84C008BA500 /* DatePickerSheet.m in Sources */,
@@ -1563,6 +1578,7 @@
 				50C5AB362206E8F3008BA500 /* JxbScaleButton.m in Sources */,
 				50C5AB702206E8F3008BA500 /* JTSSimpleImageDownloader.m in Sources */,
 				50C5AA8B2206E84C008BA500 /* TKImageView.m in Sources */,
+				507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */,
 				50C5AA872206E84C008BA500 /* RTIconButton.m in Sources */,
 				50368D102225AD7C00A05482 /* AudioController.m in Sources */,
 				50C5AA8F2206E84C008BA500 /* NSString+MyString.m in Sources */,

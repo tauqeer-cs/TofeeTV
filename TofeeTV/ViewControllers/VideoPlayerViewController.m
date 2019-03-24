@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *videoContainer;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnPlay;
+@property (weak, nonatomic) IBOutlet UIButton *btnBackBack;
 
 @end
 
@@ -28,13 +29,23 @@
     
     
 }
+- (IBAction)btnBackBackTapped:(id)sender {
+    
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    currentOne.shouldAutoRotate = YES;
 
 }
+
 - (IBAction)btnPauseTapped:(UIButton *)sender {
     
     if (sender.selected) {
@@ -52,6 +63,12 @@
     
     
 }
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
+
 - (IBAction)btnForwardTapped:(UIButton *)sender {
     
     //self.avPlayer forwardInvocation:<#(NSInvocation *)#>
@@ -101,10 +118,35 @@
     }
     return seconds;
 }
+-(void)viewWillDisappear:(BOOL)animated
+{
+    
+    AppDelegate * currentOne  = [[UIApplication sharedApplication] delegate];
+    currentOne.shouldAutoRotate = NO;
+    
+    
+    
+    
+}
+- (BOOL)shouldAutorotate
+{
+
+    return YES;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    AppDelegate * currentOne = [[UIApplication sharedApplication] delegate];
+    return UIInterfaceOrientationMaskLandscape;
+    
+}
+
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
     
     [self showLoader];
     
@@ -144,16 +186,19 @@
                 AVPlayerLayer *videoLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
                 videoLayer.frame = self.videoContainer.frame;
                 videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-                [self.view.layer addSublayer:videoLayer];
+                [self.videoContainer.layer addSublayer:videoLayer];
                 
-                self.avPlayer.accessibilityFrame = self.view.frame;
+                self.avPlayer.accessibilityFrame = self.videoContainer.frame;
                 videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-                videoLayer.frame = self.videoContainer.frame;
+                videoLayer.frame = self.view.frame;
                 
 
                 [self.avPlayer play];
                 
                 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemDidFinishPlaying:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.avPlayer currentItem]];
+                
+                
+                [self.view bringSubviewToFront:self.btnBackBack];
                 
                 
                 NSLog(@"");
@@ -178,12 +223,13 @@
 - (IBAction)quizMeTapped:(UIButton *)sender
 {
 
-    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
-    destination.questionIndex = 0;
-    destination.selectedSong = self.currentSong;
     
-    [self.navigationController showViewController:destination sender:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
     
+        [self.delegate quizTapped:self.currentSong];
+        
+    }];
+
 }
 
 
