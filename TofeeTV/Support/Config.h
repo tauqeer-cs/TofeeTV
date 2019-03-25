@@ -111,7 +111,7 @@
 #define IAgreeToTerms @"I agree to the Terms and Conditions"
 
 #define FancyFont @"KGWhattheTeacherWants"
-#define FontRegular @"Raleway-Regular"
+#define FontRegular FancyFont
 #define FontSemiBold @"Raleway-SemiBold"
 #define FontExtraBold @"Raleway-ExtraBold"
 #define FontMedium @"Raleway-Medium"
@@ -150,7 +150,7 @@
 #define DefaultRed [UIColor colorWithRed:214.0/255.0 green:4.0/255.0 blue:3.0/255.0 alpha:1.0]
 #define DefaultGreen [UIColor colorWithRed:3.0/255.0 green:134.0/255.0 blue:0.0/255.0 alpha:1.0]
 #define ShadedLightGray [UIColor colorWithRed:246.0/255.0 green:246.0/255.0 blue:246/255.0 alpha:1.0]
-
+#define DefaultPink [UIColor colorWithRed:253.0/255.0 green:40.0/255.0 blue:252/255.0 alpha:1.0]
 
 
 #define BlueBorderColor [UIColor colorWithRed:63.0/255.0 green:168.0/255.0 blue:186.0/255.0 alpha:1.0]

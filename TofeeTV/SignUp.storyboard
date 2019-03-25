@@ -15,14 +15,26 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Custom Nav View Controller-->
         <scene sceneID="xpK-wZ-oeL">
             <objects>
-                <navigationController restorationIdentifier="SignUpRoot" storyboardIdentifier="SignUpRoot" automaticallyAdjustsScrollViewInsets="NO" id="nqH-w9-U9n" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="SignUpRoot" storyboardIdentifier="SignUpRoot" automaticallyAdjustsScrollViewInsets="NO" id="nqH-w9-U9n" customClass="CustomNavViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ERl-zu-QxW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.28310409190000002" green="0.6571135521" blue="0.79511803390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="19"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="17"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -79,7 +91,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9k-Q2-RoW">
-                                        <rect key="frame" x="0.0" y="294" width="311" height="53.5"/>
+                                        <rect key="frame" x="0.0" y="286" width="311" height="53.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0L-Qk-B9z">
                                                 <rect key="frame" x="0.0" y="25.5" width="311" height="2"/>
@@ -121,8 +133,8 @@
                                             <constraint firstItem="o0L-Qk-B9z" firstAttribute="centerX" secondItem="s9k-Q2-RoW" secondAttribute="centerX" id="ygk-FR-EKu"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8x-lS-DLv">
-                                        <rect key="frame" x="100.5" y="268" width="110" height="26"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8x-lS-DLv">
+                                        <rect key="frame" x="102" y="260" width="107" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="1UQ-aW-Khw"/>
                                             <constraint firstAttribute="height" constant="26" id="TqG-UC-DsN"/>
@@ -132,7 +144,7 @@
                                                 <fragment content="Forgot Password?">
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" metaFont="system"/>
+                                                        <font key="NSFont" size="13" name="Tahoma"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops>
@@ -150,7 +162,7 @@
                                         </state>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-Dh-xpG">
-                                        <rect key="frame" x="24.5" y="80" width="262.5" height="180"/>
+                                        <rect key="frame" x="24.5" y="72" width="262.5" height="180"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7Z-z8-He8">
                                                 <rect key="frame" x="0.0" y="0.0" width="262.5" height="60"/>
@@ -288,7 +300,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toffeetv-logo" translatesAutoresizingMaskIntoConstraints="NO" id="krG-ia-KwP">
-                                        <rect key="frame" x="68.5" y="0.0" width="174" height="76"/>
+                                        <rect key="frame" x="77.5" y="0.0" width="156" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="krG-ia-KwP" secondAttribute="height" multiplier="175:76" id="42O-Rc-9Yi"/>
                                         </constraints>
@@ -308,7 +320,7 @@
                                     <constraint firstItem="s9k-Q2-RoW" firstAttribute="leading" secondItem="dDj-tC-8Ac" secondAttribute="leading" id="Yhf-aB-zST"/>
                                     <constraint firstItem="808-lI-Cvy" firstAttribute="height" secondItem="8yG-6k-qTv" secondAttribute="height" id="Zx7-Es-0sh"/>
                                     <constraint firstItem="C8x-lS-DLv" firstAttribute="top" secondItem="gAS-Dh-xpG" secondAttribute="bottom" constant="8" id="eOS-ZI-67s"/>
-                                    <constraint firstItem="8yG-6k-qTv" firstAttribute="top" secondItem="s9k-Q2-RoW" secondAttribute="bottom" id="h1w-cl-Dxe"/>
+                                    <constraint firstItem="8yG-6k-qTv" firstAttribute="top" secondItem="s9k-Q2-RoW" secondAttribute="bottom" constant="8" id="h1w-cl-Dxe"/>
                                     <constraint firstAttribute="trailing" secondItem="s9k-Q2-RoW" secondAttribute="trailing" id="hON-MM-JoI"/>
                                     <constraint firstItem="8yG-6k-qTv" firstAttribute="centerX" secondItem="dDj-tC-8Ac" secondAttribute="centerX" id="onU-fa-9Du"/>
                                 </constraints>

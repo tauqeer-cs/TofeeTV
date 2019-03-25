@@ -51,8 +51,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 
+    self.title = @"Sign Up";
+    
     [self.viewTerms setHidden:YES];
     
     [self.btnProfile roundTheView];
@@ -204,6 +207,15 @@
         [self showAlert:@"Error" message:@"User already exists"];
     }];
     
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    [super viewDidAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     
 }
 

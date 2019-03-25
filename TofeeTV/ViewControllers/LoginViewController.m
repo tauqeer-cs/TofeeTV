@@ -29,6 +29,15 @@
 
 @implementation LoginViewController
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    [super viewDidAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -39,11 +48,13 @@
     self.txtEmail.delegate = self;
     self.txtPassword.delegate = self;
     
+    
+    
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"Not Registered? Sign Up" attributes:@{
-                                                                                                                                            NSFontAttributeName: [UIFont fontWithName:@"Raleway-Regular" size: 14.0f],
-                                                                                                                                            NSForegroundColorAttributeName: [UIColor colorWithWhite:42.0f / 255.0f alpha:1.0f]
+                                                                                                                                            NSFontAttributeName: [UIFont fontWithName:FancyFont size: 20.0f],
+                                                                                                                                            NSForegroundColorAttributeName: DefaultPink
                                                                                                                                             }];
-    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Raleway-SemiBold" size: 14.0f] range:NSMakeRange(16, 7)];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:FancyFont size: 20.0f] range:NSMakeRange(16, 7)];
     
     
     [self.btnSignUp setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -72,7 +83,7 @@
     [self.btnLogin setBackgroundColor:DefaultYellowColor2];
     
     [self setupSignUPFormButtonsFont:self.btnFB];
-    [self.lblOr setFont:[UIFont fontWithName:FontRegular size:15.0]];
+    [self.lblOr setFont:[UIFont fontWithName:FancyFont size:15.0]];
     
     
     

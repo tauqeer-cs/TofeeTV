@@ -8,6 +8,7 @@
 
 #import "CustomNavViewController.h"
 #import "AppDelegate.h"
+#import "Config.h"
 
 @interface CustomNavViewController ()
 
@@ -23,7 +24,9 @@
     AppDelegate * destination = [[UIApplication sharedApplication] delegate];
     destination.navigation = self;
     
-
+ 
+    
+    
 }
 
 - (BOOL)shouldAutorotate

@@ -288,16 +288,18 @@
     if (currentCount < 2)
     {
         [self.navigationController.navigationBar setTitleTextAttributes:
-         @{NSForegroundColorAttributeName:TopBarTitleColor,
-           NSFontAttributeName:[UIFont fontWithName:FontRegular
+         @{NSForegroundColorAttributeName:[UIColor whiteColor],
+           NSFontAttributeName:[UIFont fontWithName:FancyFont
                                                size:22]}];
+        
+        
         
         
         if (self.customTestColorForTitle)
         {
             [self.navigationController.navigationBar setTitleTextAttributes:
-             @{NSForegroundColorAttributeName:self.customTestColorForTitle,
-               NSFontAttributeName:[UIFont fontWithName:FontRegular
+             @{NSForegroundColorAttributeName:[UIColor whiteColor],
+               NSFontAttributeName:[UIFont fontWithName:FancyFont
                                                    size:22]}];
             
             
