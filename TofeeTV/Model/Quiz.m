@@ -50,6 +50,12 @@
         tmpCurrentQuiz.itemColor = [self colors][tmpCurrentQuiz.itemId % [self colors].count ];
         
         
+        id answerArray1 = [Question listQuestionsWithArray:[currentItemShowing objectForKey:@"questions"]];
+        
+        tmpCurrentQuiz.myQuestions = answerArray1;
+        
+        //tmpCurrentSong.myQuestions = answerArray;
+        
         [answerArray addObject:tmpCurrentQuiz];
         
         
@@ -62,6 +68,13 @@
     return answerArray;
     
 }
+
+-(BOOL)canISeeThis
+{
+    return !self.isOwned;
+    
+}
+
 
 +(void)callQuiztionsListingWithComiltionHandler:(void(^)(id result))completionHandler
                               withFailueHandler:(void(^)(id error))failureHandler
@@ -113,10 +126,6 @@
              //NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
              
              NSMutableArray * resultToSend = [self parseItemFromResult:dataObject];
-             [resultToSend addObjectsFromArray:resultToSend];
-             [resultToSend addObjectsFromArray:resultToSend];
-             [resultToSend addObjectsFromArray:resultToSend];
-             
              
              completionHandler(resultToSend);
              

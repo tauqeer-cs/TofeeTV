@@ -30,8 +30,6 @@
     self.lblMessage.font =  [UIFont fontWithName:FancyFont size:28];
     if (self.currentQuestion) {
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-        
-        
     }
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
@@ -49,7 +47,7 @@
          self.obtainedPoints =  [[result objectForKey:@"obtained_points"] intValue];
          self.totalPoints =  [[result objectForKey:@"total_points"] intValue];
                   
-    self.lblMessage.text = [NSString stringWithFormat:@"Thanks for Playing.\nYou scored %dout of %d",self.obtainedPoints,self.totalPoints];
+    self.lblMessage.text = [NSString stringWithFormat:@"Thank you for Playing.\nYou scored %d\nout of %d",self.obtainedPoints,self.totalPoints];
                   
                   NSLog(@"%@",result);
     } withFailueHandler:^(id  _Nonnull error) {

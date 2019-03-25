@@ -122,17 +122,12 @@
          callUnlockWithScoreWithId:currentItem.itemId withComplition:^(id  _Nonnull result) {
              VideoPlayerViewController * destination = [[VideoPlayerViewController alloc] initWithNibName:@"VideoPlayerViewController" bundle:nil];
              
-             AppDelegate * currentApp = [[UIApplication sharedApplication] delegate];
+             AppDelegate * currentApp = (AppDelegate *)[[UIApplication sharedApplication] delegate];
              currentApp.currentSelectedItem = self.dataSource[indexPath.row];
              destination.currentSong = self.dataSource[indexPath.row];
              destination.delegate = self;
-             
-             
              [self presentViewController:destination animated:YES completion:^{
-                 
              }];
-             
-             
              [self loadData];
              
              
@@ -150,7 +145,7 @@
 
         return;
     }
-    AppDelegate * currentOne  = [[UIApplication sharedApplication] delegate];
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentOne.shouldAutoRotate = YES;
     
     

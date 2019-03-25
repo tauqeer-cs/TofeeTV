@@ -8,6 +8,7 @@
 
 #import "ManuViewController.h"
 #import "AudioController.h"
+#import "ThankYouViewController.h"
 
 
 @interface ManuViewController ()
@@ -75,7 +76,14 @@
 - (IBAction)btnSongsTapped:(UIButton *)sender {
     
     
-    [self performSegueWithIdentifier:@"segueMyScore" sender:self];
+   // [self performSegueWithIdentifier:@"segueMyScore" sender:self];
+    ThankYouViewController * destination  = [[ThankYouViewController alloc] initWithNibName:@"ThankYouViewController" bundle:nil];
+    
+    //destination.currentQuestion = self.selectedSong;
+    
+    
+    [self.navigationController showViewController:destination sender:nil];
+    
     
 }
 
