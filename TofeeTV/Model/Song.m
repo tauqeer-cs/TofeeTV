@@ -121,7 +121,6 @@
              
              id dataObject = [result objectForKey:@"data"];
              NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
-             [resultToSend addObjectsFromArray:resultToSend];
              
              completionHandler(resultToSend);
              

@@ -53,8 +53,7 @@
         id answerArray1 = [Question listQuestionsWithArray:[currentItemShowing objectForKey:@"questions"]];
         
         tmpCurrentQuiz.myQuestions = answerArray1;
-        
-        //tmpCurrentSong.myQuestions = answerArray;
+        tmpCurrentQuiz.thumbNailUrl = [currentItemShowing objectForKey:@"thumbnail_file"];
         
         [answerArray addObject:tmpCurrentQuiz];
         
@@ -82,28 +81,7 @@
     
     
     NSMutableArray * resultAnswer = [NSMutableArray new];
-    
-    /*
-     for (int i= 1; i < 13 ; i++)
-     {
-     
-     Song * currentOne = [Song new];
-     currentOne.name = [NSString stringWithFormat:@"Song %d",i];;
-     currentOne.itemId = i;
-     currentOne.itemColor = self.colors[i % self.colors.count ];
-     
-     if (i < 4) {
-     currentOne.isLocked = NO;
-     
-     }
-     else
-     {
-     currentOne.isLocked = YES;
-     }
-     [resultAnswer addObject:currentOne];
-     }
-     completionHandler(resultAnswer);
-     */
+ 
     
     
     
