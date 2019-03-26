@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"Songs Listing";
+    self.title = @"Songs";
     
  
     self.collectionView.dataSource = self;

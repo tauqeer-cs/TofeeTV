@@ -47,6 +47,13 @@
     }
     
     
+    
+    for (UIButton * currentButton in self.answerButons)
+    {
+        
+        [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:18]];
+        
+    }
     [self setQuestionDataWithIndex];
     
     

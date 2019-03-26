@@ -230,6 +230,231 @@
 		50C5ACD82206E9F2008BA500 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB72206E9F2008BA500 /* Raleway-Italic.ttf */; };
 		50C5ACDA2206E9F2008BA500 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB92206E9F2008BA500 /* Raleway-Bold.ttf */; };
 		50C5ACDE2206F2D7008BA500 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ACDD2206F2D7008BA500 /* LoginViewController.m */; };
+		50D8A60F2249D73B0000A967 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA382206E84B008BA500 /* SlideNavigationController.m */; };
+		50D8A6102249D73B0000A967 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB312206E8F2008BA500 /* EDStarRating.m */; };
+		50D8A6112249D73B0000A967 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAFC2206E8F2008BA500 /* FSCalendarDelegationFactory.m */; };
+		50D8A6122249D73B0000A967 /* MyListViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC2C2206E94B008BA500 /* MyListViewLayout.m */; };
+		50D8A6132249D73B0000A967 /* UIColor+HexSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AABE2206E8F2008BA500 /* UIColor+HexSupport.m */; };
+		50D8A6142249D73B0000A967 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD42206E8F2008BA500 /* View+MASAdditions.m */; };
+		50D8A6152249D73B0000A967 /* NSString+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA2A2206E84B008BA500 /* NSString+JS.m */; };
+		50D8A6162249D73B0000A967 /* HRColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAEB2206E8F2008BA500 /* HRColorInfoView.m */; };
+		50D8A6172249D73B0000A967 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA402206E84B008BA500 /* SlideNavigationContorllerAnimatorSlideAndFade.m */; };
+		50D8A6182249D73B0000A967 /* CircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAE02206E8F2008BA500 /* CircleAnimationView.m */; };
+		50D8A6192249D73B0000A967 /* HRColorMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAED2206E8F2008BA500 /* HRColorMapView.m */; };
+		50D8A61A2249D73B0000A967 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0DF220B384A00EB8CB2 /* Song.m */; };
+		50D8A61B2249D73B0000A967 /* MenuItemBenefitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC1B2206E94B008BA500 /* MenuItemBenefitTableViewCell.m */; };
+		50D8A61C2249D73B0000A967 /* DALinedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC002206E94B008BA500 /* DALinedTextView.m */; };
+		50D8A61D2249D73B0000A967 /* RestCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA542206E84B008BA500 /* RestCall.m */; };
+		50D8A61E2249D73B0000A967 /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABDE2206E94A008BA500 /* CategoryCollectionViewCell.m */; };
+		50D8A61F2249D73B0000A967 /* QZDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAB92206E8F2008BA500 /* QZDatePickerView.m */; };
+		50D8A6202249D73B0000A967 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA582206E84B008BA500 /* Validator.m */; };
+		50D8A6212249D73B0000A967 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
+		50D8A6222249D73B0000A967 /* JotTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAAE2206E8F2008BA500 /* JotTextView.m */; };
+		50D8A6232249D73B0000A967 /* QZDateSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AABC2206E8F2008BA500 /* QZDateSelectorView.m */; };
+		50D8A6242249D73B0000A967 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB2D2206E8F2008BA500 /* UIView+Toast.m */; };
+		50D8A6252249D73B0000A967 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB022206E8F2008BA500 /* FSCalendarCell.m */; };
+		50D8A6262249D73B0000A967 /* JotTouchBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAB12206E8F2008BA500 /* JotTouchBezier.m */; };
+		50D8A6272249D73B0000A967 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB102206E8F2008BA500 /* FSCalendarHeaderView.m */; };
+		50D8A6282249D73B0000A967 /* SongsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0DA220B366D00EB8CB2 /* SongsCollectionViewCell.m */; };
+		50D8A6292249D73B0000A967 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA512206E84B008BA500 /* FileManager.m */; };
+		50D8A62A2249D73B0000A967 /* MyListItemImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABE02206E94A008BA500 /* MyListItemImageCollectionViewCell.m */; };
+		50D8A62B2249D73B0000A967 /* UIImage+Jot.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAAD2206E8F2008BA500 /* UIImage+Jot.m */; };
+		50D8A62C2249D73B0000A967 /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA3A2206E84B008BA500 /* SlideNavigationContorllerAnimatorSlide.m */; };
+		50D8A62D2249D73B0000A967 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD12206E8F2008BA500 /* MASConstraintMaker.m */; };
+		50D8A62E2249D73B0000A967 /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
+		50D8A62F2249D73B0000A967 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD92206E8F2008BA500 /* MASViewConstraint.m */; };
+		50D8A6302249D73B0000A967 /* ChaterDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABD02206E94A008BA500 /* ChaterDetailView.m */; };
+		50D8A6312249D73B0000A967 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD42219BEC80064DBF4 /* Quiz.m */; };
+		50D8A6322249D73B0000A967 /* JotDrawingContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAA52206E8F2008BA500 /* JotDrawingContainer.m */; };
+		50D8A6332249D73B0000A967 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB072206E8F2008BA500 /* FSCalendarWeekdayView.m */; };
+		50D8A6342249D73B0000A967 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA6F2206E84B008BA500 /* GTMNSString+HTML.m */; };
+		50D8A6352249D73B0000A967 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB062206E8F2008BA500 /* FSCalendarScopeHandle.m */; };
+		50D8A6362249D73B0000A967 /* MyListProfileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABEA2206E94A008BA500 /* MyListProfileCollectionViewCell.m */; };
+		50D8A6372249D73B0000A967 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAFA2206E8F2008BA500 /* FSCalendarDelegationProxy.m */; };
+		50D8A6382249D73B0000A967 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA3B2206E84B008BA500 /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
+		50D8A6392249D73B0000A967 /* CustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB952206E94A008BA500 /* CustomCollectionViewLayout.m */; };
+		50D8A63A2249D73B0000A967 /* QuestionAnsweTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC132206E94B008BA500 /* QuestionAnsweTableViewCell.m */; };
+		50D8A63B2249D73B0000A967 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC952206E97D008BA500 /* BaseViewController.m */; };
+		50D8A63C2249D73B0000A967 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB7B2206E92E008BA500 /* User.m */; };
+		50D8A63D2249D73B0000A967 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA142206E477008BA500 /* ViewController.m */; };
+		50D8A63E2249D73B0000A967 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB0D2206E8F2008BA500 /* FSCalendar+Deprecated.m */; };
+		50D8A63F2249D73B0000A967 /* NSString+Measurements.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA4D2206E84B008BA500 /* NSString+Measurements.m */; };
+		50D8A6402249D73B0000A967 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD32206E8F2008BA500 /* NSArray+MASAdditions.m */; };
+		50D8A6412249D73B0000A967 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB152206E8F2008BA500 /* FSCalendarAppearance.m */; };
+		50D8A6422249D73B0000A967 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB032206E8F2008BA500 /* FSCalendarStickyHeader.m */; };
+		50D8A6432249D73B0000A967 /* TitleHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC292206E94B008BA500 /* TitleHeading.m */; };
+		50D8A6442249D73B0000A967 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */; };
+		50D8A6452249D73B0000A967 /* StoryOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC172206E94B008BA500 /* StoryOneTableViewCell.m */; };
+		50D8A6462249D73B0000A967 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA5E2206E84B008BA500 /* Reachability.m */; };
+		50D8A6472249D73B0000A967 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B265622211390007D376B /* QuestionViewController.m */; };
+		50D8A6482249D73B0000A967 /* DIYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABCE2206E94A008BA500 /* DIYTableViewCell.m */; };
+		50D8A6492249D73B0000A967 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA6C2206E84B008BA500 /* NSString+HTML.m */; };
+		50D8A64A2249D73B0000A967 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ACDD2206F2D7008BA500 /* LoginViewController.m */; };
+		50D8A64B2249D73B0000A967 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAF12206E8F2008BA500 /* UIImage+CoreGraphics.m */; };
+		50D8A64C2249D73B0000A967 /* JTSImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB182206E8F2008BA500 /* JTSImageInfo.m */; };
+		50D8A64D2249D73B0000A967 /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAEC2206E8F2008BA500 /* HRColorCursor.m */; };
+		50D8A64E2249D73B0000A967 /* JotDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAB32206E8F2008BA500 /* JotDrawView.m */; };
+		50D8A64F2249D73B0000A967 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB822206E92E008BA500 /* Question.m */; };
+		50D8A6502249D73B0000A967 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AADA2206E8F2008BA500 /* MASViewAttribute.m */; };
+		50D8A6512249D73B0000A967 /* NCTextFieldcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AABD2206E8F2008BA500 /* NCTextFieldcategory.m */; };
+		50D8A6522249D73B0000A967 /* BransListingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABDC2206E94A008BA500 /* BransListingCollectionViewCell.m */; };
+		50D8A6532249D73B0000A967 /* JotTouchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAB02206E8F2008BA500 /* JotTouchPoint.m */; };
+		50D8A6542249D73B0000A967 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAC32206E8F2008BA500 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		50D8A6552249D73B0000A967 /* IQDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB2C2206E8F2008BA500 /* IQDropDownTextField.m */; };
+		50D8A6562249D73B0000A967 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB162206E8F2008BA500 /* NIDropDown.m */; };
+		50D8A6572249D73B0000A967 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB052206E8F2008BA500 /* FSCalendarCollectionViewLayout.m */; };
+		50D8A6582249D73B0000A967 /* UIView+MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA6E2206E84B008BA500 /* UIView+MyUIView.m */; };
+		50D8A6592249D73B0000A967 /* UIButton+MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA662206E84B008BA500 /* UIButton+MyButton.m */; };
+		50D8A65A2249D73B0000A967 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB142206E8F2008BA500 /* FSCalendarTransitionCoordinator.m */; };
+		50D8A65B2249D73B0000A967 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAEE2206E8F2008BA500 /* HRBrightnessSlider.m */; };
+		50D8A65C2249D73B0000A967 /* AddMyOwnCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABF62206E94B008BA500 /* AddMyOwnCollectionReusableView.m */; };
+		50D8A65D2249D73B0000A967 /* TOActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAE22206E8F2008BA500 /* TOActionSheet.m */; };
+		50D8A65E2249D73B0000A967 /* ItemByCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABDF2206E94A008BA500 /* ItemByCategoryCollectionViewCell.m */; };
+		50D8A65F2249D73B0000A967 /* BottomCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABE72206E94A008BA500 /* BottomCollectionReusableView.m */; };
+		50D8A6602249D73B0000A967 /* NSArray+NullReplacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA2E2206E84B008BA500 /* NSArray+NullReplacement.m */; };
+		50D8A6612249D73B0000A967 /* SongsListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0E5220B42B500EB8CB2 /* SongsListingViewController.m */; };
+		50D8A6622249D73B0000A967 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA322206E84B008BA500 /* NSDate+Utilities.m */; };
+		50D8A6632249D73B0000A967 /* DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA4A2206E84B008BA500 /* DateFormatter.m */; };
+		50D8A6642249D73B0000A967 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AACC2206E8F2008BA500 /* ViewController+MASAdditions.m */; };
+		50D8A6652249D73B0000A967 /* SymptomsDetailExplainationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC112206E94B008BA500 /* SymptomsDetailExplainationTableViewCell.m */; };
+		50D8A6662249D73B0000A967 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA702206E84B008BA500 /* UIView+Toast.m */; };
+		50D8A6672249D73B0000A967 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAE12206E8F2008BA500 /* StyleKit.m */; };
+		50D8A6682249D73B0000A967 /* CustomerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC252206E94B008BA500 /* CustomerScrollView.m */; };
+		50D8A6692249D73B0000A967 /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA422206E84B008BA500 /* SlideNavigationContorllerAnimatorFade.m */; };
+		50D8A66A2249D73B0000A967 /* JotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAB52206E8F2008BA500 /* JotViewController.m */; };
+		50D8A66B2249D73B0000A967 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA9E2206E8F2008BA500 /* UIView+Snapshot.m */; };
+		50D8A66C2249D73B0000A967 /* QuizzesLisingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */; };
+		50D8A66D2249D73B0000A967 /* UILabel+MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA5B2206E84B008BA500 /* UILabel+MyLabel.m */; };
+		50D8A66E2249D73B0000A967 /* MKDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAC02206E8F2008BA500 /* MKDropdownMenu.m */; };
+		50D8A66F2249D73B0000A967 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA452206E84B008BA500 /* RightMenuViewController.m */; };
+		50D8A6702249D73B0000A967 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAF62206E8F2008BA500 /* FSCalendarCollectionView.m */; };
+		50D8A6712249D73B0000A967 /* ManuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0CE220B20F700EB8CB2 /* ManuViewController.m */; };
+		50D8A6722249D73B0000A967 /* UIImage+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB322206E8F3008BA500 /* UIImage+LMExtension.m */; };
+		50D8A6732249D73B0000A967 /* LessonsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC182206E94B008BA500 /* LessonsTableViewCell.m */; };
+		50D8A6742249D73B0000A967 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB0F2206E8F2008BA500 /* FSCalendarCalculator.m */; };
+		50D8A6752249D73B0000A967 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA492206E84B008BA500 /* CropImageViewController.m */; };
+		50D8A6762249D73B0000A967 /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB1F2206E8F2008BA500 /* UIImage+JTSImageEffects.m */; };
+		50D8A6772249D73B0000A967 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD02206E8F2008BA500 /* MASCompositeConstraint.m */; };
+		50D8A6782249D73B0000A967 /* JotTextEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAAB2206E8F2008BA500 /* JotTextEditView.m */; };
+		50D8A6792249D73B0000A967 /* ADDropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB2F2206E8F2008BA500 /* ADDropDownMenuView.m */; };
+		50D8A67A2249D73B0000A967 /* DYAlertPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC032206E94B008BA500 /* DYAlertPickView.m */; };
+		50D8A67B2249D73B0000A967 /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB192206E8F2008BA500 /* UIApplication+JTSImageViewController.m */; };
+		50D8A67C2249D73B0000A967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA1F2206E479008BA500 /* main.m */; };
+		50D8A67D2249D73B0000A967 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAE62206E8F2008BA500 /* HRHSVColorUtil.m */; };
+		50D8A67E2249D73B0000A967 /* BrandSearchCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABEF2206E94A008BA500 /* BrandSearchCollectionReusableView.m */; };
+		50D8A67F2249D73B0000A967 /* BrandSectionCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABF32206E94A008BA500 /* BrandSectionCollectionReusableView.m */; };
+		50D8A6802249D73B0000A967 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB042206E8F2008BA500 /* FSCalendar.m */; };
+		50D8A6812249D73B0000A967 /* HowItWorksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC212206E94B008BA500 /* HowItWorksTableViewCell.m */; };
+		50D8A6822249D73B0000A967 /* CustomAddToListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC0A2206E94B008BA500 /* CustomAddToListView.m */; };
+		50D8A6832249D73B0000A967 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB0B2206E8F2008BA500 /* FSCalendarExtensions.m */; };
+		50D8A6842249D73B0000A967 /* UITextField+MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA6D2206E84B008BA500 /* UITextField+MyTextField.m */; };
+		50D8A6852249D73B0000A967 /* LMDropdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AABF2206E8F2008BA500 /* LMDropdownView.m */; };
+		50D8A6862249D73B0000A967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA112206E477008BA500 /* AppDelegate.m */; };
+		50D8A6872249D73B0000A967 /* JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB232206E8F2008BA500 /* JTSImageViewController.m */; };
+		50D8A6882249D73B0000A967 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE662247537A0080ABB6 /* CustomNavViewController.m */; };
+		50D8A6892249D73B0000A967 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD72206E8F2008BA500 /* MASConstraint.m */; };
+		50D8A68A2249D73B0000A967 /* NSDictionary+NullReplacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA722206E84B008BA500 /* NSDictionary+NullReplacement.m */; };
+		50D8A68B2249D73B0000A967 /* DatePickerSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA742206E84B008BA500 /* DatePickerSheet.m */; };
+		50D8A68C2249D73B0000A967 /* QZDateSelectorToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AABA2206E8F2008BA500 /* QZDateSelectorToolBarView.m */; };
+		50D8A68D2249D73B0000A967 /* TitleViewLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABF92206E94B008BA500 /* TitleViewLogin.m */; };
+		50D8A68E2249D73B0000A967 /* JTSAnimatedGIFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB1D2206E8F2008BA500 /* JTSAnimatedGIFUtility.m */; };
+		50D8A68F2249D73B0000A967 /* MyScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D7220B22A900EB8CB2 /* MyScoreViewController.m */; };
+		50D8A6902249D73B0000A967 /* UIImage+MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA6B2206E84B008BA500 /* UIImage+MyImage.m */; };
+		50D8A6912249D73B0000A967 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA312206E84B008BA500 /* JSONKit.m */; };
+		50D8A6922249D73B0000A967 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA522206E84B008BA500 /* XMLDictionary.m */; };
+		50D8A6932249D73B0000A967 /* AFDropdownNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA2C2206E84B008BA500 /* AFDropdownNotification.m */; };
+		50D8A6942249D73B0000A967 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E93FC221DAAEE00A123DF /* CustomViewController.m */; };
+		50D8A6952249D73B0000A967 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAD22206E8F2008BA500 /* MASLayoutConstraint.m */; };
+		50D8A6962249D73B0000A967 /* DescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC1C2206E94B008BA500 /* DescriptionTableViewCell.m */; };
+		50D8A6972249D73B0000A967 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAE82206E8F2008BA500 /* HRColorPickerView.m */; };
+		50D8A6982249D73B0000A967 /* MyListSectionHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABF22206E94A008BA500 /* MyListSectionHeaderCollectionReusableView.m */; };
+		50D8A6992249D73B0000A967 /* DragAndDropTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAA12206E8F2008BA500 /* DragAndDropTableView.m */; };
+		50D8A69A2249D73B0000A967 /* CustomFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABD62206E94A008BA500 /* CustomFooterView.m */; };
+		50D8A69B2249D73B0000A967 /* TextViewForSignUpform.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC2F2206E94B008BA500 /* TextViewForSignUpform.m */; };
+		50D8A69C2249D73B0000A967 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB0E2206E8F2008BA500 /* FSCalendarConstants.m */; };
+		50D8A69D2249D73B0000A967 /* NSString+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA5D2206E84B008BA500 /* NSString+JS.m */; };
+		50D8A69E2249D73B0000A967 /* JxbScaleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAA32206E8F2008BA500 /* JxbScaleButton.m */; };
+		50D8A69F2249D73B0000A967 /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB222206E8F2008BA500 /* JTSSimpleImageDownloader.m */; };
+		50D8A6A02249D73B0000A967 /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA552206E84B008BA500 /* TKImageView.m */; };
+		50D8A6A12249D73B0000A967 /* CustomNavViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE69224758830080ABB6 /* CustomNavViewController2.m */; };
+		50D8A6A22249D73B0000A967 /* RTIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA4E2206E84B008BA500 /* RTIconButton.m */; };
+		50D8A6A32249D73B0000A967 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50368D0F2225AD7C00A05482 /* AudioController.m */; };
+		50D8A6A42249D73B0000A967 /* NSString+MyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA5C2206E84B008BA500 /* NSString+MyString.m */; };
+		50D8A6A52249D73B0000A967 /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAEA2206E8F2008BA500 /* HRBrightnessCursor.m */; };
+		50D8A6A62249D73B0000A967 /* ADDropDownMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB2E2206E8F2008BA500 /* ADDropDownMenuItemView.m */; };
+		50D8A6A72249D73B0000A967 /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA412206E84B008BA500 /* SlideNavigationContorllerAnimatorScale.m */; };
+		50D8A6A82249D73B0000A967 /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50895FCA222159B000BEC1C8 /* ThankYouViewController.m */; };
+		50D8A6AA2249D73B0000A967 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */; };
+		50D8A6AB2249D73B0000A967 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A672210832700DAC9A5 /* Bolts.framework */; };
+		50D8A6AC2249D73B0000A967 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A662210832700DAC9A5 /* FBSDKShareKit.framework */; };
+		50D8A6AD2249D73B0000A967 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */; };
+		50D8A6AE2249D73B0000A967 /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
+		50D8A6B02249D73B0000A967 /* StoryOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC202206E94B008BA500 /* StoryOneTableViewCell.xib */; };
+		50D8A6B12249D73B0000A967 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9D2206E9F2008BA500 /* Raleway-ExtraLight.ttf */; };
+		50D8A6B22249D73B0000A967 /* AddMyOwnCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABE52206E94A008BA500 /* AddMyOwnCollectionReusableView.xib */; };
+		50D8A6B32249D73B0000A967 /* TitleHeading copy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC2E2206E94B008BA500 /* TitleHeading copy.xib */; };
+		50D8A6B42249D73B0000A967 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA32206E9F2008BA500 /* Raleway-SemiBold.ttf */; };
+		50D8A6B52249D73B0000A967 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9A2206E9F2008BA500 /* Raleway-MediumItalic.ttf */; };
+		50D8A6B62249D73B0000A967 /* Barish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50368D0C2225ACA900A05482 /* Barish.mp3 */; };
+		50D8A6B72249D73B0000A967 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB72206E9F2008BA500 /* Raleway-Italic.ttf */; };
+		50D8A6B82249D73B0000A967 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB32206E9F2008BA500 /* OpenSans-Regular.ttf */; };
+		50D8A6B92249D73B0000A967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA1B2206E479008BA500 /* LaunchScreen.storyboard */; };
+		50D8A6BA2249D73B0000A967 /* Menu-Button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA462206E84B008BA500 /* Menu-Button@3x.png */; };
+		50D8A6BB2249D73B0000A967 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB22206E9F2008BA500 /* Raleway-Thin.ttf */; };
+		50D8A6BC2249D73B0000A967 /* TitleHeading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC2D2206E94B008BA500 /* TitleHeading.xib */; };
+		50D8A6BD2249D73B0000A967 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA82206E9F2008BA500 /* Raleway-ExtraLightItalic.ttf */; };
+		50D8A6BE2249D73B0000A967 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB42206E9F2008BA500 /* MavenPro-Bold.ttf */; };
+		50D8A6BF2249D73B0000A967 /* LessonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC222206E94B008BA500 /* LessonsTableViewCell.xib */; };
+		50D8A6C02249D73B0000A967 /* BottomCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABF72206E94B008BA500 /* BottomCollectionReusableView.xib */; };
+		50D8A6C12249D73B0000A967 /* SongsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 509AF0DB220B366D00EB8CB2 /* SongsCollectionViewCell.xib */; };
+		50D8A6C22249D73B0000A967 /* chat_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACAB2206E9F2008BA500 /* chat_sound.mp3 */; };
+		50D8A6C32249D73B0000A967 /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */; };
+		50D8A6C42249D73B0000A967 /* TextViewForSignUpform.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC042206E94B008BA500 /* TextViewForSignUpform.xib */; };
+		50D8A6C52249D73B0000A967 /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABEC2206E94A008BA500 /* CustomFooterView.xib */; };
+		50D8A6C62249D73B0000A967 /* BrandSectionCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABD52206E94A008BA500 /* BrandSectionCollectionReusableView.xib */; };
+		50D8A6C72249D73B0000A967 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACAA2206E9F2008BA500 /* Raleway-Light.ttf */; };
+		50D8A6C82249D73B0000A967 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC992206E9F2008BA500 /* Raleway-BoldItalic.ttf */; };
+		50D8A6C92249D73B0000A967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA192206E479008BA500 /* Assets.xcassets */; };
+		50D8A6CA2249D73B0000A967 /* TextViewForSignUpNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC022206E94B008BA500 /* TextViewForSignUpNew.xib */; };
+		50D8A6CB2249D73B0000A967 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9B2206E9F2008BA500 /* OpenSans-Semibold.ttf */; };
+		50D8A6CC2249D73B0000A967 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABE92206E94A008BA500 /* CategoryCollectionViewCell.xib */; };
+		50D8A6CD2249D73B0000A967 /* CropImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA592206E84B008BA500 /* CropImageViewController.xib */; };
+		50D8A6CE2249D73B0000A967 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA272206E54C008BA500 /* SignUp.storyboard */; };
+		50D8A6CF2249D73B0000A967 /* BransListingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABD72206E94A008BA500 /* BransListingCollectionViewCell.xib */; };
+		50D8A6D02249D73B0000A967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA162206E477008BA500 /* Main.storyboard */; };
+		50D8A6D12249D73B0000A967 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA92206E9F2008BA500 /* Raleway-SemiBoldItalic.ttf */; };
+		50D8A6D22249D73B0000A967 /* QuestionAnsweTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC122206E94B008BA500 /* QuestionAnsweTableViewCell.xib */; };
+		50D8A6D32249D73B0000A967 /* BrandSearchCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABD32206E94A008BA500 /* BrandSearchCollectionReusableView.xib */; };
+		50D8A6D42249D73B0000A967 /* MenuItemBenefitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC1A2206E94B008BA500 /* MenuItemBenefitTableViewCell.xib */; };
+		50D8A6D52249D73B0000A967 /* MyListSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABDA2206E94A008BA500 /* MyListSectionHeaderCollectionReusableView.xib */; };
+		50D8A6D62249D73B0000A967 /* ChaterDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC2A2206E94B008BA500 /* ChaterDetailView.xib */; };
+		50D8A6D72249D73B0000A967 /* SymptomsDetailExplainationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC0E2206E94B008BA500 /* SymptomsDetailExplainationTableViewCell.xib */; };
+		50D8A6D82249D73B0000A967 /* Candida-Std-Roman_9171.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA02206E9F2008BA500 /* Candida-Std-Roman_9171.ttf */; };
+		50D8A6D92249D73B0000A967 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA72206E9F2008BA500 /* Raleway-Regular.ttf */; };
+		50D8A6DA2249D73B0000A967 /* QuestionAnsweTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC102206E94B008BA500 /* QuestionAnsweTableViewCell2.xib */; };
+		50D8A6DB2249D73B0000A967 /* ItemByCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABD82206E94A008BA500 /* ItemByCategoryCollectionViewCell.xib */; };
+		50D8A6DC2249D73B0000A967 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB92206E9F2008BA500 /* Raleway-Bold.ttf */; };
+		50D8A6DD2249D73B0000A967 /* MyListItemImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABF02206E94A008BA500 /* MyListItemImageCollectionViewCell.xib */; };
+		50D8A6DE2249D73B0000A967 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9F2206E9F2008BA500 /* Raleway-Medium.ttf */; };
+		50D8A6DF2249D73B0000A967 /* BransListingCollectionViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABEB2206E94A008BA500 /* BransListingCollectionViewCell2.xib */; };
+		50D8A6E02249D73B0000A967 /* HowItWorksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC1D2206E94B008BA500 /* HowItWorksTableViewCell.xib */; };
+		50D8A6E12249D73B0000A967 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA62206E9F2008BA500 /* Raleway-ExtraBoldItalic.ttf */; };
+		50D8A6E22249D73B0000A967 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACAE2206E9F2008BA500 /* Raleway-BlackItalic.ttf */; };
+		50D8A6E32249D73B0000A967 /* TitleViewLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABFB2206E94B008BA500 /* TitleViewLogin.xib */; };
+		50D8A6E42249D73B0000A967 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9E2206E9F2008BA500 /* MavenPro-Black.ttf */; };
+		50D8A6E52249D73B0000A967 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9C2206E9F2008BA500 /* Raleway-ThinItalic.ttf */; };
+		50D8A6E62249D73B0000A967 /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA472206E84B008BA500 /* menu-button@2x.png */; };
+		50D8A6E72249D73B0000A967 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504B265722211390007D376B /* QuestionViewController.xib */; };
+		50D8A6E82249D73B0000A967 /* CustomAddToListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC0B2206E94B008BA500 /* CustomAddToListView.xib */; };
+		50D8A6E92249D73B0000A967 /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB02206E9F2008BA500 /* MavenPro-Medium.ttf */; };
+		50D8A6EA2249D73B0000A967 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACAC2206E9F2008BA500 /* MavenPro-Regular.ttf */; };
+		50D8A6EB2249D73B0000A967 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB12206E9F2008BA500 /* Raleway-LightItalic.ttf */; };
+		50D8A6EC2249D73B0000A967 /* MyListProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABF12206E94A008BA500 /* MyListProfileCollectionViewCell.xib */; };
+		50D8A6ED2249D73B0000A967 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA52206E9F2008BA500 /* Raleway-ExtraBold.ttf */; };
+		50D8A6EE2249D73B0000A967 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */; };
+		50D8A6EF2249D73B0000A967 /* ThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */; };
+		50D8A6F02249D73B0000A967 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC162206E94B008BA500 /* DescriptionTableViewCell.xib */; };
+		50D8A6F12249D73B0000A967 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACAD2206E9F2008BA500 /* Raleway-Black.ttf */; };
 		50E56AEC221C5B86008A1F81 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */; };
 		50E56AED221C5B86008A1F81 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -622,6 +847,8 @@
 		50C5ACB92206E9F2008BA500 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		50C5ACDC2206F2D7008BA500 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		50C5ACDD2206F2D7008BA500 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		50D8A6F52249D73B0000A967 /* TofeeTV copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TofeeTV copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D8A6F62249D73B0000A967 /* TofeeTV copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TofeeTV copy-Info.plist"; path = "/Users/tauqeerahmed/Documents/Work/TofeeTV/TofeeTV copy-Info.plist"; sourceTree = "<absolute>"; };
 		50E56AE9221C5B85008A1F81 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
 		50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
@@ -641,6 +868,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50D8A6A92249D73B0000A967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D8A6AA2249D73B0000A967 /* FBSDKCoreKit.framework in Frameworks */,
+				50D8A6AB2249D73B0000A967 /* Bolts.framework in Frameworks */,
+				50D8A6AC2249D73B0000A967 /* FBSDKShareKit.framework in Frameworks */,
+				50D8A6AD2249D73B0000A967 /* FBSDKLoginKit.framework in Frameworks */,
+				50D8A6AE2249D73B0000A967 /* libPods-TofeeTV.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -651,6 +890,7 @@
 				50C5AA0E2206E477008BA500 /* Products */,
 				ACA9E1B3C82D11B72DED7788 /* Pods */,
 				B9557FC826E82B2B2CCA9A7B /* Frameworks */,
+				50D8A6F62249D73B0000A967 /* TofeeTV copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -658,6 +898,7 @@
 			isa = PBXGroup;
 			children = (
 				50C5AA0D2206E477008BA500 /* TofeeTV.app */,
+				50D8A6F52249D73B0000A967 /* TofeeTV copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1294,6 +1535,24 @@
 			productReference = 50C5AA0D2206E477008BA500 /* TofeeTV.app */;
 			productType = "com.apple.product-type.application";
 		};
+		50D8A60C2249D73B0000A967 /* TofeeTV copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D8A6F22249D73B0000A967 /* Build configuration list for PBXNativeTarget "TofeeTV copy" */;
+			buildPhases = (
+				50D8A60D2249D73B0000A967 /* [CP] Check Pods Manifest.lock */,
+				50D8A60E2249D73B0000A967 /* Sources */,
+				50D8A6A92249D73B0000A967 /* Frameworks */,
+				50D8A6AF2249D73B0000A967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TofeeTV copy";
+			productName = TofeeTV;
+			productReference = 50D8A6F52249D73B0000A967 /* TofeeTV copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1322,6 +1581,7 @@
 			projectRoot = "";
 			targets = (
 				50C5AA0C2206E477008BA500 /* TofeeTV */,
+				50D8A60C2249D73B0000A967 /* TofeeTV copy */,
 			);
 		};
 /* End PBXProject section */
@@ -1400,9 +1660,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50D8A6AF2249D73B0000A967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D8A6B02249D73B0000A967 /* StoryOneTableViewCell.xib in Resources */,
+				50D8A6B12249D73B0000A967 /* Raleway-ExtraLight.ttf in Resources */,
+				50D8A6B22249D73B0000A967 /* AddMyOwnCollectionReusableView.xib in Resources */,
+				50D8A6B32249D73B0000A967 /* TitleHeading copy.xib in Resources */,
+				50D8A6B42249D73B0000A967 /* Raleway-SemiBold.ttf in Resources */,
+				50D8A6B52249D73B0000A967 /* Raleway-MediumItalic.ttf in Resources */,
+				50D8A6B62249D73B0000A967 /* Barish.mp3 in Resources */,
+				50D8A6B72249D73B0000A967 /* Raleway-Italic.ttf in Resources */,
+				50D8A6B82249D73B0000A967 /* OpenSans-Regular.ttf in Resources */,
+				50D8A6B92249D73B0000A967 /* LaunchScreen.storyboard in Resources */,
+				50D8A6BA2249D73B0000A967 /* Menu-Button@3x.png in Resources */,
+				50D8A6BB2249D73B0000A967 /* Raleway-Thin.ttf in Resources */,
+				50D8A6BC2249D73B0000A967 /* TitleHeading.xib in Resources */,
+				50D8A6BD2249D73B0000A967 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				50D8A6BE2249D73B0000A967 /* MavenPro-Bold.ttf in Resources */,
+				50D8A6BF2249D73B0000A967 /* LessonsTableViewCell.xib in Resources */,
+				50D8A6C02249D73B0000A967 /* BottomCollectionReusableView.xib in Resources */,
+				50D8A6C12249D73B0000A967 /* SongsCollectionViewCell.xib in Resources */,
+				50D8A6C22249D73B0000A967 /* chat_sound.mp3 in Resources */,
+				50D8A6C32249D73B0000A967 /* KGWhattheTeacherWants.ttf in Resources */,
+				50D8A6C42249D73B0000A967 /* TextViewForSignUpform.xib in Resources */,
+				50D8A6C52249D73B0000A967 /* CustomFooterView.xib in Resources */,
+				50D8A6C62249D73B0000A967 /* BrandSectionCollectionReusableView.xib in Resources */,
+				50D8A6C72249D73B0000A967 /* Raleway-Light.ttf in Resources */,
+				50D8A6C82249D73B0000A967 /* Raleway-BoldItalic.ttf in Resources */,
+				50D8A6C92249D73B0000A967 /* Assets.xcassets in Resources */,
+				50D8A6CA2249D73B0000A967 /* TextViewForSignUpNew.xib in Resources */,
+				50D8A6CB2249D73B0000A967 /* OpenSans-Semibold.ttf in Resources */,
+				50D8A6CC2249D73B0000A967 /* CategoryCollectionViewCell.xib in Resources */,
+				50D8A6CD2249D73B0000A967 /* CropImageViewController.xib in Resources */,
+				50D8A6CE2249D73B0000A967 /* SignUp.storyboard in Resources */,
+				50D8A6CF2249D73B0000A967 /* BransListingCollectionViewCell.xib in Resources */,
+				50D8A6D02249D73B0000A967 /* Main.storyboard in Resources */,
+				50D8A6D12249D73B0000A967 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				50D8A6D22249D73B0000A967 /* QuestionAnsweTableViewCell.xib in Resources */,
+				50D8A6D32249D73B0000A967 /* BrandSearchCollectionReusableView.xib in Resources */,
+				50D8A6D42249D73B0000A967 /* MenuItemBenefitTableViewCell.xib in Resources */,
+				50D8A6D52249D73B0000A967 /* MyListSectionHeaderCollectionReusableView.xib in Resources */,
+				50D8A6D62249D73B0000A967 /* ChaterDetailView.xib in Resources */,
+				50D8A6D72249D73B0000A967 /* SymptomsDetailExplainationTableViewCell.xib in Resources */,
+				50D8A6D82249D73B0000A967 /* Candida-Std-Roman_9171.ttf in Resources */,
+				50D8A6D92249D73B0000A967 /* Raleway-Regular.ttf in Resources */,
+				50D8A6DA2249D73B0000A967 /* QuestionAnsweTableViewCell2.xib in Resources */,
+				50D8A6DB2249D73B0000A967 /* ItemByCategoryCollectionViewCell.xib in Resources */,
+				50D8A6DC2249D73B0000A967 /* Raleway-Bold.ttf in Resources */,
+				50D8A6DD2249D73B0000A967 /* MyListItemImageCollectionViewCell.xib in Resources */,
+				50D8A6DE2249D73B0000A967 /* Raleway-Medium.ttf in Resources */,
+				50D8A6DF2249D73B0000A967 /* BransListingCollectionViewCell2.xib in Resources */,
+				50D8A6E02249D73B0000A967 /* HowItWorksTableViewCell.xib in Resources */,
+				50D8A6E12249D73B0000A967 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				50D8A6E22249D73B0000A967 /* Raleway-BlackItalic.ttf in Resources */,
+				50D8A6E32249D73B0000A967 /* TitleViewLogin.xib in Resources */,
+				50D8A6E42249D73B0000A967 /* MavenPro-Black.ttf in Resources */,
+				50D8A6E52249D73B0000A967 /* Raleway-ThinItalic.ttf in Resources */,
+				50D8A6E62249D73B0000A967 /* menu-button@2x.png in Resources */,
+				50D8A6E72249D73B0000A967 /* QuestionViewController.xib in Resources */,
+				50D8A6E82249D73B0000A967 /* CustomAddToListView.xib in Resources */,
+				50D8A6E92249D73B0000A967 /* MavenPro-Medium.ttf in Resources */,
+				50D8A6EA2249D73B0000A967 /* MavenPro-Regular.ttf in Resources */,
+				50D8A6EB2249D73B0000A967 /* Raleway-LightItalic.ttf in Resources */,
+				50D8A6EC2249D73B0000A967 /* MyListProfileCollectionViewCell.xib in Resources */,
+				50D8A6ED2249D73B0000A967 /* Raleway-ExtraBold.ttf in Resources */,
+				50D8A6EE2249D73B0000A967 /* VideoPlayerViewController.xib in Resources */,
+				50D8A6EF2249D73B0000A967 /* ThankYouViewController.xib in Resources */,
+				50D8A6F02249D73B0000A967 /* DescriptionTableViewCell.xib in Resources */,
+				50D8A6F12249D73B0000A967 /* Raleway-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		50D8A60D2249D73B0000A967 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TofeeTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBF49904B26CC685EB230C36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1586,6 +1941,167 @@
 				50C5AB742206E8F3008BA500 /* ADDropDownMenuItemView.m in Sources */,
 				50C5AA7F2206E84C008BA500 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				50895FCC222159B000BEC1C8 /* ThankYouViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D8A60E2249D73B0000A967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D8A60F2249D73B0000A967 /* SlideNavigationController.m in Sources */,
+				50D8A6102249D73B0000A967 /* EDStarRating.m in Sources */,
+				50D8A6112249D73B0000A967 /* FSCalendarDelegationFactory.m in Sources */,
+				50D8A6122249D73B0000A967 /* MyListViewLayout.m in Sources */,
+				50D8A6132249D73B0000A967 /* UIColor+HexSupport.m in Sources */,
+				50D8A6142249D73B0000A967 /* View+MASAdditions.m in Sources */,
+				50D8A6152249D73B0000A967 /* NSString+JS.m in Sources */,
+				50D8A6162249D73B0000A967 /* HRColorInfoView.m in Sources */,
+				50D8A6172249D73B0000A967 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				50D8A6182249D73B0000A967 /* CircleAnimationView.m in Sources */,
+				50D8A6192249D73B0000A967 /* HRColorMapView.m in Sources */,
+				50D8A61A2249D73B0000A967 /* Song.m in Sources */,
+				50D8A61B2249D73B0000A967 /* MenuItemBenefitTableViewCell.m in Sources */,
+				50D8A61C2249D73B0000A967 /* DALinedTextView.m in Sources */,
+				50D8A61D2249D73B0000A967 /* RestCall.m in Sources */,
+				50D8A61E2249D73B0000A967 /* CategoryCollectionViewCell.m in Sources */,
+				50D8A61F2249D73B0000A967 /* QZDatePickerView.m in Sources */,
+				50D8A6202249D73B0000A967 /* Validator.m in Sources */,
+				50D8A6212249D73B0000A967 /* ModelBase.m in Sources */,
+				50D8A6222249D73B0000A967 /* JotTextView.m in Sources */,
+				50D8A6232249D73B0000A967 /* QZDateSelectorView.m in Sources */,
+				50D8A6242249D73B0000A967 /* UIView+Toast.m in Sources */,
+				50D8A6252249D73B0000A967 /* FSCalendarCell.m in Sources */,
+				50D8A6262249D73B0000A967 /* JotTouchBezier.m in Sources */,
+				50D8A6272249D73B0000A967 /* FSCalendarHeaderView.m in Sources */,
+				50D8A6282249D73B0000A967 /* SongsCollectionViewCell.m in Sources */,
+				50D8A6292249D73B0000A967 /* FileManager.m in Sources */,
+				50D8A62A2249D73B0000A967 /* MyListItemImageCollectionViewCell.m in Sources */,
+				50D8A62B2249D73B0000A967 /* UIImage+Jot.m in Sources */,
+				50D8A62C2249D73B0000A967 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				50D8A62D2249D73B0000A967 /* MASConstraintMaker.m in Sources */,
+				50D8A62E2249D73B0000A967 /* RegitersViewController.m in Sources */,
+				50D8A62F2249D73B0000A967 /* MASViewConstraint.m in Sources */,
+				50D8A6302249D73B0000A967 /* ChaterDetailView.m in Sources */,
+				50D8A6312249D73B0000A967 /* Quiz.m in Sources */,
+				50D8A6322249D73B0000A967 /* JotDrawingContainer.m in Sources */,
+				50D8A6332249D73B0000A967 /* FSCalendarWeekdayView.m in Sources */,
+				50D8A6342249D73B0000A967 /* GTMNSString+HTML.m in Sources */,
+				50D8A6352249D73B0000A967 /* FSCalendarScopeHandle.m in Sources */,
+				50D8A6362249D73B0000A967 /* MyListProfileCollectionViewCell.m in Sources */,
+				50D8A6372249D73B0000A967 /* FSCalendarDelegationProxy.m in Sources */,
+				50D8A6382249D73B0000A967 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				50D8A6392249D73B0000A967 /* CustomCollectionViewLayout.m in Sources */,
+				50D8A63A2249D73B0000A967 /* QuestionAnsweTableViewCell.m in Sources */,
+				50D8A63B2249D73B0000A967 /* BaseViewController.m in Sources */,
+				50D8A63C2249D73B0000A967 /* User.m in Sources */,
+				50D8A63D2249D73B0000A967 /* ViewController.m in Sources */,
+				50D8A63E2249D73B0000A967 /* FSCalendar+Deprecated.m in Sources */,
+				50D8A63F2249D73B0000A967 /* NSString+Measurements.m in Sources */,
+				50D8A6402249D73B0000A967 /* NSArray+MASAdditions.m in Sources */,
+				50D8A6412249D73B0000A967 /* FSCalendarAppearance.m in Sources */,
+				50D8A6422249D73B0000A967 /* FSCalendarStickyHeader.m in Sources */,
+				50D8A6432249D73B0000A967 /* TitleHeading.m in Sources */,
+				50D8A6442249D73B0000A967 /* VideoPlayerViewController.m in Sources */,
+				50D8A6452249D73B0000A967 /* StoryOneTableViewCell.m in Sources */,
+				50D8A6462249D73B0000A967 /* Reachability.m in Sources */,
+				50D8A6472249D73B0000A967 /* QuestionViewController.m in Sources */,
+				50D8A6482249D73B0000A967 /* DIYTableViewCell.m in Sources */,
+				50D8A6492249D73B0000A967 /* NSString+HTML.m in Sources */,
+				50D8A64A2249D73B0000A967 /* LoginViewController.m in Sources */,
+				50D8A64B2249D73B0000A967 /* UIImage+CoreGraphics.m in Sources */,
+				50D8A64C2249D73B0000A967 /* JTSImageInfo.m in Sources */,
+				50D8A64D2249D73B0000A967 /* HRColorCursor.m in Sources */,
+				50D8A64E2249D73B0000A967 /* JotDrawView.m in Sources */,
+				50D8A64F2249D73B0000A967 /* Question.m in Sources */,
+				50D8A6502249D73B0000A967 /* MASViewAttribute.m in Sources */,
+				50D8A6512249D73B0000A967 /* NCTextFieldcategory.m in Sources */,
+				50D8A6522249D73B0000A967 /* BransListingCollectionViewCell.m in Sources */,
+				50D8A6532249D73B0000A967 /* JotTouchPoint.m in Sources */,
+				50D8A6542249D73B0000A967 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				50D8A6552249D73B0000A967 /* IQDropDownTextField.m in Sources */,
+				50D8A6562249D73B0000A967 /* NIDropDown.m in Sources */,
+				50D8A6572249D73B0000A967 /* FSCalendarCollectionViewLayout.m in Sources */,
+				50D8A6582249D73B0000A967 /* UIView+MyUIView.m in Sources */,
+				50D8A6592249D73B0000A967 /* UIButton+MyButton.m in Sources */,
+				50D8A65A2249D73B0000A967 /* FSCalendarTransitionCoordinator.m in Sources */,
+				50D8A65B2249D73B0000A967 /* HRBrightnessSlider.m in Sources */,
+				50D8A65C2249D73B0000A967 /* AddMyOwnCollectionReusableView.m in Sources */,
+				50D8A65D2249D73B0000A967 /* TOActionSheet.m in Sources */,
+				50D8A65E2249D73B0000A967 /* ItemByCategoryCollectionViewCell.m in Sources */,
+				50D8A65F2249D73B0000A967 /* BottomCollectionReusableView.m in Sources */,
+				50D8A6602249D73B0000A967 /* NSArray+NullReplacement.m in Sources */,
+				50D8A6612249D73B0000A967 /* SongsListingViewController.m in Sources */,
+				50D8A6622249D73B0000A967 /* NSDate+Utilities.m in Sources */,
+				50D8A6632249D73B0000A967 /* DateFormatter.m in Sources */,
+				50D8A6642249D73B0000A967 /* ViewController+MASAdditions.m in Sources */,
+				50D8A6652249D73B0000A967 /* SymptomsDetailExplainationTableViewCell.m in Sources */,
+				50D8A6662249D73B0000A967 /* UIView+Toast.m in Sources */,
+				50D8A6672249D73B0000A967 /* StyleKit.m in Sources */,
+				50D8A6682249D73B0000A967 /* CustomerScrollView.m in Sources */,
+				50D8A6692249D73B0000A967 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
+				50D8A66A2249D73B0000A967 /* JotViewController.m in Sources */,
+				50D8A66B2249D73B0000A967 /* UIView+Snapshot.m in Sources */,
+				50D8A66C2249D73B0000A967 /* QuizzesLisingViewController.m in Sources */,
+				50D8A66D2249D73B0000A967 /* UILabel+MyLabel.m in Sources */,
+				50D8A66E2249D73B0000A967 /* MKDropdownMenu.m in Sources */,
+				50D8A66F2249D73B0000A967 /* RightMenuViewController.m in Sources */,
+				50D8A6702249D73B0000A967 /* FSCalendarCollectionView.m in Sources */,
+				50D8A6712249D73B0000A967 /* ManuViewController.m in Sources */,
+				50D8A6722249D73B0000A967 /* UIImage+LMExtension.m in Sources */,
+				50D8A6732249D73B0000A967 /* LessonsTableViewCell.m in Sources */,
+				50D8A6742249D73B0000A967 /* FSCalendarCalculator.m in Sources */,
+				50D8A6752249D73B0000A967 /* CropImageViewController.m in Sources */,
+				50D8A6762249D73B0000A967 /* UIImage+JTSImageEffects.m in Sources */,
+				50D8A6772249D73B0000A967 /* MASCompositeConstraint.m in Sources */,
+				50D8A6782249D73B0000A967 /* JotTextEditView.m in Sources */,
+				50D8A6792249D73B0000A967 /* ADDropDownMenuView.m in Sources */,
+				50D8A67A2249D73B0000A967 /* DYAlertPickView.m in Sources */,
+				50D8A67B2249D73B0000A967 /* UIApplication+JTSImageViewController.m in Sources */,
+				50D8A67C2249D73B0000A967 /* main.m in Sources */,
+				50D8A67D2249D73B0000A967 /* HRHSVColorUtil.m in Sources */,
+				50D8A67E2249D73B0000A967 /* BrandSearchCollectionReusableView.m in Sources */,
+				50D8A67F2249D73B0000A967 /* BrandSectionCollectionReusableView.m in Sources */,
+				50D8A6802249D73B0000A967 /* FSCalendar.m in Sources */,
+				50D8A6812249D73B0000A967 /* HowItWorksTableViewCell.m in Sources */,
+				50D8A6822249D73B0000A967 /* CustomAddToListView.m in Sources */,
+				50D8A6832249D73B0000A967 /* FSCalendarExtensions.m in Sources */,
+				50D8A6842249D73B0000A967 /* UITextField+MyTextField.m in Sources */,
+				50D8A6852249D73B0000A967 /* LMDropdownView.m in Sources */,
+				50D8A6862249D73B0000A967 /* AppDelegate.m in Sources */,
+				50D8A6872249D73B0000A967 /* JTSImageViewController.m in Sources */,
+				50D8A6882249D73B0000A967 /* CustomNavViewController.m in Sources */,
+				50D8A6892249D73B0000A967 /* MASConstraint.m in Sources */,
+				50D8A68A2249D73B0000A967 /* NSDictionary+NullReplacement.m in Sources */,
+				50D8A68B2249D73B0000A967 /* DatePickerSheet.m in Sources */,
+				50D8A68C2249D73B0000A967 /* QZDateSelectorToolBarView.m in Sources */,
+				50D8A68D2249D73B0000A967 /* TitleViewLogin.m in Sources */,
+				50D8A68E2249D73B0000A967 /* JTSAnimatedGIFUtility.m in Sources */,
+				50D8A68F2249D73B0000A967 /* MyScoreViewController.m in Sources */,
+				50D8A6902249D73B0000A967 /* UIImage+MyImage.m in Sources */,
+				50D8A6912249D73B0000A967 /* JSONKit.m in Sources */,
+				50D8A6922249D73B0000A967 /* XMLDictionary.m in Sources */,
+				50D8A6932249D73B0000A967 /* AFDropdownNotification.m in Sources */,
+				50D8A6942249D73B0000A967 /* CustomViewController.m in Sources */,
+				50D8A6952249D73B0000A967 /* MASLayoutConstraint.m in Sources */,
+				50D8A6962249D73B0000A967 /* DescriptionTableViewCell.m in Sources */,
+				50D8A6972249D73B0000A967 /* HRColorPickerView.m in Sources */,
+				50D8A6982249D73B0000A967 /* MyListSectionHeaderCollectionReusableView.m in Sources */,
+				50D8A6992249D73B0000A967 /* DragAndDropTableView.m in Sources */,
+				50D8A69A2249D73B0000A967 /* CustomFooterView.m in Sources */,
+				50D8A69B2249D73B0000A967 /* TextViewForSignUpform.m in Sources */,
+				50D8A69C2249D73B0000A967 /* FSCalendarConstants.m in Sources */,
+				50D8A69D2249D73B0000A967 /* NSString+JS.m in Sources */,
+				50D8A69E2249D73B0000A967 /* JxbScaleButton.m in Sources */,
+				50D8A69F2249D73B0000A967 /* JTSSimpleImageDownloader.m in Sources */,
+				50D8A6A02249D73B0000A967 /* TKImageView.m in Sources */,
+				50D8A6A12249D73B0000A967 /* CustomNavViewController2.m in Sources */,
+				50D8A6A22249D73B0000A967 /* RTIconButton.m in Sources */,
+				50D8A6A32249D73B0000A967 /* AudioController.m in Sources */,
+				50D8A6A42249D73B0000A967 /* NSString+MyString.m in Sources */,
+				50D8A6A52249D73B0000A967 /* HRBrightnessCursor.m in Sources */,
+				50D8A6A62249D73B0000A967 /* ADDropDownMenuItemView.m in Sources */,
+				50D8A6A72249D73B0000A967 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				50D8A6A82249D73B0000A967 /* ThankYouViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1775,6 +2291,58 @@
 			};
 			name = Release;
 		};
+		50D8A6F32249D73B0000A967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = YDMU2749GD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Support/PrefixHeader.pch";
+				INFOPLIST_FILE = "TofeeTV copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = QuizAppDevelopment;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50D8A6F42249D73B0000A967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = YDMU2749GD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Support/PrefixHeader.pch";
+				INFOPLIST_FILE = "TofeeTV copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = QuizAppDevelopment;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1792,6 +2360,15 @@
 			buildConfigurations = (
 				50C5AA242206E479008BA500 /* Debug */,
 				50C5AA252206E479008BA500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D8A6F22249D73B0000A967 /* Build configuration list for PBXNativeTarget "TofeeTV copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D8A6F32249D73B0000A967 /* Debug */,
+				50D8A6F42249D73B0000A967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
