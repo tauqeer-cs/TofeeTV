@@ -595,14 +595,9 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
              
              
              id dataObject = [result objectForKey:@"data"];
-             
-             
              dataObject = [dataObject dictionaryByReplacingNullsWithBlanks];
-             
              [defauls setObject:dataObject forKey:@"isFirstTimeSignUp"];
-             
              [defauls setObject:[result  objectForKey:@"access_token"] forKey:@"access_token"];
-             
              [defauls setObject:@"1" forKey:@"isFbLogin"];
              
              

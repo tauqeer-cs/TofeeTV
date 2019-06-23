@@ -36,6 +36,8 @@
 		50B8866422BE2C8B0099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
 		50B8866722BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
 		50B8866822BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
+		50BAF94A22BFE10E008ADE95 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BAF94822BFE10E008ADE95 /* ProfileViewController.m */; };
+		50BAF94B22BFE10E008ADE95 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BAF94922BFE10E008ADE95 /* ProfileViewController.xib */; };
 		50BDF01122BF8E70008804FE /* XLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00C22BF8E70008804FE /* XLCircle.m */; };
 		50BDF01222BF8E70008804FE /* XLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00C22BF8E70008804FE /* XLCircle.m */; };
 		50BDF01322BF8E70008804FE /* XLCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00D22BF8E70008804FE /* XLCircleProgress.m */; };
@@ -527,6 +529,9 @@
 		50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginOptionsViewController.m; sourceTree = "<group>"; };
 		50B8866522BE65870099AA59 /* SelectSongOrGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSongOrGameViewController.h; sourceTree = "<group>"; };
 		50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSongOrGameViewController.m; sourceTree = "<group>"; };
+		50BAF94722BFE10E008ADE95 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		50BAF94822BFE10E008ADE95 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		50BAF94922BFE10E008ADE95 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		50BDF00B22BF8E70008804FE /* XLCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircleProgress.h; sourceTree = "<group>"; };
 		50BDF00C22BF8E70008804FE /* XLCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircle.m; sourceTree = "<group>"; };
 		50BDF00D22BF8E70008804FE /* XLCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleProgress.m; sourceTree = "<group>"; };
@@ -1546,6 +1551,9 @@
 				50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */,
 				50B8866522BE65870099AA59 /* SelectSongOrGameViewController.h */,
 				50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */,
+				50BAF94722BFE10E008ADE95 /* ProfileViewController.h */,
+				50BAF94822BFE10E008ADE95 /* ProfileViewController.m */,
+				50BAF94922BFE10E008ADE95 /* ProfileViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1745,6 +1753,7 @@
 				504B265922211390007D376B /* QuestionViewController.xib in Resources */,
 				50C5AC7C2206E94B008BA500 /* CustomAddToListView.xib in Resources */,
 				50C5ACD22206E9F2008BA500 /* MavenPro-Medium.ttf in Resources */,
+				50BAF94B22BFE10E008ADE95 /* ProfileViewController.xib in Resources */,
 				50C5ACCE2206E9F2008BA500 /* MavenPro-Regular.ttf in Resources */,
 				50C5ACD32206E9F2008BA500 /* Raleway-LightItalic.ttf in Resources */,
 				50C5AC6B2206E94B008BA500 /* MyListProfileCollectionViewCell.xib in Resources */,
@@ -1891,6 +1900,7 @@
 				50C5AC8F2206E94B008BA500 /* MyListViewLayout.m in Sources */,
 				50C5AB432206E8F3008BA500 /* UIColor+HexSupport.m in Sources */,
 				50C5AB4C2206E8F3008BA500 /* View+MASAdditions.m in Sources */,
+				50BAF94A22BFE10E008ADE95 /* ProfileViewController.m in Sources */,
 				50C5AA762206E84B008BA500 /* NSString+JS.m in Sources */,
 				50C5AB562206E8F3008BA500 /* HRColorInfoView.m in Sources */,
 				50C5AA7E2206E84C008BA500 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,

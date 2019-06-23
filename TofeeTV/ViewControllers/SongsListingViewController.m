@@ -13,6 +13,7 @@
 #import "QuestionViewController.h"
 #import "SelectSongOrGameViewController.h"
 #import "ThankYouViewController.h"
+#import "ProfileViewController.h"
 
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -56,6 +57,11 @@
     if(index == 0 )
     {
         //show profile
+        
+        ProfileViewController * destination = [[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:destination animated:YES];
+        
     }
     else if (index == 1)
     {
@@ -69,6 +75,9 @@
         [currentUserDefault setObject:nil forKey:@"isFirstTimeSignUp"];
         
         //[defauls setObject:nil forKey:@""];
+        
+        [self changeTheViewRootControlletWithStoryBoardName:@"SignUp" withRootName:@"SignUpRoot"];
+
         
         //logout
     }
