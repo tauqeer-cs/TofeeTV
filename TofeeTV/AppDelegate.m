@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     
     NSUserDefaults *currentUserDefault = [NSUserDefaults standardUserDefaults];
-    
+    //isFirstTimeSignUp
     id isFirstTimeRunDone = [currentUserDefault objectForKey:@"isFirstTimeSignUp"];
     if (!isFirstTimeRunDone)
     {

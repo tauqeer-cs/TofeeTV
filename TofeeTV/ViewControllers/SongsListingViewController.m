@@ -37,7 +37,6 @@
     
     [self makeDropDownSelectionWithItemsArray:self.items withCustomView:nil];
     
-    
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     
@@ -63,6 +62,13 @@
         //remove ads
     }
     else  {
+        
+        
+        NSUserDefaults *currentUserDefault = [NSUserDefaults standardUserDefaults];
+        [currentUserDefault setObject:nil forKey:@"access_token"];
+        [currentUserDefault setObject:nil forKey:@"isFirstTimeSignUp"];
+        
+        //[defauls setObject:nil forKey:@""];
         
         //logout
     }
