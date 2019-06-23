@@ -17,20 +17,37 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblQuestionTextTwo;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerButons;
-@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *pillarViews;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnQuestion1;
 @property (weak, nonatomic) IBOutlet UIButton *btnQuestion2;
 @property (weak, nonatomic) IBOutlet UIButton *btnQuestion3;
 @property (weak, nonatomic) IBOutlet UIButton *btnQuestion4;
+@property (weak, nonatomic) IBOutlet UIView *viewReactionView;
+@property (weak, nonatomic) IBOutlet UIImageView *yayImage;
+
+@property (weak, nonatomic) IBOutlet UIImageView *viewNayImage;
+
+@property (nonatomic,strong) UIColor * defaultButtonColor;
 
 @end
 
 @implementation QuestionViewController
 
+-(void)enableAllButtons {
+
+    for (UIButton * currentButton in self.answerButons)
+    {
+        [currentButton setEnabled:YES];
+        currentButton.backgroundColor = self.defaultButtonColor;
+        
+    }
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.defaultButtonColor = self.btnQuestion1.backgroundColor;
     
     self.lblQuestionTextOne.text = @"Question one part one";
     self.lblQuestionTextTwo.text = @"Question on part two";
@@ -40,25 +57,16 @@
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:36];
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     
-    for (UIView * currentView in self.pillarViews) {
-        
-        [currentView setBackgroundColor:[UIColor clearColor]];
-    
-    }
+
     
     
     
     for (UIButton * currentButton in self.answerButons)
     {
-        
         [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:18]];
-        
     }
     [self setQuestionDataWithIndex];
-    
-    
-   // [self setQuestionDataWithIndex:self.questionIndex];
-    
+
 }
 -(void)setQuestionDataWithIndex
 {
@@ -115,12 +123,100 @@
 - (IBAction)btnQuestionTapped:(UIButton *)sender {
     
 
+ 
     int selectedAnswerIndex = sender.tag;
     
    Question * currentQuestion =  self.selectedSong.myQuestions[self.questionIndex];
     NSString * selectedAnswer = currentQuestion.optionsArray[selectedAnswerIndex];
     
     
+    if (![selectedAnswer isEqualToString:currentQuestion.answer]) {
+        
+        [UIView transitionWithView:self.viewReactionView
+                          duration:1.0
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+
+                            [sender setEnabled:NO];
+                            sender.backgroundColor = [UIColor lightGrayColor];
+                            
+                            [self.view bringSubviewToFront:self.viewReactionView];
+                            [self.viewReactionView setHidden:NO];
+                            [self.viewNayImage setHidden:NO];
+                            
+                        }
+                        completion:^(BOOL finished) {
+                            
+
+                            
+                            double delayInSeconds = 2.0;
+                            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                
+                                [UIView transitionWithView:self.viewReactionView
+                                                  duration:1.0
+                                                   options:UIViewAnimationOptionTransitionCrossDissolve
+                                                animations:^{
+                                                    
+                                                    [sender setEnabled:NO];
+                                                    
+                                                    [self.viewNayImage setHidden:YES];
+                                                    
+                                                }
+                                                completion:^(BOOL finished) {
+                                                    
+                                                    
+                                                    [self.viewReactionView setHidden:YES];
+                                                }];
+                                
+                            });
+                        }];
+        
+        
+        return;
+    }
+    
+    
+    [self enableAllButtons];
+    
+    
+    [UIView transitionWithView:self.viewReactionView
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        
+                        [sender setEnabled:NO];
+                        [self.view bringSubviewToFront:self.viewReactionView];
+                        [self.viewReactionView setHidden:NO];
+                        [self.yayImage setHidden:NO];
+                        
+                    }
+                    completion:^(BOOL finished) {
+                        
+                        
+                        
+                        double delayInSeconds = 2.0;
+                        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                            
+                            [UIView transitionWithView:self.viewReactionView
+                                              duration:1.0
+                                               options:UIViewAnimationOptionTransitionCrossDissolve
+                                            animations:^{
+                                                
+                                                [sender setEnabled:NO];
+                                                
+                                                [self.yayImage setHidden:YES];
+                                                
+                                            }
+                                            completion:^(BOOL finished) {
+                                                
+                                                
+                                                [self.viewReactionView setHidden:YES];
+                                            }];
+                            
+                        });
+                    }];
     
     
     [self showLoader];
@@ -171,14 +267,5 @@
 
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

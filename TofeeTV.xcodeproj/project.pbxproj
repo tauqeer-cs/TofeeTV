@@ -32,6 +32,10 @@
 		509E3A6C2210832900DAC9A5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */; };
 		509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */; };
 		50B3B4EA2247C0430064C4C2 /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */; };
+		50B8866322BE2C820099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
+		50B8866422BE2C8B0099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
+		50B8866722BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
+		50B8866822BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
 		50C5AA122206E477008BA500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA112206E477008BA500 /* AppDelegate.m */; };
 		50C5AA152206E477008BA500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA142206E477008BA500 /* ViewController.m */; };
 		50C5AA182206E477008BA500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA162206E477008BA500 /* Main.storyboard */; };
@@ -501,6 +505,10 @@
 		509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGWhattheTeacherWants.ttf; sourceTree = "<group>"; };
+		50B8866122BE2C820099AA59 /* LoginOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginOptionsViewController.h; sourceTree = "<group>"; };
+		50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginOptionsViewController.m; sourceTree = "<group>"; };
+		50B8866522BE65870099AA59 /* SelectSongOrGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSongOrGameViewController.h; sourceTree = "<group>"; };
+		50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSongOrGameViewController.m; sourceTree = "<group>"; };
 		50C5AA0D2206E477008BA500 /* TofeeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TofeeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C5AA102206E477008BA500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50C5AA112206E477008BA500 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1452,6 +1460,10 @@
 				507ECE662247537A0080ABB6 /* CustomNavViewController.m */,
 				507ECE68224758830080ABB6 /* CustomNavViewController2.h */,
 				507ECE69224758830080ABB6 /* CustomNavViewController2.m */,
+				50B8866122BE2C820099AA59 /* LoginOptionsViewController.h */,
+				50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */,
+				50B8866522BE65870099AA59 /* SelectSongOrGameViewController.h */,
+				50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1819,6 +1831,7 @@
 				50C5AA7C2206E84B008BA500 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				50C5AB492206E8F3008BA500 /* MASConstraintMaker.m in Sources */,
 				50749780220C8A5200B1924E /* RegitersViewController.m in Sources */,
+				50B8866722BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */,
 				50C5AB4E2206E8F3008BA500 /* MASViewConstraint.m in Sources */,
 				50C5AC572206E94B008BA500 /* ChaterDetailView.m in Sources */,
 				50545BD52219BEC80064DBF4 /* Quiz.m in Sources */,
@@ -1864,6 +1877,7 @@
 				50C5AA922206E84C008BA500 /* UIButton+MyButton.m in Sources */,
 				50C5AB692206E8F3008BA500 /* FSCalendarTransitionCoordinator.m in Sources */,
 				50C5AB592206E8F3008BA500 /* HRBrightnessSlider.m in Sources */,
+				50B8866322BE2C820099AA59 /* LoginOptionsViewController.m in Sources */,
 				50C5AC6F2206E94B008BA500 /* AddMyOwnCollectionReusableView.m in Sources */,
 				50C5AB522206E8F3008BA500 /* TOActionSheet.m in Sources */,
 				50C5AC612206E94B008BA500 /* ItemByCategoryCollectionViewCell.m in Sources */,
@@ -1980,6 +1994,7 @@
 				50D8A62C2249D73B0000A967 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				50D8A62D2249D73B0000A967 /* MASConstraintMaker.m in Sources */,
 				50D8A62E2249D73B0000A967 /* RegitersViewController.m in Sources */,
+				50B8866822BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */,
 				50D8A62F2249D73B0000A967 /* MASViewConstraint.m in Sources */,
 				50D8A6302249D73B0000A967 /* ChaterDetailView.m in Sources */,
 				50D8A6312249D73B0000A967 /* Quiz.m in Sources */,
@@ -2025,6 +2040,7 @@
 				50D8A6592249D73B0000A967 /* UIButton+MyButton.m in Sources */,
 				50D8A65A2249D73B0000A967 /* FSCalendarTransitionCoordinator.m in Sources */,
 				50D8A65B2249D73B0000A967 /* HRBrightnessSlider.m in Sources */,
+				50B8866422BE2C8B0099AA59 /* LoginOptionsViewController.m in Sources */,
 				50D8A65C2249D73B0000A967 /* AddMyOwnCollectionReusableView.m in Sources */,
 				50D8A65D2249D73B0000A967 /* TOActionSheet.m in Sources */,
 				50D8A65E2249D73B0000A967 /* ItemByCategoryCollectionViewCell.m in Sources */,

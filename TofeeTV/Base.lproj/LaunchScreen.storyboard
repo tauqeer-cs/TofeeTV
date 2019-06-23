@@ -30,26 +30,26 @@
                                 <rect key="frame" x="0.0" y="203.5" width="375" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seekho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-tx-dLt">
-                                        <rect key="frame" x="115" y="56" width="145" height="59"/>
+                                        <rect key="frame" x="103" y="56" width="169" height="59"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="59" id="U0c-14-Xkt"/>
-                                            <constraint firstAttribute="width" constant="145" id="err-T8-zeW"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="145" id="err-T8-zeW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="b9j-fX-ie1">
-                                        <rect key="frame" x="124.99999999999999" y="0.0" width="125.00000000000004" height="56"/>
+                                        <rect key="frame" x="125" y="0.0" width="125" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="125" id="Ial-Mx-P1R"/>
                                             <constraint firstAttribute="height" constant="56" id="pg2-XM-xxv"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TofeeTV kay Saath" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSM-75-7Q2">
-                                        <rect key="frame" x="32.5" y="123" width="310" height="48"/>
+                                        <rect key="frame" x="21.5" y="123" width="332" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="310" id="Hxb-5o-AIN"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="310" id="Hxb-5o-AIN"/>
                                             <constraint firstAttribute="height" constant="48" id="aB5-3c-aJJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="40"/>
@@ -88,7 +88,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appicon-background" width="2133.5" height="2133.5"/>
+        <image name="appicon-background" width="1708" height="3696"/>
         <image name="mainLogo" width="124.5" height="55.5"/>
     </resources>
 </document>

@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KGWhattheTeacherWants.ttf">
+            <string>KGWhattheTeacherWants</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Manu View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -173,7 +178,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bAx-7g-k34">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CIU-y3-ty9">
                                     <size key="itemSize" width="50" height="50"/>
@@ -248,9 +253,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uch-WH-r4f"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ThH-0Z-kz8"/>
                     <connections>
                         <outlet property="collectionView" destination="qJ4-K0-uIo" id="Aps-Yg-i9g"/>
                         <segue destination="msD-Y7-6Ve" kind="show" identifier="playVideo" id="SLZ-ce-sbQ"/>
+                        <segue destination="oFN-Ul-fKS" kind="show" identifier="showOptions" id="hbf-yh-sl2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXu-jg-xFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,16 +273,16 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.28310409190000002" green="0.6571135521" blue="0.79511803390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.99215686270000003" green="0.15686274510000001" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GoC-17-idn"/>
+                        <segue destination="0Zd-d5-WHO" kind="relationship" relationship="rootViewController" id="GFl-j3-gz8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcF-ub-UkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="344.80000000000001" y="-670.61469265367316"/>
+            <point key="canvasLocation" x="1038" y="-1124"/>
         </scene>
         <!--Custom Nav View Controller2-->
         <scene sceneID="ri8-dC-4yq">
@@ -292,12 +299,79 @@
             </objects>
             <point key="canvasLocation" x="3920.8000000000002" y="-1067.3163418290856"/>
         </scene>
+        <!--Select Song Or Game View Controller-->
+        <scene sceneID="CYH-IR-JAx">
+            <objects>
+                <viewController restorationIdentifier="SelectSongOrGameViewController" storyboardIdentifier="SelectSongOrGameViewController" id="oFN-Ul-fKS" customClass="SelectSongOrGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oqd-SR-gfe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon-background" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-NU-eYi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-0z-kpJ">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L47-DW-UuF">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="80"/>
+                                        <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-3a-xHW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Z7s-lj-VEY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="CxN-UH-k3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="AOI-3a-xHW" secondAttribute="trailing" id="Glf-zh-HCY"/>
+                                    <constraint firstItem="L47-DW-UuF" firstAttribute="top" secondItem="AOI-3a-xHW" secondAttribute="bottom" id="HIo-JQ-o4g"/>
+                                    <constraint firstItem="L47-DW-UuF" firstAttribute="leading" secondItem="uwt-0z-kpJ" secondAttribute="leading" id="b39-RV-oz4"/>
+                                    <constraint firstItem="AOI-3a-xHW" firstAttribute="top" secondItem="uwt-0z-kpJ" secondAttribute="top" id="cbO-qO-FVz"/>
+                                    <constraint firstItem="AOI-3a-xHW" firstAttribute="leading" secondItem="uwt-0z-kpJ" secondAttribute="leading" id="esJ-td-VjF"/>
+                                    <constraint firstAttribute="bottom" secondItem="L47-DW-UuF" secondAttribute="bottom" id="nVE-Lj-jKt"/>
+                                    <constraint firstAttribute="trailing" secondItem="L47-DW-UuF" secondAttribute="trailing" id="wr5-kc-tMK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uwt-0z-kpJ" firstAttribute="leading" secondItem="nJf-7Y-pj4" secondAttribute="leading" id="Bva-q6-JgH"/>
+                            <constraint firstItem="uwt-0z-kpJ" firstAttribute="trailing" secondItem="nJf-7Y-pj4" secondAttribute="trailing" id="FlE-tJ-ifa"/>
+                            <constraint firstItem="aMh-NU-eYi" firstAttribute="bottom" secondItem="nJf-7Y-pj4" secondAttribute="bottom" id="IqY-qk-tgT"/>
+                            <constraint firstItem="aMh-NU-eYi" firstAttribute="trailing" secondItem="nJf-7Y-pj4" secondAttribute="trailing" id="L5z-kd-Qre"/>
+                            <constraint firstItem="aMh-NU-eYi" firstAttribute="top" secondItem="Oqd-SR-gfe" secondAttribute="top" id="RBK-3b-OmB"/>
+                            <constraint firstItem="uwt-0z-kpJ" firstAttribute="centerY" secondItem="Oqd-SR-gfe" secondAttribute="centerY" constant="-20" id="aXl-VS-Qom"/>
+                            <constraint firstItem="aMh-NU-eYi" firstAttribute="leading" secondItem="nJf-7Y-pj4" secondAttribute="leading" id="eOc-jP-s3W"/>
+                            <constraint firstItem="uwt-0z-kpJ" firstAttribute="centerX" secondItem="Oqd-SR-gfe" secondAttribute="centerX" id="uDL-MZ-veO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nJf-7Y-pj4"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblGame" destination="L47-DW-UuF" id="yu9-nG-Fc6"/>
+                        <outlet property="lblSong" destination="AOI-3a-xHW" id="LxZ-9b-ax7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IT-Wt-G6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3508" y="-456.52173913043481"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="appicon-background" width="2133.5" height="2133.5"/>
+        <image name="appicon-background" width="1708" height="3696"/>
         <image name="bt-myscore" width="440" height="116.5"/>
         <image name="bt-plain" width="316.5" height="114.5"/>
         <image name="bt-play" width="248" height="126"/>
         <image name="bt-repeat" width="382" height="126.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GFl-j3-gz8"/>
+    </inferredMetricsTieBreakers>
 </document>

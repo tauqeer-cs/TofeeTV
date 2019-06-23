@@ -11,13 +11,14 @@
 #import "Song.h"
 #import "VideoPlayerViewController.h"
 #import "QuestionViewController.h"
+#import "SelectSongOrGameViewController.h"
 
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-//    //
 
 @property (nonatomic,strong) NSArray <Song *>* dataSource;
+
 
 @end
 
@@ -43,6 +44,7 @@
     
     
 }
+
 
 -(void)loadData
 {
@@ -109,6 +111,11 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
+    [self performSegueWithIdentifier:@"showOptions" sender:self];
+    
+    return;
  
     Song * currentItem = self.dataSource[indexPath.row];
     
@@ -181,14 +188,24 @@
 
     
 }
-/*
-#pragma mark - Navigation
+
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+
+    
+    
+    if ([segue.identifier isEqualToString:@"showOptions"])
+    {
+    
+        SelectSongOrGameViewController * destination = segue.destinationViewController;
+        destination.objectComing = self.dataSource[self.collectionView.indexPathsForSelectedItems[0].row];
+        
+        
+    }
+
 }
-*/
 
 @end
