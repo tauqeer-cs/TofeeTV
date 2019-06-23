@@ -12,12 +12,15 @@
 #import "VideoPlayerViewController.h"
 #import "QuestionViewController.h"
 #import "SelectSongOrGameViewController.h"
+#import "ThankYouViewController.h"
 
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (nonatomic,strong) NSArray <Song *>* dataSource;
+
+@property (nonatomic,strong) NSArray * items;
 
 
 @end
@@ -30,7 +33,11 @@
     
     self.title = @"Songs";
     
- 
+    self.items = @[@"Profile", @"Remove Ads", @"Logout"];
+    
+    [self makeDropDownSelectionWithItemsArray:self.items withCustomView:nil];
+    
+    
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     
@@ -42,6 +49,23 @@
     [self loadData];
     
     
+    
+}
+-(void)itemSelectedWithItesPath:(int)index
+{
+
+    if(index == 0 )
+    {
+        //show profile
+    }
+    else if (index == 1)
+    {
+        //remove ads
+    }
+    else  {
+        
+        //logout
+    }
     
 }
 
@@ -68,6 +92,16 @@
     [super viewDidAppear:animated];
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    
+    
+    
+    /*
+    ThankYouViewController * destination  = [[ThankYouViewController alloc] initWithNibName:@"ThankYouViewController" bundle:nil];
+    [self.navigationController showViewController:destination sender:nil];
+    */
+    
+    
     
 }
 

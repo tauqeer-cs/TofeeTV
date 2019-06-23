@@ -185,7 +185,6 @@
                        options:UIViewAnimationOptionTransitionCrossDissolve
                     animations:^{
                         
-                        [sender setEnabled:NO];
                         [self.view bringSubviewToFront:self.viewReactionView];
                         [self.viewReactionView setHidden:NO];
                         [self.yayImage setHidden:NO];
@@ -204,7 +203,6 @@
                                                options:UIViewAnimationOptionTransitionCrossDissolve
                                             animations:^{
                                                 
-                                                [sender setEnabled:NO];
                                                 
                                                 [self.yayImage setHidden:YES];
                                                 

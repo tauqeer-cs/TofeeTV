@@ -23,6 +23,7 @@
 #import "TextViewForSignUpform.h"
 #import "IAPHelper.h"
 #import "IAPShare.h"
+#import "PFNavigationDropdownMenu.h"
 
 
 @import AVKit;
@@ -51,6 +52,7 @@
 @property (weak, nonatomic) IBOutlet UIView *viewTitleContainer;
 -(void)showAlert:(NSString *)title message:(NSString *)currentMessage;
 -(void)showAlert:(NSString *)title message:(NSString *)currentMessage customTag:(int)currentTag;
+-(void)makeDropDownSelectionWithItemsArray:(NSArray *)items withCustomView:(UIView *)custom;
 
 - (NSString *)MD5:(NSString *)forItem;
 -(void)setTextFieldFont:(UITextField *)textField;
@@ -98,6 +100,7 @@
 
 -(void)slideUp:(int)scale;
 -(void)slideBackToNormal;
+-(void)itemSelectedWithItesPath:(int)index;
 
 
 -(void)makeCallToNumber:(NSString *)number;

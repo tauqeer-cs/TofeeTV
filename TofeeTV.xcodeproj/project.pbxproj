@@ -36,6 +36,24 @@
 		50B8866422BE2C8B0099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
 		50B8866722BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
 		50B8866822BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
+		50BDF01122BF8E70008804FE /* XLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00C22BF8E70008804FE /* XLCircle.m */; };
+		50BDF01222BF8E70008804FE /* XLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00C22BF8E70008804FE /* XLCircle.m */; };
+		50BDF01322BF8E70008804FE /* XLCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00D22BF8E70008804FE /* XLCircleProgress.m */; };
+		50BDF01422BF8E70008804FE /* XLCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF00D22BF8E70008804FE /* XLCircleProgress.m */; };
+		50BDF01522BF8E70008804FE /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BDF01022BF8E70008804FE /* endPoint.png */; };
+		50BDF01622BF8E70008804FE /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BDF01022BF8E70008804FE /* endPoint.png */; };
+		50BDF02322BFD1A1008804FE /* PFTableCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01822BFD1A1008804FE /* PFTableCellContentView.m */; };
+		50BDF02422BFD1A1008804FE /* PFTableCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01822BFD1A1008804FE /* PFTableCellContentView.m */; };
+		50BDF02522BFD1A1008804FE /* PFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01922BFD1A1008804FE /* PFConfiguration.m */; };
+		50BDF02622BFD1A1008804FE /* PFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01922BFD1A1008804FE /* PFConfiguration.m */; };
+		50BDF02722BFD1A1008804FE /* PFNavigationDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01A22BFD1A1008804FE /* PFNavigationDropdownMenu.m */; };
+		50BDF02822BFD1A1008804FE /* PFNavigationDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01A22BFD1A1008804FE /* PFNavigationDropdownMenu.m */; };
+		50BDF02922BFD1A1008804FE /* PFTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01B22BFD1A1008804FE /* PFTableView.m */; };
+		50BDF02A22BFD1A1008804FE /* PFTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF01B22BFD1A1008804FE /* PFTableView.m */; };
+		50BDF02B22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50BDF02022BFD1A1008804FE /* PFNavigationDropdownMenu.bundle */; };
+		50BDF02C22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50BDF02022BFD1A1008804FE /* PFNavigationDropdownMenu.bundle */; };
+		50BDF02D22BFD1A1008804FE /* PFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF02122BFD1A1008804FE /* PFTableViewCell.m */; };
+		50BDF02E22BFD1A1008804FE /* PFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BDF02122BFD1A1008804FE /* PFTableViewCell.m */; };
 		50C5AA122206E477008BA500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA112206E477008BA500 /* AppDelegate.m */; };
 		50C5AA152206E477008BA500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA142206E477008BA500 /* ViewController.m */; };
 		50C5AA182206E477008BA500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA162206E477008BA500 /* Main.storyboard */; };
@@ -509,6 +527,22 @@
 		50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginOptionsViewController.m; sourceTree = "<group>"; };
 		50B8866522BE65870099AA59 /* SelectSongOrGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSongOrGameViewController.h; sourceTree = "<group>"; };
 		50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSongOrGameViewController.m; sourceTree = "<group>"; };
+		50BDF00B22BF8E70008804FE /* XLCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircleProgress.h; sourceTree = "<group>"; };
+		50BDF00C22BF8E70008804FE /* XLCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircle.m; sourceTree = "<group>"; };
+		50BDF00D22BF8E70008804FE /* XLCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleProgress.m; sourceTree = "<group>"; };
+		50BDF00E22BF8E70008804FE /* XLCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircle.h; sourceTree = "<group>"; };
+		50BDF01022BF8E70008804FE /* endPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endPoint.png; sourceTree = "<group>"; };
+		50BDF01822BFD1A1008804FE /* PFTableCellContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTableCellContentView.m; sourceTree = "<group>"; };
+		50BDF01922BFD1A1008804FE /* PFConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFConfiguration.m; sourceTree = "<group>"; };
+		50BDF01A22BFD1A1008804FE /* PFNavigationDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFNavigationDropdownMenu.m; sourceTree = "<group>"; };
+		50BDF01B22BFD1A1008804FE /* PFTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTableView.m; sourceTree = "<group>"; };
+		50BDF01C22BFD1A1008804FE /* PFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTableViewCell.h; sourceTree = "<group>"; };
+		50BDF01D22BFD1A1008804FE /* PFNavigationDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFNavigationDropdownMenu.h; sourceTree = "<group>"; };
+		50BDF01E22BFD1A1008804FE /* PFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFConfiguration.h; sourceTree = "<group>"; };
+		50BDF01F22BFD1A1008804FE /* PFTableCellContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTableCellContentView.h; sourceTree = "<group>"; };
+		50BDF02022BFD1A1008804FE /* PFNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PFNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
+		50BDF02122BFD1A1008804FE /* PFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTableViewCell.m; sourceTree = "<group>"; };
+		50BDF02222BFD1A1008804FE /* PFTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTableView.h; sourceTree = "<group>"; };
 		50C5AA0D2206E477008BA500 /* TofeeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TofeeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C5AA102206E477008BA500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50C5AA112206E477008BA500 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -891,6 +925,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50BDF00922BF8E70008804FE /* XLCircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				50BDF00A22BF8E70008804FE /* Class */,
+				50BDF00F22BF8E70008804FE /* Resource */,
+			);
+			path = XLCircleProgress;
+			sourceTree = "<group>";
+		};
+		50BDF00A22BF8E70008804FE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				50BDF00B22BF8E70008804FE /* XLCircleProgress.h */,
+				50BDF00C22BF8E70008804FE /* XLCircle.m */,
+				50BDF00D22BF8E70008804FE /* XLCircleProgress.m */,
+				50BDF00E22BF8E70008804FE /* XLCircle.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		50BDF00F22BF8E70008804FE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				50BDF01022BF8E70008804FE /* endPoint.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		50BDF01722BFD1A1008804FE /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				50BDF01822BFD1A1008804FE /* PFTableCellContentView.m */,
+				50BDF01922BFD1A1008804FE /* PFConfiguration.m */,
+				50BDF01A22BFD1A1008804FE /* PFNavigationDropdownMenu.m */,
+				50BDF01B22BFD1A1008804FE /* PFTableView.m */,
+				50BDF01C22BFD1A1008804FE /* PFTableViewCell.h */,
+				50BDF01D22BFD1A1008804FE /* PFNavigationDropdownMenu.h */,
+				50BDF01E22BFD1A1008804FE /* PFConfiguration.h */,
+				50BDF01F22BFD1A1008804FE /* PFTableCellContentView.h */,
+				50BDF02022BFD1A1008804FE /* PFNavigationDropdownMenu.bundle */,
+				50BDF02122BFD1A1008804FE /* PFTableViewCell.m */,
+				50BDF02222BFD1A1008804FE /* PFTableView.h */,
+			);
+			path = Dropdown;
+			sourceTree = "<group>";
+		};
 		50C5AA042206E477008BA500 = {
 			isa = PBXGroup;
 			children = (
@@ -937,6 +1017,7 @@
 		50C5AA292206E84B008BA500 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				50BDF01722BFD1A1008804FE /* Dropdown */,
 				50C5AA2A2206E84B008BA500 /* NSString+JS.m */,
 				50C5AA2B2206E84B008BA500 /* FileManager.h */,
 				50C5AA2C2206E84B008BA500 /* AFDropdownNotification.m */,
@@ -1050,6 +1131,7 @@
 		50C5AA9B2206E8F2008BA500 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				50BDF00922BF8E70008804FE /* XLCircleProgress */,
 				50C5AA9C2206E8F2008BA500 /* TOActionSheet.h */,
 				50C5AA9D2206E8F2008BA500 /* DragAndDropTableView */,
 				50C5AAA22206E8F2008BA500 /* NIDropDown.h */,
@@ -1644,11 +1726,13 @@
 				50C5AC8E2206E94B008BA500 /* ChaterDetailView.xib in Resources */,
 				50C5AC7D2206E94B008BA500 /* SymptomsDetailExplainationTableViewCell.xib in Resources */,
 				50C5ACC32206E9F2008BA500 /* Candida-Std-Roman_9171.ttf in Resources */,
+				50BDF01522BF8E70008804FE /* endPoint.png in Resources */,
 				50C5ACC92206E9F2008BA500 /* Raleway-Regular.ttf in Resources */,
 				50C5AC7E2206E94B008BA500 /* QuestionAnsweTableViewCell2.xib in Resources */,
 				50C5AC5C2206E94B008BA500 /* ItemByCategoryCollectionViewCell.xib in Resources */,
 				50C5ACDA2206E9F2008BA500 /* Raleway-Bold.ttf in Resources */,
 				50C5AC6A2206E94B008BA500 /* MyListItemImageCollectionViewCell.xib in Resources */,
+				50BDF02B22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */,
 				50C5ACC22206E9F2008BA500 /* Raleway-Medium.ttf in Resources */,
 				50C5AC672206E94B008BA500 /* BransListingCollectionViewCell2.xib in Resources */,
 				50C5AC882206E94B008BA500 /* HowItWorksTableViewCell.xib in Resources */,
@@ -1717,11 +1801,13 @@
 				50D8A6D62249D73B0000A967 /* ChaterDetailView.xib in Resources */,
 				50D8A6D72249D73B0000A967 /* SymptomsDetailExplainationTableViewCell.xib in Resources */,
 				50D8A6D82249D73B0000A967 /* Candida-Std-Roman_9171.ttf in Resources */,
+				50BDF01622BF8E70008804FE /* endPoint.png in Resources */,
 				50D8A6D92249D73B0000A967 /* Raleway-Regular.ttf in Resources */,
 				50D8A6DA2249D73B0000A967 /* QuestionAnsweTableViewCell2.xib in Resources */,
 				50D8A6DB2249D73B0000A967 /* ItemByCategoryCollectionViewCell.xib in Resources */,
 				50D8A6DC2249D73B0000A967 /* Raleway-Bold.ttf in Resources */,
 				50D8A6DD2249D73B0000A967 /* MyListItemImageCollectionViewCell.xib in Resources */,
+				50BDF02C22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */,
 				50D8A6DE2249D73B0000A967 /* Raleway-Medium.ttf in Resources */,
 				50D8A6DF2249D73B0000A967 /* BransListingCollectionViewCell2.xib in Resources */,
 				50D8A6E02249D73B0000A967 /* HowItWorksTableViewCell.xib in Resources */,
@@ -1821,12 +1907,14 @@
 				50C5AB3A2206E8F3008BA500 /* JotTextView.m in Sources */,
 				50C5AB412206E8F3008BA500 /* QZDateSelectorView.m in Sources */,
 				50C5AB732206E8F3008BA500 /* UIView+Toast.m in Sources */,
+				50BDF02D22BFD1A1008804FE /* PFTableViewCell.m in Sources */,
 				50C5AB5E2206E8F3008BA500 /* FSCalendarCell.m in Sources */,
 				50C5AB3C2206E8F3008BA500 /* JotTouchBezier.m in Sources */,
 				50C5AB682206E8F3008BA500 /* FSCalendarHeaderView.m in Sources */,
 				509AF0DC220B366D00EB8CB2 /* SongsCollectionViewCell.m in Sources */,
 				50C5AA882206E84C008BA500 /* FileManager.m in Sources */,
 				50C5AC622206E94B008BA500 /* MyListItemImageCollectionViewCell.m in Sources */,
+				50BDF02722BFD1A1008804FE /* PFNavigationDropdownMenu.m in Sources */,
 				50C5AB392206E8F3008BA500 /* UIImage+Jot.m in Sources */,
 				50C5AA7C2206E84B008BA500 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				50C5AB492206E8F3008BA500 /* MASConstraintMaker.m in Sources */,
@@ -1842,6 +1930,7 @@
 				50C5AC662206E94B008BA500 /* MyListProfileCollectionViewCell.m in Sources */,
 				50C5AB5C2206E8F3008BA500 /* FSCalendarDelegationProxy.m in Sources */,
 				50C5AA7D2206E84B008BA500 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				50BDF02322BFD1A1008804FE /* PFTableCellContentView.m in Sources */,
 				50C5AC302206E94B008BA500 /* CustomCollectionViewLayout.m in Sources */,
 				50C5AC812206E94B008BA500 /* QuestionAnsweTableViewCell.m in Sources */,
 				50C5AC962206E97E008BA500 /* BaseViewController.m in Sources */,
@@ -1853,6 +1942,7 @@
 				50C5AB6A2206E8F3008BA500 /* FSCalendarAppearance.m in Sources */,
 				50C5AB5F2206E8F3008BA500 /* FSCalendarStickyHeader.m in Sources */,
 				50C5AC8D2206E94B008BA500 /* TitleHeading.m in Sources */,
+				50BDF01122BF8E70008804FE /* XLCircle.m in Sources */,
 				50E56AEC221C5B86008A1F81 /* VideoPlayerViewController.m in Sources */,
 				50C5AC832206E94B008BA500 /* StoryOneTableViewCell.m in Sources */,
 				50C5AA912206E84C008BA500 /* Reachability.m in Sources */,
@@ -1868,10 +1958,12 @@
 				50C5AB4F2206E8F3008BA500 /* MASViewAttribute.m in Sources */,
 				50C5AB422206E8F3008BA500 /* NCTextFieldcategory.m in Sources */,
 				50C5AC5F2206E94B008BA500 /* BransListingCollectionViewCell.m in Sources */,
+				50BDF01322BF8E70008804FE /* XLCircleProgress.m in Sources */,
 				50C5AB3B2206E8F3008BA500 /* JotTouchPoint.m in Sources */,
 				50C5AB462206E8F3008BA500 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				50C5AB722206E8F3008BA500 /* IQDropDownTextField.m in Sources */,
 				50C5AB6B2206E8F3008BA500 /* NIDropDown.m in Sources */,
+				50BDF02922BFD1A1008804FE /* PFTableView.m in Sources */,
 				50C5AB612206E8F3008BA500 /* FSCalendarCollectionViewLayout.m in Sources */,
 				50C5AA962206E84C008BA500 /* UIView+MyUIView.m in Sources */,
 				50C5AA922206E84C008BA500 /* UIButton+MyButton.m in Sources */,
@@ -1950,6 +2042,7 @@
 				507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */,
 				50C5AA872206E84C008BA500 /* RTIconButton.m in Sources */,
 				50368D102225AD7C00A05482 /* AudioController.m in Sources */,
+				50BDF02522BFD1A1008804FE /* PFConfiguration.m in Sources */,
 				50C5AA8F2206E84C008BA500 /* NSString+MyString.m in Sources */,
 				50C5AB552206E8F3008BA500 /* HRBrightnessCursor.m in Sources */,
 				50C5AB742206E8F3008BA500 /* ADDropDownMenuItemView.m in Sources */,
@@ -1984,12 +2077,14 @@
 				50D8A6222249D73B0000A967 /* JotTextView.m in Sources */,
 				50D8A6232249D73B0000A967 /* QZDateSelectorView.m in Sources */,
 				50D8A6242249D73B0000A967 /* UIView+Toast.m in Sources */,
+				50BDF02E22BFD1A1008804FE /* PFTableViewCell.m in Sources */,
 				50D8A6252249D73B0000A967 /* FSCalendarCell.m in Sources */,
 				50D8A6262249D73B0000A967 /* JotTouchBezier.m in Sources */,
 				50D8A6272249D73B0000A967 /* FSCalendarHeaderView.m in Sources */,
 				50D8A6282249D73B0000A967 /* SongsCollectionViewCell.m in Sources */,
 				50D8A6292249D73B0000A967 /* FileManager.m in Sources */,
 				50D8A62A2249D73B0000A967 /* MyListItemImageCollectionViewCell.m in Sources */,
+				50BDF02822BFD1A1008804FE /* PFNavigationDropdownMenu.m in Sources */,
 				50D8A62B2249D73B0000A967 /* UIImage+Jot.m in Sources */,
 				50D8A62C2249D73B0000A967 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				50D8A62D2249D73B0000A967 /* MASConstraintMaker.m in Sources */,
@@ -2005,6 +2100,7 @@
 				50D8A6362249D73B0000A967 /* MyListProfileCollectionViewCell.m in Sources */,
 				50D8A6372249D73B0000A967 /* FSCalendarDelegationProxy.m in Sources */,
 				50D8A6382249D73B0000A967 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				50BDF02422BFD1A1008804FE /* PFTableCellContentView.m in Sources */,
 				50D8A6392249D73B0000A967 /* CustomCollectionViewLayout.m in Sources */,
 				50D8A63A2249D73B0000A967 /* QuestionAnsweTableViewCell.m in Sources */,
 				50D8A63B2249D73B0000A967 /* BaseViewController.m in Sources */,
@@ -2016,6 +2112,7 @@
 				50D8A6412249D73B0000A967 /* FSCalendarAppearance.m in Sources */,
 				50D8A6422249D73B0000A967 /* FSCalendarStickyHeader.m in Sources */,
 				50D8A6432249D73B0000A967 /* TitleHeading.m in Sources */,
+				50BDF01222BF8E70008804FE /* XLCircle.m in Sources */,
 				50D8A6442249D73B0000A967 /* VideoPlayerViewController.m in Sources */,
 				50D8A6452249D73B0000A967 /* StoryOneTableViewCell.m in Sources */,
 				50D8A6462249D73B0000A967 /* Reachability.m in Sources */,
@@ -2031,10 +2128,12 @@
 				50D8A6502249D73B0000A967 /* MASViewAttribute.m in Sources */,
 				50D8A6512249D73B0000A967 /* NCTextFieldcategory.m in Sources */,
 				50D8A6522249D73B0000A967 /* BransListingCollectionViewCell.m in Sources */,
+				50BDF01422BF8E70008804FE /* XLCircleProgress.m in Sources */,
 				50D8A6532249D73B0000A967 /* JotTouchPoint.m in Sources */,
 				50D8A6542249D73B0000A967 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				50D8A6552249D73B0000A967 /* IQDropDownTextField.m in Sources */,
 				50D8A6562249D73B0000A967 /* NIDropDown.m in Sources */,
+				50BDF02A22BFD1A1008804FE /* PFTableView.m in Sources */,
 				50D8A6572249D73B0000A967 /* FSCalendarCollectionViewLayout.m in Sources */,
 				50D8A6582249D73B0000A967 /* UIView+MyUIView.m in Sources */,
 				50D8A6592249D73B0000A967 /* UIButton+MyButton.m in Sources */,
@@ -2113,6 +2212,7 @@
 				50D8A6A12249D73B0000A967 /* CustomNavViewController2.m in Sources */,
 				50D8A6A22249D73B0000A967 /* RTIconButton.m in Sources */,
 				50D8A6A32249D73B0000A967 /* AudioController.m in Sources */,
+				50BDF02622BFD1A1008804FE /* PFConfiguration.m in Sources */,
 				50D8A6A42249D73B0000A967 /* NSString+MyString.m in Sources */,
 				50D8A6A52249D73B0000A967 /* HRBrightnessCursor.m in Sources */,
 				50D8A6A62249D73B0000A967 /* ADDropDownMenuItemView.m in Sources */,

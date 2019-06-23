@@ -1016,6 +1016,63 @@
     
 }
 
+-(void)makeDropDownSelectionWithItemsArray:(NSArray *)items withCustomView:(UIView *)custom
+{
+    if (!custom) {
+        
+        self.navigationItem.rightBarButtonItem =  [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"drobdownSegments"] style:UIBarButtonItemStylePlain target:self action:@selector(btnTopButtonTapped)];
+        
+    }
+    
+    
+    PFNavigationDropdownMenu *menuView = [[PFNavigationDropdownMenu alloc] initWithFrame:CGRectMake(0, 0, 70, 44)
+                                                                                   title:items.firstObject
+                                                                                   items:items
+                                                                           containerView:self.view];
+    menuView.cellHeight = 50;
+    menuView.cellBackgroundColor = self.navigationController.navigationBar.barTintColor;
+    menuView.cellTextLabelColor = [UIColor whiteColor];
+    
+    menuView.cellSelectionColor = [UIColor whiteColor];
+    
+    menuView.cellTextLabelFont = [UIFont fontWithName:FontRegular size:17];
+    menuView.arrowPadding = 15;
+    menuView.animationDuration = 0.5f;
+    menuView.maskBackgroundColor = [UIColor whiteColor];
+    menuView.maskBackgroundOpacity = 0.5f;
+    
+    
+    menuView.didSelectItemAtIndexHandler = ^(NSUInteger indexPath){
+        NSLog(@"Did select item at index: %ld", indexPath);
+        
+        [self itemSelectedWithItesPath:indexPath];
+        
+        
+    };
+    if (custom) {
+        
+        
+        
+        [menuView.menuArrow setHidden:YES];
+        [menuView.menuTitle setHidden:YES];
+        
+        [custom.superview addSubview:menuView];
+        menuView.frame = custom.frame;
+        
+    }
+    else
+    {
+        self.navigationItem.rightBarButtonItem.customView = menuView;
+        
+    }
+    
+}
+-(void)itemSelectedWithItesPath:(int)index
+{
+    
+    
+}
+
 -(void)insertSpinnerOfStyle:(RTSpinKitViewStyle)style
             backgroundColor:(UIColor*)backgroundColor
                       label:(NSString *)labelString
@@ -1029,7 +1086,8 @@
     [self.spinner startAnimating];
     
     
-    self.panel = [[UIView alloc] initWithFrame:CGRectOffset(self.view.bounds, 0.0, 0.0)];
+    
+    self.panel = [[UIView alloc] initWithFrame:CGRectOffset([UIScreen mainScreen].bounds, 0.0, 0.0)];
     
     
     self.panel.backgroundColor = backgroundColor;
