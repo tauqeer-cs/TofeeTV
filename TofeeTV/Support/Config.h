@@ -151,7 +151,7 @@
 #define DefaultGreen [UIColor colorWithRed:3.0/255.0 green:134.0/255.0 blue:0.0/255.0 alpha:1.0]
 #define ShadedLightGray [UIColor colorWithRed:246.0/255.0 green:246.0/255.0 blue:246/255.0 alpha:1.0]
 #define DefaultPink [UIColor colorWithRed:253.0/255.0 green:40.0/255.0 blue:252/255.0 alpha:1.0]
-
+#define DefaultPink2 [UIColor colorWithRed:253.0/255.0 green:40.0/255.0 blue:252/255.0 alpha:0.8]
 
 #define BlueBorderColor [UIColor colorWithRed:63.0/255.0 green:168.0/255.0 blue:186.0/255.0 alpha:1.0]
 

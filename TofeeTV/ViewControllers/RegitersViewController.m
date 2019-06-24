@@ -201,10 +201,14 @@
     } withFailueHandler:^{
         
         [self hideLoader];
+
+                [self showAlert:@"Error" message:@"Unable to create user."];
         
     } withAlreadyExistsHandler:^(id result) {
         
-        [self showAlert:@"Error" message:@"User already exists"];
+        [self hideLoader];
+        
+        [self showAlert:@"Error" message:@"User already exists."];
     }];
     
     

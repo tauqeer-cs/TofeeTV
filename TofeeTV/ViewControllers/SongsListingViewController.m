@@ -142,8 +142,12 @@
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SongsCollectionViewCell *currentCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellSongs" forIndexPath:indexPath];
-    currentCell.backgroundColor = self.dataSource[indexPath.row].itemColor;
+    currentCell.backgroundColor = DefaultPink2;
+    
+    
     currentCell.lblTitle.text = self.dataSource[indexPath.row].name;
+    currentCell.contentView.layer.borderWidth = 2.0;
+    currentCell.contentView.layer.borderColor = [UIColor whiteColor].CGColor;
     
     [currentCell.lockedImage setHidden:!self.dataSource[indexPath.row].canISeeThis];
     
