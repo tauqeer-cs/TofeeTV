@@ -35,7 +35,7 @@
                     <rect key="frame" x="62" y="100" width="290" height="180"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKq-7d-CLL">
-                            <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="180"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbu-27-PKn">
                                     <rect key="frame" x="0.0" y="4" width="290" height="52"/>
@@ -70,14 +70,15 @@
                                         <constraint firstItem="Oms-Kb-odF" firstAttribute="centerY" secondItem="Qbu-27-PKn" secondAttribute="centerY" id="WlY-aT-WNh"/>
                                         <constraint firstAttribute="bottom" secondItem="RwO-WS-ddL" secondAttribute="bottom" id="cVA-NE-azO"/>
                                         <constraint firstItem="RwO-WS-ddL" firstAttribute="top" secondItem="Qbu-27-PKn" secondAttribute="top" id="iib-oM-hFs"/>
+                                        <constraint firstAttribute="height" constant="52" id="k0W-HV-VhR"/>
                                         <constraint firstItem="6cb-f3-guT" firstAttribute="width" secondItem="Qbu-27-PKn" secondAttribute="width" multiplier="0.1" id="yPN-Qx-nRz"/>
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHt-9A-cxG">
-                                    <rect key="frame" x="8" y="124" width="142" height="35"/>
+                                    <rect key="frame" x="8" y="124" width="156" height="35"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="AXT-8s-QdP"/>
-                                        <constraint firstAttribute="width" constant="142" id="Ooo-dl-Y2A"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="Ooo-dl-Y2A"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="19"/>
                                     <state key="normal" title="Change Password"/>
@@ -122,7 +123,6 @@
                             <constraints>
                                 <constraint firstItem="mgM-oj-yCj" firstAttribute="leading" secondItem="jKq-7d-CLL" secondAttribute="leading" id="1SZ-zh-DMB"/>
                                 <constraint firstItem="ies-Kb-PAc" firstAttribute="height" secondItem="6cb-f3-guT" secondAttribute="height" id="29f-Mo-iLR"/>
-                                <constraint firstAttribute="bottom" secondItem="Qbu-27-PKn" secondAttribute="bottom" constant="4" id="5Tc-Ky-JDQ"/>
                                 <constraint firstAttribute="trailing" secondItem="Qbu-27-PKn" secondAttribute="trailing" id="5Vc-oq-Adp"/>
                                 <constraint firstItem="HHt-9A-cxG" firstAttribute="leading" secondItem="jKq-7d-CLL" secondAttribute="leading" constant="8" id="7HG-kZ-Efq"/>
                                 <constraint firstItem="ies-Kb-PAc" firstAttribute="width" secondItem="6cb-f3-guT" secondAttribute="width" id="7qA-H3-6ql"/>
@@ -131,7 +131,7 @@
                                 <constraint firstAttribute="trailing" secondItem="mgM-oj-yCj" secondAttribute="trailing" id="hhB-Jb-NuT"/>
                                 <constraint firstItem="mgM-oj-yCj" firstAttribute="top" secondItem="Qbu-27-PKn" secondAttribute="bottom" constant="8" id="shb-Tv-Vux"/>
                                 <constraint firstItem="Qbu-27-PKn" firstAttribute="leading" secondItem="jKq-7d-CLL" secondAttribute="leading" id="wQP-Ii-KMF"/>
-                                <constraint firstAttribute="height" constant="60" id="zl5-dw-aJ2"/>
+                                <constraint firstAttribute="height" constant="180" id="zl5-dw-aJ2"/>
                             </constraints>
                         </view>
                     </subviews>

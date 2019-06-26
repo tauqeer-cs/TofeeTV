@@ -40,6 +40,7 @@
     self.txtEmail.text = self.myEmail;
     
     
+    [self showLoader];
     
     [Song callGetScoreWithId:0
               withComplition:^(id  _Nonnull result) {
