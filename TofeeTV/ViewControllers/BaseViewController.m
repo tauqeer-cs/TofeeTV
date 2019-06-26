@@ -707,9 +707,11 @@
     
 
     if ([[self.userDefaults objectForKey:@"isFirstTimeSignUp"] isKindOfClass:[NSArray class]]) {
-        return [[[self.userDefaults objectForKey:@"isFirstTimeSignUp"] firstObject] objectForKey:@"first_name"];
+        return [[[self.userDefaults objectForKey:@"isFirstTimeSignUp"] firstObject] objectForKey:@"name"];
     }
-    return [[self.userDefaults objectForKey:@"isFirstTimeSignUp"] objectForKey:@"first_name"];
+    NSLog(@"%@",[self.userDefaults objectForKey:@"isFirstTimeSignUp"]);
+    
+    return [[self.userDefaults objectForKey:@"isFirstTimeSignUp"] objectForKey:@"name"];
     
 }
 
