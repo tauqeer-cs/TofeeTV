@@ -57,6 +57,7 @@
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:36];
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     
+    self.title = @"Game";
 
     
     

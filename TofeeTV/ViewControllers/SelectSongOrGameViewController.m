@@ -24,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"Select option";
     [self setTouchMethodWithLabel:self.lblSong withSelector:@selector(songItemTapped)];
     [self setTouchMethodWithLabel:self.lblGame withSelector:@selector(gameLabelTapped)];
     
