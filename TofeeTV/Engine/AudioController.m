@@ -23,12 +23,29 @@
 {
     self = [super init];
     if (self) {
+        self.fileName = @"Barish";
+        self.fileType = @"mp3";
         [self configureAudioSession];
         [self configureAudioPlayer];
         [self configureSystemSound];
     }
     return self;
 }
+
+- (instancetype)initWithFileName:(NSString *)fileName withFileType:(NSString *)fileType
+{
+    self = [super init];
+    if (self) {
+        self.fileName = fileName;
+        self.fileType = fileType;
+        
+        [self configureAudioSession];
+        [self configureAudioPlayer];
+        [self configureSystemSound];
+    }
+    return self;
+}
+
 
 - (void)tryPlayMusic {
     // If background music or other music is already playing, nothing more to do here
@@ -47,6 +64,12 @@
     
 }
 
+-(void)endIt{
+    
+    [self.backgroundMusicPlayer stop];
+    
+    
+}
 -(void)resumeIt
 {
     [self.backgroundMusicPlayer play];
@@ -74,7 +97,7 @@
 
 - (void)configureAudioPlayer {
     // Create audio player with background music
-    NSString *backgroundMusicPath = [[NSBundle mainBundle] pathForResource:@"Barish" ofType:@"mp3"];
+    NSString *backgroundMusicPath = [[NSBundle mainBundle] pathForResource:self.fileName ofType:self.fileType];
     NSURL *backgroundMusicURL = [NSURL fileURLWithPath:backgroundMusicPath];
     self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:nil];
     self.backgroundMusicPlayer.delegate = self;  // We need this so we can restart after interruptions
@@ -83,7 +106,7 @@
 
 - (void)configureSystemSound {
 //.
-    NSString *pewPewPath = [[NSBundle mainBundle] pathForResource:@"Barish" ofType:@"mp3"];
+    NSString *pewPewPath = [[NSBundle mainBundle] pathForResource:self.fileName ofType:self.fileType];
     NSURL *pewPewURL = [NSURL fileURLWithPath:pewPewPath];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)pewPewURL, &_pewPewSound);
 

@@ -18,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)pauseIt;
 
 -(void)resumeIt;
+
+@property (nonatomic,strong) NSString * fileName;
+@property (nonatomic,strong) NSString * fileType;
+
+- (instancetype)initWithFileName:(NSString *)fileName withFileType:(NSString *)fileType;
+
 @end
 
 NS_ASSUME_NONNULL_END

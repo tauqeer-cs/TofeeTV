@@ -7,15 +7,15 @@
 //
 
 #import "ManuViewController.h"
-#import "AudioController.h"
+
 #import "ThankYouViewController.h"
 
 
 @interface ManuViewController ()
-@property (strong, nonatomic) AudioController *audioController;
 
 
-@property (nonatomic) BOOL isPaused;
+
+
 
 @end
 
@@ -32,32 +32,26 @@
     
     [self showAllFonts];
    
-    self.audioController = [[AudioController alloc] init];
-    [self.audioController tryPlayMusic];
+
+    [self inititateTheAudioFile:@"Barish" withFileType:@"mp3"];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
  
     [super viewDidAppear:animated];
+    [self resumeFromPausedState];
     
-    if (self.isPaused) {
-        
-        self.isPaused = NO;
-        [self.audioController resumeIt];
-        
-        
-    }
 }
+
 -(void)viewDidDisappear:(BOOL)animated
 {
  
     [super viewDidDisappear:animated];
     
-    [self.audioController pauseIt];
     
-    self.isPaused = YES;
-    
+    [self pauseTheMusic];
     
 }
 
@@ -76,12 +70,7 @@
 - (IBAction)btnSongsTapped:(UIButton *)sender {
     
     
-   // [self performSegueWithIdentifier:@"segueMyScore" sender:self];
     ThankYouViewController * destination  = [[ThankYouViewController alloc] initWithNibName:@"ThankYouViewController" bundle:nil];
-    
-    //destination.currentQuestion = self.selectedSong;
-    
-    
     [self.navigationController showViewController:destination sender:nil];
     
     

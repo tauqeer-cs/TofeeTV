@@ -11,6 +11,7 @@
 #import "Question.h"
 #import "Quiz.h"
 #import "ThankYouViewController.h"
+#import "AudioController.h"
 
 @interface QuestionViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblQuestionTextOne;
@@ -133,6 +134,9 @@
     
     if (![selectedAnswer isEqualToString:currentQuestion.answer]) {
         
+        [self inititateTheAudioFile:@"uh oh" withFileType:@"wav"];
+        
+        
         [UIView transitionWithView:self.viewReactionView
                           duration:1.0
                            options:UIViewAnimationOptionTransitionCrossDissolve
@@ -168,6 +172,8 @@
                                                     
                                                     
                                                     [self.viewReactionView setHidden:YES];
+                                                    [self pauseTheMusic];
+                                                    
                                                 }];
                                 
                             });
@@ -180,6 +186,9 @@
     
     [self enableAllButtons];
     
+    
+    //yay.
+    [self inititateTheAudioFile:@"yay" withFileType:@"wav"];
     
     [UIView transitionWithView:self.viewReactionView
                       duration:1.0
@@ -212,6 +221,9 @@
                                                 
                                                 
                                                 [self.viewReactionView setHidden:YES];
+                                                
+                                                [self pauseTheMusic];
+                                                
                                             }];
                             
                         });

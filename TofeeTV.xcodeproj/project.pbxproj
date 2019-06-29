@@ -14,6 +14,10 @@
 		504B265922211390007D376B /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504B265722211390007D376B /* QuestionViewController.xib */; };
 		50545BD22219B8DB0064DBF4 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD12219B8DB0064DBF4 /* ModelBase.m */; };
 		50545BD52219BEC80064DBF4 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 50545BD42219BEC80064DBF4 /* Quiz.m */; };
+		506683C122C782C300590C92 /* yay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C022C782C300590C92 /* yay.wav */; };
+		506683C222C782C300590C92 /* yay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C022C782C300590C92 /* yay.wav */; };
+		506683C422C78C5B00590C92 /* uh oh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C322C78C5B00590C92 /* uh oh.wav */; };
+		506683C522C78C5B00590C92 /* uh oh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C322C78C5B00590C92 /* uh oh.wav */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
 		507ECE672247537A0080ABB6 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE662247537A0080ABB6 /* CustomNavViewController.m */; };
 		507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE69224758830080ABB6 /* CustomNavViewController2.m */; };
@@ -496,6 +500,8 @@
 		50545BD12219B8DB0064DBF4 /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
 		50545BD32219BEC80064DBF4 /* Quiz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		50545BD42219BEC80064DBF4 /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		506683C022C782C300590C92 /* yay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yay.wav; sourceTree = "<group>"; };
+		506683C322C78C5B00590C92 /* uh oh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "uh oh.wav"; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
 		507ECE652247537A0080ABB6 /* CustomNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
@@ -1561,7 +1567,9 @@
 		50C5AC972206E9F2008BA500 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				506683C322C78C5B00590C92 /* uh oh.wav */,
 				50368D0C2225ACA900A05482 /* Barish.mp3 */,
+				506683C022C782C300590C92 /* yay.wav */,
 				50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */,
 				50C5AC992206E9F2008BA500 /* Raleway-BoldItalic.ttf */,
 				50C5AC9A2206E9F2008BA500 /* Raleway-MediumItalic.ttf */,
@@ -1693,6 +1701,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506683C122C782C300590C92 /* yay.wav in Resources */,
 				50C5AC892206E94B008BA500 /* StoryOneTableViewCell.xib in Resources */,
 				50C5ACC02206E9F2008BA500 /* Raleway-ExtraLight.ttf in Resources */,
 				50C5AC632206E94B008BA500 /* AddMyOwnCollectionReusableView.xib in Resources */,
@@ -1740,6 +1749,7 @@
 				50C5AC5C2206E94B008BA500 /* ItemByCategoryCollectionViewCell.xib in Resources */,
 				50C5ACDA2206E9F2008BA500 /* Raleway-Bold.ttf in Resources */,
 				50C5AC6A2206E94B008BA500 /* MyListItemImageCollectionViewCell.xib in Resources */,
+				506683C422C78C5B00590C92 /* uh oh.wav in Resources */,
 				50BDF02B22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */,
 				50C5ACC22206E9F2008BA500 /* Raleway-Medium.ttf in Resources */,
 				50C5AC672206E94B008BA500 /* BransListingCollectionViewCell2.xib in Resources */,
@@ -1770,6 +1780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D8A6B02249D73B0000A967 /* StoryOneTableViewCell.xib in Resources */,
+				506683C522C78C5B00590C92 /* uh oh.wav in Resources */,
 				50D8A6B12249D73B0000A967 /* Raleway-ExtraLight.ttf in Resources */,
 				50D8A6B22249D73B0000A967 /* AddMyOwnCollectionReusableView.xib in Resources */,
 				50D8A6B32249D73B0000A967 /* TitleHeading copy.xib in Resources */,
@@ -1826,6 +1837,7 @@
 				50D8A6E42249D73B0000A967 /* MavenPro-Black.ttf in Resources */,
 				50D8A6E52249D73B0000A967 /* Raleway-ThinItalic.ttf in Resources */,
 				50D8A6E62249D73B0000A967 /* menu-button@2x.png in Resources */,
+				506683C222C782C300590C92 /* yay.wav in Resources */,
 				50D8A6E72249D73B0000A967 /* QuestionViewController.xib in Resources */,
 				50D8A6E82249D73B0000A967 /* CustomAddToListView.xib in Resources */,
 				50D8A6E92249D73B0000A967 /* MavenPro-Medium.ttf in Resources */,

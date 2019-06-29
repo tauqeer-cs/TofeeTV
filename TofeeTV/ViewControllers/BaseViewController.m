@@ -2052,4 +2052,25 @@
     
 }
 
+-(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType
+{
+    self.audioController = [[AudioController alloc] initWithFileName:fileName withFileType:fileType];
+    [self.audioController tryPlayMusic];
+    
+    
+}
+-(void)resumeFromPausedState{
+    if (self.isPaused) {
+        self.isPaused = NO;
+        [self.audioController resumeIt];
+    }
+}
+
+-(void)pauseTheMusic{
+    
+    //[self resumeFromPausedState];
+    [self.audioController pauseIt];
+    self.isPaused = YES;
+    
+}
 @end

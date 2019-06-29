@@ -24,7 +24,7 @@
 #import "IAPHelper.h"
 #import "IAPShare.h"
 #import "PFNavigationDropdownMenu.h"
-
+#import "AudioController.h"
 
 @import AVKit;
 @class AVAssetExportSession;
@@ -289,6 +289,11 @@
 
 -(void)changeTheViewRootControlletWithStoryBoardName:(NSString *)storyname withRootName:(NSString *)rootViewName;
 -(void)showExternalUrl:(NSString *)externalUrl;
+@property (strong, nonatomic) AudioController *audioController;
+-(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType;
 
+@property (nonatomic) BOOL isPaused;
+-(void)resumeFromPausedState;
 
+-(void)pauseTheMusic;
 @end
