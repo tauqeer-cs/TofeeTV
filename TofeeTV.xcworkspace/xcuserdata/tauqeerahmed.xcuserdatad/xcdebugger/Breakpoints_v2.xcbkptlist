@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/ManuViewController.m"
-            timestampString = "583603470.370231"
+            timestampString = "575182658.9089791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/User.m"
-            timestampString = "583086840.969964"
+            timestampString = "572113001.387488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1236"
@@ -38,11 +38,43 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TofeeTV/ViewControllers/LoginViewController.m"
+            timestampString = "575264918.787807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "-getFacebookProfileInfos"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TofeeTV/ViewControllers/LoginViewController.m"
+            timestampString = "575264918.788209"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "-btnFacebookTapped:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/User.m"
-            timestampString = "583086840.970452"
+            timestampString = "572113001.387629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "578"
@@ -54,11 +86,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/User.m"
-            timestampString = "583086840.970794"
+            timestampString = "572113001.387699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "592"
@@ -138,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.371385"
+            timestampString = "575227187.449149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -154,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.371483"
+            timestampString = "575227187.44967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
@@ -170,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.37157"
+            timestampString = "575227187.449954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -186,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.371652"
+            timestampString = "575227187.450229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -202,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.3717231"
+            timestampString = "575227187.450502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
@@ -250,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Question.m"
-            timestampString = "583603470.3718489"
+            timestampString = "575182526.014165"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "+callQuiztionsListingWithComiltionHandler:withFailueHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Question.m"
-            timestampString = "583603470.371964"
+            timestampString = "575182526.014271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "+parseItemFromResult:"
             landmarkType = "7">
          </BreakpointContent>
@@ -304,6 +336,22 @@
             startingLineNumber = "23"
             endingLineNumber = "23"
             landmarkName = "+colors"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TofeeTV/Model/Song.m"
+            timestampString = "575227187.451162"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "+callGiveMeSongsListWithComiltionHandler:withFailueHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -378,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.3721581"
+            timestampString = "575227187.45201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -394,12 +442,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.372237"
+            timestampString = "583089737.2347929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
-            landmarkName = "-setQuestionDataWithIndex"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -410,12 +458,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.372339"
+            timestampString = "583089737.2373641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
-            landmarkName = "-setQuestionDataWithIndex"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -426,12 +474,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.372434"
+            timestampString = "583089737.2383569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "278"
-            endingLineNumber = "278"
-            landmarkName = "-btnQuestionTapped:"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
+            timestampString = "583089737.239373"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "-handlePanGesture:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -442,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Question.m"
-            timestampString = "583603470.372523"
+            timestampString = "575182526.015198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "+makeQuestionFromDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,12 +522,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.372588"
+            timestampString = "583089737.240477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "393"
-            endingLineNumber = "393"
-            landmarkName = "-btnQuestionTapped:"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "-handlePanGesture:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -490,12 +554,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.372709"
+            timestampString = "583089737.241532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
-            landmarkName = "-setQuestionDataWithIndex"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -522,12 +586,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.372811"
+            timestampString = "583089737.242553"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "407"
-            endingLineNumber = "407"
-            landmarkName = "-btnQuestionTapped:"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "-handlePanGesture:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -538,7 +602,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.3728909"
+            timestampString = "575227187.45401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "174"
@@ -554,7 +618,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.372949"
+            timestampString = "575227187.45479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
@@ -596,11 +660,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/BaseViewController.m"
-            timestampString = "583603470.373036"
+            timestampString = "575228723.263104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1963"
-            endingLineNumber = "1963"
+            startingLineNumber = "1903"
+            endingLineNumber = "1903"
             landmarkName = "-purchaseItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -644,7 +708,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/VideoPlayerViewController.m"
-            timestampString = "583505421.634182"
+            timestampString = "575127416.421163"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
@@ -660,7 +724,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/VideoPlayerViewController.m"
-            timestampString = "583505421.635039"
+            timestampString = "575127416.421379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -692,7 +756,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/VideoPlayerViewController.m"
-            timestampString = "583505421.635558"
+            timestampString = "575127416.4215111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "137"
@@ -708,11 +772,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/SongsListingViewController.m"
-            timestampString = "583088306.713217"
+            timestampString = "575265230.480955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "238"
-            endingLineNumber = "238"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-quizTapped:"
             landmarkType = "7">
          </BreakpointContent>
@@ -724,11 +788,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/VideoPlayerViewController.m"
-            timestampString = "583505421.635938"
+            timestampString = "575127416.4217809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-quizMeTapped:"
             landmarkType = "7">
          </BreakpointContent>
@@ -740,11 +804,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/BaseViewController.m"
-            timestampString = "583603470.37324"
+            timestampString = "575228723.2637171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1753"
-            endingLineNumber = "1753"
+            startingLineNumber = "1693"
+            endingLineNumber = "1693"
             landmarkName = "-showAllFonts"
             landmarkType = "7">
          </BreakpointContent>
@@ -766,7 +830,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Question.m"
-            timestampString = "583603470.373298"
+            timestampString = "575182526.01657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -782,12 +846,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Question.m"
-            timestampString = "583603470.373354"
+            timestampString = "575182526.016616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "+makeQuestionFromDictionary:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "+listQuestionsWithArray:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -798,7 +862,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.373407"
+            timestampString = "575227187.456158"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "245"
@@ -814,11 +878,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/SongsListingViewController.m"
-            timestampString = "583088306.7140779"
+            timestampString = "575265230.481326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-quizTapped:"
             landmarkType = "7">
          </BreakpointContent>
@@ -862,12 +926,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Question.m"
-            timestampString = "583603470.373554"
+            timestampString = "575182526.017012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "+makeQuestionFromDictionary:"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "+listQuestionsWithArray:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -878,11 +942,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/SongsListingViewController.m"
-            timestampString = "583088306.714633"
+            timestampString = "575265230.481606"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -894,7 +958,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.373646"
+            timestampString = "575227187.457171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "236"
@@ -910,7 +974,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.37371"
+            timestampString = "575227187.457659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "224"
@@ -926,11 +990,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TofeeTV/ViewControllers/ThankYouViewController.m"
-            timestampString = "583261523.871906"
+            timestampString = "575182658.91721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -1060,240 +1124,6 @@
             startingLineNumber = "57"
             endingLineNumber = "57"
             landmarkName = "+parseItemFromResult:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/SelectSongOrGameViewController.m"
-            timestampString = "583261523.874041"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ThirdParty/XLCircleProgress/Class/XLCircleProgress.m"
-            timestampString = "582981320.165308"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-setProgress:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/BaseViewController.m"
-            timestampString = "583603470.373988"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "709"
-            endingLineNumber = "709"
-            landmarkName = "-myName"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/ProfileViewController.m"
-            timestampString = "583261523.874801"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-btnChangePasswordTapped:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/Model/Song.m"
-            timestampString = "583603470.3740931"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "+parseTheSongsService:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.374175"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
-            landmarkName = "-setQuestionDataWithIndex"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.37428"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
-            landmarkName = "-setQuestionDataWithIndex"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[QuestionViewController setQuestionDataWithIndex]"
-                  moduleName = "TofeeTV"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Work/kha/TofeeTV/TofeeTV/ViewControllers/QuestionViewController.m"
-                  timestampString = "583596593.016688"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "649">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__50-[QuestionViewController setQuestionDataWithIndex]_block_invoke"
-                  moduleName = "TofeeTV"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Work/kha/TofeeTV/TofeeTV/ViewControllers/QuestionViewController.m"
-                  timestampString = "583596593.02045"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "51">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/SongsListingViewController.m"
-            timestampString = "583596581.967158"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-loadData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.374416"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "-handlePanGesture:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/ViewControllers/QuestionViewController.m"
-            timestampString = "583603470.374503"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "-handlePanGesture:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/Engine/AudioController.m"
-            timestampString = "583603470.374579"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "-audioPlayerBeginInterruption:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TofeeTV/Engine/AudioController.m"
-            timestampString = "583603470.375249"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "-audioPlayerEndInterruption:withOptions:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
