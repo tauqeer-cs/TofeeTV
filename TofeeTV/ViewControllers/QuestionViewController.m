@@ -28,8 +28,12 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *viewNayImage;
 
+@property (weak, nonatomic) IBOutlet UIImageView *hintImage;
 @property (nonatomic,strong) UIColor * defaultButtonColor;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topDistance;
 
+@property (nonatomic,strong) UIImageView * gestureImageView;
+@property (weak, nonatomic) IBOutlet UIView *questionContainer;
 @end
 
 @implementation QuestionViewController
@@ -50,8 +54,6 @@
     
     self.defaultButtonColor = self.btnQuestion1.backgroundColor;
     
-    self.lblQuestionTextOne.text = @"Question one part one";
-    self.lblQuestionTextTwo.text = @"Question on part two";
     
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:30];
@@ -69,14 +71,162 @@
     }
     [self setQuestionDataWithIndex];
 
+    UIPanGestureRecognizer * panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                                                     action:@selector(handlePanGesture:)];
+    
+    [self.hintImage addGestureRecognizer:panRecognizer];
+    
+    self.hintImage.userInteractionEnabled = YES;
+    
+    
+}
+
+- (void)handlePanGesture:(UIPanGestureRecognizer *)gestureRecognizer
+{
+    if (gestureRecognizer.state == UIGestureRecognizerStateBegan)
+    {
+     
+        self.gestureImageView = [UIImageView new];
+        [self.gestureImageView setImage:self.hintImage.image];
+        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width, self.hintImage.frame.size.height)];
+        
+        [self.view addSubview:self.gestureImageView];
+        
+        
+    }
+    else if (gestureRecognizer.state == UIGestureRecognizerStateEnded){
+
+        
+        [self.gestureImageView removeFromSuperview];
+        self.gestureImageView = nil;
+
+        CGRect frame = self.gestureImageView.frame;
+        frame.origin = [gestureRecognizer locationInView:self.gestureImageView.superview];
+        
+        self.gestureImageView.frame = frame;
+        
+        CGPoint draggingPoint = [gestureRecognizer locationInView:self.view];
+        UIView *hitView = [self.view hitTest:draggingPoint withEvent:nil];
+        
+        if ([hitView isEqual:self.btnQuestion1]) {
+            
+            NSLog(@"its in the range");
+            [self btnQuestionTapped:self.btnQuestion1];
+            
+        }
+        else if([hitView isEqual:self.btnQuestion2]){
+            NSLog(@"its in the range");
+            [self btnQuestionTapped:self.btnQuestion2];
+            
+        }
+        else if([hitView isEqual:self.btnQuestion3]){
+            NSLog(@"its in the range");
+            [self btnQuestionTapped:self.btnQuestion3];
+            
+        }
+        else if([hitView isEqual:self.btnQuestion4]){
+            NSLog(@"its in the range");
+            
+            [self btnQuestionTapped:self.btnQuestion4];
+            
+        }
+        else
+        {
+
+            
+        }
+        
+    }
+    
+    if (self.gestureImageView) {
+        CGRect frame = self.gestureImageView.frame;
+        frame.origin = [gestureRecognizer locationInView:self.gestureImageView.superview];
+        
+        self.gestureImageView.frame = frame;
+     
+        CGPoint draggingPoint = [gestureRecognizer locationInView:self.view];
+        UIView *hitView = [self.view hitTest:draggingPoint withEvent:nil];
+        
+        if ([hitView isEqual:self.btnQuestion1]) {
+            
+            NSLog(@"its in the range");
+            
+            [self setAllButtonHightlightedNot];
+            
+            [self.btnQuestion1 setHighlighted:YES];
+            
+            
+        }
+        else if([hitView isEqual:self.btnQuestion2]){
+            NSLog(@"its in the range");
+            [self setAllButtonHightlightedNot];
+            [self.btnQuestion2 setHighlighted:YES];
+            
+        }
+        else if([hitView isEqual:self.btnQuestion3]){
+                        NSLog(@"its in the range");
+            [self setAllButtonHightlightedNot];
+            [self.btnQuestion3 setHighlighted:YES];
+            
+            
+        }
+        else if([hitView isEqual:self.btnQuestion4]){
+                        NSLog(@"its in the range");
+        
+            [self setAllButtonHightlightedNot];
+            
+            [self.btnQuestion4 setHighlighted:YES];
+            
+        }
+        else
+        {
+            [self setAllButtonHightlightedNot];
+            
+        }
+        
+    }
+
+
+}
+
+-(void)setAllButtonHightlightedNot{
+    
+    [self.btnQuestion1 setHighlighted:NO];
+    [self.btnQuestion2 setHighlighted:NO];
+    [self.btnQuestion3 setHighlighted:NO];
+    [self.btnQuestion4 setHighlighted:NO];
+    
 }
 -(void)setQuestionDataWithIndex
 {
  
     Question * currentQuestion = self.selectedSong.myQuestions[self.questionIndex];
     self.lblQuestionTextOne.text = currentQuestion.question;
-    self.lblQuestionTextTwo.text = currentQuestion.subQuestion;
    
+    if ([currentQuestion.hintImage length] == 0) {
+        
+        [self.hintImage setHidden:YES];
+        
+        self.topDistance.constant = 120;
+        
+    }
+    else {
+        self.topDistance.constant = 72;
+        
+        // add the loading image logic here
+        
+        [self.hintImage setHidden:NO];
+        
+        [FileManager loadItemImage:self.hintImage url:currentQuestion.hintImage loader:nil withComplitionHandler:^(id value) {
+        
+            
+            [self.hintImage setImage:value[1]];
+            
+            NSLog(@"");
+            
+        }];
+        
+    }
     
     if ([currentQuestion.questionType isEqualToString:@"four_options"])
     {

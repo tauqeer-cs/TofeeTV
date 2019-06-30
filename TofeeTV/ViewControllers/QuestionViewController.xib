@@ -16,8 +16,10 @@
                 <outlet property="btnQuestion2" destination="ihv-q3-BW3" id="5wf-Ay-NWc"/>
                 <outlet property="btnQuestion3" destination="QUL-y9-flz" id="9Ll-lf-eVJ"/>
                 <outlet property="btnQuestion4" destination="x77-bx-2Kn" id="LYs-Ba-kDy"/>
+                <outlet property="hintImage" destination="mOa-wo-Xyw" id="9Ug-Eo-Fl7"/>
                 <outlet property="lblQuestionTextOne" destination="Soh-s8-Fb2" id="Ib6-hP-KVn"/>
-                <outlet property="lblQuestionTextTwo" destination="2GD-zl-saW" id="mUh-D6-sJM"/>
+                <outlet property="questionContainer" destination="FPF-OT-l1e" id="gJp-dk-8DY"/>
+                <outlet property="topDistance" destination="93b-2x-8Ve" id="Mnl-cX-ao9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewNayImage" destination="pQv-8C-YCu" id="OW0-vz-QfG"/>
                 <outlet property="viewReactionView" destination="FPF-OT-l1e" id="dmT-cp-Cfk"/>
@@ -68,7 +70,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-9O-zaj">
-                            <rect key="frame" x="32" y="152.5" width="311" height="164.5"/>
+                            <rect key="frame" x="32" y="72" width="311" height="245"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-s8-Fb2">
                                     <rect key="frame" x="8" y="8" width="295" height="57.5"/>
@@ -79,29 +81,25 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GD-zl-saW">
-                                    <rect key="frame" x="8" y="97.5" width="295" height="21"/>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mOa-wo-Xyw">
+                                    <rect key="frame" x="95.5" y="81.5" width="120" height="120"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="7mZ-4y-Z1F"/>
+                                        <constraint firstAttribute="width" constant="120" id="X68-Fr-bj5"/>
+                                        <constraint firstAttribute="height" constant="120" id="z3z-De-OKX"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                </imageView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="2GD-zl-saW" firstAttribute="top" secondItem="Soh-s8-Fb2" secondAttribute="bottom" constant="32" id="1b1-zb-AhE"/>
                                 <constraint firstItem="Soh-s8-Fb2" firstAttribute="top" secondItem="hNW-9O-zaj" secondAttribute="top" constant="8" id="Ic3-ag-p6v"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="IgZ-Ju-wbI"/>
-                                <constraint firstItem="2GD-zl-saW" firstAttribute="leading" secondItem="hNW-9O-zaj" secondAttribute="leading" constant="8" id="JUu-cw-PkK"/>
-                                <constraint firstAttribute="bottom" secondItem="2GD-zl-saW" secondAttribute="bottom" constant="46" id="SIh-Ma-Ers"/>
+                                <constraint firstItem="mOa-wo-Xyw" firstAttribute="centerX" secondItem="hNW-9O-zaj" secondAttribute="centerX" id="Tle-Cr-HUq"/>
                                 <constraint firstAttribute="trailing" secondItem="Soh-s8-Fb2" secondAttribute="trailing" constant="8" id="iCk-Ri-QdV"/>
                                 <constraint firstItem="Soh-s8-Fb2" firstAttribute="leading" secondItem="hNW-9O-zaj" secondAttribute="leading" constant="8" id="jmP-Mp-phv"/>
-                                <constraint firstAttribute="trailing" secondItem="2GD-zl-saW" secondAttribute="trailing" constant="8" id="xRI-Hc-opb"/>
+                                <constraint firstItem="mOa-wo-Xyw" firstAttribute="top" secondItem="Soh-s8-Fb2" secondAttribute="bottom" constant="16" id="nbX-cJ-4LS"/>
                             </constraints>
                         </view>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="hNW-9O-zaj" firstAttribute="top" secondItem="8jX-7f-N4R" secondAttribute="top" constant="72" id="93b-2x-8Ve"/>
                         <constraint firstItem="hNW-9O-zaj" firstAttribute="centerX" secondItem="8jX-7f-N4R" secondAttribute="centerX" id="LG2-LB-eB3"/>
                         <constraint firstAttribute="bottom" secondItem="hNW-9O-zaj" secondAttribute="bottom" constant="16.5" id="XBN-vi-wUN"/>
                         <constraint firstItem="hNW-9O-zaj" firstAttribute="leading" secondItem="8jX-7f-N4R" secondAttribute="leading" constant="32" id="lDr-I2-PAo"/>
@@ -119,6 +117,9 @@
                                     <color key="backgroundColor" red="0.15686274510000001" green="0.6705882353" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="Button">
                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.99215686270000003" green="0.15686274510000001" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnQuestionTapped:" destination="-1" eventType="touchUpInside" id="R7c-sN-tX8"/>
