@@ -2052,9 +2052,9 @@
     
 }
 
--(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType
+-(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType withOneTimePlay:(BOOL)oneTime
 {
-    self.audioController = [[AudioController alloc] initWithFileName:fileName withFileType:fileType];
+    self.audioController = [[AudioController alloc] initWithFileName:fileName withFileType:fileType withOneTimePlay:oneTime];
     [self.audioController tryPlayMusic];
     
     

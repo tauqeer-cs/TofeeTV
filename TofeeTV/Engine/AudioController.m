@@ -15,6 +15,7 @@
 @property (assign) BOOL backgroundMusicPlaying;
 @property (assign) BOOL backgroundMusicInterrupted;
 @property (assign) SystemSoundID pewPewSound;
+@property (nonatomic) BOOL oneTime;
 
 @end
 @implementation AudioController
@@ -32,12 +33,13 @@
     return self;
 }
 
-- (instancetype)initWithFileName:(NSString *)fileName withFileType:(NSString *)fileType
+- (instancetype)initWithFileName:(NSString *)fileName withFileType:(NSString *)fileType withOneTimePlay:(BOOL)oneTime
 {
     self = [super init];
     if (self) {
         self.fileName = fileName;
         self.fileType = fileType;
+        self.oneTime =  oneTime;
         
         [self configureAudioSession];
         [self configureAudioPlayer];
@@ -101,7 +103,18 @@
     NSURL *backgroundMusicURL = [NSURL fileURLWithPath:backgroundMusicPath];
     self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:nil];
     self.backgroundMusicPlayer.delegate = self;  // We need this so we can restart after interruptions
-    self.backgroundMusicPlayer.numberOfLoops = -1;  // Negative number means loop forever
+    
+    if (self.oneTime) {
+        self.backgroundMusicPlayer.numberOfLoops = 1;  // Negative number means loop forever
+
+    }
+    else {
+        
+        self.backgroundMusicPlayer.numberOfLoops = -1;  // Negative number means loop forever
+
+    }
+    
+    
 }
 
 - (void)configureSystemSound {

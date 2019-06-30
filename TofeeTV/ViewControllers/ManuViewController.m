@@ -33,7 +33,7 @@
     [self showAllFonts];
    
 
-    [self inititateTheAudioFile:@"Barish" withFileType:@"mp3"];
+    [self inititateTheAudioFile:@"Barish" withFileType:@"mp3" withOneTimePlay:NO];
 
 }
 

@@ -22,7 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSString * fileName;
 @property (nonatomic,strong) NSString * fileType;
 
-- (instancetype)initWithFileName:(NSString *)fileName withFileType:(NSString *)fileType;
+- (instancetype)initWithFileName:(NSString *)fileName withFileType:(NSString *)fileType withOneTimePlay:(BOOL)oneTime;
+
 
 @end
 

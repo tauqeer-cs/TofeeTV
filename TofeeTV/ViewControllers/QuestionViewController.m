@@ -284,7 +284,7 @@
     
     if (![selectedAnswer isEqualToString:currentQuestion.answer]) {
         
-        [self inititateTheAudioFile:@"uh oh" withFileType:@"wav"];
+        [self inititateTheAudioFile:@"uh oh" withFileType:@"wav" withOneTimePlay:YES];
         
         
         [UIView transitionWithView:self.viewReactionView
@@ -338,7 +338,7 @@
     
     
     //yay.
-    [self inititateTheAudioFile:@"yay" withFileType:@"wav"];
+    [self inititateTheAudioFile:@"yay" withFileType:@"wav" withOneTimePlay:YES];
     
     [UIView transitionWithView:self.viewReactionView
                       duration:1.0

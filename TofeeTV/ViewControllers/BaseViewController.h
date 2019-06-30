@@ -290,7 +290,8 @@
 -(void)changeTheViewRootControlletWithStoryBoardName:(NSString *)storyname withRootName:(NSString *)rootViewName;
 -(void)showExternalUrl:(NSString *)externalUrl;
 @property (strong, nonatomic) AudioController *audioController;
--(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType;
+-(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType withOneTimePlay:(BOOL)oneTime;
+
 
 @property (nonatomic) BOOL isPaused;
 -(void)resumeFromPausedState;
