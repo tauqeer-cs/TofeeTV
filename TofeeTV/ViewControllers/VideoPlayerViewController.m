@@ -190,7 +190,16 @@
                 
                 self.avPlayer.accessibilityFrame = self.videoContainer.frame;
                 videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-                videoLayer.frame = self.view.frame;
+
+                
+                if(IS_IPad)
+                {
+                videoLayer.frame = [UIScreen mainScreen].bounds;
+                videoLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+                videoLayer.videoGravity = AVLayerVideoGravityResize;
+                    //this is
+                    
+                }
                 
 
                 [self.avPlayer play];
@@ -207,6 +216,7 @@
             } withFailHander:^(int error) {
                 
             }];
+    
     
 }
 - (void)itemDidFinishPlaying:(NSNotification *)notification {

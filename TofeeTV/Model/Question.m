@@ -28,7 +28,13 @@
     [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option2"]];
     [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option3"]];
     [tmpQuesrtion.optionsArray addObject:[question objectForKey:@"option4"]];
+    
+    
+   // [tmpQuesrtion.hintImage addObject:[question objectForKey:@""]];
+    
+    //hintImage
     tmpQuesrtion.questionType = [question objectForKey:@"question_type"];
+    tmpQuesrtion.hintImage = [question objectForKey:@"hint_image"];
     
     tmpQuesrtion.subQuestion = [question objectForKey:@"sub_title"];
     tmpQuesrtion.currentGivenAnswer = [question objectForKey:@"answer"];

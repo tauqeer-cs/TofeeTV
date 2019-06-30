@@ -18,6 +18,8 @@
 @property (nonatomic,strong) NSString * question;
 @property (nonatomic,strong) NSString * subQuestion;
 
+@property (nonatomic,strong) NSString * hintImage;
+
 +(NSMutableArray *)listQuestionsWithArray:(NSArray*)questionList;
 
 
