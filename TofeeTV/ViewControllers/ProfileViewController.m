@@ -39,7 +39,7 @@
     self.txtName.text = self.myName;
     self.txtEmail.text = self.myEmail;
     
-    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
+   // [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
     [self showLoader];
     

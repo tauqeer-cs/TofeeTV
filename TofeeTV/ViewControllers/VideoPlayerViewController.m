@@ -189,7 +189,7 @@
                 [self.videoContainer.layer addSublayer:videoLayer];
                 
                 self.avPlayer.accessibilityFrame = self.videoContainer.frame;
-                videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+                videoLayer.videoGravity = AVLayerVideoGravityResize;
 
                 
                 if(IS_IPad)

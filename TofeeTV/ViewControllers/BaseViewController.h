@@ -300,5 +300,7 @@
 -(void)pauseTheMusic;
 @property(nonatomic, strong) GADInterstitial *interstitial;
 
+@property (nonatomic,strong) GADRequest *request;
+
 
 @end

@@ -15,7 +15,7 @@
 #import "ThankYouViewController.h"
 #import "ProfileViewController.h"
 
-@interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -52,18 +52,20 @@
     [self loadData];
     [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
-    
-    /*
-    self.bannerView.adUnitID = @"ca-app-pub-1949777708516294/4870272595";
-    self.bannerView.rootViewController = self;
-    
+    //
+
     self.request = [GADRequest request];
     self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
+    
+    self.bannerView.adUnitID = @"ca-app-pub-2522914220379856/3130957071";
+    self.bannerView.rootViewController = self;
+    
+
     self.bannerView.delegate = self;
     
     [self.bannerView loadRequest:self.request];
 
-    */
+    
     
 }
 -(void)itemSelectedWithItesPath:(int)index

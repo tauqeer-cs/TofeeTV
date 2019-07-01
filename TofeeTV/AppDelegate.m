@@ -20,6 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
+    //App ID:
+
+    //ca-app-pub-2522914220379856/3130957071 banner
+   // [GADMobileAds configureWithApplicationID:@"ca-app-pub-4058691632572433~6497028034"];
+    
+     [GADMobileAds configureWithApplicationID:@"ca-app-pub-2522914220379856~9609747274"];
+    
     
     NSUserDefaults *currentUserDefault = [NSUserDefaults standardUserDefaults];
     //isFirstTimeSignUp
@@ -31,7 +38,8 @@
         initViewController = [storyBoard instantiateViewControllerWithIdentifier:@"SignUpRoot"];
         self.window.rootViewController = initViewController;
     }
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-1949777708516294~6948397754"];
+    
+
     
     return YES;
 }

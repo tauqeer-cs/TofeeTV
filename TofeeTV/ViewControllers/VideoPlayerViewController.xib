@@ -28,7 +28,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-c0-Rvi">
-                    <rect key="frame" x="0.0" y="0.0" width="667" height="292.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62U-E2-X0d">
                     <rect key="frame" x="0.0" y="293" width="123" height="82"/>
@@ -146,14 +146,14 @@
                 <constraint firstItem="hYN-K9-J08" firstAttribute="leading" secondItem="5O7-70-vgN" secondAttribute="trailing" constant="8" id="NZ4-Nj-pio"/>
                 <constraint firstAttribute="bottom" secondItem="62U-E2-X0d" secondAttribute="bottom" id="OKt-n0-cH3"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="aLN-9f-bLU"/>
-                <constraint firstItem="xPP-c0-Rvi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.78" id="b1v-lO-Qc7"/>
+                <constraint firstItem="xPP-c0-Rvi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.78" constant="82.5" id="b1v-lO-Qc7"/>
                 <constraint firstItem="sk0-kO-ZPD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="cO1-Hg-scL"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="cqk-ly-Tjm"/>
-                <constraint firstItem="62U-E2-X0d" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="0.5" id="iWp-Rz-tDA"/>
+                <constraint firstItem="62U-E2-X0d" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="-82" id="iWp-Rz-tDA"/>
                 <constraint firstItem="62U-E2-X0d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="p8k-7o-jAM"/>
-                <constraint firstItem="hYN-K9-J08" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" id="qfY-eh-0Gf"/>
+                <constraint firstItem="hYN-K9-J08" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="-82.5" id="qfY-eh-0Gf"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="rWH-hX-3NZ"/>
-                <constraint firstItem="5O7-70-vgN" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="8" id="rhs-2u-WyG"/>
+                <constraint firstItem="5O7-70-vgN" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="-74.5" id="rhs-2u-WyG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="138.98050974512745" y="152.80000000000001"/>
