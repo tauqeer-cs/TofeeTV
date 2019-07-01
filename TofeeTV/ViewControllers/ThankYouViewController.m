@@ -38,6 +38,8 @@
     if (self.currentQuestion) {
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     }
+    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
+    
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     

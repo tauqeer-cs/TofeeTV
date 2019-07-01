@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblSong;
 @property (weak, nonatomic) IBOutlet UILabel *lblGame;
 
+
 @end
 
 @implementation SelectSongOrGameViewController
@@ -27,7 +28,17 @@
     self.title = @"Select option";
     [self setTouchMethodWithLabel:self.lblSong withSelector:@selector(songItemTapped)];
     [self setTouchMethodWithLabel:self.lblGame withSelector:@selector(gameLabelTapped)];
+    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
+    
+    /*
+    self.interstitial =
+    [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-1949777708516294/9068499910"];
+    [self.interstitial loadRequest:self.request];
+    
+    
+    [self.interstitial presentFromRootViewController:self];
+    */
 }
 
 -(void)viewDidAppear:(BOOL)animated

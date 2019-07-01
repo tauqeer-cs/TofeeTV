@@ -104,13 +104,7 @@
     
     self.lblTermsText.userInteractionEnabled = YES;
     
-    //[self setTouchMethodWithLabel:self.lblTermsText withSelector:@selector(showTerms)];
-    
-    
-    
-    
-    
-    //[self setTouchMethodWithLabel:self.lblTermsText withSelector:@selector(termsLabelTapped)];
+    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
     [self setTouchMethodWithLabel:self.view withSelector:@selector(viewTouched)];
     

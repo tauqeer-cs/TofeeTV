@@ -26,6 +26,7 @@
 #import "PFNavigationDropdownMenu.h"
 #import "AudioController.h"
 
+@import GoogleMobileAds;
 @import AVKit;
 @class AVAssetExportSession;
 
@@ -297,4 +298,7 @@
 -(void)resumeFromPausedState;
 
 -(void)pauseTheMusic;
+@property(nonatomic, strong) GADInterstitial *interstitial;
+
+
 @end

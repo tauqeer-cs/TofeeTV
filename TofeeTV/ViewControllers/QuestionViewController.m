@@ -78,6 +78,8 @@
     
     self.hintImage.userInteractionEnabled = YES;
     
+ 
+    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
 }
 

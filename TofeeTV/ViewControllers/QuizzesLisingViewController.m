@@ -52,7 +52,7 @@
     }];
     
     //
-    
+    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
     
 }

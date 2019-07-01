@@ -82,9 +82,8 @@
     
     [self setupSignUPFormButtonsFont:self.btnFB];
     [self.lblOr setFont:[UIFont fontWithName:FancyFont size:15.0]];
-    
-    
-    
+    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
+
 
 }
 

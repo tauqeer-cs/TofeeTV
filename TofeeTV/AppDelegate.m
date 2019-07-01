@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+@import GoogleMobileAds;
 
 @interface AppDelegate ()
 
@@ -30,6 +31,7 @@
         initViewController = [storyBoard instantiateViewControllerWithIdentifier:@"SignUpRoot"];
         self.window.rootViewController = initViewController;
     }
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-1949777708516294~6948397754"];
     
     return YES;
 }
