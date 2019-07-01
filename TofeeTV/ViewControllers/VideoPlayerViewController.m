@@ -90,6 +90,9 @@
 
 
 - (IBAction)btnBackTapped:(UIButton *)sender {
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentOne resumeFromPausedState];
+    
     float playerCurrentTime = [self getCurrentTime];
     float newTime = playerCurrentTime - 2;
     
@@ -152,6 +155,10 @@
     
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
+                
+                AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                [currentOne pauseTheMusic];
+                
                 
                 [self hideLoader];
                 

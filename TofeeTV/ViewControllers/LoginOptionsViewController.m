@@ -28,7 +28,7 @@
     [self setTouchMethodWithLabel:self.lblEmail withSelector:@selector(emailButtonTapped)];
     
     [self setTouchMethodWithLabel:self.lblFb withSelector:@selector(fbButtonTapped)];
-    [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
+   // [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
     
     

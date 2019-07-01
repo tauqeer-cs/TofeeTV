@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class  AudioController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
@@ -16,6 +18,11 @@
 
 @property (nonatomic) id currentSelectedItem;
 @property (nonatomic,strong) id navigation;
+
+@property (nonatomic,strong) AudioController * audioController;
+-(void)pauseTheMusic;
+
+-(void)resumeFromPausedState;
 
 @end
 

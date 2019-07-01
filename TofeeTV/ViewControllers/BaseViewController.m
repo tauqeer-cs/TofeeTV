@@ -357,9 +357,15 @@
     
     [super viewWillAppear:animated];
     
+    
 }
-
-
+//pauseTheMusic
+- (void)viewDidDisappear:(BOOL)animated{
+    
+    //[self pauseTheMusic];
+    
+    
+}
 
 -(void)viewDidAppear:(BOOL)animated{
     
@@ -367,7 +373,9 @@
     
     
     [super viewDidAppear:animated];
- 
+    //[self resumeFromPausedState];
+    
+    
  
 }
 
@@ -2056,6 +2064,11 @@
 {
     self.audioController = [[AudioController alloc] initWithFileName:fileName withFileType:fileType withOneTimePlay:oneTime];
     [self.audioController tryPlayMusic];
+    
+    AppDelegate * myApp = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    myApp.audioController = self.audioController;
+    
+    
     
     
 }

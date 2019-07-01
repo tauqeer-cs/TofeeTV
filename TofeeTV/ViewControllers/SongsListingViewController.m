@@ -66,6 +66,12 @@
     [self.bannerView loadRequest:self.request];
 
     
+    self.heightOfAdd.constant = 0;
+    
+
+    NSLog(@"");
+    
+    //  self.;
     
 }
 -(void)itemSelectedWithItesPath:(int)index
@@ -282,6 +288,10 @@
 /// Tells the delegate an ad request loaded an ad.
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
     NSLog(@"adViewDidReceiveAd");
+    [self.bannerView setHidden:NO];
+    self.heightOfAdd.constant = 50;
+    
+    
 }
 
 /// Tells the delegate an ad request failed.

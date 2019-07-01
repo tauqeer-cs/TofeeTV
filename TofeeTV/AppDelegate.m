@@ -8,14 +8,31 @@
 
 #import "AppDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "AudioController.h"
+
 @import GoogleMobileAds;
 
 @interface AppDelegate ()
+@property (nonatomic) BOOL isPaused;
 
 @end
 
 @implementation AppDelegate
 
+-(void)pauseTheMusic{
+    
+    //[self resumeFromPausedState];
+    [self.audioController pauseIt];
+    self.isPaused = YES;
+    
+}
+
+-(void)resumeFromPausedState{
+    if (self.isPaused) {
+        self.isPaused = NO;
+        [self.audioController resumeIt];
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
