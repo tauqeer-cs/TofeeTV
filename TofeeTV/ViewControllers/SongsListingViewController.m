@@ -14,6 +14,8 @@
 #import "SelectSongOrGameViewController.h"
 #import "ThankYouViewController.h"
 #import "ProfileViewController.h"
+#import <AdSupport/ASIdentifierManager.h>
+
 
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate>
 
@@ -52,11 +54,14 @@
     [self loadData];
     [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
-    //
-
-    self.request = [GADRequest request];
-    self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
     
+    NSLog(@"%@",[[ASIdentifierManager sharedManager] advertisingIdentifier]);
+    //ASIdentifierManager *manager = [ASIdentifierManagerClass sharedManager];
+    
+    self.request = [GADRequest request];
+    self.request.testDevices = @[ @"931CA2DA0AF0484680E367B30FB570B0",kGADSimulatorID];
+    
+//
     self.bannerView.adUnitID = @"ca-app-pub-2522914220379856/3130957071";
     self.bannerView.rootViewController = self;
     
@@ -66,12 +71,20 @@
     [self.bannerView loadRequest:self.request];
 
     
+
     self.heightOfAdd.constant = 0;
     
 
     NSLog(@"");
     
     //  self.;
+    
+    
+}
+
+-(void)viewDidLayoutSubviews{
+    
+    [self.collectionView reloadData];
     
 }
 -(void)itemSelectedWithItesPath:(int)index
@@ -155,6 +168,15 @@
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+    
+    /*if (deviceOrientation == UIDeviceOrientationLandscapeLeft || deviceOrientation == UIDeviceOrientationLandscapeRight)
+    {
+    
+    return CGSizeMake([[UIScreen mainScreen ] bounds].size.height/2, [[UIScreen mainScreen ] bounds].size.height/2);
+        
+    }*/
     
     
     return CGSizeMake([[UIScreen mainScreen ] bounds].size.width/2, [[UIScreen mainScreen ] bounds].size.width/2);
@@ -323,4 +345,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     NSLog(@"adViewWillLeaveApplication");
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    
+    
+}
 @end

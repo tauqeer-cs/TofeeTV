@@ -43,7 +43,7 @@
    // [GADMobileAds configureWithApplicationID:@"ca-app-pub-4058691632572433~6497028034"];
     
      [GADMobileAds configureWithApplicationID:@"ca-app-pub-2522914220379856~9609747274"];
-    
+    [GADMobileAds sharedInstance];
     
     NSUserDefaults *currentUserDefault = [NSUserDefaults standardUserDefaults];
     //isFirstTimeSignUp

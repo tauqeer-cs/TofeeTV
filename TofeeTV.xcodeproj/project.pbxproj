@@ -2394,9 +2394,9 @@
 			baseConfigurationReference = CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = YDMU2749GD;
+				DEVELOPMENT_TEAM = CDGRA7E2B7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2411,7 +2411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = QuizAppDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = GrappetiteWildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2421,9 +2421,9 @@
 			baseConfigurationReference = 4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = YDMU2749GD;
+				DEVELOPMENT_TEAM = CDGRA7E2B7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2438,7 +2438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = QuizAppDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = GrappetiteWildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
