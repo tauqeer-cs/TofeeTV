@@ -131,7 +131,7 @@
     }
     else
     {
-        QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
+        QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName bundle:nil];
         destination.questionIndex = 0;
         
         destination.selectedSong = currentItmSelected;

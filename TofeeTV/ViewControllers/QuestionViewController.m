@@ -58,6 +58,11 @@
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:30];
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:36];
+    if (IS_IPad) {
+
+        self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:55];
+        
+    }
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     
     self.title = @"Game";
@@ -68,6 +73,11 @@
     for (UIButton * currentButton in self.answerButons)
     {
         [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:18]];
+        
+        if (IS_IPad) {
+            [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:36]];
+            
+        }
         currentButton.layer.borderColor = [UIColor whiteColor].CGColor ;
         currentButton.layer.borderWidth = 3.0;
         
@@ -88,7 +98,7 @@
      
         self.gestureImageView = [UIImageView new];
         [self.gestureImageView setImage:self.hintImage.image];
-        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width, self.hintImage.frame.size.height)];
+        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width/2, self.hintImage.frame.size.height/2)];
         
         [self.view addSubview:self.gestureImageView];
         

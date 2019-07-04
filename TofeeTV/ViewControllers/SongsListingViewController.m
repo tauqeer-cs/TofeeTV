@@ -249,11 +249,15 @@
 {
  
     
-    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
+    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName
+                                                                                    bundle:nil];
     destination.questionIndex = 0;
     destination.selectedSong = itemTapped;
+    
+    
     [self.navigationController showViewController:destination sender:nil];
 }
+
 
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -320,6 +324,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
         tmpCell.lblName.text = self.dataSource[indexPath.row-1].name;
         [tmpCell setSelectionStyle:UITableViewCellSelectionStyleNone];
         
+        
+        if (IS_IPad)
+        {
+            tmpCell.lblName.font = [UIFont fontWithName:tmpCell.lblName.font.fontName size:45];
+        }
 
         if (indexPath.row % 2 == 0) {
        

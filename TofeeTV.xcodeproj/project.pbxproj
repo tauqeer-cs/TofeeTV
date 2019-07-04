@@ -46,6 +46,8 @@
 		509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A672210832700DAC9A5 /* Bolts.framework */; };
 		509E3A6C2210832900DAC9A5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */; };
 		509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */; };
+		50A9937F22CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */; };
+		50A9938022CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */; };
 		50B3B4EA2247C0430064C4C2 /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */; };
 		50B8866322BE2C820099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
 		50B8866422BE2C8B0099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
@@ -547,6 +549,7 @@
 		509E3A672210832700DAC9A5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController_iPad.xib; sourceTree = "<group>"; };
 		50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGWhattheTeacherWants.ttf; sourceTree = "<group>"; };
 		50B8866122BE2C820099AA59 /* LoginOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginOptionsViewController.h; sourceTree = "<group>"; };
 		50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginOptionsViewController.m; sourceTree = "<group>"; };
@@ -1539,6 +1542,7 @@
 		50C5AC932206E960008BA500 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */,
 				5074977E220C8A5200B1924E /* RegitersViewController.h */,
 				5074977F220C8A5200B1924E /* RegitersViewController.m */,
 				509AF0E4220B42B500EB8CB2 /* SongsListingViewController.h */,
@@ -1781,6 +1785,7 @@
 				504B265922211390007D376B /* QuestionViewController.xib in Resources */,
 				50C5AC7C2206E94B008BA500 /* CustomAddToListView.xib in Resources */,
 				50C5ACD22206E9F2008BA500 /* MavenPro-Medium.ttf in Resources */,
+				50A9937F22CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */,
 				50BAF94B22BFE10E008ADE95 /* ProfileViewController.xib in Resources */,
 				50C5ACCE2206E9F2008BA500 /* MavenPro-Regular.ttf in Resources */,
 				50C5ACD32206E9F2008BA500 /* Raleway-LightItalic.ttf in Resources */,
@@ -1857,6 +1862,7 @@
 				50D8A6E32249D73B0000A967 /* TitleViewLogin.xib in Resources */,
 				50D8A6E42249D73B0000A967 /* MavenPro-Black.ttf in Resources */,
 				50D8A6E52249D73B0000A967 /* Raleway-ThinItalic.ttf in Resources */,
+				50A9938022CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */,
 				50D8A6E62249D73B0000A967 /* menu-button@2x.png in Resources */,
 				506683C222C782C300590C92 /* yay.wav in Resources */,
 				50D8A6E72249D73B0000A967 /* QuestionViewController.xib in Resources */,

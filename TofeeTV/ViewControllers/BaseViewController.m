@@ -2068,9 +2068,6 @@
     AppDelegate * myApp = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     myApp.audioController = self.audioController;
     
-    
-    
-    
 }
 -(void)resumeFromPausedState{
     if (self.isPaused) {
@@ -2079,6 +2076,14 @@
     }
 }
 
+-(NSString *)questionViewControllerName {
+    //.xib
+    
+    if (IS_IPad) {
+        return @"QuestionViewController_iPad";
+    }
+    return @"QuestionViewController";
+}
 -(void)pauseTheMusic{
     
     //[self resumeFromPausedState];

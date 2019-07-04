@@ -72,7 +72,8 @@
 
 -(void)gameLabelTapped {
     
-    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
+    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName bundle:nil];
+    
     destination.questionIndex = 0;
     destination.selectedSong = self.objectComing;
     
@@ -105,7 +106,7 @@
 {
     
     
-    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
+    QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName bundle:nil];
     destination.questionIndex = 0;
     destination.selectedSong = itemTapped;
     [self.navigationController showViewController:destination sender:nil];

@@ -149,7 +149,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="byy-df-3Wd" firstAttribute="width" secondItem="Urr-uO-dhX" secondAttribute="width" multiplier="0.8" id="5Ao-IA-1HV"/>
+                                    <constraint firstItem="byy-df-3Wd" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Urr-uO-dhX" secondAttribute="width" multiplier="0.8" id="5Ao-IA-1HV"/>
                                     <constraint firstItem="XPV-pg-znA" firstAttribute="leading" secondItem="Urr-uO-dhX" secondAttribute="leading" id="AAE-5Z-fPh"/>
                                     <constraint firstAttribute="trailing" secondItem="XPV-pg-znA" secondAttribute="trailing" id="GjO-Xs-2xI"/>
                                     <constraint firstItem="byy-df-3Wd" firstAttribute="top" secondItem="XPV-pg-znA" secondAttribute="bottom" constant="8" id="Jf5-vH-XO4"/>

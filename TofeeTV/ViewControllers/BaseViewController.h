@@ -296,6 +296,7 @@
 
 @property (nonatomic) BOOL isPaused;
 -(void)resumeFromPausedState;
+-(NSString *)questionViewControllerName;
 
 -(void)pauseTheMusic;
 @property(nonatomic, strong) GADInterstitial *interstitial;
