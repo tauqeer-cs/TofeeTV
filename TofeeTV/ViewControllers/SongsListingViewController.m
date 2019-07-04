@@ -305,7 +305,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 /// Tells the delegate that a user click will open another app (such as
 /// the App Store), backgrounding the current app.
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
-    
+    //
     NSLog(@"adViewWillLeaveApplication");
 }
 
