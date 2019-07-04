@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
+		501C43FF22CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */; };
+		501C440022CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */; };
+		501C440122CDA5D100546E96 /* SongHeadingViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */; };
+		501C440222CDA5D100546E96 /* SongHeadingViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */; };
+		501C440622CDABEA00546E96 /* SongListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C440422CDABEA00546E96 /* SongListingTableViewCell.m */; };
+		501C440722CDABEA00546E96 /* SongListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C440422CDABEA00546E96 /* SongListingTableViewCell.m */; };
+		501C440822CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */; };
+		501C440922CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */; };
 		50368D0D2225ACA900A05482 /* Barish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50368D0C2225ACA900A05482 /* Barish.mp3 */; };
 		50368D102225AD7C00A05482 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50368D0F2225AD7C00A05482 /* AudioController.m */; };
 		504B265822211390007D376B /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B265622211390007D376B /* QuestionViewController.m */; };
@@ -494,6 +502,12 @@
 /* Begin PBXFileReference section */
 		2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TofeeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
+		501C43FC22CDA5D100546E96 /* SongHeadingViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongHeadingViewTableViewCell.h; sourceTree = "<group>"; };
+		501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongHeadingViewTableViewCell.m; sourceTree = "<group>"; };
+		501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongHeadingViewTableViewCell.xib; sourceTree = "<group>"; };
+		501C440322CDABEA00546E96 /* SongListingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListingTableViewCell.h; sourceTree = "<group>"; };
+		501C440422CDABEA00546E96 /* SongListingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListingTableViewCell.m; sourceTree = "<group>"; };
+		501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListingTableViewCell.xib; sourceTree = "<group>"; };
 		50368D0C2225ACA900A05482 /* Barish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Barish.mp3; sourceTree = "<group>"; };
 		50368D0E2225AD7C00A05482 /* AudioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
 		50368D0F2225AD7C00A05482 /* AudioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
@@ -1398,7 +1412,6 @@
 			isa = PBXGroup;
 			children = (
 				50C5AB952206E94A008BA500 /* CustomCollectionViewLayout.m */,
-				50C5AB962206E94A008BA500 /* TableView */,
 				50C5ABCE2206E94A008BA500 /* DIYTableViewCell.m */,
 				50C5ABCF2206E94A008BA500 /* CustomAddToListView.h */,
 				50C5ABD02206E94A008BA500 /* ChaterDetailView.m */,
@@ -1428,15 +1441,14 @@
 				50C5AC2D2206E94B008BA500 /* TitleHeading.xib */,
 				50C5AC2E2206E94B008BA500 /* TitleHeading copy.xib */,
 				50C5AC2F2206E94B008BA500 /* TextViewForSignUpform.m */,
+				501C43FC22CDA5D100546E96 /* SongHeadingViewTableViewCell.h */,
+				501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */,
+				501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */,
+				501C440322CDABEA00546E96 /* SongListingTableViewCell.h */,
+				501C440422CDABEA00546E96 /* SongListingTableViewCell.m */,
+				501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		50C5AB962206E94A008BA500 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableView;
 			sourceTree = "<group>";
 		};
 		50C5ABD22206E94A008BA500 /* CollectionView */ = {
@@ -1714,6 +1726,7 @@
 				506683C122C782C300590C92 /* yay.wav in Resources */,
 				50C5AC892206E94B008BA500 /* StoryOneTableViewCell.xib in Resources */,
 				50C5ACC02206E9F2008BA500 /* Raleway-ExtraLight.ttf in Resources */,
+				501C440822CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */,
 				50C5AC632206E94B008BA500 /* AddMyOwnCollectionReusableView.xib in Resources */,
 				50C5AC912206E94B008BA500 /* TitleHeading copy.xib in Resources */,
 				50C5ACC52206E9F2008BA500 /* Raleway-SemiBold.ttf in Resources */,
@@ -1764,6 +1777,7 @@
 				50BDF02B22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */,
 				50C5ACC22206E9F2008BA500 /* Raleway-Medium.ttf in Resources */,
 				50C5AC672206E94B008BA500 /* BransListingCollectionViewCell2.xib in Resources */,
+				501C440122CDA5D100546E96 /* SongHeadingViewTableViewCell.xib in Resources */,
 				50C5AC882206E94B008BA500 /* HowItWorksTableViewCell.xib in Resources */,
 				50C5ACC82206E9F2008BA500 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 				50C5ACD02206E9F2008BA500 /* Raleway-BlackItalic.ttf in Resources */,
@@ -1815,6 +1829,7 @@
 				50D8A6C52249D73B0000A967 /* CustomFooterView.xib in Resources */,
 				50D8A6C62249D73B0000A967 /* BrandSectionCollectionReusableView.xib in Resources */,
 				50D8A6C72249D73B0000A967 /* Raleway-Light.ttf in Resources */,
+				501C440922CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */,
 				5067F86322CA1FF800A97CF7 /* App background loop.wav in Resources */,
 				50D8A6C82249D73B0000A967 /* Raleway-BoldItalic.ttf in Resources */,
 				50D8A6C92249D73B0000A967 /* Assets.xcassets in Resources */,
@@ -1826,6 +1841,7 @@
 				50D8A6CF2249D73B0000A967 /* BransListingCollectionViewCell.xib in Resources */,
 				50D8A6D02249D73B0000A967 /* Main.storyboard in Resources */,
 				50D8A6D12249D73B0000A967 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				501C440222CDA5D100546E96 /* SongHeadingViewTableViewCell.xib in Resources */,
 				50D8A6D22249D73B0000A967 /* QuestionAnsweTableViewCell.xib in Resources */,
 				50D8A6D32249D73B0000A967 /* BrandSearchCollectionReusableView.xib in Resources */,
 				50D8A6D42249D73B0000A967 /* MenuItemBenefitTableViewCell.xib in Resources */,
@@ -1921,6 +1937,7 @@
 				50C5AA7B2206E84B008BA500 /* SlideNavigationController.m in Sources */,
 				50C5AB762206E8F3008BA500 /* EDStarRating.m in Sources */,
 				50C5AB5D2206E8F3008BA500 /* FSCalendarDelegationFactory.m in Sources */,
+				501C440622CDABEA00546E96 /* SongListingTableViewCell.m in Sources */,
 				50C5AC8F2206E94B008BA500 /* MyListViewLayout.m in Sources */,
 				50C5AB432206E8F3008BA500 /* UIColor+HexSupport.m in Sources */,
 				50C5AB4C2206E8F3008BA500 /* View+MASAdditions.m in Sources */,
@@ -1942,6 +1959,7 @@
 				50C5AB412206E8F3008BA500 /* QZDateSelectorView.m in Sources */,
 				50C5AB732206E8F3008BA500 /* UIView+Toast.m in Sources */,
 				50BDF02D22BFD1A1008804FE /* PFTableViewCell.m in Sources */,
+				501C43FF22CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */,
 				50C5AB5E2206E8F3008BA500 /* FSCalendarCell.m in Sources */,
 				50C5AB3C2206E8F3008BA500 /* JotTouchBezier.m in Sources */,
 				50C5AB682206E8F3008BA500 /* FSCalendarHeaderView.m in Sources */,
@@ -2195,6 +2213,7 @@
 				50D8A66E2249D73B0000A967 /* MKDropdownMenu.m in Sources */,
 				50D8A66F2249D73B0000A967 /* RightMenuViewController.m in Sources */,
 				50D8A6702249D73B0000A967 /* FSCalendarCollectionView.m in Sources */,
+				501C440022CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */,
 				50D8A6712249D73B0000A967 /* ManuViewController.m in Sources */,
 				50D8A6722249D73B0000A967 /* UIImage+LMExtension.m in Sources */,
 				50D8A6732249D73B0000A967 /* LessonsTableViewCell.m in Sources */,
@@ -2232,6 +2251,7 @@
 				50D8A6932249D73B0000A967 /* AFDropdownNotification.m in Sources */,
 				50D8A6942249D73B0000A967 /* CustomViewController.m in Sources */,
 				50D8A6952249D73B0000A967 /* MASLayoutConstraint.m in Sources */,
+				501C440722CDABEA00546E96 /* SongListingTableViewCell.m in Sources */,
 				50D8A6962249D73B0000A967 /* DescriptionTableViewCell.m in Sources */,
 				50D8A6972249D73B0000A967 /* HRColorPickerView.m in Sources */,
 				50D8A6982249D73B0000A967 /* MyListSectionHeaderCollectionReusableView.m in Sources */,

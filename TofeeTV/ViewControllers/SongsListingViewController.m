@@ -15,9 +15,9 @@
 #import "ThankYouViewController.h"
 #import "ProfileViewController.h"
 #import <AdSupport/ASIdentifierManager.h>
+#import "SongListingTableViewCell.h"
 
-
-@interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate>
+@interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfAdd;
 
 @property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 @end
@@ -38,17 +39,19 @@
     // Do any additional setup after loading the view.
     
     self.title = @"Songs";
-    
     self.items = @[@"Profile", @"Remove Ads", @"Logout"];
-    
     [self makeDropDownSelectionWithItemsArray:self.items withCustomView:nil];
+    [self addTableViewCellWithTableView:self.tableView withNibName:@"SongHeadingViewTableViewCell" withCellIdName:@"cellHeader"];
     
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
+    [self addTableViewCellWithTableView:self.tableView withNibName:@"SongListingTableViewCell" withCellIdName:@"cellSongListing"];
     
-    [self addCollectionViewCellWithCollectionView:self.collectionView withNibName:@"SongsCollectionViewCell" withCellIdName:@"cellSongs"];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
+    self.tableView.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:222.0/255.0 alpha:1.0];
     
+
+
     [self showLoader];
     
     [self loadData];
@@ -60,8 +63,6 @@
     
     self.request = [GADRequest request];
     self.request.testDevices = @[ @"931CA2DA0AF0484680E367B30FB570B0",kGADSimulatorID];
-    
-//
     self.bannerView.adUnitID = @"ca-app-pub-2522914220379856/3130957071";
     self.bannerView.rootViewController = self;
     
@@ -69,16 +70,7 @@
     self.bannerView.delegate = self;
     
     [self.bannerView loadRequest:self.request];
-
-    
-
     self.heightOfAdd.constant = 0;
-    
-
-    NSLog(@"");
-    
-    //  self.;
-    
     
 }
 
@@ -130,10 +122,17 @@
         [self hideLoader];
         
         self.dataSource = result;
-        [self.collectionView reloadData];
+        
+        [self.tableView reloadData];
         
     } withFailueHandler:^(id  _Nonnull error) {
         [self hideLoader];
+        
+        [self callAlertViewControllerWithTitle:@"" withMessage:@"" withOkButtonTitle:@"" withCancleTitle:@"" withOKHandler:^{
+            
+        } withCancelHandler:^{
+            
+        }];
         
     }];
 }
@@ -141,19 +140,7 @@
 {
     
     [super viewDidAppear:animated];
-    
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    
-    
-    
-    
-    /*
-    ThankYouViewController * destination  = [[ThankYouViewController alloc] initWithNibName:@"ThankYouViewController" bundle:nil];
-    [self.navigationController showViewController:destination sender:nil];
-    */
-    
-    
-    
 }
 
 
@@ -167,20 +154,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
-    
-    /*if (deviceOrientation == UIDeviceOrientationLandscapeLeft || deviceOrientation == UIDeviceOrientationLandscapeRight)
-    {
-    
-    return CGSizeMake([[UIScreen mainScreen ] bounds].size.height/2, [[UIScreen mainScreen ] bounds].size.height/2);
-        
-    }*/
-    
-    
     return CGSizeMake([[UIScreen mainScreen ] bounds].size.width/2, [[UIScreen mainScreen ] bounds].size.width/2);
-    
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -280,11 +254,7 @@
     destination.questionIndex = 0;
     
     destination.selectedSong = itemTapped;
-    
-    
     [self.navigationController showViewController:destination sender:nil];
-
-    
 }
 
 
@@ -297,11 +267,8 @@
     
     if ([segue.identifier isEqualToString:@"showOptions"])
     {
-    
         SelectSongOrGameViewController * destination = segue.destinationViewController;
-        destination.objectComing = self.dataSource[self.collectionView.indexPathsForSelectedItems[0].row];
-        
-        
+        destination.objectComing = self.dataSource[self.tableView.indexPathForSelectedRow.row - 1];
     }
 
 }
@@ -345,8 +312,56 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     NSLog(@"adViewWillLeaveApplication");
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    if (indexPath.row > 0)
+    {
+        
+        SongListingTableViewCell * tmpCell = [tableView dequeueReusableCellWithIdentifier:@"cellSongListing"];
+        tmpCell.lblName.text = self.dataSource[indexPath.row-1].name;
+        [tmpCell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        
+
+        if (indexPath.row % 2 == 0) {
+       
+            tmpCell.backgroundColor = [UIColor colorWithRed:198.0/255.0
+                                                  green:0.0 blue:1.0 alpha:1.0];
+            
+        }
+        else
+        {
+            tmpCell.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:222.0/255.0 alpha:1.0];
+        }
+        return tmpCell;
+    }
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellHeader" forIndexPath:indexPath];
+    
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    
+    return cell;
     
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.row == 0) {
+        return [[UIScreen mainScreen] bounds].size.height/6;
+    }
+    
+    return [[UIScreen mainScreen] bounds].size.height/12;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count + 1;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    [self performSegueWithIdentifier:@"showOptions" sender:self];
+    
+}
+
 @end
