@@ -224,8 +224,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ag-HD-Ipr">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellItem" rowHeight="80" id="4CP-mv-oFv">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
@@ -263,8 +263,8 @@
                             <constraint firstItem="maM-gT-sYZ" firstAttribute="trailing" secondItem="uch-WH-r4f" secondAttribute="trailing" id="4ZV-6I-CDI"/>
                             <constraint firstItem="0ag-HD-Ipr" firstAttribute="top" secondItem="uch-WH-r4f" secondAttribute="top" id="EDv-5B-Xte"/>
                             <constraint firstAttribute="bottom" secondItem="maM-gT-sYZ" secondAttribute="bottom" id="OzV-ld-vpr"/>
-                            <constraint firstItem="0ag-HD-Ipr" firstAttribute="bottom" secondItem="uch-WH-r4f" secondAttribute="bottom" id="Ret-Zo-wXQ"/>
                             <constraint firstItem="0ag-HD-Ipr" firstAttribute="trailing" secondItem="uch-WH-r4f" secondAttribute="trailing" id="URe-bA-oPD"/>
+                            <constraint firstItem="maM-gT-sYZ" firstAttribute="top" secondItem="0ag-HD-Ipr" secondAttribute="bottom" id="Vsv-in-o6W"/>
                             <constraint firstItem="0ag-HD-Ipr" firstAttribute="leading" secondItem="uch-WH-r4f" secondAttribute="leading" id="bnC-PO-n9E"/>
                             <constraint firstItem="maM-gT-sYZ" firstAttribute="leading" secondItem="uch-WH-r4f" secondAttribute="leading" id="wHo-j9-Tml"/>
                         </constraints>

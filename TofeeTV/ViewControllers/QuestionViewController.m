@@ -68,18 +68,16 @@
     for (UIButton * currentButton in self.answerButons)
     {
         [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:18]];
+        currentButton.layer.borderColor = [UIColor whiteColor].CGColor ;
+        currentButton.layer.borderWidth = 3.0;
+        
     }
     [self setQuestionDataWithIndex];
-
-    UIPanGestureRecognizer * panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+   UIPanGestureRecognizer * panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                                      action:@selector(handlePanGesture:)];
-    
     [self.hintImage addGestureRecognizer:panRecognizer];
-    
     self.hintImage.userInteractionEnabled = YES;
     
- 
-    //[self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
 }
 
@@ -230,7 +228,7 @@
         
     }
     
-    if ([currentQuestion.questionType isEqualToString:@"four_options"])
+    if ([currentQuestion.questionType isEqualToString:@"four_options"] || [currentQuestion.questionType isEqualToString:@"images"])
     {
     
         NSArray * buttonsArray = @[self.btnQuestion1,self.btnQuestion2,self.btnQuestion3,self.btnQuestion4];
