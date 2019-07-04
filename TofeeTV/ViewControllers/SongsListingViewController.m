@@ -70,7 +70,7 @@
     self.bannerView.delegate = self;
     
     [self.bannerView loadRequest:self.request];
-    self.heightOfAdd.constant = 0;
+    self.heightOfAdd.constant = 50;
     
 }
 
@@ -143,7 +143,7 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-
+/*/
 -(NSInteger)collectionView:(UICollectionView *)collectionView
     numberOfItemsInSection:(NSInteger)section{
     
@@ -241,18 +241,16 @@
         
     }];
     
-    ///[self.navigationController showViewController:destination sender:self];
     
     
 }
-
+*/
 -(void)quizTapped:(id)itemTapped
 {
  
     
     QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:@"QuestionViewController" bundle:nil];
     destination.questionIndex = 0;
-    
     destination.selectedSong = itemTapped;
     [self.navigationController showViewController:destination sender:nil];
 }
@@ -278,7 +276,6 @@
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
     NSLog(@"adViewDidReceiveAd");
     [self.bannerView setHidden:NO];
-    self.heightOfAdd.constant = 50;
     
     
 }

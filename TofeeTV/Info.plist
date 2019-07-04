@@ -25,9 +25,8 @@
 			</array>
 		</dict>
 	</array>
-    <key>CFBundleDisplayName</key>
-    <string>$(PRODUCT_NAME)</string>
-    
+	<key>CFBundleDisplayName</key>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleVersion</key>
 	<string>6</string>
 	<key>FacebookAppID</key>
@@ -52,32 +51,14 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Raleway-Black.ttf</string>
-		<string>Raleway-BlackItalic.ttf</string>
-		<string>Raleway-BoldItalic.ttf</string>
-		<string>Raleway-ExtraBold.ttf</string>
-		<string>Raleway-ExtraBoldItalic.ttf</string>
-		<string>Raleway-ExtraLight.ttf</string>
-		<string>Raleway-ExtraLightItalic.ttf</string>
-		<string>Raleway-Italic.ttf</string>
-		<string>Raleway-Light.ttf</string>
-		<string>Raleway-LightItalic.ttf</string>
-		<string>Raleway-Medium.ttf</string>
-		<string>Raleway-MediumItalic.ttf</string>
-		<string>Raleway-Regular.ttf</string>
-		<string>Raleway-SemiBold.ttf</string>
-		<string>Raleway-SemiBoldItalic.ttf</string>
-		<string>Raleway-Thin.ttf</string>
-		<string>Raleway-ThinItalic.ttf</string>
-		<string>Raleway-Bold.ttf</string>
-		<string>OpenSans-Regular.ttf</string>
-		<string>OpenSans-Semibold.ttf</string>
 		<string>KGWhattheTeacherWants.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-2522914220379856~9609747274</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

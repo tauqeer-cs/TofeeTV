@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21794F92E6B0253444373ADD /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
 		27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
 		501C43FF22CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */; };
 		501C440022CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */; };
@@ -28,8 +29,6 @@
 		506683C522C78C5B00590C92 /* uh oh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C322C78C5B00590C92 /* uh oh.wav */; };
 		5067F86222CA1FF800A97CF7 /* App background loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5067F86122CA1FF800A97CF7 /* App background loop.wav */; };
 		5067F86322CA1FF800A97CF7 /* App background loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5067F86122CA1FF800A97CF7 /* App background loop.wav */; };
-		5067F86522CA26EF00A97CF7 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5067F86422CA26EF00A97CF7 /* GoogleMobileAds.framework */; };
-		5067F86622CA26EF00A97CF7 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5067F86422CA26EF00A97CF7 /* GoogleMobileAds.framework */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
 		507ECE672247537A0080ABB6 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE662247537A0080ABB6 /* CustomNavViewController.m */; };
 		507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE69224758830080ABB6 /* CustomNavViewController2.m */; };
@@ -428,7 +427,6 @@
 		50D8A6AB2249D73B0000A967 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A672210832700DAC9A5 /* Bolts.framework */; };
 		50D8A6AC2249D73B0000A967 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A662210832700DAC9A5 /* FBSDKShareKit.framework */; };
 		50D8A6AD2249D73B0000A967 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */; };
-		50D8A6AE2249D73B0000A967 /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
 		50D8A6B02249D73B0000A967 /* StoryOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC202206E94B008BA500 /* StoryOneTableViewCell.xib */; };
 		50D8A6B12249D73B0000A967 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9D2206E9F2008BA500 /* Raleway-ExtraLight.ttf */; };
 		50D8A6B22249D73B0000A967 /* AddMyOwnCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ABE52206E94A008BA500 /* AddMyOwnCollectionReusableView.xib */; };
@@ -501,7 +499,7 @@
 
 /* Begin PBXFileReference section */
 		2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TofeeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
+		38952574FE3B321DAD1C124E /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
 		501C43FC22CDA5D100546E96 /* SongHeadingViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongHeadingViewTableViewCell.h; sourceTree = "<group>"; };
 		501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongHeadingViewTableViewCell.m; sourceTree = "<group>"; };
 		501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongHeadingViewTableViewCell.xib; sourceTree = "<group>"; };
@@ -521,7 +519,6 @@
 		506683C022C782C300590C92 /* yay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yay.wav; sourceTree = "<group>"; };
 		506683C322C78C5B00590C92 /* uh oh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "uh oh.wav"; sourceTree = "<group>"; };
 		5067F86122CA1FF800A97CF7 /* App background loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "App background loop.wav"; sourceTree = "<group>"; };
-		5067F86422CA26EF00A97CF7 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
 		507ECE652247537A0080ABB6 /* CustomNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
@@ -925,7 +922,7 @@
 		50E56AE9221C5B85008A1F81 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
 		50E56AEA221C5B85008A1F81 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		50E56AEB221C5B85008A1F81 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
-		CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2DEAEBDAB3D35A4182C5CF /* Pods-TofeeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -933,12 +930,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5067F86522CA26EF00A97CF7 /* GoogleMobileAds.framework in Frameworks */,
 				509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */,
 				509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */,
 				509E3A6A2210832900DAC9A5 /* FBSDKShareKit.framework in Frameworks */,
 				509E3A6C2210832900DAC9A5 /* FBSDKLoginKit.framework in Frameworks */,
 				27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */,
+				21794F92E6B0253444373ADD /* libPods-TofeeTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,12 +943,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5067F86622CA26EF00A97CF7 /* GoogleMobileAds.framework in Frameworks */,
 				50D8A6AA2249D73B0000A967 /* FBSDKCoreKit.framework in Frameworks */,
 				50D8A6AB2249D73B0000A967 /* Bolts.framework in Frameworks */,
 				50D8A6AC2249D73B0000A967 /* FBSDKShareKit.framework in Frameworks */,
 				50D8A6AD2249D73B0000A967 /* FBSDKLoginKit.framework in Frameworks */,
-				50D8A6AE2249D73B0000A967 /* libPods-TofeeTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1587,7 +1582,6 @@
 		50C5AC972206E9F2008BA500 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				5067F86422CA26EF00A97CF7 /* GoogleMobileAds.framework */,
 				5067F86122CA1FF800A97CF7 /* App background loop.wav */,
 				506683C322C78C5B00590C92 /* uh oh.wav */,
 				50368D0C2225ACA900A05482 /* Barish.mp3 */,
@@ -1628,8 +1622,8 @@
 		ACA9E1B3C82D11B72DED7788 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */,
-				4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */,
+				FB2DEAEBDAB3D35A4182C5CF /* Pods-TofeeTV.debug.xcconfig */,
+				38952574FE3B321DAD1C124E /* Pods-TofeeTV.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1671,7 +1665,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50D8A6F22249D73B0000A967 /* Build configuration list for PBXNativeTarget "TofeeTV copy" */;
 			buildPhases = (
-				50D8A60D2249D73B0000A967 /* [CP] Check Pods Manifest.lock */,
 				50D8A60E2249D73B0000A967 /* Sources */,
 				50D8A6A92249D73B0000A967 /* Frameworks */,
 				50D8A6AF2249D73B0000A967 /* Resources */,
@@ -1883,28 +1876,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50D8A60D2249D73B0000A967 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TofeeTV-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EBF49904B26CC685EB230C36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2411,7 +2382,7 @@
 		};
 		50C5AA242206E479008BA500 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */;
+			baseConfigurationReference = FB2DEAEBDAB3D35A4182C5CF /* Pods-TofeeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2438,7 +2409,7 @@
 		};
 		50C5AA252206E479008BA500 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */;
+			baseConfigurationReference = 38952574FE3B321DAD1C124E /* Pods-TofeeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2465,7 +2436,6 @@
 		};
 		50D8A6F32249D73B0000A967 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF451F39201FCA3CB482C001 /* Pods-TofeeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2492,7 +2462,6 @@
 		};
 		50D8A6F42249D73B0000A967 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C87BF05F8B0D009E13309CA /* Pods-TofeeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

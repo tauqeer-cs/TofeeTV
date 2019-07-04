@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB764940999021682A1DC2631D78685F"
+               BlueprintIdentifier = "4F5310CBF8A26CE43CD168E01D10C480"
+               BuildableName = "libPods-TofeeTV.a"
                BlueprintName = "Pods-TofeeTV"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-TofeeTV.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
