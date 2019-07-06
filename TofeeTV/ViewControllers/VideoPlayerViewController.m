@@ -21,6 +21,9 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnPlay;
 @property (weak, nonatomic) IBOutlet UIButton *btnBackBack;
+@property (weak, nonatomic) IBOutlet UIButton *btnQuiz;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *btnTopBottom;
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *topBottom;
 
 @end
 
@@ -44,6 +47,19 @@
     AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentOne.shouldAutoRotate = YES;
 
+    self.btnQuiz.backgroundColor = DefaultYellowColor2;
+    self.btnQuiz.layer.cornerRadius = 15;
+    
+    
+    if (IS_IPad)
+    {
+        for (NSLayoutConstraint * currentOne in self.topBottom) {
+            
+            currentOne.constant = 40;
+            
+        }
+    }
+    
 }
 
 - (IBAction)btnPauseTapped:(UIButton *)sender {

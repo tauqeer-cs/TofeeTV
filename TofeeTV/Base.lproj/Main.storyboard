@@ -338,10 +338,16 @@
                                             <constraint firstAttribute="height" constant="80" id="zQN-PR-YKG"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnSongTapped:" destination="oFN-Ul-fKS" eventType="touchUpInside" id="w8l-gj-UoB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EF-OW-yj2">
                                         <rect key="frame" x="24" y="104" width="327" height="80"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnGameTapped:" destination="oFN-Ul-fKS" eventType="touchUpInside" id="dSz-Wo-VFe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -380,11 +386,13 @@
                     <connections>
                         <outlet property="btnGame" destination="0EF-OW-yj2" id="Oz0-FZ-cx8"/>
                         <outlet property="btnSong" destination="F7b-5K-zkL" id="Iqo-au-xqD"/>
+                        <outlet property="heightOfView" destination="CxN-UH-k3Q" id="VPE-bm-Jhr"/>
                         <outlet property="lblSong" destination="AOI-3a-xHW" id="xL6-D7-iFZ"/>
                         <outletCollection property="distanceFromSides" destination="kWI-gh-Uom" id="5Jh-di-b76"/>
                         <outletCollection property="distanceFromSides" destination="BRT-40-Jja" id="K6e-S2-eiL"/>
                         <outletCollection property="distanceFromSides" destination="bo4-kC-top" id="v4q-QS-082"/>
                         <outletCollection property="distanceFromSides" destination="xRc-X8-Pns" id="oZX-5C-gvd"/>
+                        <outletCollection property="distanceFromSides" destination="a25-Qt-kSj" id="2sz-Si-hSy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IT-Wt-G6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
