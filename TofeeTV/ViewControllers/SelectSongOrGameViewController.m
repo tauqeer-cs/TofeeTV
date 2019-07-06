@@ -72,14 +72,18 @@
     }
 
     
-    //btnFeedback.layer.cornerRadius  = 25;
     
     
 }
 
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{
     
-    [ad presentFromRootViewController:self];
+    if ([self.navigationController.viewControllers.lastObject isEqual:self]) {
+
+            [ad presentFromRootViewController:self];
+        
+    }
+
     
     NSLog(@"");
 }
