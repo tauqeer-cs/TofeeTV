@@ -97,7 +97,7 @@
      
         self.gestureImageView = [UIImageView new];
         [self.gestureImageView setImage:self.hintImage.image];
-        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width/2, self.hintImage.frame.size.height/2)];
+        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width, self.hintImage.frame.size.height)];
         
         [self.view addSubview:self.gestureImageView];
         
