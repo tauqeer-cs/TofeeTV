@@ -669,6 +669,9 @@
 
 - (void)btnBackTapped {
     
+    //[self buttonBlip];
+    
+    
     
     [self closeButtonTapped];
     
@@ -2060,6 +2063,12 @@
     
 }
 
+-(void)buttonBlip {
+    
+    [self inititateTheAudioFile:@"blip" withFileType:@"wav" withOneTimePlay:YES];
+
+    
+}
 -(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType withOneTimePlay:(BOOL)oneTime
 {
     self.audioController = [[AudioController alloc] initWithFileName:fileName withFileType:fileType withOneTimePlay:oneTime];

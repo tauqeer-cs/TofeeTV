@@ -284,7 +284,9 @@
 - (IBAction)btnQuestionTapped:(UIButton *)sender {
     
 
- 
+ //-(void)buttonBlip;
+    [self buttonBlip];
+    
     int selectedAnswerIndex = sender.tag;
     
    Question * currentQuestion =  self.selectedSong.myQuestions[self.questionIndex];
@@ -293,8 +295,16 @@
     
     if (![selectedAnswer isEqualToString:currentQuestion.answer]) {
         
-        [self inititateTheAudioFile:@"uh oh" withFileType:@"wav" withOneTimePlay:YES];
+        double delayInSeconds = 0.5;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            
+            [self inititateTheAudioFile:@"uh oh" withFileType:@"wav" withOneTimePlay:YES];
+            
+            
+        });
         
+
 
         [sender setEnabled:NO];
         sender.backgroundColor = [UIColor lightGrayColor];

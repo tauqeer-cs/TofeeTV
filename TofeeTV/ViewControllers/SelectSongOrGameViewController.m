@@ -101,6 +101,8 @@
 }
 
 -(void)gameLabelTapped {
+    [self buttonBlip];
+    
     
     QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName bundle:nil];
     
@@ -121,6 +123,9 @@
     
 }
 -(void)songItemTapped {
+    
+    [self buttonBlip];
+    
     
     AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentOne.shouldAutoRotate = YES;
@@ -143,6 +148,9 @@
 
 -(void)quizTapped:(id)itemTapped
 {
+    
+    [self buttonBlip];
+    
     
     
     QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName bundle:nil];

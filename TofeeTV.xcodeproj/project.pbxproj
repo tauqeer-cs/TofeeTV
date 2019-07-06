@@ -17,7 +17,6 @@
 		501C440722CDABEA00546E96 /* SongListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C440422CDABEA00546E96 /* SongListingTableViewCell.m */; };
 		501C440822CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */; };
 		501C440922CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */; };
-		50368D0D2225ACA900A05482 /* Barish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50368D0C2225ACA900A05482 /* Barish.mp3 */; };
 		50368D102225AD7C00A05482 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50368D0F2225AD7C00A05482 /* AudioController.m */; };
 		504B265822211390007D376B /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B265622211390007D376B /* QuestionViewController.m */; };
 		504B265922211390007D376B /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504B265722211390007D376B /* QuestionViewController.xib */; };
@@ -49,6 +48,8 @@
 		50A9937F22CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */; };
 		50A9938022CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */; };
 		50B3B4EA2247C0430064C4C2 /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */; };
+		50B7C12422D0F8C800B1B536 /* blip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 50B7C12322D0F8C800B1B536 /* blip.wav */; };
+		50B7C12522D0F8C800B1B536 /* blip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 50B7C12322D0F8C800B1B536 /* blip.wav */; };
 		50B8866322BE2C820099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
 		50B8866422BE2C8B0099AA59 /* LoginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */; };
 		50B8866722BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8866622BE65870099AA59 /* SelectSongOrGameViewController.m */; };
@@ -435,7 +436,6 @@
 		50D8A6B32249D73B0000A967 /* TitleHeading copy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC2E2206E94B008BA500 /* TitleHeading copy.xib */; };
 		50D8A6B42249D73B0000A967 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACA32206E9F2008BA500 /* Raleway-SemiBold.ttf */; };
 		50D8A6B52249D73B0000A967 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AC9A2206E9F2008BA500 /* Raleway-MediumItalic.ttf */; };
-		50D8A6B62249D73B0000A967 /* Barish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50368D0C2225ACA900A05482 /* Barish.mp3 */; };
 		50D8A6B72249D73B0000A967 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB72206E9F2008BA500 /* Raleway-Italic.ttf */; };
 		50D8A6B82249D73B0000A967 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACB32206E9F2008BA500 /* OpenSans-Regular.ttf */; };
 		50D8A6B92249D73B0000A967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5AA1B2206E479008BA500 /* LaunchScreen.storyboard */; };
@@ -508,7 +508,6 @@
 		501C440322CDABEA00546E96 /* SongListingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListingTableViewCell.h; sourceTree = "<group>"; };
 		501C440422CDABEA00546E96 /* SongListingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListingTableViewCell.m; sourceTree = "<group>"; };
 		501C440522CDABEA00546E96 /* SongListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListingTableViewCell.xib; sourceTree = "<group>"; };
-		50368D0C2225ACA900A05482 /* Barish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Barish.mp3; sourceTree = "<group>"; };
 		50368D0E2225AD7C00A05482 /* AudioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
 		50368D0F2225AD7C00A05482 /* AudioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
 		504B265522211390007D376B /* QuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
@@ -551,6 +550,7 @@
 		509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		50A9937E22CE53770085AA91 /* QuestionViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController_iPad.xib; sourceTree = "<group>"; };
 		50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGWhattheTeacherWants.ttf; sourceTree = "<group>"; };
+		50B7C12322D0F8C800B1B536 /* blip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blip.wav; sourceTree = "<group>"; };
 		50B8866122BE2C820099AA59 /* LoginOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginOptionsViewController.h; sourceTree = "<group>"; };
 		50B8866222BE2C820099AA59 /* LoginOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginOptionsViewController.m; sourceTree = "<group>"; };
 		50B8866522BE65870099AA59 /* SelectSongOrGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSongOrGameViewController.h; sourceTree = "<group>"; };
@@ -1588,7 +1588,7 @@
 			children = (
 				5067F86122CA1FF800A97CF7 /* App background loop.wav */,
 				506683C322C78C5B00590C92 /* uh oh.wav */,
-				50368D0C2225ACA900A05482 /* Barish.mp3 */,
+				50B7C12322D0F8C800B1B536 /* blip.wav */,
 				506683C022C782C300590C92 /* yay.wav */,
 				50B3B4E92247C0430064C4C2 /* KGWhattheTeacherWants.ttf */,
 				50C5AC992206E9F2008BA500 /* Raleway-BoldItalic.ttf */,
@@ -1728,7 +1728,6 @@
 				50C5AC912206E94B008BA500 /* TitleHeading copy.xib in Resources */,
 				50C5ACC52206E9F2008BA500 /* Raleway-SemiBold.ttf in Resources */,
 				50C5ACBD2206E9F2008BA500 /* Raleway-MediumItalic.ttf in Resources */,
-				50368D0D2225ACA900A05482 /* Barish.mp3 in Resources */,
 				50C5ACD82206E9F2008BA500 /* Raleway-Italic.ttf in Resources */,
 				50C5ACD52206E9F2008BA500 /* OpenSans-Regular.ttf in Resources */,
 				50C5AA1D2206E479008BA500 /* LaunchScreen.storyboard in Resources */,
@@ -1787,6 +1786,7 @@
 				50C5ACD22206E9F2008BA500 /* MavenPro-Medium.ttf in Resources */,
 				50A9937F22CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */,
 				50BAF94B22BFE10E008ADE95 /* ProfileViewController.xib in Resources */,
+				50B7C12422D0F8C800B1B536 /* blip.wav in Resources */,
 				50C5ACCE2206E9F2008BA500 /* MavenPro-Regular.ttf in Resources */,
 				50C5ACD32206E9F2008BA500 /* Raleway-LightItalic.ttf in Resources */,
 				50C5AC6B2206E94B008BA500 /* MyListProfileCollectionViewCell.xib in Resources */,
@@ -1809,7 +1809,6 @@
 				50D8A6B32249D73B0000A967 /* TitleHeading copy.xib in Resources */,
 				50D8A6B42249D73B0000A967 /* Raleway-SemiBold.ttf in Resources */,
 				50D8A6B52249D73B0000A967 /* Raleway-MediumItalic.ttf in Resources */,
-				50D8A6B62249D73B0000A967 /* Barish.mp3 in Resources */,
 				50D8A6B72249D73B0000A967 /* Raleway-Italic.ttf in Resources */,
 				50D8A6B82249D73B0000A967 /* OpenSans-Regular.ttf in Resources */,
 				50D8A6B92249D73B0000A967 /* LaunchScreen.storyboard in Resources */,
@@ -1817,6 +1816,7 @@
 				50D8A6BB2249D73B0000A967 /* Raleway-Thin.ttf in Resources */,
 				50D8A6BC2249D73B0000A967 /* TitleHeading.xib in Resources */,
 				50D8A6BD2249D73B0000A967 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				50B7C12522D0F8C800B1B536 /* blip.wav in Resources */,
 				50D8A6BE2249D73B0000A967 /* MavenPro-Bold.ttf in Resources */,
 				50D8A6BF2249D73B0000A967 /* LessonsTableViewCell.xib in Resources */,
 				50D8A6C02249D73B0000A967 /* BottomCollectionReusableView.xib in Resources */,

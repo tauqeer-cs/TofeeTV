@@ -390,7 +390,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    //[self buttonBlip];
     [self performSegueWithIdentifier:@"showOptions" sender:self];
     
 }

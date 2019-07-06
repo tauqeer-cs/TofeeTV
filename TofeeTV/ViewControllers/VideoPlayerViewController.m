@@ -256,6 +256,7 @@
 - (IBAction)quizMeTapped:(UIButton *)sender
 {
 
+    [self buttonBlip];
     
     [self dismissViewControllerAnimated:YES completion:^{
     

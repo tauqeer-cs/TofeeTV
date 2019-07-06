@@ -104,8 +104,7 @@
     
     self.lblTermsText.userInteractionEnabled = YES;
     
-   //[self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
-    
+   
     [self setTouchMethodWithLabel:self.view withSelector:@selector(viewTouched)];
     
     

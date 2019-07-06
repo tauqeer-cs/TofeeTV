@@ -126,18 +126,24 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sk0-kO-ZPD">
                     <rect key="frame" x="16" y="16" width="30" height="30"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGG-oD-HT6">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGG-oD-HT6">
                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="previous"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="7Cm-ny-wNZ"/>
+                                <constraint firstAttribute="width" constant="30" id="azE-ag-Vqg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="36"/>
+                            <state key="normal" title="←"/>
                             <connections>
                                 <action selector="btnBackBackTapped:" destination="-1" eventType="touchUpInside" id="Ryo-UP-k2v"/>
                             </connections>
                         </button>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="uGG-oD-HT6" firstAttribute="leading" secondItem="sk0-kO-ZPD" secondAttribute="leading" id="EN8-HF-wfW"/>
                         <constraint firstAttribute="width" constant="30" id="c5b-mt-n5l"/>
                         <constraint firstAttribute="height" constant="30" id="cdG-rC-6EN"/>
+                        <constraint firstItem="uGG-oD-HT6" firstAttribute="top" secondItem="sk0-kO-ZPD" secondAttribute="top" id="kbH-dZ-eCS"/>
                     </constraints>
                 </view>
             </subviews>
@@ -171,6 +177,5 @@
         <image name="icon-pause" width="250" height="250"/>
         <image name="icon-play" width="250" height="250"/>
         <image name="icon-rewind" width="250" height="250"/>
-        <image name="previous" width="9.5" height="17.5"/>
     </resources>
 </document>

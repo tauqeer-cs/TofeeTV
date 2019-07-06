@@ -292,6 +292,7 @@
 -(void)showExternalUrl:(NSString *)externalUrl;
 @property (strong, nonatomic) AudioController *audioController;
 -(void)inititateTheAudioFile:(NSString *)fileName withFileType:(NSString *)fileType withOneTimePlay:(BOOL)oneTime;
+-(void)buttonBlip;
 
 
 @property (nonatomic) BOOL isPaused;
