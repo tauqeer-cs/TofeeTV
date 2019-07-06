@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="73.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt-repeat" translatesAutoresizingMaskIntoConstraints="NO" id="MQs-TP-5vA">
-                                                <rect key="frame" x="48" y="14.5" width="144" height="44.5"/>
+                                                <rect key="frame" x="48" y="14.5" width="144" height="44.500000000000028"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -330,35 +330,39 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-0z-kpJ">
-                                <rect key="frame" x="0.0" y="233.5" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="221.5" width="375" height="184"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L47-DW-UuF">
-                                        <rect key="frame" x="0.0" y="80" width="375" height="80"/>
-                                        <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-3a-xHW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-5K-zkL">
+                                        <rect key="frame" x="24" y="0.0" width="327" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="Z7s-lj-VEY"/>
+                                            <constraint firstAttribute="height" constant="80" id="zQN-PR-YKG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EF-OW-yj2">
+                                        <rect key="frame" x="24" y="104" width="327" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="CxN-UH-k3Q"/>
-                                    <constraint firstAttribute="trailing" secondItem="AOI-3a-xHW" secondAttribute="trailing" id="Glf-zh-HCY"/>
-                                    <constraint firstItem="L47-DW-UuF" firstAttribute="top" secondItem="AOI-3a-xHW" secondAttribute="bottom" id="HIo-JQ-o4g"/>
-                                    <constraint firstItem="L47-DW-UuF" firstAttribute="leading" secondItem="uwt-0z-kpJ" secondAttribute="leading" id="b39-RV-oz4"/>
-                                    <constraint firstItem="AOI-3a-xHW" firstAttribute="top" secondItem="uwt-0z-kpJ" secondAttribute="top" id="cbO-qO-FVz"/>
-                                    <constraint firstItem="AOI-3a-xHW" firstAttribute="leading" secondItem="uwt-0z-kpJ" secondAttribute="leading" id="esJ-td-VjF"/>
-                                    <constraint firstAttribute="bottom" secondItem="L47-DW-UuF" secondAttribute="bottom" id="nVE-Lj-jKt"/>
-                                    <constraint firstAttribute="trailing" secondItem="L47-DW-UuF" secondAttribute="trailing" id="wr5-kc-tMK"/>
+                                    <constraint firstItem="F7b-5K-zkL" firstAttribute="leading" secondItem="uwt-0z-kpJ" secondAttribute="leading" constant="24" id="BRT-40-Jja"/>
+                                    <constraint firstAttribute="height" constant="184" id="CxN-UH-k3Q"/>
+                                    <constraint firstItem="0EF-OW-yj2" firstAttribute="top" secondItem="F7b-5K-zkL" secondAttribute="bottom" constant="24" id="a25-Qt-kSj"/>
+                                    <constraint firstItem="0EF-OW-yj2" firstAttribute="leading" secondItem="uwt-0z-kpJ" secondAttribute="leading" constant="24" id="bo4-kC-top"/>
+                                    <constraint firstAttribute="bottom" secondItem="0EF-OW-yj2" secondAttribute="bottom" id="eXz-wZ-7bF"/>
+                                    <constraint firstAttribute="trailing" secondItem="F7b-5K-zkL" secondAttribute="trailing" constant="24" id="kWI-gh-Uom"/>
+                                    <constraint firstAttribute="trailing" secondItem="0EF-OW-yj2" secondAttribute="trailing" constant="24" id="xRc-X8-Pns"/>
+                                    <constraint firstItem="F7b-5K-zkL" firstAttribute="top" secondItem="uwt-0z-kpJ" secondAttribute="top" id="zMF-qb-5pl"/>
                                 </constraints>
                             </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-3a-xHW">
+                                <rect key="frame" x="24" y="492" width="327" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -374,8 +378,13 @@
                         <viewLayoutGuide key="safeArea" id="nJf-7Y-pj4"/>
                     </view>
                     <connections>
-                        <outlet property="lblGame" destination="L47-DW-UuF" id="yu9-nG-Fc6"/>
-                        <outlet property="lblSong" destination="AOI-3a-xHW" id="LxZ-9b-ax7"/>
+                        <outlet property="btnGame" destination="0EF-OW-yj2" id="Oz0-FZ-cx8"/>
+                        <outlet property="btnSong" destination="F7b-5K-zkL" id="Iqo-au-xqD"/>
+                        <outlet property="lblSong" destination="AOI-3a-xHW" id="xL6-D7-iFZ"/>
+                        <outletCollection property="distanceFromSides" destination="kWI-gh-Uom" id="5Jh-di-b76"/>
+                        <outletCollection property="distanceFromSides" destination="BRT-40-Jja" id="K6e-S2-eiL"/>
+                        <outletCollection property="distanceFromSides" destination="bo4-kC-top" id="v4q-QS-082"/>
+                        <outletCollection property="distanceFromSides" destination="xRc-X8-Pns" id="oZX-5C-gvd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IT-Wt-G6u" userLabel="First Responder" sceneMemberID="firstResponder"/>

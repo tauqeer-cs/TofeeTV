@@ -71,6 +71,31 @@
     
     [self.bannerView loadRequest:self.request];
     self.heightOfAdd.constant = 50;
+
+
+    UIView * currentView =  [self viewControllerFromStoryBoard:@"LaunchScreen" withViewControllerName:@"LaunchScreen"].view;
+    
+    currentView.frame = [UIScreen mainScreen].bounds;
+    
+    UIImageView *splashScreen = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    splashScreen.image = [UIImage imageNamed:@"splash"];
+    
+    
+    [[[UIApplication sharedApplication] keyWindow] addSubview:currentView];
+    
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:2
+                         animations:^{currentView.alpha = 0.0;}
+                         completion:(void (^)(BOOL)) ^{
+                             [splashScreen removeFromSuperview];
+                         }
+         ];
+        
+        
+    });
     
 }
 

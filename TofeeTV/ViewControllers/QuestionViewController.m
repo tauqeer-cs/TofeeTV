@@ -56,7 +56,6 @@
     
     
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
-    self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:30];
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:36];
     if (IS_IPad) {
 
@@ -72,7 +71,7 @@
     
     for (UIButton * currentButton in self.answerButons)
     {
-        [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:18]];
+        [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:24]];
         
         if (IS_IPad) {
             [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:36]];
@@ -296,50 +295,9 @@
         
         [self inititateTheAudioFile:@"uh oh" withFileType:@"wav" withOneTimePlay:YES];
         
-        
-        [UIView transitionWithView:self.viewReactionView
-                          duration:1.0
-                           options:UIViewAnimationOptionTransitionCrossDissolve
-                        animations:^{
 
-                            [sender setEnabled:NO];
-                            sender.backgroundColor = [UIColor lightGrayColor];
-                            
-                            [self.view bringSubviewToFront:self.viewReactionView];
-                            [self.viewReactionView setHidden:NO];
-                            [self.viewNayImage setHidden:NO];
-                            
-                        }
-                        completion:^(BOOL finished) {
-                            
-
-                            
-                            double delayInSeconds = 2.0;
-                            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                                
-                                [UIView transitionWithView:self.viewReactionView
-                                                  duration:1.0
-                                                   options:UIViewAnimationOptionTransitionCrossDissolve
-                                                animations:^{
-                                                    
-                                                    [sender setEnabled:NO];
-                                                    
-                                                    [self.viewNayImage setHidden:YES];
-                                                    
-                                                }
-                                                completion:^(BOOL finished) {
-                                                    
-                                                    
-                                                    [self.viewReactionView setHidden:YES];
-                                                    [self pauseTheMusic];
-                                                    
-                                                }];
-                                
-                            });
-                        }];
-        
-        
+        [sender setEnabled:NO];
+        sender.backgroundColor = [UIColor lightGrayColor];
         return;
     }
     
