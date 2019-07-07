@@ -33,6 +33,14 @@
 		507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 507ECE69224758830080ABB6 /* CustomNavViewController2.m */; };
 		50895FCC222159B000BEC1C8 /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50895FCA222159B000BEC1C8 /* ThankYouViewController.m */; };
 		50895FCD222159B000BEC1C8 /* ThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */; };
+		508DACE822D245C3004A13DF /* SubcribeAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACE622D245C3004A13DF /* SubcribeAppViewController.m */; };
+		508DACE922D245C3004A13DF /* SubcribeAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACE622D245C3004A13DF /* SubcribeAppViewController.m */; };
+		508DACEA22D245C3004A13DF /* SubcribeAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */; };
+		508DACEB22D245C3004A13DF /* SubcribeAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */; };
+		508DACED22D245E8004A13DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508DACEC22D245E8004A13DF /* StoreKit.framework */; };
+		508DACEE22D245F1004A13DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508DACEC22D245E8004A13DF /* StoreKit.framework */; };
+		508DACF522D2465C004A13DF /* IAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACF422D2465C004A13DF /* IAppHelper.m */; };
+		508DACF622D2465C004A13DF /* IAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACF422D2465C004A13DF /* IAppHelper.m */; };
 		508E93FD221DAAEE00A123DF /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E93FC221DAAEE00A123DF /* CustomViewController.m */; };
 		509AF0CF220B20F700EB8CB2 /* ManuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0CE220B20F700EB8CB2 /* ManuViewController.m */; };
 		509AF0D5220B21E600EB8CB2 /* QuizzesLisingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */; };
@@ -529,6 +537,12 @@
 		50895FC9222159B000BEC1C8 /* ThankYouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
 		50895FCA222159B000BEC1C8 /* ThankYouViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
 		50895FCB222159B000BEC1C8 /* ThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThankYouViewController.xib; sourceTree = "<group>"; };
+		508DACE522D245C3004A13DF /* SubcribeAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubcribeAppViewController.h; sourceTree = "<group>"; };
+		508DACE622D245C3004A13DF /* SubcribeAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubcribeAppViewController.m; sourceTree = "<group>"; };
+		508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubcribeAppViewController.xib; sourceTree = "<group>"; };
+		508DACEC22D245E8004A13DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		508DACF322D2465C004A13DF /* IAppHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAppHelper.h; sourceTree = "<group>"; };
+		508DACF422D2465C004A13DF /* IAppHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAppHelper.m; sourceTree = "<group>"; };
 		508E93FB221DAAEE00A123DF /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		508E93FC221DAAEE00A123DF /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		509AF0CD220B20F700EB8CB2 /* ManuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuViewController.h; sourceTree = "<group>"; };
@@ -933,6 +947,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508DACED22D245E8004A13DF /* StoreKit.framework in Frameworks */,
 				509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */,
 				509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */,
 				509E3A6A2210832900DAC9A5 /* FBSDKShareKit.framework in Frameworks */,
@@ -946,6 +961,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508DACEE22D245F1004A13DF /* StoreKit.framework in Frameworks */,
 				50D8A6AA2249D73B0000A967 /* FBSDKCoreKit.framework in Frameworks */,
 				50D8A6AB2249D73B0000A967 /* Bolts.framework in Frameworks */,
 				50D8A6AC2249D73B0000A967 /* FBSDKShareKit.framework in Frameworks */,
@@ -1086,6 +1102,8 @@
 				50C5AA752206E84B008BA500 /* CropImageViewController.h */,
 				50368D0E2225AD7C00A05482 /* AudioController.h */,
 				50368D0F2225AD7C00A05482 /* AudioController.m */,
+				508DACF322D2465C004A13DF /* IAppHelper.h */,
+				508DACF422D2465C004A13DF /* IAppHelper.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -1579,6 +1597,9 @@
 				50BAF94722BFE10E008ADE95 /* ProfileViewController.h */,
 				50BAF94822BFE10E008ADE95 /* ProfileViewController.m */,
 				50BAF94922BFE10E008ADE95 /* ProfileViewController.xib */,
+				508DACE522D245C3004A13DF /* SubcribeAppViewController.h */,
+				508DACE622D245C3004A13DF /* SubcribeAppViewController.m */,
+				508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1635,6 +1656,7 @@
 		B9557FC826E82B2B2CCA9A7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				508DACEC22D245E8004A13DF /* StoreKit.framework */,
 				509E3A672210832700DAC9A5 /* Bolts.framework */,
 				509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */,
 				509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */,
@@ -1745,6 +1767,7 @@
 				50C5AC682206E94B008BA500 /* CustomFooterView.xib in Resources */,
 				50C5AC592206E94B008BA500 /* BrandSectionCollectionReusableView.xib in Resources */,
 				50C5ACCC2206E9F2008BA500 /* Raleway-Light.ttf in Resources */,
+				508DACEA22D245C3004A13DF /* SubcribeAppViewController.xib in Resources */,
 				50C5ACBC2206E9F2008BA500 /* Raleway-BoldItalic.ttf in Resources */,
 				50C5AA1A2206E479008BA500 /* Assets.xcassets in Resources */,
 				50C5AC762206E94B008BA500 /* TextViewForSignUpNew.xib in Resources */,
@@ -1804,6 +1827,7 @@
 			files = (
 				50D8A6B02249D73B0000A967 /* StoryOneTableViewCell.xib in Resources */,
 				506683C522C78C5B00590C92 /* uh oh.wav in Resources */,
+				508DACEB22D245C3004A13DF /* SubcribeAppViewController.xib in Resources */,
 				50D8A6B12249D73B0000A967 /* Raleway-ExtraLight.ttf in Resources */,
 				50D8A6B22249D73B0000A967 /* AddMyOwnCollectionReusableView.xib in Resources */,
 				50D8A6B32249D73B0000A967 /* TitleHeading copy.xib in Resources */,
@@ -1999,6 +2023,7 @@
 				50C5AB692206E8F3008BA500 /* FSCalendarTransitionCoordinator.m in Sources */,
 				50C5AB592206E8F3008BA500 /* HRBrightnessSlider.m in Sources */,
 				50B8866322BE2C820099AA59 /* LoginOptionsViewController.m in Sources */,
+				508DACE822D245C3004A13DF /* SubcribeAppViewController.m in Sources */,
 				50C5AC6F2206E94B008BA500 /* AddMyOwnCollectionReusableView.m in Sources */,
 				50C5AB522206E8F3008BA500 /* TOActionSheet.m in Sources */,
 				50C5AC612206E94B008BA500 /* ItemByCategoryCollectionViewCell.m in Sources */,
@@ -2063,6 +2088,7 @@
 				50C5AB352206E8F3008BA500 /* DragAndDropTableView.m in Sources */,
 				50C5AC5A2206E94B008BA500 /* CustomFooterView.m in Sources */,
 				50C5AC922206E94B008BA500 /* TextViewForSignUpform.m in Sources */,
+				508DACF522D2465C004A13DF /* IAppHelper.m in Sources */,
 				50C5AB662206E8F3008BA500 /* FSCalendarConstants.m in Sources */,
 				50C5AA902206E84C008BA500 /* NSString+JS.m in Sources */,
 				50C5AB362206E8F3008BA500 /* JxbScaleButton.m in Sources */,
@@ -2115,6 +2141,7 @@
 				50D8A62A2249D73B0000A967 /* MyListItemImageCollectionViewCell.m in Sources */,
 				50BDF02822BFD1A1008804FE /* PFNavigationDropdownMenu.m in Sources */,
 				50D8A62B2249D73B0000A967 /* UIImage+Jot.m in Sources */,
+				508DACE922D245C3004A13DF /* SubcribeAppViewController.m in Sources */,
 				50D8A62C2249D73B0000A967 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				50D8A62D2249D73B0000A967 /* MASConstraintMaker.m in Sources */,
 				50D8A62E2249D73B0000A967 /* RegitersViewController.m in Sources */,
@@ -2157,6 +2184,7 @@
 				50D8A6502249D73B0000A967 /* MASViewAttribute.m in Sources */,
 				50D8A6512249D73B0000A967 /* NCTextFieldcategory.m in Sources */,
 				50D8A6522249D73B0000A967 /* BransListingCollectionViewCell.m in Sources */,
+				508DACF622D2465C004A13DF /* IAppHelper.m in Sources */,
 				50BDF01422BF8E70008804FE /* XLCircleProgress.m in Sources */,
 				50D8A6532249D73B0000A967 /* JotTouchPoint.m in Sources */,
 				50D8A6542249D73B0000A967 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
