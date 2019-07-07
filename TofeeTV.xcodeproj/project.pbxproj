@@ -41,6 +41,8 @@
 		508DACEE22D245F1004A13DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508DACEC22D245E8004A13DF /* StoreKit.framework */; };
 		508DACF522D2465C004A13DF /* IAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACF422D2465C004A13DF /* IAppHelper.m */; };
 		508DACF622D2465C004A13DF /* IAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACF422D2465C004A13DF /* IAppHelper.m */; };
+		508DACFB22D25F04004A13DF /* song1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 508DACFA22D25F04004A13DF /* song1.mp4 */; };
+		508DACFC22D25F04004A13DF /* song1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 508DACFA22D25F04004A13DF /* song1.mp4 */; };
 		508E93FD221DAAEE00A123DF /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E93FC221DAAEE00A123DF /* CustomViewController.m */; };
 		509AF0CF220B20F700EB8CB2 /* ManuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0CE220B20F700EB8CB2 /* ManuViewController.m */; };
 		509AF0D5220B21E600EB8CB2 /* QuizzesLisingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509AF0D4220B21E600EB8CB2 /* QuizzesLisingViewController.m */; };
@@ -543,6 +545,7 @@
 		508DACEC22D245E8004A13DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		508DACF322D2465C004A13DF /* IAppHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAppHelper.h; sourceTree = "<group>"; };
 		508DACF422D2465C004A13DF /* IAppHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAppHelper.m; sourceTree = "<group>"; };
+		508DACFA22D25F04004A13DF /* song1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = song1.mp4; sourceTree = "<group>"; };
 		508E93FB221DAAEE00A123DF /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		508E93FC221DAAEE00A123DF /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		509AF0CD220B20F700EB8CB2 /* ManuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuViewController.h; sourceTree = "<group>"; };
@@ -1607,6 +1610,7 @@
 		50C5AC972206E9F2008BA500 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				508DACFA22D25F04004A13DF /* song1.mp4 */,
 				5067F86122CA1FF800A97CF7 /* App background loop.wav */,
 				506683C322C78C5B00590C92 /* uh oh.wav */,
 				50B7C12322D0F8C800B1B536 /* blip.wav */,
@@ -1781,6 +1785,7 @@
 				50C5ACCB2206E9F2008BA500 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				50C5AC802206E94B008BA500 /* QuestionAnsweTableViewCell.xib in Resources */,
 				50C5AC582206E94B008BA500 /* BrandSearchCollectionReusableView.xib in Resources */,
+				508DACFB22D25F04004A13DF /* song1.mp4 in Resources */,
 				50C5AC852206E94B008BA500 /* MenuItemBenefitTableViewCell.xib in Resources */,
 				50C5AC5D2206E94B008BA500 /* MyListSectionHeaderCollectionReusableView.xib in Resources */,
 				50C5AC8E2206E94B008BA500 /* ChaterDetailView.xib in Resources */,
@@ -1900,6 +1905,7 @@
 				50D8A6EF2249D73B0000A967 /* ThankYouViewController.xib in Resources */,
 				50D8A6F02249D73B0000A967 /* DescriptionTableViewCell.xib in Resources */,
 				50D8A6F12249D73B0000A967 /* Raleway-Black.ttf in Resources */,
+				508DACFC22D25F04004A13DF /* song1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

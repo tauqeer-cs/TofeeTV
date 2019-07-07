@@ -90,8 +90,6 @@
 
 - (IBAction)btnForwardTapped:(UIButton *)sender {
     
-    //self.avPlayer forwardInvocation:<#(NSInvocation *)#>
-    
    
     float playerCurrentTime = [self getCurrentTime];
     float newTime = playerCurrentTime + 2;
@@ -174,6 +172,35 @@
     AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [currentOne pauseTheMusic];
     
+    if (self.currentSong.isOwned) {
+        //AVPlayer
+        
+        
+        
+
+        id song1 = [[NSBundle mainBundle] pathForResource:@"song1" ofType:@"mp4"];
+        self.avPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:song1]];
+        self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+        AVPlayerLayer *videoLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
+        videoLayer.frame = self.videoContainer.frame;
+        videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+        [self.videoContainer.layer addSublayer:videoLayer];
+        
+        self.avPlayer.accessibilityFrame = self.videoContainer.frame;
+        videoLayer.videoGravity = AVLayerVideoGravityResize;
+
+        [self.avPlayer play];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemDidFinishPlaying:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.avPlayer currentItem]];
+        
+        
+        [self.view bringSubviewToFront:self.btnBackBack];
+        
+        
+        [self hideLoader];
+        NSLog(@"");
+    }
+    else
     
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
