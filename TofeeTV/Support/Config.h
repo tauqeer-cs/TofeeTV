@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 //http:///pingem/api/vendor/create-vendor-from-user
 
-#define baseServiceUrl isLive ? @"https://toffeetvapp.tahirafridi.com/api/v1/" : @"https://toffeetvapp.tahirafridi.com/api/v1/"
-#define baseImageLink isLive ? @"https://toffeetvapp.tahirafridi.com/api/v1/" : @"https://toffeetvapp.tahirafridi.com/api/v1/"
-#define startingLink isLive ? @"https://toffeetvapp.tahirafridi.com" : @"https://toffeetvapp.tahirafridi.com"
+///dashboard/login
+
+#define baseServiceUrl isLive ? @"http://142.93.217.242/api/v1/" : @"http://142.93.217.242/api/v1/"
+#define baseImageLink isLive ? @"http://142.93.217.242/api/v1/" : @"http://142.93.217.242/api/v1/"
+#define startingLink isLive ? @"http://142.93.217.242" : @"http://142.93.217.242"
 
 
 #define appUrl @"https://itunes.apple.com/us/app/gift-list-a-gift-sharing-app/id1440596904?ls=1&mt=8"

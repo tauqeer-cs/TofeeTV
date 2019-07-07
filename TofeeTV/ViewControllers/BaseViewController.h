@@ -303,6 +303,7 @@
 @property(nonatomic, strong) GADInterstitial *interstitial;
 
 @property (nonatomic,strong) GADRequest *request;
+- (void)launcherThings;
 
 
 @end

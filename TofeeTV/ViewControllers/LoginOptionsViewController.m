@@ -30,6 +30,7 @@
     [self setTouchMethodWithLabel:self.lblFb withSelector:@selector(fbButtonTapped)];
    // [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
     
+    [self launcherThings];
     
     
 }
