@@ -88,10 +88,10 @@
     
     for (UIButton * currentButton in self.answerButons)
     {
-        [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:24]];
+        [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:28]];
         
         if (IS_IPad) {
-            [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:36]];
+            [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:38]];
             
         }
         currentButton.layer.borderColor = [UIColor whiteColor].CGColor ;
@@ -139,6 +139,10 @@
         self.gestureImageView = nil;
 
         CGRect frame = self.gestureImageView.frame;
+        
+        
+        frame = CGRectMake(frame.origin.x, frame.origin.y-self.hintImage.frame.size.height/6.0, frame.size.width, frame.size.height);
+        
         frame.origin = [gestureRecognizer locationInView:self.gestureImageView.superview];
         
         self.gestureImageView.frame = frame;
@@ -179,6 +183,8 @@
     if (self.gestureImageView) {
         CGRect frame = self.gestureImageView.frame;
         frame.origin = [gestureRecognizer locationInView:self.gestureImageView.superview];
+        frame = CGRectMake(frame.origin.x, frame.origin.y-self.hintImage.frame.size.height/6.0, frame.size.width, frame.size.height);
+        
         
         self.gestureImageView.frame = frame;
      

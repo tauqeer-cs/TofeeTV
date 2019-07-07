@@ -98,8 +98,6 @@
 {
     
     
-    NSMutableArray * resultAnswer = [NSMutableArray new];
-    
   
     
     

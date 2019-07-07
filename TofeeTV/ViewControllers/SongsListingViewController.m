@@ -133,7 +133,9 @@
     } withFailueHandler:^(id  _Nonnull error) {
         [self hideLoader];
         
-        [self callAlertViewControllerWithTitle:@"" withMessage:@"" withOkButtonTitle:@"" withCancleTitle:@"" withOKHandler:^{
+        [self callAlertViewControllerWithTitle:@"" withMessage:@"Error while loading data" withOkButtonTitle:@"OK" withCancleTitle:@"" withOKHandler:^{
+            
+            [self loadData];
             
         } withCancelHandler:^{
             
