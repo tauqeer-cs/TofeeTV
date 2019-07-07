@@ -59,7 +59,7 @@
     
     
     NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
-    self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:36];
+    self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:38];
     if (IS_IPad) {
 
         self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:55];
@@ -126,7 +126,7 @@
      
         self.gestureImageView = [UIImageView new];
         [self.gestureImageView setImage:self.hintImage.image];
-        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width, self.hintImage.frame.size.height)];
+        [self.gestureImageView setFrame:CGRectMake(gestureRecognizer.view.frame.origin.x, gestureRecognizer.view.frame.origin.y, self.hintImage.frame.size.width/1.5, self.hintImage.frame.size.height/1.5)];
         
         [self.view addSubview:self.gestureImageView];
         

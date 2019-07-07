@@ -68,41 +68,20 @@
                                             <constraint firstAttribute="width" secondItem="at7-ad-dVD" secondAttribute="height" multiplier="175:76" id="4z7-QA-f7w"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqH-Ot-5gf">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="93.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seekho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-Ee-xzD">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
-                                                <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TofeeTV kay Saath" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-x2-jxM">
-                                                <rect key="frame" x="0.0" y="46.5" width="375" height="47"/>
-                                                <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="40"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newLogo" translatesAutoresizingMaskIntoConstraints="NO" id="amV-LB-nDN">
+                                        <rect key="frame" x="24" y="50" width="327" height="83"/>
                                         <constraints>
-                                            <constraint firstItem="3a0-Ee-xzD" firstAttribute="leading" secondItem="mqH-Ot-5gf" secondAttribute="leading" id="A6M-0R-qFd"/>
-                                            <constraint firstItem="Pc4-x2-jxM" firstAttribute="leading" secondItem="mqH-Ot-5gf" secondAttribute="leading" id="BrH-Na-3G6"/>
-                                            <constraint firstItem="3a0-Ee-xzD" firstAttribute="top" secondItem="mqH-Ot-5gf" secondAttribute="top" id="LBG-6T-TCu"/>
-                                            <constraint firstItem="Pc4-x2-jxM" firstAttribute="top" secondItem="3a0-Ee-xzD" secondAttribute="bottom" id="M0z-Pq-LR6"/>
-                                            <constraint firstItem="3a0-Ee-xzD" firstAttribute="height" secondItem="mqH-Ot-5gf" secondAttribute="height" multiplier="0.5" id="gSo-1M-7Dh"/>
-                                            <constraint firstAttribute="trailing" secondItem="Pc4-x2-jxM" secondAttribute="trailing" id="kO3-ob-yYw"/>
-                                            <constraint firstAttribute="trailing" secondItem="3a0-Ee-xzD" secondAttribute="trailing" id="m6p-0c-fKQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="Pc4-x2-jxM" secondAttribute="bottom" id="rcP-Bu-yFE"/>
+                                            <constraint firstAttribute="width" secondItem="amV-LB-nDN" secondAttribute="height" multiplier="327:83" id="2zQ-LK-MNk"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="mqH-Ot-5gf" secondAttribute="trailing" id="1W9-bx-AjJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="amV-LB-nDN" secondAttribute="trailing" constant="24" id="Gjk-bt-9hP"/>
                                     <constraint firstItem="at7-ad-dVD" firstAttribute="height" secondItem="TMp-xp-r12" secondAttribute="height" multiplier="0.3" id="IbS-Jd-3Ga"/>
+                                    <constraint firstItem="amV-LB-nDN" firstAttribute="centerX" secondItem="TMp-xp-r12" secondAttribute="centerX" id="Luh-jk-h4a"/>
                                     <constraint firstItem="at7-ad-dVD" firstAttribute="centerX" secondItem="TMp-xp-r12" secondAttribute="centerX" id="MpI-Up-dkO"/>
-                                    <constraint firstItem="mqH-Ot-5gf" firstAttribute="leading" secondItem="TMp-xp-r12" secondAttribute="leading" id="UAg-8H-UbX"/>
-                                    <constraint firstItem="mqH-Ot-5gf" firstAttribute="top" secondItem="at7-ad-dVD" secondAttribute="bottom" id="odC-CY-WMo"/>
-                                    <constraint firstAttribute="bottom" secondItem="mqH-Ot-5gf" secondAttribute="bottom" id="r5L-Wp-moL"/>
+                                    <constraint firstItem="amV-LB-nDN" firstAttribute="leading" secondItem="TMp-xp-r12" secondAttribute="leading" constant="24" id="Wik-oK-HJb"/>
+                                    <constraint firstItem="amV-LB-nDN" firstAttribute="top" secondItem="at7-ad-dVD" secondAttribute="bottom" constant="10" id="ftG-4v-DOY"/>
                                     <constraint firstItem="at7-ad-dVD" firstAttribute="top" secondItem="TMp-xp-r12" secondAttribute="top" id="seB-Tk-PET"/>
                                 </constraints>
                             </view>
@@ -746,6 +725,7 @@
     <resources>
         <image name="appicon-background" width="1708" height="3696"/>
         <image name="icomEmail" width="15" height="11.5"/>
+        <image name="newLogo" width="327" height="83.5"/>
         <image name="passicon" width="12.5" height="17"/>
         <image name="previous" width="9.5" height="17.5"/>
         <image name="toffeetv-logo" width="175" height="75.5"/>

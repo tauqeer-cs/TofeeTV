@@ -34,6 +34,9 @@
 }
 - (IBAction)btnBackBackTapped:(id)sender {
     
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentOne resumeFromPausedState];
+    
     
     [self dismissViewControllerAnimated:YES completion:^{
         
@@ -168,12 +171,13 @@
     
     
     [self showLoader];
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentOne pauseTheMusic];
+    
     
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
                 
-                AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-                [currentOne pauseTheMusic];
                 
                 
                 [self hideLoader];
@@ -255,8 +259,12 @@
 
 - (IBAction)quizMeTapped:(UIButton *)sender
 {
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [currentOne resumeFromPausedState];
+    
+    
+    
 
-    [self buttonBlip];
     
     [self dismissViewControllerAnimated:YES completion:^{
     

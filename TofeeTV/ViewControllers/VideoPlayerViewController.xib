@@ -84,7 +84,7 @@
                     <rect key="frame" x="131" y="300.5" width="408" height="74.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHm-DG-H8F">
-                            <rect key="frame" x="185.5" y="18.5" width="37" height="37.5"/>
+                            <rect key="frame" x="178" y="11" width="52" height="52.5"/>
                             <state key="normal" image="icon-pause"/>
                             <state key="selected" image="icon-play"/>
                             <connections>
@@ -92,7 +92,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2l-GR-spf">
-                            <rect key="frame" x="132" y="18.5" width="37.5" height="37.5"/>
+                            <rect key="frame" x="110" y="11" width="52" height="52.5"/>
                             <state key="normal" image="icon-rewind"/>
                             <state key="selected" image="backward"/>
                             <connections>
@@ -100,7 +100,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-gs-cY1">
-                            <rect key="frame" x="238.5" y="18.5" width="37.5" height="37.5"/>
+                            <rect key="frame" x="246" y="11" width="52" height="52.5"/>
                             <state key="normal" image="icon-forward"/>
                             <state key="selected" image="forward"/>
                             <connections>
@@ -109,7 +109,7 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="zHm-DG-H8F" firstAttribute="width" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.5" id="0Jq-4n-aXs"/>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="width" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.7" id="0Jq-4n-aXs"/>
                         <constraint firstItem="o52-gs-cY1" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="HjQ-ad-Mmh"/>
                         <constraint firstItem="y2l-GR-spf" firstAttribute="height" secondItem="zHm-DG-H8F" secondAttribute="height" id="Mde-g3-Gb8"/>
                         <constraint firstItem="o52-gs-cY1" firstAttribute="height" secondItem="zHm-DG-H8F" secondAttribute="height" id="PKJ-ds-kHT"/>
@@ -118,7 +118,7 @@
                         <constraint firstItem="zHm-DG-H8F" firstAttribute="leading" secondItem="y2l-GR-spf" secondAttribute="trailing" constant="16" id="ZtV-xq-rVh"/>
                         <constraint firstItem="o52-gs-cY1" firstAttribute="leading" secondItem="zHm-DG-H8F" secondAttribute="trailing" constant="16" id="g51-l7-9R8"/>
                         <constraint firstItem="o52-gs-cY1" firstAttribute="width" secondItem="zHm-DG-H8F" secondAttribute="width" id="iga-OK-jqX"/>
-                        <constraint firstItem="zHm-DG-H8F" firstAttribute="height" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.5" id="qYs-OT-pWh"/>
+                        <constraint firstItem="zHm-DG-H8F" firstAttribute="height" secondItem="5O7-70-vgN" secondAttribute="height" multiplier="0.7" id="qYs-OT-pWh"/>
                         <constraint firstItem="zHm-DG-H8F" firstAttribute="centerX" secondItem="5O7-70-vgN" secondAttribute="centerX" id="wZl-Sa-w3r"/>
                         <constraint firstItem="zHm-DG-H8F" firstAttribute="centerY" secondItem="5O7-70-vgN" secondAttribute="centerY" id="zE5-by-mJF"/>
                     </constraints>
@@ -129,10 +129,10 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGG-oD-HT6">
                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="7Cm-ny-wNZ"/>
-                                <constraint firstAttribute="width" constant="30" id="azE-ag-Vqg"/>
+                                <constraint firstAttribute="height" constant="30" id="j0P-8b-14o"/>
+                                <constraint firstAttribute="width" constant="30" id="qRD-Pc-XG3"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="36"/>
+                            <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
                             <state key="normal" title="←"/>
                             <connections>
                                 <action selector="btnBackBackTapped:" destination="-1" eventType="touchUpInside" id="Ryo-UP-k2v"/>
@@ -140,10 +140,10 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="uGG-oD-HT6" firstAttribute="leading" secondItem="sk0-kO-ZPD" secondAttribute="leading" id="EN8-HF-wfW"/>
+                        <constraint firstItem="uGG-oD-HT6" firstAttribute="leading" secondItem="sk0-kO-ZPD" secondAttribute="leading" id="JOx-OR-Hf3"/>
                         <constraint firstAttribute="width" constant="30" id="c5b-mt-n5l"/>
                         <constraint firstAttribute="height" constant="30" id="cdG-rC-6EN"/>
-                        <constraint firstItem="uGG-oD-HT6" firstAttribute="top" secondItem="sk0-kO-ZPD" secondAttribute="top" id="kbH-dZ-eCS"/>
+                        <constraint firstItem="uGG-oD-HT6" firstAttribute="top" secondItem="sk0-kO-ZPD" secondAttribute="top" id="upW-Oe-0h6"/>
                     </constraints>
                 </view>
             </subviews>

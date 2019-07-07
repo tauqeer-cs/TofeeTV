@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblSong;
 @property (weak, nonatomic) IBOutlet UIButton *btnSong;
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnGame;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *distanceFromSides;
@@ -33,6 +34,8 @@
     
     
     
+    self.lblName.text = self.objectComing.name;
+    self.lblName.font = self.lblSong.font;
     
     self.request = [GADRequest request];
     self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
@@ -128,7 +131,7 @@
 }
 -(void)songItemTapped {
     
-    [self buttonBlip];
+   // [self buttonBlip];
     
     
     AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
