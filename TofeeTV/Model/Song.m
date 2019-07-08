@@ -105,7 +105,14 @@
     NSMutableDictionary * currentDictionary = [NSMutableDictionary new];
     
     
-    
+    NSUserDefaults *currentUserDefault = [NSUserDefaults standardUserDefaults];
+   
+    if ([currentUserDefault objectForKey:@"data"]) {
+        
+        id currentListing  = [currentUserDefault objectForKey:@"data"];
+        completionHandler([self parseTheSongsService:currentListing]);
+        
+    }
     [RestCall callWebServiceWithTheseParams:currentDictionary
                       withSignatureSequence:nil
                                  urlCalling:[self makeURLCompleteFromString:@"songs"]
@@ -118,6 +125,8 @@
          if ([self isSuccessFullWithDictionary:result]) {
              
              id dataObject = [result objectForKey:@"data"];
+             [currentUserDefault setObject:dataObject forKey:@"data"];
+             
              NSMutableArray * resultToSend = [self parseTheSongsService:dataObject];
              
              completionHandler(resultToSend);

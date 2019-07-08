@@ -11,7 +11,7 @@
 #import "VideoPlayerViewController.h"
 #import "QuestionViewController.h"
 
-@interface SelectSongOrGameViewController ()
+@interface SelectSongOrGameViewController ()<VideoPlayerViewControllerDelegate,GADInterstitialDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UILabel *lblSong;
@@ -144,6 +144,8 @@
     AppDelegate * currentApp = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentApp.currentSelectedItem = self.objectComing;
     destination.currentSong = self.objectComing;
+    destination.nextLink = self.nextSongLink;
+    
     
     destination.delegate = self;
     
@@ -163,6 +165,8 @@
     QuestionViewController * destination = [[QuestionViewController alloc] initWithNibName:self.questionViewControllerName bundle:nil];
     destination.questionIndex = 0;
     destination.selectedSong = itemTapped;
+    destination.nextLink = self.nextSongLink;
+    
     [self.navigationController showViewController:destination sender:nil];
     
     

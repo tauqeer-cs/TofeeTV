@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) Song * objectComing;
 
+@property (nonatomic,strong) NSString * nextSongLink;
+
+
 
 @end
 

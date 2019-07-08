@@ -272,12 +272,19 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 
-    
-    
     if ([segue.identifier isEqualToString:@"showOptions"])
     {
         SelectSongOrGameViewController * destination = segue.destinationViewController;
         destination.objectComing = self.dataSource[self.tableView.indexPathForSelectedRow.row - 1];
+        if ([self.dataSource count] == self.tableView.indexPathForSelectedRow.row)
+        {
+        
+            NSLog(@"Last One");
+        }
+        else {
+            destination.nextSongLink = self.dataSource[self.tableView.indexPathForSelectedRow.row].videoUrl;
+        }
+        
     }
 
 }

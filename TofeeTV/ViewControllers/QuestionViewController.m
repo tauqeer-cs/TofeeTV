@@ -13,7 +13,7 @@
 #import "ThankYouViewController.h"
 #import "AudioController.h"
 
-@interface QuestionViewController ()
+@interface QuestionViewController ()<GADInterstitialDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblQuestionTextOne;
 @property (weak, nonatomic) IBOutlet UILabel *lblQuestionTextTwo;
 

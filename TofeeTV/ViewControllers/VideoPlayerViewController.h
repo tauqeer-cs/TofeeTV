@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) Song * currentSong;
 @property (nonatomic,strong) id<VideoPlayerViewControllerDelegate> delegate;
 
+@property (nonatomic,strong) NSString * nextLink;
 
 @end
 

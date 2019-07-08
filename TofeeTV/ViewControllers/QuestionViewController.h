@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) Song * selectedSong;
 
+@property (nonatomic,strong) NSString * nextLink;
+
 @end
 
 NS_ASSUME_NONNULL_END

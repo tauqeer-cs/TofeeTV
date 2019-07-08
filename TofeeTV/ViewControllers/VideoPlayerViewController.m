@@ -161,6 +161,15 @@
 }
 
 
+-(void)downloadTheNextLink{
+    
+    [FileManager loadVideoFromurl:self.nextLink withComplitionHandler:^(id value) {
+        
+    } withFailHander:^(int d) {
+        
+    }];
+    
+}
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -176,8 +185,8 @@
         //AVPlayer
         
         
+        [self downloadTheNextLink];
         
-
         id song1 = [[NSBundle mainBundle] pathForResource:@"song1" ofType:@"mp4"];
         self.avPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:song1]];
         self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
@@ -205,37 +214,23 @@
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
                 
+                [self downloadTheNextLink];
                 
                 
                 [self hideLoader];
-                
-                
                 NSURL *vedioURL = item;
                 NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
                 NSString *documentsDirectory = [paths objectAtIndex:0];
                 NSArray *filePathsArray = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:documentsDirectory  error:nil];
-                
-                NSLog(@"files array %@", filePathsArray);
                 NSString *fullpath;
-                
-                
                 for ( NSString *apath in filePathsArray )
                 {
                     fullpath = [documentsDirectory stringByAppendingPathComponent:apath];
                     vedioURL =[NSURL fileURLWithPath:fullpath];
                 }
-                
-                NSLog(@"");
-                
-                
-                
-                
-                
-                
                 NSURL *fileURL = [NSURL fileURLWithPath:item];
                 self.avPlayer = [AVPlayer playerWithURL:fileURL];
                 self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
-                
                 
                 AVPlayerLayer *videoLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
                 videoLayer.frame = self.videoContainer.frame;
@@ -251,20 +246,12 @@
                 videoLayer.frame = [UIScreen mainScreen].bounds;
                 videoLayer.videoGravity = AVLayerVideoGravityResizeAspect;
                 videoLayer.videoGravity = AVLayerVideoGravityResize;
-                    //this is
-                    
                 }
                 
 
                 [self.avPlayer play];
-                
                 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemDidFinishPlaying:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.avPlayer currentItem]];
-                
-                
                 [self.view bringSubviewToFront:self.btnBackBack];
-                
-                
-                NSLog(@"");
                 
                 
             } withFailHander:^(int error) {
