@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL isLocked;
 @property (nonatomic) BOOL isOwned;
 
+@property (nonatomic) BOOL videoIsInApp;
+
 @property (nonatomic) BOOL canISeeThis;
 
 @property (nonatomic,strong) UIColor * itemColor;

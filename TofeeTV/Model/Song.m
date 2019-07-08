@@ -64,7 +64,7 @@
         
         tmpCurrentSong.inAppPurchaseId = [currentItemShowing objectForKey:@"in_app_purchase_ios"];
         tmpCurrentSong.fileOwned = [[currentItemShowing objectForKey:@"is_owned"] boolValue];
-        
+        tmpCurrentSong.videoIsInApp = [[currentItemShowing objectForKey:@"video_is_in_app"] boolValue];
         tmpCurrentSong.thumbNailUrl = [currentItemShowing objectForKey:@"thumbnail_file"];
         //tmpCurrentSong.thumbNailUrl = @"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg";
         

@@ -181,7 +181,7 @@
     AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [currentOne pauseTheMusic];
     
-    if (self.currentSong.isOwned) {
+    if (self.currentSong.videoIsInApp) {
         //AVPlayer
         
         
@@ -194,20 +194,12 @@
         videoLayer.frame = self.videoContainer.frame;
         videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         [self.videoContainer.layer addSublayer:videoLayer];
-        
         self.avPlayer.accessibilityFrame = self.videoContainer.frame;
         videoLayer.videoGravity = AVLayerVideoGravityResize;
-
         [self.avPlayer play];
-        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemDidFinishPlaying:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.avPlayer currentItem]];
-        
-        
         [self.view bringSubviewToFront:self.btnBackBack];
-        
-        
         [self hideLoader];
-        NSLog(@"");
     }
     else
     
