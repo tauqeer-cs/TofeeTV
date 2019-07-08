@@ -36,6 +36,7 @@
 @property (weak, nonatomic) IBOutlet UIView *questionContainer;
 
 @property (nonatomic,strong) GADInterstitial * adToShow;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loaderView;
 
 @end
 
@@ -47,6 +48,7 @@
     {
         [currentButton setEnabled:YES];
         currentButton.backgroundColor = self.defaultButtonColor;
+        [currentButton setHighlighted:NO];
         
     }
     
@@ -57,34 +59,18 @@
     
     self.defaultButtonColor = self.btnQuestion1.backgroundColor;
     
-    
-    NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
     self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:38];
     if (IS_IPad) {
-
         self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:55];
-        
     }
-    NSLog(@"%@",self.lblQuestionTextTwo.font.fontName);
-    
     self.title = @"Game";
-
-    
-    
     self.request = [GADRequest request];
     self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
-    
     self.interstitial =
     [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-1949777708516294/9068499910"];
-    
     self.interstitial.delegate = self;
-    
     [self.interstitial loadRequest:self.request];
     [self.interstitial presentFromRootViewController:self];
-    
-    
-    
-    
     
     for (UIButton * currentButton in self.answerButons)
     {
@@ -109,14 +95,7 @@
 
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{
     
-    
     self.adToShow = ad;
-    
-    //    [ad presentFromRootViewController:self];
-        
-    
-    
-    NSLog(@"");
 }
 
 - (void)handlePanGesture:(UIPanGestureRecognizer *)gestureRecognizer
@@ -270,8 +249,15 @@
         
         [self.hintImage setHidden:NO];
         
+        self.loaderView.center = self.hintImage.center;
+        
+        [self.loaderView startAnimating];
+        [self.loaderView setHidden:YES];
+        
         [FileManager loadItemImage:self.hintImage url:currentQuestion.hintImage loader:nil withComplitionHandler:^(id value) {
         
+            [self.loaderView startAnimating];
+            [self.loaderView setHidden:NO];
             
             [self.hintImage setImage:value[1]];
             
