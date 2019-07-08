@@ -1058,7 +1058,7 @@
 {
     if (!custom) {
         
-        self.navigationItem.rightBarButtonItem =  [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"drobdownSegments"] style:UIBarButtonItemStylePlain target:self action:@selector(btnTopButtonTapped)];
+        self.navigationItem.rightBarButtonItem =  [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icomEmail"] style:UIBarButtonItemStylePlain target:self action:@selector(btnTopButtonTapped)];
         
     }
     

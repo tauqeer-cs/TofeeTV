@@ -41,7 +41,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"Songs";
-    self.items = @[@"Profile", @"Remove Ads", @"Logout"];
+    self.items = @[@"Profile", @"Remove Ads",@"About Us",@"Contact Us", @"Logout"];
     [self makeDropDownSelectionWithItemsArray:self.items withCustomView:nil];
     [self addTableViewCellWithTableView:self.tableView withNibName:@"SongHeadingViewTableViewCell" withCellIdName:@"cellHeader"];
     
@@ -52,8 +52,6 @@
     
     self.tableView.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:222.0/255.0 alpha:1.0];
     
-
-
     [self showLoader];
     
     [self loadData];
@@ -99,6 +97,15 @@
     else if (index == 1)
     {
         //remove ads
+    }
+    else if(index == 2)
+    {
+        //About US
+    }
+    else if(index == 3)
+    {
+        //Contact Us
+        
     }
     else  {
         

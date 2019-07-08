@@ -252,12 +252,12 @@
         self.loaderView.center = self.hintImage.center;
         
         [self.loaderView startAnimating];
-        [self.loaderView setHidden:YES];
+        [self.loaderView setHidden:NO];
         
         [FileManager loadItemImage:self.hintImage url:currentQuestion.hintImage loader:nil withComplitionHandler:^(id value) {
         
             [self.loaderView startAnimating];
-            [self.loaderView setHidden:NO];
+            [self.loaderView setHidden:YES];
             
             [self.hintImage setImage:value[1]];
             

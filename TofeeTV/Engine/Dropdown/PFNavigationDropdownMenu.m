@@ -51,7 +51,9 @@
         self.menuTitle.font = self.configuration.cellTextLabelFont;
         [self.menuButton addSubview:self.menuTitle];
         
-        self.menuArrow = [[UIImageView alloc] initWithImage:self.configuration.arrowImage];
+       
+        self.menuArrow = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"iconsetting"]];
+        
         [self.menuButton addSubview:self.menuArrow];
         
         // Init table view
