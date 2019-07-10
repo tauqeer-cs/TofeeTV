@@ -121,9 +121,11 @@
 
 
 - (void)setLblTermsText {
+    //
+    //
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:IAgreeToTerms
                                                                                          attributes:@{
-                                                                                                      NSFontAttributeName: [UIFont fontWithName:@"Raleway-Regular" size: 10.33f],
+                                                                                                      NSFontAttributeName: [UIFont fontWithName:FancyFont size: 10.33f],
                                                                                                       NSForegroundColorAttributeName: [UIColor colorWithRed:214.0f / 255.0f green:4.0f / 255.0f blue:3.0f / 255.0f alpha:1.0f],
                                                                                                       NSKernAttributeName: @(0.26)
                                                                                                       }];

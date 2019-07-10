@@ -26,6 +26,36 @@
 		506683C222C782C300590C92 /* yay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C022C782C300590C92 /* yay.wav */; };
 		506683C422C78C5B00590C92 /* uh oh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C322C78C5B00590C92 /* uh oh.wav */; };
 		506683C522C78C5B00590C92 /* uh oh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 506683C322C78C5B00590C92 /* uh oh.wav */; };
+		5067F33422D4F87A00894B2F /* NSObject+KeychainProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F32F22D4F87900894B2F /* NSObject+KeychainProperty.m */; };
+		5067F33522D4F87A00894B2F /* NSObject+KeychainProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F32F22D4F87900894B2F /* NSObject+KeychainProperty.m */; };
+		5067F33622D4F87A00894B2F /* InAppReceiptVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33122D4F87900894B2F /* InAppReceiptVerifier.m */; };
+		5067F33722D4F87A00894B2F /* InAppReceiptVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33122D4F87900894B2F /* InAppReceiptVerifier.m */; };
+		5067F33822D4F87A00894B2F /* InAppPaymentQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33222D4F87A00894B2F /* InAppPaymentQueue.m */; };
+		5067F33922D4F87A00894B2F /* InAppPaymentQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33222D4F87A00894B2F /* InAppPaymentQueue.m */; };
+		5067F33A22D4F87A00894B2F /* InAppProductRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33322D4F87A00894B2F /* InAppProductRequester.m */; };
+		5067F33B22D4F87A00894B2F /* InAppProductRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33322D4F87A00894B2F /* InAppProductRequester.m */; };
+		5067F34022D4F88F00894B2F /* InAppDateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33C22D4F88E00894B2F /* InAppDateChecker.m */; };
+		5067F34122D4F88F00894B2F /* InAppDateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33C22D4F88E00894B2F /* InAppDateChecker.m */; };
+		5067F34222D4F88F00894B2F /* InAppPaymentVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33F22D4F88E00894B2F /* InAppPaymentVerifier.m */; };
+		5067F34322D4F88F00894B2F /* InAppPaymentVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F33F22D4F88E00894B2F /* InAppPaymentVerifier.m */; };
+		5067F34A22D4F8A400894B2F /* InAppSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F34622D4F8A300894B2F /* InAppSubscription.m */; };
+		5067F34B22D4F8A400894B2F /* InAppSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F34622D4F8A300894B2F /* InAppSubscription.m */; };
+		5067F34C22D4F8A400894B2F /* InAppExpirationChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F34822D4F8A300894B2F /* InAppExpirationChecker.m */; };
+		5067F34D22D4F8A400894B2F /* InAppExpirationChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F34822D4F8A300894B2F /* InAppExpirationChecker.m */; };
+		5067F34E22D4F8A400894B2F /* InAppSubscriptionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F34922D4F8A400894B2F /* InAppSubscriptionState.m */; };
+		5067F34F22D4F8A400894B2F /* InAppSubscriptionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F34922D4F8A400894B2F /* InAppSubscriptionState.m */; };
+		5067F35222D4F96200894B2F /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35022D4F96200894B2F /* Lockbox.m */; };
+		5067F35322D4F96200894B2F /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35022D4F96200894B2F /* Lockbox.m */; };
+		5067F35622D4F9AB00894B2F /* WeakEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35422D4F9AB00894B2F /* WeakEvent.m */; };
+		5067F35722D4F9AB00894B2F /* WeakEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35422D4F9AB00894B2F /* WeakEvent.m */; };
+		5067F35A22D4FA8100894B2F /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35822D4FA8000894B2F /* WeakTimer.m */; };
+		5067F35B22D4FA8100894B2F /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35822D4FA8000894B2F /* WeakTimer.m */; };
+		5067F35E22D4FC3800894B2F /* InAppSubscriptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35C22D4FC3800894B2F /* InAppSubscriptionManager.m */; };
+		5067F35F22D4FC3800894B2F /* InAppSubscriptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F35C22D4FC3800894B2F /* InAppSubscriptionManager.m */; };
+		5067F36322D4FEF300894B2F /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F36122D4FEF300894B2F /* SubscribeViewController.m */; };
+		5067F36422D4FEF300894B2F /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F36122D4FEF300894B2F /* SubscribeViewController.m */; };
+		5067F36522D4FEF300894B2F /* SubscribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067F36222D4FEF300894B2F /* SubscribeViewController.xib */; };
+		5067F36622D4FEF300894B2F /* SubscribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067F36222D4FEF300894B2F /* SubscribeViewController.xib */; };
 		5067F86222CA1FF800A97CF7 /* App background loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5067F86122CA1FF800A97CF7 /* App background loop.wav */; };
 		5067F86322CA1FF800A97CF7 /* App background loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5067F86122CA1FF800A97CF7 /* App background loop.wav */; };
 		50749780220C8A5200B1924E /* RegitersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074977F220C8A5200B1924E /* RegitersViewController.m */; };
@@ -37,8 +67,6 @@
 		508DACE922D245C3004A13DF /* SubcribeAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACE622D245C3004A13DF /* SubcribeAppViewController.m */; };
 		508DACEA22D245C3004A13DF /* SubcribeAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */; };
 		508DACEB22D245C3004A13DF /* SubcribeAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */; };
-		508DACED22D245E8004A13DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508DACEC22D245E8004A13DF /* StoreKit.framework */; };
-		508DACEE22D245F1004A13DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508DACEC22D245E8004A13DF /* StoreKit.framework */; };
 		508DACF522D2465C004A13DF /* IAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACF422D2465C004A13DF /* IAppHelper.m */; };
 		508DACF622D2465C004A13DF /* IAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DACF422D2465C004A13DF /* IAppHelper.m */; };
 		508DACFB22D25F04004A13DF /* song1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 508DACFA22D25F04004A13DF /* song1.mp4 */; };
@@ -479,6 +507,35 @@
 		50545BD42219BEC80064DBF4 /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		506683C022C782C300590C92 /* yay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yay.wav; sourceTree = "<group>"; };
 		506683C322C78C5B00590C92 /* uh oh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "uh oh.wav"; sourceTree = "<group>"; };
+		5067F32C22D4F87900894B2F /* NSObject+KeychainProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KeychainProperty.h"; sourceTree = "<group>"; };
+		5067F32D22D4F87900894B2F /* InAppProductRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppProductRequester.h; sourceTree = "<group>"; };
+		5067F32E22D4F87900894B2F /* InAppPaymentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPaymentQueue.h; sourceTree = "<group>"; };
+		5067F32F22D4F87900894B2F /* NSObject+KeychainProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KeychainProperty.m"; sourceTree = "<group>"; };
+		5067F33022D4F87900894B2F /* InAppReceiptVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppReceiptVerifier.h; sourceTree = "<group>"; };
+		5067F33122D4F87900894B2F /* InAppReceiptVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppReceiptVerifier.m; sourceTree = "<group>"; };
+		5067F33222D4F87A00894B2F /* InAppPaymentQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPaymentQueue.m; sourceTree = "<group>"; };
+		5067F33322D4F87A00894B2F /* InAppProductRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppProductRequester.m; sourceTree = "<group>"; };
+		5067F33C22D4F88E00894B2F /* InAppDateChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppDateChecker.m; sourceTree = "<group>"; };
+		5067F33D22D4F88E00894B2F /* InAppDateChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppDateChecker.h; sourceTree = "<group>"; };
+		5067F33E22D4F88E00894B2F /* InAppPaymentVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPaymentVerifier.h; sourceTree = "<group>"; };
+		5067F33F22D4F88E00894B2F /* InAppPaymentVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPaymentVerifier.m; sourceTree = "<group>"; };
+		5067F34422D4F8A300894B2F /* InAppExpirationChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppExpirationChecker.h; sourceTree = "<group>"; };
+		5067F34522D4F8A300894B2F /* InAppSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSubscription.h; sourceTree = "<group>"; };
+		5067F34622D4F8A300894B2F /* InAppSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSubscription.m; sourceTree = "<group>"; };
+		5067F34722D4F8A300894B2F /* InAppSubscriptionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSubscriptionState.h; sourceTree = "<group>"; };
+		5067F34822D4F8A300894B2F /* InAppExpirationChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppExpirationChecker.m; sourceTree = "<group>"; };
+		5067F34922D4F8A400894B2F /* InAppSubscriptionState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSubscriptionState.m; sourceTree = "<group>"; };
+		5067F35022D4F96200894B2F /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
+		5067F35122D4F96200894B2F /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
+		5067F35422D4F9AB00894B2F /* WeakEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakEvent.m; sourceTree = "<group>"; };
+		5067F35522D4F9AB00894B2F /* WeakEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakEvent.h; sourceTree = "<group>"; };
+		5067F35822D4FA8000894B2F /* WeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
+		5067F35922D4FA8100894B2F /* WeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
+		5067F35C22D4FC3800894B2F /* InAppSubscriptionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSubscriptionManager.m; sourceTree = "<group>"; };
+		5067F35D22D4FC3800894B2F /* InAppSubscriptionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSubscriptionManager.h; sourceTree = "<group>"; };
+		5067F36022D4FEF300894B2F /* SubscribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscribeViewController.h; sourceTree = "<group>"; };
+		5067F36122D4FEF300894B2F /* SubscribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscribeViewController.m; sourceTree = "<group>"; };
+		5067F36222D4FEF300894B2F /* SubscribeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeViewController.xib; sourceTree = "<group>"; };
 		5067F86122CA1FF800A97CF7 /* App background loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "App background loop.wav"; sourceTree = "<group>"; };
 		5074977E220C8A5200B1924E /* RegitersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegitersViewController.h; sourceTree = "<group>"; };
 		5074977F220C8A5200B1924E /* RegitersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegitersViewController.m; sourceTree = "<group>"; };
@@ -492,7 +549,6 @@
 		508DACE522D245C3004A13DF /* SubcribeAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubcribeAppViewController.h; sourceTree = "<group>"; };
 		508DACE622D245C3004A13DF /* SubcribeAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubcribeAppViewController.m; sourceTree = "<group>"; };
 		508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubcribeAppViewController.xib; sourceTree = "<group>"; };
-		508DACEC22D245E8004A13DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		508DACF322D2465C004A13DF /* IAppHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAppHelper.h; sourceTree = "<group>"; };
 		508DACF422D2465C004A13DF /* IAppHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAppHelper.m; sourceTree = "<group>"; };
 		508DACFA22D25F04004A13DF /* song1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = song1.mp4; sourceTree = "<group>"; };
@@ -875,7 +931,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				508DACED22D245E8004A13DF /* StoreKit.framework in Frameworks */,
 				509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */,
 				509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */,
 				509E3A6A2210832900DAC9A5 /* FBSDKShareKit.framework in Frameworks */,
@@ -889,7 +944,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				508DACEE22D245F1004A13DF /* StoreKit.framework in Frameworks */,
 				50D8A6AA2249D73B0000A967 /* FBSDKCoreKit.framework in Frameworks */,
 				50D8A6AB2249D73B0000A967 /* Bolts.framework in Frameworks */,
 				50D8A6AC2249D73B0000A967 /* FBSDKShareKit.framework in Frameworks */,
@@ -900,6 +954,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5067F32B22D4F64C00894B2F /* InApp */ = {
+			isa = PBXGroup;
+			children = (
+				5067F35D22D4FC3800894B2F /* InAppSubscriptionManager.h */,
+				5067F35C22D4FC3800894B2F /* InAppSubscriptionManager.m */,
+				5067F35922D4FA8100894B2F /* WeakTimer.h */,
+				5067F35822D4FA8000894B2F /* WeakTimer.m */,
+				5067F35522D4F9AB00894B2F /* WeakEvent.h */,
+				5067F35422D4F9AB00894B2F /* WeakEvent.m */,
+				5067F35122D4F96200894B2F /* Lockbox.h */,
+				5067F35022D4F96200894B2F /* Lockbox.m */,
+				5067F34422D4F8A300894B2F /* InAppExpirationChecker.h */,
+				5067F34822D4F8A300894B2F /* InAppExpirationChecker.m */,
+				5067F34522D4F8A300894B2F /* InAppSubscription.h */,
+				5067F34622D4F8A300894B2F /* InAppSubscription.m */,
+				5067F34722D4F8A300894B2F /* InAppSubscriptionState.h */,
+				5067F34922D4F8A400894B2F /* InAppSubscriptionState.m */,
+				5067F33D22D4F88E00894B2F /* InAppDateChecker.h */,
+				5067F33C22D4F88E00894B2F /* InAppDateChecker.m */,
+				5067F33E22D4F88E00894B2F /* InAppPaymentVerifier.h */,
+				5067F33F22D4F88E00894B2F /* InAppPaymentVerifier.m */,
+				5067F32E22D4F87900894B2F /* InAppPaymentQueue.h */,
+				5067F33222D4F87A00894B2F /* InAppPaymentQueue.m */,
+				5067F32D22D4F87900894B2F /* InAppProductRequester.h */,
+				5067F33322D4F87A00894B2F /* InAppProductRequester.m */,
+				5067F33022D4F87900894B2F /* InAppReceiptVerifier.h */,
+				5067F33122D4F87900894B2F /* InAppReceiptVerifier.m */,
+				5067F32C22D4F87900894B2F /* NSObject+KeychainProperty.h */,
+				5067F32F22D4F87900894B2F /* NSObject+KeychainProperty.m */,
+			);
+			path = InApp;
+			sourceTree = "<group>";
+		};
 		50BDF00922BF8E70008804FE /* XLCircleProgress */ = {
 			isa = PBXGroup;
 			children = (
@@ -1108,6 +1195,7 @@
 		50C5AA9B2206E8F2008BA500 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				5067F32B22D4F64C00894B2F /* InApp */,
 				50BDF00922BF8E70008804FE /* XLCircleProgress */,
 				50C5AA9C2206E8F2008BA500 /* TOActionSheet.h */,
 				50C5AA9D2206E8F2008BA500 /* DragAndDropTableView */,
@@ -1528,6 +1616,9 @@
 				508DACE522D245C3004A13DF /* SubcribeAppViewController.h */,
 				508DACE622D245C3004A13DF /* SubcribeAppViewController.m */,
 				508DACE722D245C3004A13DF /* SubcribeAppViewController.xib */,
+				5067F36022D4FEF300894B2F /* SubscribeViewController.h */,
+				5067F36122D4FEF300894B2F /* SubscribeViewController.m */,
+				5067F36222D4FEF300894B2F /* SubscribeViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1560,7 +1651,6 @@
 		B9557FC826E82B2B2CCA9A7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				508DACEC22D245E8004A13DF /* StoreKit.framework */,
 				509E3A672210832700DAC9A5 /* Bolts.framework */,
 				509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */,
 				509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */,
@@ -1619,6 +1709,11 @@
 				TargetAttributes = {
 					50C5AA0C2206E477008BA500 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1690,6 +1785,7 @@
 				50C5AC722206E94B008BA500 /* TitleViewLogin.xib in Resources */,
 				50C5AA832206E84C008BA500 /* menu-button@2x.png in Resources */,
 				504B265922211390007D376B /* QuestionViewController.xib in Resources */,
+				5067F36522D4FEF300894B2F /* SubscribeViewController.xib in Resources */,
 				50C5AC7C2206E94B008BA500 /* CustomAddToListView.xib in Resources */,
 				50A9937F22CE53770085AA91 /* QuestionViewController_iPad.xib in Resources */,
 				50BAF94B22BFE10E008ADE95 /* ProfileViewController.xib in Resources */,
@@ -1726,6 +1822,7 @@
 				5067F86322CA1FF800A97CF7 /* App background loop.wav in Resources */,
 				50D8A6C92249D73B0000A967 /* Assets.xcassets in Resources */,
 				50D8A6CA2249D73B0000A967 /* TextViewForSignUpNew.xib in Resources */,
+				5067F36622D4FEF300894B2F /* SubscribeViewController.xib in Resources */,
 				50D8A6CC2249D73B0000A967 /* CategoryCollectionViewCell.xib in Resources */,
 				50D8A6CD2249D73B0000A967 /* CropImageViewController.xib in Resources */,
 				50D8A6CE2249D73B0000A967 /* SignUp.storyboard in Resources */,
@@ -1826,6 +1923,7 @@
 				50BDF02722BFD1A1008804FE /* PFNavigationDropdownMenu.m in Sources */,
 				50C5AB392206E8F3008BA500 /* UIImage+Jot.m in Sources */,
 				50C5AA7C2206E84B008BA500 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				5067F34E22D4F8A400894B2F /* InAppSubscriptionState.m in Sources */,
 				50C5AB492206E8F3008BA500 /* MASConstraintMaker.m in Sources */,
 				50749780220C8A5200B1924E /* RegitersViewController.m in Sources */,
 				50B8866722BE65870099AA59 /* SelectSongOrGameViewController.m in Sources */,
@@ -1834,11 +1932,15 @@
 				50545BD52219BEC80064DBF4 /* Quiz.m in Sources */,
 				50C5AB372206E8F3008BA500 /* JotDrawingContainer.m in Sources */,
 				50C5AB632206E8F3008BA500 /* FSCalendarWeekdayView.m in Sources */,
+				5067F34A22D4F8A400894B2F /* InAppSubscription.m in Sources */,
 				50C5AA972206E84C008BA500 /* GTMNSString+HTML.m in Sources */,
 				50C5AB622206E8F3008BA500 /* FSCalendarScopeHandle.m in Sources */,
+				5067F34022D4F88F00894B2F /* InAppDateChecker.m in Sources */,
 				50C5AC662206E94B008BA500 /* MyListProfileCollectionViewCell.m in Sources */,
 				50C5AB5C2206E8F3008BA500 /* FSCalendarDelegationProxy.m in Sources */,
 				50C5AA7D2206E84B008BA500 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				5067F33422D4F87A00894B2F /* NSObject+KeychainProperty.m in Sources */,
+				5067F34C22D4F8A400894B2F /* InAppExpirationChecker.m in Sources */,
 				50BDF02322BFD1A1008804FE /* PFTableCellContentView.m in Sources */,
 				50C5AC302206E94B008BA500 /* CustomCollectionViewLayout.m in Sources */,
 				50C5AC812206E94B008BA500 /* QuestionAnsweTableViewCell.m in Sources */,
@@ -1849,6 +1951,7 @@
 				50C5AA862206E84C008BA500 /* NSString+Measurements.m in Sources */,
 				50C5AB4B2206E8F3008BA500 /* NSArray+MASAdditions.m in Sources */,
 				50C5AB6A2206E8F3008BA500 /* FSCalendarAppearance.m in Sources */,
+				5067F35E22D4FC3800894B2F /* InAppSubscriptionManager.m in Sources */,
 				50C5AB5F2206E8F3008BA500 /* FSCalendarStickyHeader.m in Sources */,
 				50C5AC8D2206E94B008BA500 /* TitleHeading.m in Sources */,
 				50BDF01122BF8E70008804FE /* XLCircle.m in Sources */,
@@ -1859,12 +1962,14 @@
 				50C5AC562206E94B008BA500 /* DIYTableViewCell.m in Sources */,
 				50C5AA942206E84C008BA500 /* NSString+HTML.m in Sources */,
 				50C5ACDE2206F2D7008BA500 /* LoginViewController.m in Sources */,
+				5067F35622D4F9AB00894B2F /* WeakEvent.m in Sources */,
 				50C5AB5A2206E8F3008BA500 /* UIImage+CoreGraphics.m in Sources */,
 				50C5AB6C2206E8F3008BA500 /* JTSImageInfo.m in Sources */,
 				50C5AB572206E8F3008BA500 /* HRColorCursor.m in Sources */,
 				50C5AB3D2206E8F3008BA500 /* JotDrawView.m in Sources */,
 				50C5AB902206E92E008BA500 /* Question.m in Sources */,
 				50C5AB4F2206E8F3008BA500 /* MASViewAttribute.m in Sources */,
+				5067F33622D4F87A00894B2F /* InAppReceiptVerifier.m in Sources */,
 				50C5AB422206E8F3008BA500 /* NCTextFieldcategory.m in Sources */,
 				50C5AC5F2206E94B008BA500 /* BransListingCollectionViewCell.m in Sources */,
 				50BDF01322BF8E70008804FE /* XLCircleProgress.m in Sources */,
@@ -1872,15 +1977,19 @@
 				50C5AB462206E8F3008BA500 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				50C5AB722206E8F3008BA500 /* IQDropDownTextField.m in Sources */,
 				50C5AB6B2206E8F3008BA500 /* NIDropDown.m in Sources */,
+				5067F33A22D4F87A00894B2F /* InAppProductRequester.m in Sources */,
 				50BDF02922BFD1A1008804FE /* PFTableView.m in Sources */,
 				50C5AB612206E8F3008BA500 /* FSCalendarCollectionViewLayout.m in Sources */,
 				50C5AA962206E84C008BA500 /* UIView+MyUIView.m in Sources */,
+				5067F36322D4FEF300894B2F /* SubscribeViewController.m in Sources */,
 				50C5AA922206E84C008BA500 /* UIButton+MyButton.m in Sources */,
 				50C5AB692206E8F3008BA500 /* FSCalendarTransitionCoordinator.m in Sources */,
 				50C5AB592206E8F3008BA500 /* HRBrightnessSlider.m in Sources */,
+				5067F33822D4F87A00894B2F /* InAppPaymentQueue.m in Sources */,
 				50B8866322BE2C820099AA59 /* LoginOptionsViewController.m in Sources */,
 				508DACE822D245C3004A13DF /* SubcribeAppViewController.m in Sources */,
 				50C5AC6F2206E94B008BA500 /* AddMyOwnCollectionReusableView.m in Sources */,
+				5067F35A22D4FA8100894B2F /* WeakTimer.m in Sources */,
 				50C5AB522206E8F3008BA500 /* TOActionSheet.m in Sources */,
 				50C5AC612206E94B008BA500 /* ItemByCategoryCollectionViewCell.m in Sources */,
 				50C5AC642206E94B008BA500 /* BottomCollectionReusableView.m in Sources */,
@@ -1889,6 +1998,7 @@
 				50C5AA7A2206E84B008BA500 /* NSDate+Utilities.m in Sources */,
 				50C5AA852206E84C008BA500 /* DateFormatter.m in Sources */,
 				50C5AB472206E8F3008BA500 /* ViewController+MASAdditions.m in Sources */,
+				5067F34222D4F88F00894B2F /* InAppPaymentVerifier.m in Sources */,
 				50C5AC7F2206E94B008BA500 /* SymptomsDetailExplainationTableViewCell.m in Sources */,
 				50C5AA982206E84C008BA500 /* UIView+Toast.m in Sources */,
 				50C5AB512206E8F3008BA500 /* StyleKit.m in Sources */,
@@ -1920,6 +2030,7 @@
 				50C5AC8A2206E94B008BA500 /* HowItWorksTableViewCell.m in Sources */,
 				50C5AC7B2206E94B008BA500 /* CustomAddToListView.m in Sources */,
 				50C5AB642206E8F3008BA500 /* FSCalendarExtensions.m in Sources */,
+				5067F35222D4F96200894B2F /* Lockbox.m in Sources */,
 				50C5AA952206E84C008BA500 /* UITextField+MyTextField.m in Sources */,
 				50C5AB442206E8F3008BA500 /* LMDropdownView.m in Sources */,
 				50C5AA122206E477008BA500 /* AppDelegate.m in Sources */,
@@ -2008,12 +2119,15 @@
 				50D8A6322249D73B0000A967 /* JotDrawingContainer.m in Sources */,
 				50D8A6332249D73B0000A967 /* FSCalendarWeekdayView.m in Sources */,
 				50D8A6342249D73B0000A967 /* GTMNSString+HTML.m in Sources */,
+				5067F33522D4F87A00894B2F /* NSObject+KeychainProperty.m in Sources */,
+				5067F36422D4FEF300894B2F /* SubscribeViewController.m in Sources */,
 				50D8A6352249D73B0000A967 /* FSCalendarScopeHandle.m in Sources */,
 				50D8A6362249D73B0000A967 /* MyListProfileCollectionViewCell.m in Sources */,
 				50D8A6372249D73B0000A967 /* FSCalendarDelegationProxy.m in Sources */,
 				50D8A6382249D73B0000A967 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				50BDF02422BFD1A1008804FE /* PFTableCellContentView.m in Sources */,
 				50D8A6392249D73B0000A967 /* CustomCollectionViewLayout.m in Sources */,
+				5067F35F22D4FC3800894B2F /* InAppSubscriptionManager.m in Sources */,
 				50D8A63A2249D73B0000A967 /* QuestionAnsweTableViewCell.m in Sources */,
 				50D8A63B2249D73B0000A967 /* BaseViewController.m in Sources */,
 				50D8A63C2249D73B0000A967 /* User.m in Sources */,
@@ -2028,6 +2142,7 @@
 				50D8A6442249D73B0000A967 /* VideoPlayerViewController.m in Sources */,
 				50D8A6452249D73B0000A967 /* StoryOneTableViewCell.m in Sources */,
 				50D8A6462249D73B0000A967 /* Reachability.m in Sources */,
+				5067F34B22D4F8A400894B2F /* InAppSubscription.m in Sources */,
 				50D8A6472249D73B0000A967 /* QuestionViewController.m in Sources */,
 				50D8A6482249D73B0000A967 /* DIYTableViewCell.m in Sources */,
 				50D8A6492249D73B0000A967 /* NSString+HTML.m in Sources */,
@@ -2061,6 +2176,7 @@
 				50D8A6612249D73B0000A967 /* SongsListingViewController.m in Sources */,
 				50D8A6622249D73B0000A967 /* NSDate+Utilities.m in Sources */,
 				50D8A6632249D73B0000A967 /* DateFormatter.m in Sources */,
+				5067F34F22D4F8A400894B2F /* InAppSubscriptionState.m in Sources */,
 				50D8A6642249D73B0000A967 /* ViewController+MASAdditions.m in Sources */,
 				50D8A6652249D73B0000A967 /* SymptomsDetailExplainationTableViewCell.m in Sources */,
 				50D8A6662249D73B0000A967 /* UIView+Toast.m in Sources */,
@@ -2073,15 +2189,19 @@
 				50D8A66D2249D73B0000A967 /* UILabel+MyLabel.m in Sources */,
 				50D8A66E2249D73B0000A967 /* MKDropdownMenu.m in Sources */,
 				50D8A66F2249D73B0000A967 /* RightMenuViewController.m in Sources */,
+				5067F35B22D4FA8100894B2F /* WeakTimer.m in Sources */,
+				5067F35322D4F96200894B2F /* Lockbox.m in Sources */,
 				50D8A6702249D73B0000A967 /* FSCalendarCollectionView.m in Sources */,
 				501C440022CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */,
 				50D8A6712249D73B0000A967 /* ManuViewController.m in Sources */,
 				50D8A6722249D73B0000A967 /* UIImage+LMExtension.m in Sources */,
+				5067F34D22D4F8A400894B2F /* InAppExpirationChecker.m in Sources */,
 				50D8A6732249D73B0000A967 /* LessonsTableViewCell.m in Sources */,
 				50D8A6742249D73B0000A967 /* FSCalendarCalculator.m in Sources */,
 				50D8A6752249D73B0000A967 /* CropImageViewController.m in Sources */,
 				50D8A6762249D73B0000A967 /* UIImage+JTSImageEffects.m in Sources */,
 				50D8A6772249D73B0000A967 /* MASCompositeConstraint.m in Sources */,
+				5067F33B22D4F87A00894B2F /* InAppProductRequester.m in Sources */,
 				50D8A6782249D73B0000A967 /* JotTextEditView.m in Sources */,
 				50D8A6792249D73B0000A967 /* ADDropDownMenuView.m in Sources */,
 				50D8A67A2249D73B0000A967 /* DYAlertPickView.m in Sources */,
@@ -2099,6 +2219,7 @@
 				50D8A6862249D73B0000A967 /* AppDelegate.m in Sources */,
 				50D8A6872249D73B0000A967 /* JTSImageViewController.m in Sources */,
 				50D8A6882249D73B0000A967 /* CustomNavViewController.m in Sources */,
+				5067F34322D4F88F00894B2F /* InAppPaymentVerifier.m in Sources */,
 				50D8A6892249D73B0000A967 /* MASConstraint.m in Sources */,
 				50D8A68A2249D73B0000A967 /* NSDictionary+NullReplacement.m in Sources */,
 				50D8A68B2249D73B0000A967 /* DatePickerSheet.m in Sources */,
@@ -2115,6 +2236,7 @@
 				501C440722CDABEA00546E96 /* SongListingTableViewCell.m in Sources */,
 				50D8A6962249D73B0000A967 /* DescriptionTableViewCell.m in Sources */,
 				50D8A6972249D73B0000A967 /* HRColorPickerView.m in Sources */,
+				5067F33722D4F87A00894B2F /* InAppReceiptVerifier.m in Sources */,
 				50D8A6982249D73B0000A967 /* MyListSectionHeaderCollectionReusableView.m in Sources */,
 				50D8A6992249D73B0000A967 /* DragAndDropTableView.m in Sources */,
 				50D8A69A2249D73B0000A967 /* CustomFooterView.m in Sources */,
@@ -2123,14 +2245,17 @@
 				50D8A69D2249D73B0000A967 /* NSString+JS.m in Sources */,
 				50D8A69E2249D73B0000A967 /* JxbScaleButton.m in Sources */,
 				50D8A69F2249D73B0000A967 /* JTSSimpleImageDownloader.m in Sources */,
+				5067F34122D4F88F00894B2F /* InAppDateChecker.m in Sources */,
 				50D8A6A02249D73B0000A967 /* TKImageView.m in Sources */,
 				50D8A6A12249D73B0000A967 /* CustomNavViewController2.m in Sources */,
+				5067F35722D4F9AB00894B2F /* WeakEvent.m in Sources */,
 				50D8A6A22249D73B0000A967 /* RTIconButton.m in Sources */,
 				50D8A6A32249D73B0000A967 /* AudioController.m in Sources */,
 				50BDF02622BFD1A1008804FE /* PFConfiguration.m in Sources */,
 				50D8A6A42249D73B0000A967 /* NSString+MyString.m in Sources */,
 				50D8A6A52249D73B0000A967 /* HRBrightnessCursor.m in Sources */,
 				50D8A6A62249D73B0000A967 /* ADDropDownMenuItemView.m in Sources */,
+				5067F33922D4F87A00894B2F /* InAppPaymentQueue.m in Sources */,
 				50D8A6A72249D73B0000A967 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				50D8A6A82249D73B0000A967 /* ThankYouViewController.m in Sources */,
 			);

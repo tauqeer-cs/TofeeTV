@@ -16,7 +16,7 @@
 #import "ProfileViewController.h"
 #import <AdSupport/ASIdentifierManager.h>
 #import "SongListingTableViewCell.h"
-
+#import "SubscribeViewController.h"
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -97,6 +97,9 @@
     else if (index == 1)
     {
         //remove ads
+        SubscribeViewController * subsViewController = [[SubscribeViewController alloc] initWithNibName:@"SubscribeViewController" bundle:nil];
+        [self.navigationController showViewController:subsViewController sender:self];
+        
     }
     else if(index == 2)
     {

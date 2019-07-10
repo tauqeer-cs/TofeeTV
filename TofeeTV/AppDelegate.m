@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "AudioController.h"
+#import "InAppPaymentQueue.h"
 
 @import GoogleMobileAds;
 
@@ -35,6 +36,8 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[InAppPaymentQueue sharedInstance] start];
     
     // Override point for customization after application launch.
     //App ID:

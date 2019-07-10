@@ -114,11 +114,7 @@
 
 #define FancyFont @"KGWhattheTeacherWants"
 #define FontRegular FancyFont
-#define FontSemiBold @"Raleway-SemiBold"
-#define FontExtraBold @"Raleway-ExtraBold"
-#define FontMedium @"Raleway-Medium"
-#define DigitFont @"OpenSans"
-#define DigitFontBold @"OpenSans-Semibold"
+
 
 /*
  2019-02-06 19:28:58.183486+0500 TofeeTV[1262:58706] Family name: Raleway

@@ -16,23 +16,29 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>0.1</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb1136076146563641</string>
-			</array>
-		</dict>
-	</array>
+	
+    
 	<key>CFBundleDisplayName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleVersion</key>
 	<string>6</string>
-	<key>FacebookAppID</key>
-	<string>1136076146563641</string>
-	<key>FacebookDisplayName</key>
-	<string>Toffeetv App</string>
+
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb463086034504634</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>463086034504634</string>
+    <key>FacebookDisplayName</key>
+    <string>ttv-app2019</string>
+    
+
+    
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>

@@ -9,6 +9,7 @@ pod 'SpinKit', '~> 1.1'
 pod 'AFNetworking', '~> 3.0'
 pod 'IAPHelper'
 pod 'Google-Mobile-Ads-SDK'
+pod 'IAPHelper'
 
   # Pods for TofeeTV
 
