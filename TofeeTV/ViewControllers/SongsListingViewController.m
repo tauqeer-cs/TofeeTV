@@ -18,8 +18,8 @@
 #import "SongListingTableViewCell.h"
 #import "SubscribeViewController.h"
 #import "AboutUsViewController.h"
-
-@interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate,UITableViewDelegate,UITableViewDataSource>
+#import "ContactUsViewController.h"
+@interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,GADBannerViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -115,6 +115,8 @@
     else if(index == 3)
     {
         //Contact Us
+        ContactUsViewController * contactUS = [[ContactUsViewController alloc] initWithNibName:@"" bundle:nil];
+        [self.navigationController pushViewController:contactUS animated:true];
         
     }
     else  {
