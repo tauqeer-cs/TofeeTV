@@ -37,7 +37,9 @@
 
 -(void)getFacebookProfileInfos {
     
-    FBSDKGraphRequest *requestMe = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me" parameters: @{@"fields": @"id,name,link,first_name, last_name, picture.type(large), email  "}];
+    //picture.type(large)
+    
+    FBSDKGraphRequest *requestMe = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me" parameters: @{@"fields": @"id,name,link,first_name, last_name, email  "}];
     
     FBSDKGraphRequestConnection *connection = [[FBSDKGraphRequestConnection alloc] init];
     [connection addRequest:requestMe completionHandler:^(FBSDKGraphRequestConnection *connection,

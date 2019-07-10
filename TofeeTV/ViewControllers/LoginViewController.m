@@ -176,10 +176,6 @@
     }];
     
 }
-- (IBAction)btnFacebookTapped:(UIButton *)sender {
-    
-    
-}
 
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{

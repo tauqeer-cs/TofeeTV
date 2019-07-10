@@ -23,6 +23,10 @@
 @property (nonatomic) InAppSubscriptionManager* subManager;
 
 
+@property (nonatomic,strong) SKPaymentQueue * paymentQue;
+
+//    let paymentQueue = SKPaymentQueue.default()
+
 @end
 
 @implementation SubscribeViewController
@@ -37,12 +41,30 @@
     self.subManager = [[InAppSubscriptionManager alloc]init];
     
     [self requestProduct];
+ 
+    self.paymentQue = [SKPaymentQueue defaultQueue];
     
 }
 //maybe step 1
 
 -(void)requestProduct{
- 
+    
+    self.productRequester = [[InAppProductRequester alloc]initWithProductIdentifier:PRODUCT_ID];
+    
+    [self.productRequester requestWithCompletion:^(SKProduct *product) {
+        self.product = product;
+        [self makePayment];
+        
+        
+    }];
+    
+    
+    
+    
+    
+    //self checkSubscription:<#(InAppSubscription *)#> name:<#(NSString *)#>
+    
+    return;
     if(![IAPShare sharedHelper].iap) {
         //com.hashtaggospel
         //unlock123
@@ -58,42 +80,14 @@
      {
          NSLog(@"%@",response);
          if(response > 0 ) {
-         NSLog(@"%@",response);
+             NSLog(@"%@",response);
              
              SKProduct* product =[[IAPShare sharedHelper].iap.products objectAtIndex:0];
              
              NSLog(@"Price: %@",[[IAPShare sharedHelper].iap getLocalePrice:product]);
-             NSLog(@"Title: %@",product.localizedTitle);
-             /*
-             [[IAPShare sharedHelper].iap buyProduct:product
-                                        onCompletion:^(SKPaymentTransaction* trans){
-                                            if(trans.error)
-                                            {
-                                                
-                                                NSLog(@"Fail %@",[trans.error localizedDescription]);
-                                                
-                                            }
-                                            else if(trans.transactionState == SKPaymentTransactionStatePurchased) {
-                                                
-                                                [[IAPShare sharedHelper].iap checkReceipt:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]] AndSharedSecret:@"your sharesecret" onCompletion:^(NSString *response, NSError *error) {
-                                                    NSDictionary* rec = [IAPShare toJSON:response];
-                                                    if([rec[@"status"] integerValue]==0)
-                                                    {
-                                                        [[IAPShare sharedHelper].iap provideContentWithTransaction:trans];
-                                                        NSLog(@"SUCCESS %@",response);
-                                                        NSLog(@"Pruchases %@",[IAPShare sharedHelper].iap.purchasedProducts);
-                                                        //[self.userDefaults setValue:@"1" forKey:@"HasPurchasedTheItem"];
-                                                       // [self hideLoader];
-                                                    }
-                                                    else {
-                                                        NSLog(@"Fail");
-                                                    }
-                                                }];
-                                            }
-                                            else if(trans.transactionState == SKPaymentTransactionStateFailed) {
-                                                NSLog(@"Fail");
-                                            }
-                                        }];*/
+             //NSLog(@"Title: %@",product.subscriptionPeriod.unit);
+             
+             
              
              
              
@@ -103,25 +97,82 @@
     
     
     return;
-    self.productRequester = [[InAppProductRequester alloc]initWithProductIdentifier:PRODUCT_ID];
     
-    [self.productRequester requestWithCompletion:^(SKProduct *product) {
-        self.product = product;
-    }];
     
 }
 
 
+-(BOOL)canMakePayment {
+    
+    return SKPaymentQueue.canMakePayments;
+    
+    
+}
+
 -(void)makePayment{
     
     if (self.product != nil){
-        [[InAppPaymentQueue sharedInstance] addPayment:self.product];
+  
+        
+        
+        if ([self canMakePayment]) {
+            
+            //            let payment = SKPayment(product: product)
+
+           SKPayment * currentPayment =  [SKPayment paymentWithProduct:self.product];
+        
+
+         //   [[SKPaymentQueue defaultQueue] addPayment:self];
+            
+            [[SKPaymentQueue defaultQueue] addPayment:currentPayment];
+            
+            //SKPaymentQueue.default().add(self)
+
+        }
+        
+
+        //[[SKPaymentQueue defaultQueue] addPayment:[SKPayment paymentWithProduct:self.product]];
+        
+//        [[InAppPaymentQueue sharedInstance] addPayment:self.product];
+
+        return;
+        
+        [[IAPShare sharedHelper].iap buyProduct:self.product
+                                   onCompletion:^(SKPaymentTransaction* trans){
+                                       if(trans.error)
+                                       {
+                                           
+                                           NSLog(@"Fail %@",[trans.error localizedDescription]);
+                                           
+                                       }
+                                       else if(trans.transactionState == SKPaymentTransactionStatePurchased) {
+                                           
+                                           [[IAPShare sharedHelper].iap checkReceipt:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]] AndSharedSecret:@"your sharesecret" onCompletion:^(NSString *response, NSError *error) {
+                                               NSDictionary* rec = [IAPShare toJSON:response];
+                                               if([rec[@"status"] integerValue]==0)
+                                               {
+                                                   [[IAPShare sharedHelper].iap provideContentWithTransaction:trans];
+                                                   NSLog(@"SUCCESS %@",response);
+                                                   NSLog(@"Pruchases %@",[IAPShare sharedHelper].iap.purchasedProducts);
+                                                   //[self.userDefaults setValue:@"1" forKey:@"HasPurchasedTheItem"];
+                                                   // [self hideLoader];
+                                               }
+                                               else {
+                                                   NSLog(@"Fail");
+                                               }
+                                           }];
+                                       }
+                                       else if(trans.transactionState == SKPaymentTransactionStateFailed) {
+                                           NSLog(@"Fail");
+                                       }
+                                   }];
+        
     }
     
 }
 
 -(void)validateRecipt{
- 
+    
     NSData* receiptData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]];
     if (receiptData != nil){
         NSString* receipt = [receiptData base64EncodedStringWithOptions:0];
@@ -173,13 +224,14 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+

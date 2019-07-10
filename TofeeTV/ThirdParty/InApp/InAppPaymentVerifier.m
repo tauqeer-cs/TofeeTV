@@ -71,6 +71,7 @@ EVENT_IMPL(PaymentVerifyComplete);
 
 -(void)onTransactionComplete
 {
+    return;
         NSData* data = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]];
         assert(data != nil);
         self.receiptData = [data base64EncodedStringWithOptions:0];
