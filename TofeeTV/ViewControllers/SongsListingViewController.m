@@ -17,6 +17,8 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import "SongListingTableViewCell.h"
 #import "SubscribeViewController.h"
+#import "AboutUsViewController.h"
+
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,GADBannerViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -104,6 +106,11 @@
     else if(index == 2)
     {
         //About US
+        id destination = [[AboutUsViewController alloc] initWithNibName:@"AboutUsViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:destination animated:true];
+        
+        //#import ""
     }
     else if(index == 3)
     {

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		21794F92E6B0253444373ADD /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
 		27235E6F2B25C0DEC338952E /* libPods-TofeeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */; };
+		501A78CF22D5970C00F1C32F /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A78CD22D5970C00F1C32F /* AboutUsViewController.m */; };
+		501A78D022D5970C00F1C32F /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501A78CE22D5970C00F1C32F /* AboutUsViewController.xib */; };
+		501A78D422D5993F00F1C32F /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A78D222D5993F00F1C32F /* ContactUsViewController.m */; };
+		501A78D522D5993F00F1C32F /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501A78D322D5993F00F1C32F /* ContactUsViewController.xib */; };
 		501C43FF22CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */; };
 		501C440022CDA5D100546E96 /* SongHeadingViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */; };
 		501C440122CDA5D100546E96 /* SongHeadingViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */; };
@@ -490,6 +494,12 @@
 /* Begin PBXFileReference section */
 		2CA7C36BC503086E3EC66AF7 /* libPods-TofeeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TofeeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38952574FE3B321DAD1C124E /* Pods-TofeeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofeeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofeeTV/Pods-TofeeTV.release.xcconfig"; sourceTree = "<group>"; };
+		501A78CC22D5970C00F1C32F /* AboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		501A78CD22D5970C00F1C32F /* AboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		501A78CE22D5970C00F1C32F /* AboutUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
+		501A78D122D5993F00F1C32F /* ContactUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		501A78D222D5993F00F1C32F /* ContactUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		501A78D322D5993F00F1C32F /* ContactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsViewController.xib; sourceTree = "<group>"; };
 		501C43FC22CDA5D100546E96 /* SongHeadingViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongHeadingViewTableViewCell.h; sourceTree = "<group>"; };
 		501C43FD22CDA5D100546E96 /* SongHeadingViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongHeadingViewTableViewCell.m; sourceTree = "<group>"; };
 		501C43FE22CDA5D100546E96 /* SongHeadingViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongHeadingViewTableViewCell.xib; sourceTree = "<group>"; };
@@ -1619,6 +1629,12 @@
 				5067F36022D4FEF300894B2F /* SubscribeViewController.h */,
 				5067F36122D4FEF300894B2F /* SubscribeViewController.m */,
 				5067F36222D4FEF300894B2F /* SubscribeViewController.xib */,
+				501A78CC22D5970C00F1C32F /* AboutUsViewController.h */,
+				501A78CD22D5970C00F1C32F /* AboutUsViewController.m */,
+				501A78CE22D5970C00F1C32F /* AboutUsViewController.xib */,
+				501A78D122D5993F00F1C32F /* ContactUsViewController.h */,
+				501A78D222D5993F00F1C32F /* ContactUsViewController.m */,
+				501A78D322D5993F00F1C32F /* ContactUsViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1777,7 +1793,9 @@
 				50C5AC7E2206E94B008BA500 /* QuestionAnsweTableViewCell2.xib in Resources */,
 				50C5AC5C2206E94B008BA500 /* ItemByCategoryCollectionViewCell.xib in Resources */,
 				50C5AC6A2206E94B008BA500 /* MyListItemImageCollectionViewCell.xib in Resources */,
+				501A78D022D5970C00F1C32F /* AboutUsViewController.xib in Resources */,
 				506683C422C78C5B00590C92 /* uh oh.wav in Resources */,
+				501A78D522D5993F00F1C32F /* ContactUsViewController.xib in Resources */,
 				50BDF02B22BFD1A1008804FE /* PFNavigationDropdownMenu.bundle in Resources */,
 				50C5AC672206E94B008BA500 /* BransListingCollectionViewCell2.xib in Resources */,
 				501C440122CDA5D100546E96 /* SongHeadingViewTableViewCell.xib in Resources */,
@@ -1992,6 +2010,7 @@
 				5067F35A22D4FA8100894B2F /* WeakTimer.m in Sources */,
 				50C5AB522206E8F3008BA500 /* TOActionSheet.m in Sources */,
 				50C5AC612206E94B008BA500 /* ItemByCategoryCollectionViewCell.m in Sources */,
+				501A78CF22D5970C00F1C32F /* AboutUsViewController.m in Sources */,
 				50C5AC642206E94B008BA500 /* BottomCollectionReusableView.m in Sources */,
 				50C5AA782206E84B008BA500 /* NSArray+NullReplacement.m in Sources */,
 				509AF0E6220B42B500EB8CB2 /* SongsListingViewController.m in Sources */,
@@ -2062,6 +2081,7 @@
 				50C5AB702206E8F3008BA500 /* JTSSimpleImageDownloader.m in Sources */,
 				50C5AA8B2206E84C008BA500 /* TKImageView.m in Sources */,
 				507ECE6A224758830080ABB6 /* CustomNavViewController2.m in Sources */,
+				501A78D422D5993F00F1C32F /* ContactUsViewController.m in Sources */,
 				50C5AA872206E84C008BA500 /* RTIconButton.m in Sources */,
 				50368D102225AD7C00A05482 /* AudioController.m in Sources */,
 				50BDF02522BFD1A1008804FE /* PFConfiguration.m in Sources */,
