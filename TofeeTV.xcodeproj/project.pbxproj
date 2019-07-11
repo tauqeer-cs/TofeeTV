@@ -289,6 +289,13 @@
 		50C5AC962206E97E008BA500 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AC952206E97D008BA500 /* BaseViewController.m */; };
 		50C5ACCD2206E9F2008BA500 /* chat_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50C5ACAB2206E9F2008BA500 /* chat_sound.mp3 */; };
 		50C5ACDE2206F2D7008BA500 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ACDD2206F2D7008BA500 /* LoginViewController.m */; };
+		50C9E46222D64E13009DFAC1 /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C9E46022D64E13009DFAC1 /* MKStoreKit.m */; };
+		50C9E46322D64E13009DFAC1 /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C9E46022D64E13009DFAC1 /* MKStoreKit.m */; };
+		50C9E46822D6566E009DFAC1 /* TestingAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9E46622D6566E009DFAC1 /* TestingAgainViewController.swift */; };
+		50C9E46922D6566E009DFAC1 /* TestingAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9E46622D6566E009DFAC1 /* TestingAgainViewController.swift */; };
+		50C9E47022D65C59009DFAC1 /* TestingAgainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C9E46F22D65C59009DFAC1 /* TestingAgainViewController.xib */; };
+		50C9E47122D65C59009DFAC1 /* TestingAgainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C9E46F22D65C59009DFAC1 /* TestingAgainViewController.xib */; };
+		50C9E47322D6641D009DFAC1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C9E47222D6641D009DFAC1 /* StoreKit.framework */; };
 		50D8A60F2249D73B0000A967 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AA382206E84B008BA500 /* SlideNavigationController.m */; };
 		50D8A6102249D73B0000A967 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AB312206E8F2008BA500 /* EDStarRating.m */; };
 		50D8A6112249D73B0000A967 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C5AAFC2206E8F2008BA500 /* FSCalendarDelegationFactory.m */; };
@@ -928,6 +935,13 @@
 		50C5ACB52206E9F2008BA500 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		50C5ACDC2206F2D7008BA500 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		50C5ACDD2206F2D7008BA500 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		50C9E46022D64E13009DFAC1 /* MKStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreKit.m; sourceTree = "<group>"; };
+		50C9E46122D64E13009DFAC1 /* MKStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreKit.h; sourceTree = "<group>"; };
+		50C9E46422D6566E009DFAC1 /* TofeeTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TofeeTV-Bridging-Header.h"; sourceTree = "<group>"; };
+		50C9E46522D6566E009DFAC1 /* TofeeTV copy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TofeeTV copy-Bridging-Header.h"; sourceTree = "<group>"; };
+		50C9E46622D6566E009DFAC1 /* TestingAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAgainViewController.swift; sourceTree = "<group>"; };
+		50C9E46F22D65C59009DFAC1 /* TestingAgainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingAgainViewController.xib; sourceTree = "<group>"; };
+		50C9E47222D6641D009DFAC1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		50D8A6F52249D73B0000A967 /* TofeeTV copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TofeeTV copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D8A6F62249D73B0000A967 /* TofeeTV copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TofeeTV copy-Info.plist"; path = "/Users/tauqeerahmed/Documents/Work/TofeeTV/TofeeTV copy-Info.plist"; sourceTree = "<absolute>"; };
 		50E56AE9221C5B85008A1F81 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
@@ -942,6 +956,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				509E3A6D2210832900DAC9A5 /* FBSDKCoreKit.framework in Frameworks */,
+				50C9E47322D6641D009DFAC1 /* StoreKit.framework in Frameworks */,
 				509E3A6B2210832900DAC9A5 /* Bolts.framework in Frameworks */,
 				509E3A6A2210832900DAC9A5 /* FBSDKShareKit.framework in Frameworks */,
 				509E3A6C2210832900DAC9A5 /* FBSDKLoginKit.framework in Frameworks */,
@@ -1089,6 +1104,8 @@
 		50C5AA292206E84B008BA500 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				50C9E46122D64E13009DFAC1 /* MKStoreKit.h */,
+				50C9E46022D64E13009DFAC1 /* MKStoreKit.m */,
 				50BDF01722BFD1A1008804FE /* Dropdown */,
 				50C5AA2A2206E84B008BA500 /* NSString+JS.m */,
 				50C5AA2B2206E84B008BA500 /* FileManager.h */,
@@ -1633,8 +1650,12 @@
 				501A78CD22D5970C00F1C32F /* AboutUsViewController.m */,
 				501A78CE22D5970C00F1C32F /* AboutUsViewController.xib */,
 				501A78D122D5993F00F1C32F /* ContactUsViewController.h */,
+				50C9E46F22D65C59009DFAC1 /* TestingAgainViewController.xib */,
 				501A78D222D5993F00F1C32F /* ContactUsViewController.m */,
 				501A78D322D5993F00F1C32F /* ContactUsViewController.xib */,
+				50C9E46622D6566E009DFAC1 /* TestingAgainViewController.swift */,
+				50C9E46422D6566E009DFAC1 /* TofeeTV-Bridging-Header.h */,
+				50C9E46522D6566E009DFAC1 /* TofeeTV copy-Bridging-Header.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1667,6 +1688,7 @@
 		B9557FC826E82B2B2CCA9A7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50C9E47222D6641D009DFAC1 /* StoreKit.framework */,
 				509E3A672210832700DAC9A5 /* Bolts.framework */,
 				509E3A692210832900DAC9A5 /* FBSDKCoreKit.framework */,
 				509E3A682210832800DAC9A5 /* FBSDKLoginKit.framework */,
@@ -1725,11 +1747,15 @@
 				TargetAttributes = {
 					50C5AA0C2206E477008BA500 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
+					};
+					50D8A60C2249D73B0000A967 = {
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -1761,6 +1787,7 @@
 				50C5AC892206E94B008BA500 /* StoryOneTableViewCell.xib in Resources */,
 				501C440822CDABEA00546E96 /* SongListingTableViewCell.xib in Resources */,
 				50C5AC632206E94B008BA500 /* AddMyOwnCollectionReusableView.xib in Resources */,
+				50C9E47022D65C59009DFAC1 /* TestingAgainViewController.xib in Resources */,
 				50C5AC912206E94B008BA500 /* TitleHeading copy.xib in Resources */,
 				50C5AA1D2206E479008BA500 /* LaunchScreen.storyboard in Resources */,
 				50C5AA822206E84C008BA500 /* Menu-Button@3x.png in Resources */,
@@ -1869,6 +1896,7 @@
 				50D8A6EC2249D73B0000A967 /* MyListProfileCollectionViewCell.xib in Resources */,
 				50D8A6EE2249D73B0000A967 /* VideoPlayerViewController.xib in Resources */,
 				50D8A6EF2249D73B0000A967 /* ThankYouViewController.xib in Resources */,
+				50C9E47122D65C59009DFAC1 /* TestingAgainViewController.xib in Resources */,
 				50D8A6F02249D73B0000A967 /* DescriptionTableViewCell.xib in Resources */,
 				508DACFC22D25F04004A13DF /* song1.mp4 in Resources */,
 			);
@@ -1977,12 +2005,14 @@
 				50C5AC832206E94B008BA500 /* StoryOneTableViewCell.m in Sources */,
 				50C5AA912206E84C008BA500 /* Reachability.m in Sources */,
 				504B265822211390007D376B /* QuestionViewController.m in Sources */,
+				50C9E46222D64E13009DFAC1 /* MKStoreKit.m in Sources */,
 				50C5AC562206E94B008BA500 /* DIYTableViewCell.m in Sources */,
 				50C5AA942206E84C008BA500 /* NSString+HTML.m in Sources */,
 				50C5ACDE2206F2D7008BA500 /* LoginViewController.m in Sources */,
 				5067F35622D4F9AB00894B2F /* WeakEvent.m in Sources */,
 				50C5AB5A2206E8F3008BA500 /* UIImage+CoreGraphics.m in Sources */,
 				50C5AB6C2206E8F3008BA500 /* JTSImageInfo.m in Sources */,
+				50C9E46822D6566E009DFAC1 /* TestingAgainViewController.swift in Sources */,
 				50C5AB572206E8F3008BA500 /* HRColorCursor.m in Sources */,
 				50C5AB3D2206E8F3008BA500 /* JotDrawView.m in Sources */,
 				50C5AB902206E92E008BA500 /* Question.m in Sources */,
@@ -2142,6 +2172,7 @@
 				5067F33522D4F87A00894B2F /* NSObject+KeychainProperty.m in Sources */,
 				5067F36422D4FEF300894B2F /* SubscribeViewController.m in Sources */,
 				50D8A6352249D73B0000A967 /* FSCalendarScopeHandle.m in Sources */,
+				50C9E46922D6566E009DFAC1 /* TestingAgainViewController.swift in Sources */,
 				50D8A6362249D73B0000A967 /* MyListProfileCollectionViewCell.m in Sources */,
 				50D8A6372249D73B0000A967 /* FSCalendarDelegationProxy.m in Sources */,
 				50D8A6382249D73B0000A967 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
@@ -2221,6 +2252,7 @@
 				50D8A6752249D73B0000A967 /* CropImageViewController.m in Sources */,
 				50D8A6762249D73B0000A967 /* UIImage+JTSImageEffects.m in Sources */,
 				50D8A6772249D73B0000A967 /* MASCompositeConstraint.m in Sources */,
+				50C9E46322D64E13009DFAC1 /* MKStoreKit.m in Sources */,
 				5067F33B22D4F87A00894B2F /* InAppProductRequester.m in Sources */,
 				50D8A6782249D73B0000A967 /* JotTextEditView.m in Sources */,
 				50D8A6792249D73B0000A967 /* ADDropDownMenuView.m in Sources */,
@@ -2420,8 +2452,10 @@
 			baseConfigurationReference = FB2DEAEBDAB3D35A4182C5CF /* Pods-TofeeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YDMU2749GD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2438,6 +2472,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = QuizAppDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "TofeeTV/ViewControllers/TofeeTV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2447,8 +2484,10 @@
 			baseConfigurationReference = 38952574FE3B321DAD1C124E /* Pods-TofeeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YDMU2749GD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2465,6 +2504,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = QuizAppDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "TofeeTV/ViewControllers/TofeeTV-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2473,6 +2514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YDMU2749GD;
@@ -2491,6 +2533,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = QuizAppDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "TofeeTV/ViewControllers/TofeeTV copy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2499,6 +2544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YDMU2749GD;
@@ -2517,6 +2563,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TofeeTv.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = QuizAppDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "TofeeTV/ViewControllers/TofeeTV copy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

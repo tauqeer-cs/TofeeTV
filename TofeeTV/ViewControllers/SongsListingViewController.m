@@ -19,6 +19,12 @@
 #import "SubscribeViewController.h"
 #import "AboutUsViewController.h"
 #import "ContactUsViewController.h"
+//#import "TestingAgainViewController.swift"
+
+#import "TofeeTV-Swift.h"
+
+
+
 @interface SongsListingViewController ()<VideoPlayerViewControllerDelegate,GADBannerViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -98,9 +104,14 @@
     }
     else if (index == 1)
     {
-        //remove ads
-        SubscribeViewController * subsViewController = [[SubscribeViewController alloc] initWithNibName:@"SubscribeViewController" bundle:nil];
-        [self.navigationController showViewController:subsViewController sender:self];
+        
+        id destination = [[TestingAgainViewController alloc] initWithNibName:@"TestingAgainViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:destination animated:true];
+        
+        
+    //TestingAgainViewController * subsViewController = [[SubscribeViewController alloc] initWithNibName:@"SubscribeViewController" bundle:nil];
+    //[self.navigationController showViewController:subsViewController sender:self];
         
     }
     else if(index == 2)
@@ -114,8 +125,8 @@
     }
     else if(index == 3)
     {
-        //Contact Us
-        ContactUsViewController * contactUS = [[ContactUsViewController alloc] initWithNibName:@"" bundle:nil];
+        //Contact Us"
+        ContactUsViewController * contactUS = [[ContactUsViewController alloc] initWithNibName:@"ContactUsViewController" bundle:nil];
         [self.navigationController pushViewController:contactUS animated:true];
         
     }
@@ -154,7 +165,7 @@
         
         [self callAlertViewControllerWithTitle:@"" withMessage:@"Error while loading data" withOkButtonTitle:@"OK" withCancleTitle:@"" withOKHandler:^{
             
-            [self loadData];
+         //   [self loadData];
             
         } withCancelHandler:^{
             
@@ -398,6 +409,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.row == 0)
+    {
+        return;
+        
+    }
     //[self buttonBlip];
     [self performSegueWithIdentifier:@"showOptions" sender:self];
     

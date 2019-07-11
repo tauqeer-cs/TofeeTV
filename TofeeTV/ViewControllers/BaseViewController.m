@@ -1516,7 +1516,7 @@
 -(void)setPlaceHolderColorWithTextFieldWith:(UITextField *)textField
 {
 
-    [textField setValue:[UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:0.5] forKeyPath:@"_placeholderLabel.textColor"];
+    [textField setValue:[UIColor blackColor] forKeyPath:@"_placeholderLabel.textColor"];
     
 }
 -(void)setTextFieldFont:(UITextField *)textField

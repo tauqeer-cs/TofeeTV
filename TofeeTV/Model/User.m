@@ -424,10 +424,6 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
 
     
 
-    NSUserDefaults *currentUserDefault = [NSUserDefaults standardUserDefaults];
-    
-    
-    
     NSData *imageData;
     
     if (profileImage)
@@ -648,14 +644,14 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
     
     NSMutableDictionary *currentDictionary = [NSMutableDictionary new];
     
-    [currentDictionary setObject:subject forKey:@"subject"];
+    [currentDictionary setObject:subject forKey:@"phone"];
     [currentDictionary setObject:message forKey:@"message"];
     
     
     [RestCall callWebServiceWithTheseParams:currentDictionary
                       withSignatureSequence:nil
                                  urlCalling:
-     [baseServiceUrl stringByAppendingString:@"contact_us"]
+     [baseServiceUrl stringByAppendingString:@"contactus"]
                               isPostService:YES
                       withComplitionHandler:^(id result) {
                           

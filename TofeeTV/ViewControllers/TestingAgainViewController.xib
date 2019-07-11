@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KGWhattheTeacherWants.ttf">
+            <string>KGWhattheTeacherWants</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestingAgainViewController" customModule="TofeeTV" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon-background" translatesAutoresizingMaskIntoConstraints="NO" id="8KK-oK-6uZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or if you have subscribed before then restore you purchase." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-gI-San">
+                    <rect key="frame" x="20" y="355" width="374" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="faO-2b-vdg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove ads by subscribtion for only 1 $ or 160 rupees per month" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-af-fhU">
+                    <rect key="frame" x="20" y="144" width="374" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="KRq-m4-Vxm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="010-L1-BG3">
+                    <rect key="frame" x="87" y="281" width="240" height="50"/>
+                    <color key="backgroundColor" red="0.98310989140000005" green="0.68967938419999997" blue="0.2312567532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JQm-e2-D64"/>
+                        <constraint firstAttribute="width" constant="240" id="R8L-uE-PH4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="subscribtion">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="purchasePressed:" destination="-1" eventType="touchUpInside" id="277-TJ-h6a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-VY-R9B">
+                    <rect key="frame" x="87" y="492" width="240" height="50"/>
+                    <color key="backgroundColor" red="0.98310989140000005" green="0.68967938419999997" blue="0.2312567532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Restore purchase">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="restorePressed:" destination="-1" eventType="touchUpInside" id="Adh-a1-y6k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99846988920000002" green="0.0" blue="0.87192785740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ISV-VY-R9B" firstAttribute="width" secondItem="010-L1-BG3" secondAttribute="width" id="4JV-Pk-Uqp"/>
+                <constraint firstItem="hS7-gI-San" firstAttribute="top" secondItem="010-L1-BG3" secondAttribute="bottom" constant="24" id="DaB-xg-ke6"/>
+                <constraint firstItem="hS7-gI-San" firstAttribute="width" secondItem="jNb-af-fhU" secondAttribute="width" id="HHr-wK-k8V"/>
+                <constraint firstItem="010-L1-BG3" firstAttribute="top" secondItem="jNb-af-fhU" secondAttribute="bottom" constant="24" id="KQ5-2y-OQR"/>
+                <constraint firstItem="ISV-VY-R9B" firstAttribute="top" secondItem="hS7-gI-San" secondAttribute="bottom" constant="24" id="OU3-VV-8p0"/>
+                <constraint firstItem="jNb-af-fhU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="S08-Qa-awa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jNb-af-fhU" secondAttribute="trailing" constant="20" id="VM4-Bw-wLJ"/>
+                <constraint firstItem="010-L1-BG3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZxU-bb-fFb"/>
+                <constraint firstItem="8KK-oK-6uZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bNO-VU-1iu"/>
+                <constraint firstItem="ISV-VY-R9B" firstAttribute="height" secondItem="010-L1-BG3" secondAttribute="height" id="pHX-oS-9K8"/>
+                <constraint firstItem="ISV-VY-R9B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rdM-v6-Gyk"/>
+                <constraint firstAttribute="bottom" secondItem="8KK-oK-6uZ" secondAttribute="bottom" id="sqd-Wu-Zy7"/>
+                <constraint firstItem="jNb-af-fhU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sty-YY-ceT"/>
+                <constraint firstItem="8KK-oK-6uZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wKd-c9-CTP"/>
+                <constraint firstItem="hS7-gI-San" firstAttribute="leading" secondItem="jNb-af-fhU" secondAttribute="leading" id="x4F-ZG-0T3"/>
+                <constraint firstItem="8KK-oK-6uZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zNI-Cl-H1J"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="appicon-background" width="1708" height="3696"/>
+    </resources>
+</document>

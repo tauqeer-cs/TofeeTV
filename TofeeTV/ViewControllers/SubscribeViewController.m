@@ -14,8 +14,9 @@
 @import StoreKit;
 #import "IAPHelper.h"
 #import "IAPShare.h"
+#import "MKStoreKit.h"
 
-@interface SubscribeViewController ()
+@interface SubscribeViewController ()<SKPaymentTransactionObserver>
 
 @property (nonatomic) InAppProductRequester* productRequester;
 @property (nonatomic) InAppReceiptVerifier* receiptVerifier;
@@ -42,29 +43,19 @@
     
     [self requestProduct];
  
-    self.paymentQue = [SKPaymentQueue defaultQueue];
+    self.paymentQue = [SKPaymentQueue defaultQueue] ;
+  [self.paymentQue addPayment:self];
+    
+    //SKPaymentQueue.default().add(self)
     
 }
 //maybe step 1
 
 -(void)requestProduct{
-    
-    self.productRequester = [[InAppProductRequester alloc]initWithProductIdentifier:PRODUCT_ID];
-    
-    [self.productRequester requestWithCompletion:^(SKProduct *product) {
-        self.product = product;
-        [self makePayment];
-        
-        
-    }];
+  
     
     
     
-    
-    
-    //self checkSubscription:<#(InAppSubscription *)#> name:<#(NSString *)#>
-    
-    return;
     if(![IAPShare sharedHelper].iap) {
         //com.hashtaggospel
         //unlock123
@@ -89,6 +80,9 @@
              
              
              
+             [self makePayment];
+             
+             
              
              
              
@@ -98,6 +92,12 @@
     
     return;
     
+    
+}
+
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions{
+    
+    NSLog(@"");
     
 }
 
@@ -115,20 +115,19 @@
   
         
         
-        if ([self canMakePayment]) {
-            
-            //            let payment = SKPayment(product: product)
-
-           SKPayment * currentPayment =  [SKPayment paymentWithProduct:self.product];
+        SKMutablePayment *request = [SKMutablePayment new];
+        request.productIdentifier = PRODUCT_ID;
+       
+        [[SKPaymentQueue defaultQueue] addPayment:request];
+        
+        //let paymentRequest = SKMutablePayment()
+        //paymentRequest.productIdentifier = productID
+        //SKPaymentQueue.default().add(paymentRequest)
         
 
-         //   [[SKPaymentQueue defaultQueue] addPayment:self];
-            
-            [[SKPaymentQueue defaultQueue] addPayment:currentPayment];
-            
+
             //SKPaymentQueue.default().add(self)
 
-        }
         
 
         //[[SKPaymentQueue defaultQueue] addPayment:[SKPayment paymentWithProduct:self.product]];
@@ -136,6 +135,7 @@
 //        [[InAppPaymentQueue sharedInstance] addPayment:self.product];
 
         return;
+        
         
         [[IAPShare sharedHelper].iap buyProduct:self.product
                                    onCompletion:^(SKPaymentTransaction* trans){
