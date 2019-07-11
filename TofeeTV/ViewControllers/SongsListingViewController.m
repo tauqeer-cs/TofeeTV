@@ -76,10 +76,17 @@
     
 
     self.bannerView.delegate = self;
+    if ([self removeAdd])
+    {
+        [self.bannerView loadRequest:self.request];
+        self.heightOfAdd.constant = 0;
+        
+    }
+    else{
     
-    [self.bannerView loadRequest:self.request];
-    self.heightOfAdd.constant = 50;
-
+        [self.bannerView loadRequest:self.request];
+        self.heightOfAdd.constant = 50;
+    }
 
     [self launcherThings];
     

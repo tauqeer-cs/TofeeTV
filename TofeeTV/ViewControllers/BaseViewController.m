@@ -379,7 +379,26 @@
  
 }
 
+-(BOOL)removeAdd {
 
+    return [[self.userDefaults objectForKey:@"removeAdd"] boolValue];
+    
+    return NO;
+}
+
+-(void)setAds:(BOOL)removeOrNot{
+    
+    if (removeOrNot) {
+       
+        [self.userDefaults setObject:@"1" forKey:@"removeAdd"];
+        
+    }
+    else {
+        [self.userDefaults setObject:@"0" forKey:@"removeAdd"];
+        
+    }
+    
+}
 
 -(void)topBarButtonTapped{
     

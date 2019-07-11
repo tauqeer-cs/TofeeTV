@@ -305,5 +305,9 @@
 @property (nonatomic,strong) GADRequest *request;
 - (void)launcherThings;
 
+-(void)setAds:(BOOL)removeOrNot;
+
+-(BOOL)removeAdd;
+
 
 @end

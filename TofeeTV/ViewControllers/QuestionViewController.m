@@ -64,14 +64,20 @@
         self.lblQuestionTextOne.font =  [UIFont fontWithName:FancyFont size:55];
     }
     self.title = @"Game";
-    self.request = [GADRequest request];
-    self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
-    self.interstitial =
-    [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-1949777708516294/9068499910"];
-    self.interstitial.delegate = self;
-    [self.interstitial loadRequest:self.request];
-    [self.interstitial presentFromRootViewController:self];
-    
+    if ([self removeAdd])
+    {
+        
+    }
+    else{
+        self.request = [GADRequest request];
+        self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
+        self.interstitial =
+        [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-1949777708516294/9068499910"];
+        self.interstitial.delegate = self;
+        [self.interstitial loadRequest:self.request];
+        [self.interstitial presentFromRootViewController:self];
+    }
+
     for (UIButton * currentButton in self.answerButons)
     {
         [currentButton.titleLabel setFont:[UIFont fontWithName:FancyFont size:28]];

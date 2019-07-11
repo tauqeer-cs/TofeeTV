@@ -53,7 +53,7 @@
                         <constraint firstAttribute="height" constant="50" id="JQm-e2-D64"/>
                         <constraint firstAttribute="width" constant="240" id="R8L-uE-PH4"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="20"/>
                     <state key="normal" title="subscribtion">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -64,7 +64,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-VY-R9B">
                     <rect key="frame" x="87" y="492" width="240" height="50"/>
                     <color key="backgroundColor" red="0.98310989140000005" green="0.68967938419999997" blue="0.2312567532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="20"/>
                     <state key="normal" title="Restore purchase">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>

@@ -43,10 +43,16 @@
     self.interstitial =
     [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-1949777708516294/9068499910"];
     
-    self.interstitial.delegate = self;
     
-    [self.interstitial loadRequest:self.request];
-    [self.interstitial presentFromRootViewController:self];
+    if ([self removeAdd])
+    {
+        
+    }
+    else {
+        self.interstitial.delegate = self;
+        [self.interstitial loadRequest:self.request];
+        [self.interstitial presentFromRootViewController:self];
+    }
     
     
     [self.btnGame.titleLabel setFont:self.lblSong.font];

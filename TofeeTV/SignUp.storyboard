@@ -138,7 +138,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99846988920000002" green="0.0" blue="0.87192785740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="B8g-Db-Wtk" firstAttribute="bottom" secondItem="N5j-od-EtT" secondAttribute="bottom" id="1ah-GG-XDG"/>
                             <constraint firstItem="B8g-Db-Wtk" firstAttribute="trailing" secondItem="N5j-od-EtT" secondAttribute="trailing" id="4XC-MC-VdP"/>
@@ -400,7 +400,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.28310409190000002" green="0.6571135521" blue="0.79511803390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99846988920000002" green="0.0" blue="0.87192785740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vhJ-GL-xuo" firstAttribute="top" secondItem="OZ2-oM-F1W" secondAttribute="bottom" id="2tg-BY-zHD"/>
                             <constraint firstItem="qKZ-YD-Acg" firstAttribute="trailing" secondItem="H6L-bc-JzK" secondAttribute="trailing" id="5mY-uP-kNU"/>
@@ -674,7 +674,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.28310409190000002" green="0.6571135521" blue="0.79511803390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99846988920000002" green="0.0" blue="0.87192785740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iQm-Qy-jFl" firstAttribute="leading" secondItem="USB-Wk-h0A" secondAttribute="leading" id="0Mp-EM-2P1"/>
                             <constraint firstItem="iQm-Qy-jFl" firstAttribute="trailing" secondItem="USB-Wk-h0A" secondAttribute="trailing" id="2Aq-gA-nvR"/>

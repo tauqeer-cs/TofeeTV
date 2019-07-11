@@ -9,7 +9,7 @@
 import UIKit
 import StoreKit
 
-class TestingAgainViewController: UIViewController , SKPaymentTransactionObserver {
+class TestingAgainViewController: BaseViewController , SKPaymentTransactionObserver {
 
     
     let productID = "com.tofee.adsRemove"
@@ -20,6 +20,7 @@ class TestingAgainViewController: UIViewController , SKPaymentTransactionObserve
         // Do any additional setup after loading the view.
           SKPaymentQueue.default().add(self)
         
+
     }
 
 
@@ -31,7 +32,10 @@ class TestingAgainViewController: UIViewController , SKPaymentTransactionObserve
             paymentRequest.simulatesAskToBuyInSandbox = true
             
             SKPaymentQueue.default().add(paymentRequest)
+            self.showLoader()
         } else {
+            
+            self.showAlert("", message: "You can purchase this subscribtion")
             print("User unable to make payments")
         }
     }
@@ -40,18 +44,30 @@ class TestingAgainViewController: UIViewController , SKPaymentTransactionObserve
             if transaction.transactionState == .purchased {
                 //if item has been purchased
                 print("Transaction Successful")
-                //purchaseLabel.text = "Purchase Completed!"
+                self.hideLoader()
+              
+
+            self.setAds(true)
+                
+            //self.setAds(true)
+                
             } else if transaction.transactionState == .failed {
                 
                 print(transaction.error)
+                self.hideLoader()
+                self.showAlert("", message: "Can process your request")
             } else if transaction.transactionState == .restored {
                 print("restored")
                // purchaseLabel.text = "Purchase Restored!"
+                self.hideLoader()
+                self.setAds(true)
             }
         }
     }
     
     @IBAction func restorePressed(_ sender: Any) {
+        self.showLoader()
+        
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
     
