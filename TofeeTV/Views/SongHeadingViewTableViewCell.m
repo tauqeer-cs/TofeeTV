@@ -13,6 +13,12 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+
+    if (IS_IPad) {
+        self.trailing.constant = 200;
+        self.leading.constant = 200;
+        
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

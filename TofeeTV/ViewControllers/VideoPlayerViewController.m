@@ -107,8 +107,6 @@
 
 
 - (IBAction)btnBackTapped:(UIButton *)sender {
-    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [currentOne resumeFromPausedState];
     
     float playerCurrentTime = [self getCurrentTime];
     float newTime = playerCurrentTime - 2;
@@ -141,7 +139,7 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     
-    AppDelegate * currentOne  = [[UIApplication sharedApplication] delegate];
+    AppDelegate * currentOne  = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentOne.shouldAutoRotate = NO;
     
     
@@ -155,7 +153,7 @@
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    AppDelegate * currentOne = [[UIApplication sharedApplication] delegate];
+    AppDelegate * currentOne = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     return UIInterfaceOrientationMaskLandscape;
     
 }
@@ -187,6 +185,8 @@
         
         [self downloadTheNextLink];
         
+    
+        
         id song1 = [[NSBundle mainBundle] pathForResource:@"song1" ofType:@"mp4"];
         self.avPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:song1]];
         self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
@@ -205,6 +205,9 @@
     
     [FileManager loadVideoFromurl:self.currentSong.videoUrl
             withComplitionHandler:^(id item) {
+    
+                [currentOne pauseTheMusic];
+                
                 
                 [self downloadTheNextLink];
                 

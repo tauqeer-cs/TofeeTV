@@ -11,8 +11,10 @@ import StoreKit
 
 class TestingAgainViewController: BaseViewController , SKPaymentTransactionObserver {
 
+    @IBOutlet weak var lblOne: UILabel!
     
     let productID = "com.tofee.adsRemove"
+    @IBOutlet weak var lblTwo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,8 @@ class TestingAgainViewController: BaseViewController , SKPaymentTransactionObser
         // Do any additional setup after loading the view.
           SKPaymentQueue.default().add(self)
         
-
+        lblOne.text = "Want to remove ads and download videos?\nSubscribe $1/month."
+        lblTwo.text = "If you have already subscribed, restore your purchase."
     }
 
 
@@ -45,17 +48,14 @@ class TestingAgainViewController: BaseViewController , SKPaymentTransactionObser
                 //if item has been purchased
                 print("Transaction Successful")
                 self.hideLoader()
-              
+                self.setAds(true)
 
-            self.setAds(true)
-                
-            //self.setAds(true)
-                
+            
             } else if transaction.transactionState == .failed {
                 
-                print(transaction.error)
+
                 self.hideLoader()
-                self.showAlert("", message: "Can process your request")
+                self.showAlert("", message: "Can not process your request")
             } else if transaction.transactionState == .restored {
                 print("restored")
                // purchaseLabel.text = "Purchase Restored!"

@@ -19,8 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 @property (weak, nonatomic) IBOutlet UITextField *txtEmail;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
-@property (weak, nonatomic) IBOutlet UIView *lblOR;
-@property (weak, nonatomic) IBOutlet UILabel *lblOr;
+@property (weak, nonatomic) IBOutlet UIButton *btnForgotPassword;
 
 @end
 
@@ -28,10 +27,8 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    
     [super viewDidAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     
 }
 
@@ -68,7 +65,7 @@
     self.btnLogin.superview.backgroundColor = [UIColor clearColor];
     [self makeButtonRounded:self.btnLogin];
     
-    //
+
     
     [self setTouchMethodWithLabel:self.view withSelector:@selector(viewTouched)];
     
@@ -81,7 +78,7 @@
     [self.btnLogin setBackgroundColor:DefaultYellowColor2];
     
     [self setupSignUPFormButtonsFont:self.btnFB];
-    [self.lblOr setFont:[UIFont fontWithName:FancyFont size:15.0]];
+
 //   [self inititateTheAudioFile:@"App background loop" withFileType:@"wav" withOneTimePlay:NO];
 
 
@@ -215,6 +212,28 @@
     
     
 }
+- (IBAction)btnReset:(id)sender {
+
+    [self showLoader];
+    
+    
+    [User callForgetAccount:self.txtEmail.text withComplitionHandler:^(id result) {
+    [self hideLoader];
+   
+        [self callAlertViewControllerWithTitle:@"" withMessage:result withOkButtonTitle:@"OK" withCancleTitle:@"" withOKHandler:^{
+            
+            [self.navigationController popViewControllerAnimated:YES];
+            
+        } withCancelHandler:^{
+            
+        }];
+    } withFailueHandler:^{
+            [self showLoader];
+        [self showAlert:@"" message:@"Could not send email."];
+    }];
+    
+}
+
 
 
 @end

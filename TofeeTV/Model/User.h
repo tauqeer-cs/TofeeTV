@@ -33,10 +33,13 @@
         withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler;
 
 
-+(void)callRegisterUserWithSocial:(NSString *)socialToken
++(void)callRegisterUserWithSocial:(NSString *)socialToken withName:(NSString *)fullName
+                        withEmail:(NSString *)email
+                         withFbID:(NSString *)fbId
             withComplitionHandler:(void(^)(id result))completionHandler
                 withFailueHandler:(void(^)(id error))failureHandler
          withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler;
+
 
 +(void)callLoginUserWithEmail:(NSString *)email withPassword:(NSString *)password
         withComplitionHandler:(void(^)(id result))completionHandler withFailueHandler:(void(^)(id message))failureHandler

@@ -71,7 +71,7 @@
     
     self.request = [GADRequest request];
     self.request.testDevices = @[ @"931CA2DA0AF0484680E367B30FB570B0",kGADSimulatorID];
-    self.bannerView.adUnitID = @"ca-app-pub-2522914220379856/3130957071";
+    self.bannerView.adUnitID = @"ca-app-pub-1949777708516294/4870272595";
     self.bannerView.rootViewController = self;
     
 
@@ -404,6 +404,10 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     if (indexPath.row == 0) {
+        if (IS_IPad) {
+        return [[UIScreen mainScreen] bounds].size.height/4;
+        }
+        else
         return [[UIScreen mainScreen] bounds].size.height/6;
     }
     

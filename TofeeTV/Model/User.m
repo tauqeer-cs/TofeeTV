@@ -377,7 +377,7 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
                                   dataObject = [dataObject dictionaryByReplacingNullsWithBlanks];
                                   [defauls setObject:dataObject forKey:@"isFirstTimeSignUp"];
                                   
-                                  AppDelegate * currentDelegate = [[UIApplication sharedApplication] delegate];
+                                  AppDelegate * currentDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
                                   
                                   completionHandler(dataObject);
                                   
@@ -537,7 +537,7 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
                                   [defauls setObject:dataObject forKey:@"isFirstTimeSignUp"];
                                   [defauls setObject:[responseObject objectForKey:@"access_token"] forKey:@"access_token"];
                                   
-                                  AppDelegate * currentDelegate = [[UIApplication sharedApplication] delegate];
+                                  AppDelegate * currentDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
                                   
                                   completionHandler(dataObject);
                                   
@@ -562,7 +562,9 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
     
 }
 
-+(void)callRegisterUserWithSocial:(NSString *)socialToken
++(void)callRegisterUserWithSocial:(NSString *)socialToken withName:(NSString *)fullName
+                        withEmail:(NSString *)email
+                         withFbID:(NSString *)fbId
            withComplitionHandler:(void(^)(id result))completionHandler
                withFailueHandler:(void(^)(id error))failureHandler
         withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
@@ -572,6 +574,10 @@ withAlreadyExistsHandler:(void(^)(id result))alreadyExistHandler
     
     NSMutableDictionary *currentDictionary = [NSMutableDictionary new];
     [currentDictionary setObject:socialToken forKey:@"token"];
+    [currentDictionary setObject:fullName forKey:@"fullname"];
+    [currentDictionary setObject:email forKey:@"email"];
+    [currentDictionary setObject:fbId forKey:@"facebook_id"];
+    
     NSUserDefaults *defauls = [NSUserDefaults standardUserDefaults];
     
     
@@ -869,11 +875,11 @@ withFailueHandler:(void(^)(void))failureHandler
                               
                               if ([message isEqualToString:@"success"]) {
                                   
-                                  id data = [result objectForKey:@"data"];
+                                  id data = [result objectForKey:@"message"];
                                   
                                   
         
-                                  completionHandler(@"yes");
+                                  completionHandler(data);
                                   
                                   
                               }

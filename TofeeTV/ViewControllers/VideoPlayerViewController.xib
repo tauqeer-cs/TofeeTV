@@ -124,41 +124,39 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sk0-kO-ZPD">
-                    <rect key="frame" x="16" y="16" width="30" height="30"/>
+                    <rect key="frame" x="16" y="16" width="40" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGG-oD-HT6">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="30" id="j0P-8b-14o"/>
-                                <constraint firstAttribute="width" constant="30" id="qRD-Pc-XG3"/>
-                            </constraints>
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                             <fontDescription key="fontDescription" name="KGWhattheTeacherWants" family="KG What the Teacher Wants" pointSize="50"/>
-                            <state key="normal" title="←"/>
+                            <state key="normal" image="back-button-"/>
                             <connections>
                                 <action selector="btnBackBackTapped:" destination="-1" eventType="touchUpInside" id="Ryo-UP-k2v"/>
                             </connections>
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="uGG-oD-HT6" firstAttribute="leading" secondItem="sk0-kO-ZPD" secondAttribute="leading" id="JOx-OR-Hf3"/>
-                        <constraint firstAttribute="width" constant="30" id="c5b-mt-n5l"/>
-                        <constraint firstAttribute="height" constant="30" id="cdG-rC-6EN"/>
-                        <constraint firstItem="uGG-oD-HT6" firstAttribute="top" secondItem="sk0-kO-ZPD" secondAttribute="top" id="upW-Oe-0h6"/>
+                        <constraint firstAttribute="bottom" secondItem="uGG-oD-HT6" secondAttribute="bottom" id="984-Ye-UCd"/>
+                        <constraint firstAttribute="height" constant="40" id="BH9-Vv-lfU"/>
+                        <constraint firstItem="uGG-oD-HT6" firstAttribute="top" secondItem="sk0-kO-ZPD" secondAttribute="top" id="I38-wB-fvK"/>
+                        <constraint firstItem="uGG-oD-HT6" firstAttribute="leading" secondItem="sk0-kO-ZPD" secondAttribute="leading" id="X4Y-Ef-Tyi"/>
+                        <constraint firstAttribute="trailing" secondItem="uGG-oD-HT6" secondAttribute="trailing" id="aU4-mO-FQc"/>
+                        <constraint firstAttribute="width" constant="40" id="pnY-ke-jeE"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.99215686270000003" green="0.15686274510000001" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="sk0-kO-ZPD" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="7pS-hF-bYR"/>
+                <constraint firstItem="sk0-kO-ZPD" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="4Vd-fA-XUc"/>
                 <constraint firstItem="5O7-70-vgN" firstAttribute="leading" secondItem="62U-E2-X0d" secondAttribute="trailing" constant="8" id="Ce3-8j-vMM"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="DF3-iF-Dp4"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="DI6-kL-2L3"/>
                 <constraint firstItem="5O7-70-vgN" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="LBj-D8-4Cm"/>
+                <constraint firstItem="sk0-kO-ZPD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="Lbu-1d-kvI"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="leading" secondItem="5O7-70-vgN" secondAttribute="trailing" constant="8" id="NZ4-Nj-pio"/>
                 <constraint firstAttribute="bottom" secondItem="62U-E2-X0d" secondAttribute="bottom" id="OKt-n0-cH3"/>
                 <constraint firstItem="hYN-K9-J08" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="aLN-9f-bLU"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.78" constant="82.5" id="b1v-lO-Qc7"/>
-                <constraint firstItem="sk0-kO-ZPD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="cO1-Hg-scL"/>
                 <constraint firstItem="xPP-c0-Rvi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="cqk-ly-Tjm"/>
                 <constraint firstItem="62U-E2-X0d" firstAttribute="top" secondItem="xPP-c0-Rvi" secondAttribute="bottom" constant="-82" id="iWp-Rz-tDA"/>
                 <constraint firstItem="62U-E2-X0d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="p8k-7o-jAM"/>
@@ -171,6 +169,7 @@
         </view>
     </objects>
     <resources>
+        <image name="back-button-" width="128" height="128"/>
         <image name="backward" width="83.5" height="82.5"/>
         <image name="forward" width="85" height="82.5"/>
         <image name="icon-forward" width="250" height="250"/>

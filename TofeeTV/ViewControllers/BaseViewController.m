@@ -253,9 +253,6 @@
     [super viewDidLoad];
     
    
-
-    
-    
     [self showAllFonts];
     
 
@@ -311,7 +308,10 @@
 
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    //self.navigationController.navigationBar.backIndicatorImage = [UIImage imageNamed:@"back-button-"];
+  //  self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"back-button-"];
     
+ //   self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:nil action:nil];
     [self showAllFonts];
     
     

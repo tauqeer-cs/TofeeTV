@@ -37,6 +37,10 @@
             <color key="backgroundColor" red="0.36466276650000001" green="0.36473065609999999" blue="0.3646585047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.36466276650000001" green="0.36473065609999999" blue="0.3646585047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="leading" destination="jZm-5W-eaG" id="xRB-X6-Vqu"/>
+                <outlet property="trailing" destination="JNk-ia-LYi" id="nEg-dW-3bK"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="154.01785714285714"/>
         </tableViewCell>
     </objects>

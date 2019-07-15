@@ -60,49 +60,31 @@
             
             NSString *fbId = [result objectForKey:@"id"];
             
-            
-            
-            
-            
-            NSString *pictureUrl =  [[[result objectForKey:@"picture"] objectForKey:@"data"] objectForKey:@"url"];
-            
+
+
             [self showLoader];
-            NSLog(@"%@",[FBSDKAccessToken currentAccessToken].tokenString);
+
             
-            
-            [User callRegisterUserWithSocial:[FBSDKAccessToken currentAccessToken].tokenString withComplitionHandler:^(id result) {
-                
-                
+            [User callRegisterUserWithSocial:[FBSDKAccessToken currentAccessToken].tokenString withName:[result objectForKey:@"name"] withEmail:[result objectForKey:@"email"] withFbID:fbId withComplitionHandler:^(id result) {
                 [self hideLoader];
                 
                 
                 [self changeTheViewRootControlletWithStoryBoardName:@"Main" withRootName:@"RootTapBar"];
                 
-                [User callAddPushIds:1 withComplitionHandler:^(id result) {
-                    
-                } withFailueHandler:^(id error) {
-                    
-                } withAlreadyExistsHandler:^(id result) {
-                    
-                }];
-                
-                
-                
-                NSLog(@"");
+
                 
             } withFailueHandler:^(id error) {
-                
                 [self hideLoader];
                 [self showAlert:Error message:ErrorWhileLoggingFacebook];
                 
                 
-                
             } withAlreadyExistsHandler:^(id result) {
-                
-                [self showAlert:Error message:ErrorWhileLoggingFacebook];
+                [self showAlert:Error message:@"User already exists with this email"];
                 
                 
             }];
+            
+
             
             /*
              [User callCheckFbLoginIdExists:[FBSDKAccessToken currentAccessToken].tokenString

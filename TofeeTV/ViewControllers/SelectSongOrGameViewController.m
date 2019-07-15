@@ -41,8 +41,9 @@
     self.request.testDevices = @[ @"f2d702823400817844a80703be06886b" ,@"4f2b62a930ebbb22ac092b428fb74a67",@"4fb9829edac4b523686799880a3fea36",@"35cbf4628e8467f7c7bbb209f6a9b681",kGADSimulatorID];
     
     self.interstitial =
-    [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-1949777708516294/9068499910"];
-    
+    [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-4058691632572433/3138695938"];
+    //
+//ca-app-pub-1949777708516294/9068499910
     
     if ([self removeAdd])
     {

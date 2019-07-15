@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SongHeadingViewTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *trailing;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leading;
 
 @end
 
