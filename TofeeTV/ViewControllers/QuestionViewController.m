@@ -37,6 +37,7 @@
 
 @property (nonatomic,strong) GADInterstitial * adToShow;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loaderView;
+@property (nonatomic,strong) GADInterstitial *adToShowToSend;
 
 @end
 
@@ -226,6 +227,11 @@
     [self.btnQuestion4 setHighlighted:NO];
     
 }
+-(void)doThingAfterParentAreDone{
+    
+    [self.adToShow presentFromRootViewController:self];
+    
+}
 -(void)setQuestionDataWithIndex
 {
  
@@ -233,7 +239,12 @@
         
         if (self.questionIndex > 2)
         {
-        [self.adToShow presentFromRootViewController:self];
+        
+            
+            [self userDidTapOnBuyNowButton:self];
+            
+            
+            
         }
         
     }

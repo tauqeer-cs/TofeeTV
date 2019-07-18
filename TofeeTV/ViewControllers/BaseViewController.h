@@ -25,6 +25,7 @@
 #import "IAPShare.h"
 #import "PFNavigationDropdownMenu.h"
 #import "AudioController.h"
+#import "HTKParentalGateViewController.h"
 
 @import GoogleMobileAds;
 @import AVKit;
@@ -308,6 +309,9 @@
 -(void)setAds:(BOOL)removeOrNot;
 
 -(BOOL)removeAdd;
+- (void)userDidTapOnBuyNowButton:(id)sender;
+
+-(void)doThingAfterParentAreDone;
 
 
 @end

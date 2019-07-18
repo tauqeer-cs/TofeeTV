@@ -1709,6 +1709,7 @@
 				50C5AA092206E477008BA500 /* Sources */,
 				50C5AA0A2206E477008BA500 /* Frameworks */,
 				50C5AA0B2206E477008BA500 /* Resources */,
+				CD98B7F7F924340C2E7F29CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1905,6 +1906,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		CD98B7F7F924340C2E7F29CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TofeeTV/Pods-TofeeTV-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HTKUltimateParentalGate/HTKUltimateParentalGate.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HTKUltimateParentalGate.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TofeeTV/Pods-TofeeTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBF49904B26CC685EB230C36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

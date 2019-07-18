@@ -315,13 +315,52 @@
     [self showAllFonts];
     
     
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleValidationStateChangedNotification:) name:HTKParentalGateValidationStateChangedNotification object:nil];
+    
 
     
 
 }
 
+- (void)userDidTapOnBuyNowButton:(id)sender {
+    // Show our parental gate
+    HTKParentalGateViewController *parentalGateController = [[HTKParentalGateViewController alloc] init];
+    [parentalGateController showInParentViewController:self fullScreen:NO];
+    
+}
 
 
+- (void)handleValidationStateChangedNotification:(NSNotification *)notification {
+    if ([NSThread isMainThread]) {
+        NSUInteger state = [notification.userInfo[HTKParentalGateValidationStateChangedKey] integerValue];
+        switch (state) {
+            case HTKParentalGateValidationStateIsValidated: {
+                // Validated! Launch something here!
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Begin Purchase" message:@"Great! You've successfully validated the Parental Gate. Now you can continue your in app purchase!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+             //   [alertView show];
+
+                [self doThingAfterParentAreDone];
+                
+                break;
+            }
+                // Handle other states
+            case HTKParentalGateValidationStateInvalid:
+            case HTKParentalGateValidationStateTimesUp:
+            case HTKParentalGateValidationStateTooManyAttempts:
+            case HTKParentalGateValidationStateTooManyIncorrectAnswers:
+            default:
+                break;
+        }
+    } else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self handleValidationStateChangedNotification:notification];
+        });
+    }
+}
+
+-(void)doThingAfterParentAreDone{
+    
+}
 -(void)loginButtonTapped{
     
     [self performSegueWithIdentifier:@"segueLoginTapped" sender:self];

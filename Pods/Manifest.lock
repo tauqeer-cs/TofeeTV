@@ -38,6 +38,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (6.2.0)"
   - GoogleUtilities/Reachability (6.2.0):
     - GoogleUtilities/Logger
+  - HTKUltimateParentalGate (0.0.4)
   - IAPHelper (1.1)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -49,6 +50,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Google-Mobile-Ads-SDK
+  - HTKUltimateParentalGate (~> 0.0.4)
   - IAPHelper
   - SpinKit (~> 1.1)
 
@@ -58,6 +60,7 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
+    - HTKUltimateParentalGate
     - IAPHelper
     - nanopb
     - SpinKit
@@ -67,10 +70,11 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: f76d0f6b67445d64928f3ba1235ad85483fa8537
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 996e0db07153674fd1b54b220fda3a3dc3547cba
+  HTKUltimateParentalGate: 70e6ef4f4e531fa63eb640bdcf8d5dff73264d07
   IAPHelper: fd74f53b0ac142eed085777b88b86a11746a2dd4
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
 
-PODFILE CHECKSUM: df80b35095cb86b1eac94f8b34ea794318e791d2
+PODFILE CHECKSUM: aab91a17b29749b77a9231a4b7973b84582d5e02
 
 COCOAPODS: 1.6.1

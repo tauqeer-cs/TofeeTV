@@ -10,6 +10,7 @@ pod 'AFNetworking', '~> 3.0'
 pod 'IAPHelper'
 pod 'Google-Mobile-Ads-SDK'
 pod 'IAPHelper'
+pod 'HTKUltimateParentalGate', '~> 0.0.4'
 
   # Pods for TofeeTV
 

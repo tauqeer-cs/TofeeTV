@@ -15,6 +15,33 @@ class TestingAgainViewController: BaseViewController , SKPaymentTransactionObser
     
     let productID = "com.tofee.adsRemove"
     @IBOutlet weak var lblTwo: UILabel!
+    //
+    var purchaseOrRestoring = true
+    
+    override func doThingAfterParentAreDone() {
+        
+     
+        if purchaseOrRestoring {
+            if SKPaymentQueue.canMakePayments() {
+                let paymentRequest = SKMutablePayment()
+                paymentRequest.productIdentifier = productID
+                paymentRequest.simulatesAskToBuyInSandbox = true
+                
+                SKPaymentQueue.default().add(paymentRequest)
+                self.showLoader()
+            } else {
+                
+                self.showAlert("", message: "You can purchase this subscribtion")
+                print("User unable to make payments")
+            }
+        }
+        else
+        {
+            self.purchaseOrRestoring = false
+            self.showLoader()
+            SKPaymentQueue.default().restoreCompletedTransactions()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +55,7 @@ class TestingAgainViewController: BaseViewController , SKPaymentTransactionObser
 
 
     @IBAction func purchasePressed(_ sender: Any) {
-        
-        if SKPaymentQueue.canMakePayments() {
-            let paymentRequest = SKMutablePayment()
-            paymentRequest.productIdentifier = productID
-            paymentRequest.simulatesAskToBuyInSandbox = true
-            
-            SKPaymentQueue.default().add(paymentRequest)
-            self.showLoader()
-        } else {
-            
-            self.showAlert("", message: "You can purchase this subscribtion")
-            print("User unable to make payments")
-        }
+        self.purchaseOrRestoring = true
     }
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
@@ -66,10 +81,12 @@ class TestingAgainViewController: BaseViewController , SKPaymentTransactionObser
     }
     
     @IBAction func restorePressed(_ sender: Any) {
-        self.showLoader()
+     
+        self.userDidTapOnBuyNowButton(self)
         
-        SKPaymentQueue.default().restoreCompletedTransactions()
     }
+    
+
     
     /*
     // MARK: - Navigation

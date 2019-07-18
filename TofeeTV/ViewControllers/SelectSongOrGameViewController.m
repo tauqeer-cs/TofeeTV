@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnGame;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *distanceFromSides;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfView;
+@property (nonatomic,strong) GADInterstitial *adToShow;
 
 @end
 
@@ -90,12 +91,20 @@
     
     if ([self.navigationController.viewControllers.lastObject isEqual:self]) {
 
-            [ad presentFromRootViewController:self];
+        
+        
+        self.adToShow = ad;
+        [self userDidTapOnBuyNowButton:self];
+        
         
     }
 
     
     NSLog(@"");
+}
+-(void)doThingAfterParentAreDone{
+    
+    [self.adToShow presentFromRootViewController:self];
 }
 
 /// Called when an interstitial ad request completed without an interstitial to

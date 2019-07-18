@@ -19,8 +19,6 @@
 #import "SubscribeViewController.h"
 #import "AboutUsViewController.h"
 #import "ContactUsViewController.h"
-//#import "TestingAgainViewController.swift"
-
 #import "TofeeTV-Swift.h"
 
 
@@ -84,8 +82,10 @@
     }
     else{
     
-        [self.bannerView loadRequest:self.request];
-        self.heightOfAdd.constant = 50;
+       // [self.bannerView loadRequest:self.request];
+       // self.heightOfAdd.constant = 50;
+        self.heightOfAdd.constant = 0;
+        
     }
 
     [self launcherThings];

@@ -140,7 +140,7 @@
     
 }
 
--(void)fbButtonTapped {
+-(void)doThingAfterParentAreDone{
     [self showLoader];
     
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
@@ -173,6 +173,13 @@
                          
                      }
                  }];
+    
+}
+-(void)fbButtonTapped {
+    
+    [self userDidTapOnBuyNowButton:self];
+    
+    
     
     
     
